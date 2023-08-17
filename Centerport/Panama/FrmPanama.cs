@@ -793,6 +793,10 @@ namespace MedicalManagementSoftware
             txtIssuedMonth.Text = "00";
             txtIssuedYear.Text = "00";
 
+            txtXrayPerformed.Text ="00/00/0000";
+            txtEZGPerformed.Text = "00/00/0000";
+
+
             //txtUndergoingDate.Text = "00/00/0000";
 
 
@@ -812,17 +816,18 @@ namespace MedicalManagementSoftware
             setRadioButtonValue(cbKidneyDisordersYes, cbKidneyDisordersNo_, "No");
             setRadioButtonValue(cbSkinProblemYes, cbSkinProblemNo, "No");
             setRadioButtonValue(cbAllergiesYes, cbAllergiesNo, "No");
+
             setRadioButtonValue(cbEpilipsyYes, cbEpilipsyNo, "No");
             setRadioButtonValue(cbSickleCellYes, cbSickleCellNo, "No");
             setRadioButtonValue(cbHerinasYes, cbHerinasNo, "No");
             setRadioButtonValue(cbGenitalDisordersYes, cbGenitalDisordersNo, "No");
             setRadioButtonValue(cbPregnancyYes, cbPregnancyNo, "No");
-
             setRadioButtonValue(cbSleepproblemYes, cbSleepproblemNo, "No");
+
             setRadioButtonValue(cbDoyouSmokeYes, cbDoyouSmokeNo, "No");
             setRadioButtonValue(cbSurgeriesYes, cbSurgeriesNo, "No");
             setRadioButtonValue(cbInfectiousYes, cbInfectiousNo, "No");
-            setRadioButtonValue(cbDigestiveDisordersYes, cbDigestiveDisordersNo, "No");
+            setRadioButtonValue(cbDizzinessFaintingYes, cbDizzinessFaintingNo, "No");          
             setRadioButtonValue(cbLossofconsciousnessYes, cbLossofconsciousnessNo, "No");
             setRadioButtonValue(cbPsychiatricProblemYes, cbPsychiatricProblemNo, "No");
             setRadioButtonValue(cbDepressionYes, cbDepressionNo, "No");
@@ -830,7 +835,7 @@ namespace MedicalManagementSoftware
             setRadioButtonValue(cbLossofmemoryYes, cbLossofmemoryNo, "No");
             setRadioButtonValue(cbBalanceProblemsYes, cbBalanceProblemsNo, "No");
             setRadioButtonValue(cbSevereHeadAchesYes, cbSevereHeadAchesNo, "No");
-
+       
 
 
             setRadioButtonValue(cbRestrictedMobilityYes, cbRestrictedMobilityNo, "No");
@@ -838,6 +843,7 @@ namespace MedicalManagementSoftware
             setRadioButtonValue(cbAmputationYes, cbAmputationNo, "No");
             setRadioButtonValue(cbFracturesDislocationYes, cbFracturesDislocationNo, "No");
             setRadioButtonValue(cbCovidYes, cbCovidNo, "No");
+       
             setRadioButtonValue(cbRepatriatedYes, cbRepatriatedNo, "No");
             setRadioButtonValue(cbHospitalizedYes, cbHospitalizedNo, "No");
 
@@ -865,7 +871,7 @@ namespace MedicalManagementSoftware
             setRadioButtonValue(cbHernias, cbHerniasNo, "Yes");
             setRadioButtonValue(cbAnus, cbAnusNo, "Yes");
             setRadioButtonValue(cbGu, cbGuNo, "Yes");
-            setRadioButtonValue(cbDizzinessFaintingYes, cbDizzinessFaintingNo, "Yes");
+          
 
             setRadioButtonValue(cbUpper, cbUpperNo, "Yes");
             setRadioButtonValue(cbSpine, cbSpineNo, "Yes");
@@ -911,7 +917,7 @@ namespace MedicalManagementSoftware
             setCheckBoxValue(cbVdrl, cbHidden, "Yes"); ;
             txtVdrlNormal.Text = "X";
 
-            setCheckBoxValue(cbGch, cbHidden, "Yes");
+            setCheckBoxValue(cbGch, cbHidden, "No");
             txtGchNormal.Text = "N/A";
 
             setCheckBoxValue(cbGeneralUrien, cbHidden, "Yes");
@@ -2825,14 +2831,15 @@ namespace MedicalManagementSoftware
                 txtPsaNormal.Text = i.PsaNormal.Replace("NA", "N/A");
                 txtPsaAbNormal.Text = i.PsaAbNormal;
                 txtPsaObservation.Text = i.PsaObservation;
-                setCheckBoxValue(cbXray, cbHidden, i.Xray);
+
+                setCheckBoxValue(cbXray, cbHidden, "Yes");
 
                 //validateDate(i.XrayDate, dtXrayDate, checkBox109);
-                txtXrayPerformed.Text = fitnessdate;
+                //txtXrayPerformed.Text = fitnessdate;
                 txtXrayObservation.Text = i.XrayObservation;
-                setCheckBoxValue(cbEkg, cbHidden, i.Ekg);
+                setCheckBoxValue(cbEkg, cbHidden, "Yes");
                 //validateDate(i.Ekg, dtEkg, checkBox110);
-                txtEZGPerformed.Text = fitnessdate;
+                //txtEZGPerformed.Text = fitnessdate;
 
                 txtEkgObservation.Text = i.EkgObservation;
 
@@ -3192,6 +3199,10 @@ namespace MedicalManagementSoftware
                     lblDay.Text = "Day: " + undergoingExaminationDate[0].ToString();
                     lblMonth.Text = "Month: " + undergoingExaminationDate[1].ToString();
                     lblYear.Text = "Year: " + undergoingExaminationDate[2].ToString();
+
+                    txtXrayPerformed.Text = i.fitness_date.ToString();
+                    txtEZGPerformed.Text = i.fitness_date.ToString();
+
 
                 }
                 catch (Exception)
