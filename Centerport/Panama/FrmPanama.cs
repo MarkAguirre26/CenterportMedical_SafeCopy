@@ -984,7 +984,7 @@ namespace MedicalManagementSoftware
 
             setCheckBoxValue(cbPsa, cbHidden, "No");
             txtPsaNormal.Text = "N/A";
-            setCheckBoxValue(cbXray, cbHidden, "No");
+            setCheckBoxValue(cbXray, cbHidden, "Yes");
             txtXrayObservation.Text = "NORMAL";
             setCheckBoxValue(cbEkg, cbHidden, "Yes");
 
