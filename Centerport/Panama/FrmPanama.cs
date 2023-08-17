@@ -2995,7 +2995,7 @@ namespace MedicalManagementSoftware
 
                 clearFields();
 
-                txtRhType.Text = i.RhTyping;
+                txtRhType.Text = "POSITIVE";
 
                 txtUndergoingDate.Text = i.fitness_date;
 

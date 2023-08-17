@@ -421,3 +421,109 @@ D:\Files\Devs\Project\Centerport\SafeCopy\MedicalAndPanama-main\Centerport\obj\D
 D:\Files\Devs\Project\Centerport\SafeCopy\MedicalAndPanama-main\Centerport\obj\Debug\Medical Management Software.TrustInfo.xml
 D:\Files\Devs\Project\Centerport\SafeCopy\MedicalAndPanama-main\Centerport\obj\Debug\Medical Management Software.exe.manifest
 D:\Files\Devs\Project\Centerport\SafeCopy\MedicalAndPanama-main\Centerport\obj\Debug\Medical Management Software.application
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Medical Management Software.exe.config
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.exe
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.pdb
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\SqlServerTypes\x64\msvcr100.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\SqlServerTypes\x64\SqlServerSpatial110.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\SqlServerTypes\x86\msvcr100.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\SqlServerTypes\x86\SqlServerSpatial110.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Accord.dll.config
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Medical Management Software.exe.manifest
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Medical Management Software.application
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Medical Management Software.exe
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Medical Management Software.pdb
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Accord.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Accord.Video.DirectShow.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Accord.Video.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\AForge.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\AForge.Video.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\EntityFramework.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Microsoft.SqlServer.Smo.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Microsoft.VisualBasic.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\MySql.Data.dll
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Accord.xml
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Accord.Video.xml
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Accord.Video.DirectShow.xml
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\AForge.xml
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\AForge.Video.xml
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\EntityFramework.xml
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.csprojResolveAssemblyReference.cache
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.CustomControl.PanamaView.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.FrmSearchPanama.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Frm_Immunology.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.UserControlView.Login.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Dataset.frm_report.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_ChemOthers.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_Instance.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_krpan.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.FrmPanama.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_LabPrintChoices.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_MLC_Print.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_NewPatient.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_about.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_addPatient.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_Approval.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_Backup.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_camera.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_FormPrinting.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_HIV.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_lab.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_Landbase.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_MedicalPersonnel.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_NormalValues.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_patient_Info.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_printers.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_productList.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_Seafarer_MLC.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_patientInfo.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_searchTumor.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_search_hiv.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_search_Patient.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_Psych_Evaluation.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_repeat_Chemistry.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_repeat_Fecalysis.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_repeat_Hema.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_repeat_Urninalysis.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_search_Land.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_search_MLC.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_search_Lab.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_search_Psych_Eval.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_search_SeaBase.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_search_ultrasound.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_search_xray.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_server.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_splash.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_user.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_xray.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_seafarer_MEC.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_search_Patient_Queuing.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_Ultrasound.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_visit.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_VisitDetail.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.RDLC.frm_RDLC_report.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Report.FrmPanamaReport.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Report.frm_lab_33_Report.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Report.frm_landbase_Print_Choice.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.frm_Seabase_Print_Choice.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Report.lab_printOut_Form.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Main.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Properties.Resources.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Report.Report_Lab.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Report.Report_Landbase.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Report.Report_PrintOuts.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Report.Report_ResultPrinting.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Report.Report_Visit.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Report_SeaBase_Print.resources
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.csproj.GenerateResource.Cache
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\RdlCompile.cache
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\RdlCompile.compiled
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.TrustInfo.xml
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.exe.manifest
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.application

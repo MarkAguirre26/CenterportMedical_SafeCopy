@@ -145,8 +145,8 @@ namespace MedicalManagementSoftware.UserControlView
             ViewMainForm(false);
 
             this.Text = Properties.Settings.Default.SystemName + Tool.version;
-            txt_username.Clear();
-            txt_password.Clear();
+            //txt_username.Clear();
+            //txt_password.Clear();
 
 
             //if (System.Environment.MachineName == "CMSISERVER-PC")
