@@ -361,8 +361,7 @@
             this.txtDoctorName = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.txtUndergoingDate = new System.Windows.Forms.TextBox();
-            this.label85 = new System.Windows.Forms.Label();
+            this.lblDayWitness = new System.Windows.Forms.Label();
             this.rjLabel81 = new System.Windows.Forms.Label();
             this.rjLabel83 = new System.Windows.Forms.Label();
             this.rjLabel84 = new System.Windows.Forms.Label();
@@ -828,6 +827,8 @@
             this.lblDay = new System.Windows.Forms.Label();
             this.lblMonth = new System.Windows.Forms.Label();
             this.lblYear = new System.Windows.Forms.Label();
+            this.lblMonthWitness = new System.Windows.Forms.Label();
+            this.lblYearWitness = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -4863,28 +4864,22 @@
             // 
             // flowLayoutPanel5
             // 
-            this.flowLayoutPanel5.Controls.Add(this.txtUndergoingDate);
-            this.flowLayoutPanel5.Controls.Add(this.label85);
+            this.flowLayoutPanel5.Controls.Add(this.lblDayWitness);
+            this.flowLayoutPanel5.Controls.Add(this.lblMonthWitness);
+            this.flowLayoutPanel5.Controls.Add(this.lblYearWitness);
             this.flowLayoutPanel5.Location = new System.Drawing.Point(409, 31);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(320, 27);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(364, 27);
             this.flowLayoutPanel5.TabIndex = 50;
             // 
-            // txtUndergoingDate
+            // lblDayWitness
             // 
-            this.txtUndergoingDate.Location = new System.Drawing.Point(3, 3);
-            this.txtUndergoingDate.Name = "txtUndergoingDate";
-            this.txtUndergoingDate.Size = new System.Drawing.Size(100, 20);
-            this.txtUndergoingDate.TabIndex = 51;
-            // 
-            // label85
-            // 
-            this.label85.Location = new System.Drawing.Point(109, 0);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(107, 24);
-            this.label85.TabIndex = 50;
-            this.label85.Text = "Day/month/year:";
-            this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDayWitness.Location = new System.Drawing.Point(3, 0);
+            this.lblDayWitness.Name = "lblDayWitness";
+            this.lblDayWitness.Size = new System.Drawing.Size(107, 24);
+            this.lblDayWitness.TabIndex = 50;
+            this.lblDayWitness.Text = "Day:";
+            this.lblDayWitness.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // rjLabel81
             // 
@@ -5005,8 +5000,8 @@
             this.tableLayoutPanel7.Controls.Add(this.txtBloodPressure, 1, 4);
             this.tableLayoutPanel7.Controls.Add(this.txtRespiratory, 3, 3);
             this.tableLayoutPanel7.Controls.Add(this.txtDiastolic, 3, 4);
-            this.tableLayoutPanel7.Controls.Add(this.txtBMI, 3, 1);
-            this.tableLayoutPanel7.Controls.Add(this.txtOxygen, 3, 2);
+            this.tableLayoutPanel7.Controls.Add(this.txtBMI, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.txtOxygen, 1, 2);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(16, 318);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 5;
@@ -5015,6 +5010,7 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(773, 135);
             this.tableLayoutPanel7.TabIndex = 21;
             this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Paint);
@@ -5172,7 +5168,7 @@
             // 
             // txtBMI
             // 
-            this.txtBMI.Location = new System.Drawing.Point(669, 31);
+            this.txtBMI.Location = new System.Drawing.Point(283, 31);
             this.txtBMI.Name = "txtBMI";
             this.txtBMI.Size = new System.Drawing.Size(100, 20);
             this.txtBMI.TabIndex = 1;
@@ -5180,7 +5176,7 @@
             // 
             // txtOxygen
             // 
-            this.txtOxygen.Location = new System.Drawing.Point(669, 58);
+            this.txtOxygen.Location = new System.Drawing.Point(283, 58);
             this.txtOxygen.Name = "txtOxygen";
             this.txtOxygen.Size = new System.Drawing.Size(100, 20);
             this.txtOxygen.TabIndex = 1;
@@ -10297,6 +10293,24 @@
             this.lblYear.Text = "Year:";
             this.lblYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblMonthWitness
+            // 
+            this.lblMonthWitness.Location = new System.Drawing.Point(116, 0);
+            this.lblMonthWitness.Name = "lblMonthWitness";
+            this.lblMonthWitness.Size = new System.Drawing.Size(107, 24);
+            this.lblMonthWitness.TabIndex = 51;
+            this.lblMonthWitness.Text = "Month:";
+            this.lblMonthWitness.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblYearWitness
+            // 
+            this.lblYearWitness.Location = new System.Drawing.Point(229, 0);
+            this.lblYearWitness.Name = "lblYearWitness";
+            this.lblYearWitness.Size = new System.Drawing.Size(107, 24);
+            this.lblYearWitness.TabIndex = 52;
+            this.lblYearWitness.Text = "Year:";
+            this.lblYearWitness.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FrmPanama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -10442,7 +10456,6 @@
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.flowLayoutPanel5.ResumeLayout(false);
-            this.flowLayoutPanel5.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             this.tableLayoutPanel8.ResumeLayout(false);
@@ -11343,10 +11356,9 @@
         public System.Windows.Forms.TextBox txtResultID;
         private System.Windows.Forms.RadioButton rbTypeOfShipOther;
         private System.Windows.Forms.MaskedTextBox txtCividTestDate;
-        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Label lblDayWitness;
         private System.Windows.Forms.MaskedTextBox txtEZGPerformed;
         private System.Windows.Forms.MaskedTextBox txtXrayPerformed;
-        private System.Windows.Forms.TextBox txtUndergoingDate;
         private Class.OverlayShadow tabPage1Overlay;
         private Class.OverlayShadow tabPage2overlay;
         private Class.OverlayShadow tabPage3overlay;
@@ -11386,5 +11398,7 @@
         private System.Windows.Forms.Label lblDay;
         private System.Windows.Forms.Label lblMonth;
         private System.Windows.Forms.Label lblYear;
+        private System.Windows.Forms.Label lblMonthWitness;
+        private System.Windows.Forms.Label lblYearWitness;
     }
 }

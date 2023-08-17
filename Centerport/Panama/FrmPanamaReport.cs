@@ -814,8 +814,7 @@ namespace MedicalManagementSoftware.Report
                 page6.SetParameterValue("Vdrl", page6Model.Vdrl);
                 page6.SetParameterValue("VdrlNormal", page6Model.VdrlNormal);
                 page6.SetParameterValue("VdrlAbnormal", page6Model.VdrlAbnormal);
-                page6.SetParameterValue("VdrlObservation", page6Model.VdrlObservation);
-                page6.SetParameterValue("Gch", page6Model.Gch);
+                page6.SetParameterValue("VdrlObservation", page6Model.VdrlObservation);              
                 page6.SetParameterValue("GchNormal", page6Model.GchNormal);
                 page6.SetParameterValue("GchAbnormal", page6Model.GchAbnormal);
                 page6.SetParameterValue("GchObservation", page6Model.GchObservation);

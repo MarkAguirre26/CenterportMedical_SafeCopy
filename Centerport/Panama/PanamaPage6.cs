@@ -378,7 +378,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Gch {
+        public CrystalDecisions.Shared.IParameterField Parameter_GchNormal {
             get {
                 return this.DataDefinition.ParameterFields[36];
             }
@@ -386,7 +386,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_GchNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_GchAbnormal {
             get {
                 return this.DataDefinition.ParameterFields[37];
             }
@@ -394,7 +394,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_GchAbnormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_GchObservation {
             get {
                 return this.DataDefinition.ParameterFields[38];
             }
@@ -402,7 +402,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_GchObservation {
+        public CrystalDecisions.Shared.IParameterField Parameter_GeneralUrien {
             get {
                 return this.DataDefinition.ParameterFields[39];
             }
@@ -410,7 +410,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_GeneralUrien {
+        public CrystalDecisions.Shared.IParameterField Parameter_GeneralUrineNormal {
             get {
                 return this.DataDefinition.ParameterFields[40];
             }
@@ -418,7 +418,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_GeneralUrineNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_GeneralUrineAbNormal {
             get {
                 return this.DataDefinition.ParameterFields[41];
             }
@@ -426,7 +426,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_GeneralUrineAbNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_GeneralUrineObservation {
             get {
                 return this.DataDefinition.ParameterFields[42];
             }
@@ -434,7 +434,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_GeneralUrineObservation {
+        public CrystalDecisions.Shared.IParameterField Parameter_Stool {
             get {
                 return this.DataDefinition.ParameterFields[43];
             }
@@ -442,7 +442,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Stool {
+        public CrystalDecisions.Shared.IParameterField Parameter_StoolNormal {
             get {
                 return this.DataDefinition.ParameterFields[44];
             }
@@ -450,7 +450,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_StoolNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_StoolAbNormal {
             get {
                 return this.DataDefinition.ParameterFields[45];
             }
@@ -458,7 +458,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_StoolAbNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_StoolObservation {
             get {
                 return this.DataDefinition.ParameterFields[46];
             }
@@ -466,7 +466,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_StoolObservation {
+        public CrystalDecisions.Shared.IParameterField Parameter_Drugtest {
             get {
                 return this.DataDefinition.ParameterFields[47];
             }
@@ -474,7 +474,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Drugtest {
+        public CrystalDecisions.Shared.IParameterField Parameter_DrugTestNormal {
             get {
                 return this.DataDefinition.ParameterFields[48];
             }
@@ -482,7 +482,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_DrugTestNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_DrugTestAbNormal {
             get {
                 return this.DataDefinition.ParameterFields[49];
             }
@@ -490,7 +490,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_DrugTestAbNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_DrugTestObservation {
             get {
                 return this.DataDefinition.ParameterFields[50];
             }
@@ -498,7 +498,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_DrugTestObservation {
+        public CrystalDecisions.Shared.IParameterField Parameter_Alcohol {
             get {
                 return this.DataDefinition.ParameterFields[51];
             }
@@ -506,7 +506,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Alcohol {
+        public CrystalDecisions.Shared.IParameterField Parameter_AlcoholNormal {
             get {
                 return this.DataDefinition.ParameterFields[52];
             }
@@ -514,7 +514,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_AlcoholNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_AlcoholAbNormal {
             get {
                 return this.DataDefinition.ParameterFields[53];
             }
@@ -522,7 +522,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_AlcoholAbNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_AlcoholObservation {
             get {
                 return this.DataDefinition.ParameterFields[54];
             }
@@ -530,7 +530,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_AlcoholObservation {
+        public CrystalDecisions.Shared.IParameterField Parameter_BreastExamination {
             get {
                 return this.DataDefinition.ParameterFields[55];
             }
@@ -538,7 +538,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_BreastExamination {
+        public CrystalDecisions.Shared.IParameterField Parameter_BreastExaminationNormal {
             get {
                 return this.DataDefinition.ParameterFields[56];
             }
@@ -546,7 +546,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_BreastExaminationNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_BreastExaminationAbNormal {
             get {
                 return this.DataDefinition.ParameterFields[57];
             }
@@ -554,7 +554,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_BreastExaminationAbNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_BreastExaminationObservation {
             get {
                 return this.DataDefinition.ParameterFields[58];
             }
@@ -562,7 +562,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_BreastExaminationObservation {
+        public CrystalDecisions.Shared.IParameterField Parameter_PapTest {
             get {
                 return this.DataDefinition.ParameterFields[59];
             }
@@ -570,7 +570,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_PapTest {
+        public CrystalDecisions.Shared.IParameterField Parameter_PaptestJNormal {
             get {
                 return this.DataDefinition.ParameterFields[60];
             }
@@ -578,7 +578,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_PaptestJNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_PapAbnormal {
             get {
                 return this.DataDefinition.ParameterFields[61];
             }
@@ -586,7 +586,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_PapAbnormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_PapObservation {
             get {
                 return this.DataDefinition.ParameterFields[62];
             }
@@ -594,7 +594,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_PapObservation {
+        public CrystalDecisions.Shared.IParameterField Parameter_Psa {
             get {
                 return this.DataDefinition.ParameterFields[63];
             }
@@ -602,7 +602,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Psa {
+        public CrystalDecisions.Shared.IParameterField Parameter_PsaNormal {
             get {
                 return this.DataDefinition.ParameterFields[64];
             }
@@ -610,7 +610,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_PsaNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_PsaAbNormal {
             get {
                 return this.DataDefinition.ParameterFields[65];
             }
@@ -618,7 +618,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_PsaAbNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_PsaObservation {
             get {
                 return this.DataDefinition.ParameterFields[66];
             }
@@ -626,7 +626,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_PsaObservation {
+        public CrystalDecisions.Shared.IParameterField Parameter_Xray {
             get {
                 return this.DataDefinition.ParameterFields[67];
             }
@@ -634,7 +634,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Xray {
+        public CrystalDecisions.Shared.IParameterField Parameter_XrayPerformed {
             get {
                 return this.DataDefinition.ParameterFields[68];
             }
@@ -642,7 +642,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_XrayPerformed {
+        public CrystalDecisions.Shared.IParameterField Parameter_XrayObservation {
             get {
                 return this.DataDefinition.ParameterFields[69];
             }
@@ -650,7 +650,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_XrayObservation {
+        public CrystalDecisions.Shared.IParameterField Parameter_Ekg {
             get {
                 return this.DataDefinition.ParameterFields[70];
             }
@@ -658,7 +658,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Ekg {
+        public CrystalDecisions.Shared.IParameterField Parameter_EZGPerformed {
             get {
                 return this.DataDefinition.ParameterFields[71];
             }
@@ -666,7 +666,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_EZGPerformed {
+        public CrystalDecisions.Shared.IParameterField Parameter_EkgObservation {
             get {
                 return this.DataDefinition.ParameterFields[72];
             }
@@ -674,7 +674,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_EkgObservation {
+        public CrystalDecisions.Shared.IParameterField Parameter_HemogramOservation {
             get {
                 return this.DataDefinition.ParameterFields[73];
             }
@@ -682,7 +682,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_HemogramOservation {
+        public CrystalDecisions.Shared.IParameterField Parameter_HemogramAbNormal {
             get {
                 return this.DataDefinition.ParameterFields[74];
             }
@@ -690,7 +690,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_HemogramAbNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_HemogramNormal {
             get {
                 return this.DataDefinition.ParameterFields[75];
             }
@@ -698,17 +698,9 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_HemogramNormal {
-            get {
-                return this.DataDefinition.ParameterFields[76];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public CrystalDecisions.Shared.IParameterField Parameter_Hemogram {
             get {
-                return this.DataDefinition.ParameterFields[77];
+                return this.DataDefinition.ParameterFields[76];
             }
         }
     }
