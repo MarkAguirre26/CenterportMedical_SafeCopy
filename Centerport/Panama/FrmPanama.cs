@@ -106,7 +106,7 @@ namespace MedicalManagementSoftware
                 Availability(tabPage7overlay, true);
                 Availability(tabPage8overlay, true);
             }
-           
+
         }
 
         public void Delete()
@@ -160,7 +160,7 @@ namespace MedicalManagementSoftware
 
         private Page8Model prepareThePage8()
         {
-            Page8Model model = new Page8Model();       
+            Page8Model model = new Page8Model();
             model.expirationDay = txtExpirationDay.Text;
             model.expirationMonth = txtExpirationMonth.Text;
             model.expirationYear = txtExpirationYear.Text;
@@ -517,7 +517,7 @@ namespace MedicalManagementSoftware
             model.PhysicalExploration2 = txtPhysicalExploration2.Text;
             model.PhysicalExploration3 = txtPhysicalExploration3.Text;
             model.PhysicalExploration4 = txtPhysicalExploration4.Text;
-   
+
 
             return model;
         }
@@ -626,7 +626,7 @@ namespace MedicalManagementSoftware
             Availability(tabPage6overlay, false);
             Availability(tabPage7overlay, false);
             Availability(tabPage8overlay, false);
-            //
+
 
         }
 
@@ -2082,7 +2082,7 @@ namespace MedicalManagementSoftware
         //}
         private void FormPanama_KeyDown(object sender, KeyEventArgs e)
         {
-           if (e.KeyCode == Keys.Add && e.Modifiers == Keys.Control)
+            if (e.KeyCode == Keys.Add && e.Modifiers == Keys.Control)
             {
                 OpenSearchList();
             }
@@ -2104,11 +2104,11 @@ namespace MedicalManagementSoftware
             }
             else if (e.KeyCode == Keys.F4)
             {
-                
-                    Edit();
+
+                Edit();
 
             }
-           
+
 
 
 
@@ -2550,7 +2550,7 @@ namespace MedicalManagementSoftware
             searchPhysicalExploration();
             searchsearchPhysicalExploration();
             searchPanamaResultMain();
-
+            search_RecomendationFromSearch();
 
 
         }
@@ -2567,17 +2567,6 @@ namespace MedicalManagementSoftware
 
 
 
-                rbWithRestrictions.Checked = true;
-                if (i.WithOutRestrictions.Equals("Yes"))
-                {
-                    rbWithOutRestrictions.Checked = true;
-                }
-
-                rbWithOutRestrictions.Checked = true;
-                if (i.WithRestrictions.Equals("Yes"))
-                {
-                    rbWithRestrictions.Checked = true;
-                }
 
 
 
@@ -2590,17 +2579,29 @@ namespace MedicalManagementSoftware
 
 
 
-                string deck_srvc_flag_ = i.DeckServiceFit.ToString();
-                if (deck_srvc_flag_ == "Yes") { cbDeckServiceFit.Checked = true; } else if (deck_srvc_flag_ == "No") { cbDeckServiceUnFit.Checked = true; } else { cbDeckServiceFit.Checked = false; cbDeckServiceUnFit.Checked = false; }
+                //rbWithRestrictions.Checked = true;
+                //if (i.WithOutRestrictions.Equals("Yes"))
+                //{
+                //    rbWithOutRestrictions.Checked = true;
+                //}
 
-                string t_engine_srvc_flag_ = i.EngineFit.ToString();
-                if (t_engine_srvc_flag_ == "Yes") { this.cbEngineFit.Checked = true; } else if (t_engine_srvc_flag_ == "No") { this.cbEngineUnFit.Checked = true; } else { cbEngineFit.Checked = false; cbEngineUnFit.Checked = false; }
+                //rbWithOutRestrictions.Checked = true;
+                //if (i.WithRestrictions.Equals("Yes"))
+                //{
+                //    rbWithRestrictions.Checked = true;
+                //}
 
-                string t_catering_srvc_flag_ = i.CateringFit.ToString();
-                if (t_catering_srvc_flag_ == "Yes") { this.cbCateringFit.Checked = true; } else if (t_catering_srvc_flag_ == "No") { this.cbCateringUnFit.Checked = true; } else { cbCateringFit.Checked = false; cbCateringUnFit.Checked = false; }
+                //string deck_srvc_flag_ = i.DeckServiceFit.ToString();
+                //if (deck_srvc_flag_ == "Yes") { cbDeckServiceFit.Checked = true; } else if (deck_srvc_flag_ == "No") { cbDeckServiceUnFit.Checked = true; } else { cbDeckServiceFit.Checked = false; cbDeckServiceUnFit.Checked = false; }
 
-                string t_other_srvc_flag_ = i.OtherServiceFit.ToString();
-                if (t_other_srvc_flag_ == "Yes") { this.cbOtherServiceFit.Checked = true; } else if (t_other_srvc_flag_ == "No") { this.OtherServiceNotFit.Checked = true; } else { cbOtherServiceFit.Checked = false; OtherServiceNotFit.Checked = false; }
+                //string t_engine_srvc_flag_ = i.EngineFit.ToString();
+                //if (t_engine_srvc_flag_ == "Yes") { this.cbEngineFit.Checked = true; } else if (t_engine_srvc_flag_ == "No") { this.cbEngineUnFit.Checked = true; } else { cbEngineFit.Checked = false; cbEngineUnFit.Checked = false; }
+
+                //string t_catering_srvc_flag_ = i.CateringFit.ToString();
+                //if (t_catering_srvc_flag_ == "Yes") { this.cbCateringFit.Checked = true; } else if (t_catering_srvc_flag_ == "No") { this.cbCateringUnFit.Checked = true; } else { cbCateringFit.Checked = false; cbCateringUnFit.Checked = false; }
+
+                //string t_other_srvc_flag_ = i.OtherServiceFit.ToString();
+                //if (t_other_srvc_flag_ == "Yes") { this.cbOtherServiceFit.Checked = true; } else if (t_other_srvc_flag_ == "No") { this.OtherServiceNotFit.Checked = true; } else { cbOtherServiceFit.Checked = false; OtherServiceNotFit.Checked = false; }
 
 
 
@@ -2611,6 +2612,113 @@ namespace MedicalManagementSoftware
 
             }
         }
+
+
+        public void search_RecomendationFromSearch()
+        {
+
+            try
+            {
+
+
+
+                var i = db.sp_Seabase_Recomendation(txtResultID.Text).FirstOrDefault();
+
+
+
+                rbWithRestrictions.Checked = true;
+                if (i.recommendation.Equals("FIT FOR SEA DUTY") || i.recommendation.Equals("FIT TO WORK"))
+                {
+                    rbWithOutRestrictions.Checked = true;
+                }
+                else
+                {
+                    rbWithRestrictions.Checked = true;
+                }
+
+                
+
+
+                string deck_srvc_flag_ = i.deck_srvc_flag.ToString();
+                string engine_srvc_flag_ = i.engine_srvc_flag.ToString();
+                string t_engine_srvc_flag_ = i.catering_srvc_flag.ToString();
+                string t_other_srvc_flag_ = i.other_srvc_flag.ToString();
+
+                
+
+
+                if (deck_srvc_flag_ == "Y")
+                {
+                    cbDeckServiceFit.Checked = true;
+                    cbDeckServiceUnFit.Checked = false;
+                    cbEngineFit.Checked = false;
+                    cbEngineUnFit.Checked = false;
+                    cbCateringFit.Checked = false;
+                    cbCateringUnFit.Checked = false;
+                    cbOtherServiceFit.Checked = false;
+                    OtherServiceNotFit.Checked = false;
+                }
+                else if (engine_srvc_flag_ == "Y")
+                {
+                    cbDeckServiceFit.Checked = false;
+                    cbDeckServiceUnFit.Checked = false;
+                    cbEngineFit.Checked = true;
+                    cbEngineUnFit.Checked = false;
+                    cbCateringFit.Checked = false;
+                    cbCateringUnFit.Checked = false;
+                    cbOtherServiceFit.Checked = false;
+                    OtherServiceNotFit.Checked = false;
+                }
+                else if (t_engine_srvc_flag_ == "Y")
+                {
+                    cbDeckServiceFit.Checked = false;
+                    cbDeckServiceUnFit.Checked = false;
+                    cbEngineFit.Checked = false;
+                    cbEngineUnFit.Checked = false;
+                    cbCateringFit.Checked = true;
+                    cbCateringUnFit.Checked = false;
+                    cbOtherServiceFit.Checked = false;
+                    OtherServiceNotFit.Checked = false;
+                }
+                else if (t_other_srvc_flag_ == "Y")
+                {
+                    cbDeckServiceFit.Checked = false;
+                    cbDeckServiceUnFit.Checked = false;
+                    cbEngineFit.Checked = false;
+                    cbEngineUnFit.Checked = false;
+                    cbCateringFit.Checked = false;
+                    cbCateringUnFit.Checked = false;
+                    cbOtherServiceFit.Checked = true;
+                    OtherServiceNotFit.Checked = false;
+                }
+                else
+                {
+                    cbDeckServiceFit.Checked = false;
+                    cbDeckServiceUnFit.Checked = false;
+                    cbEngineFit.Checked = false;
+                    cbEngineUnFit.Checked = false;
+                    cbCateringFit.Checked = false;
+                    cbCateringUnFit.Checked = false;
+                    cbOtherServiceFit.Checked = false;
+                    OtherServiceNotFit.Checked = false;
+                }
+
+
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
+
+            }
+
+
+        }
+
+
 
         private void searchsearchPhysicalExploration()
         {
@@ -2785,8 +2893,8 @@ namespace MedicalManagementSoftware
 
                 txtUnaidedRightEyeDistant.Text = i.FAR_OD_U;
                 txtUnAidedLeftEyeDistant.Text = i.FAR_OS_U;
-                txtUnaidedRightEyeShort.Text ="J/"+ i.NEAR_ODJ_U;
-                txtUnAidedLeftEyeShort.Text = "J/"+i.NEAR_OSJ_U;
+                txtUnaidedRightEyeShort.Text = "J/" + i.NEAR_ODJ_U;
+                txtUnAidedLeftEyeShort.Text = "J/" + i.NEAR_OSJ_U;
 
             }
 
@@ -2997,7 +3105,7 @@ namespace MedicalManagementSoftware
                 txtPersonundergoingExamination.Text = i.Fullname;
                 txtUndergoingExamination.Text = i.Fullname;
                 txtSpecimenNo.Text = i.specimen_no;
-                
+
 
                 try
                 {
@@ -3053,9 +3161,9 @@ namespace MedicalManagementSoftware
                 try
                 {
                     string[] undergoingExaminationDate = i.fitness_date.ToString().Split('/');
-                    lblDay.Text ="Day: "+ undergoingExaminationDate[0].ToString();
-                    lblMonth.Text = "Month: "+undergoingExaminationDate[1].ToString();
-                    lblYear.Text = "Year: "+undergoingExaminationDate[2].ToString();
+                    lblDay.Text = "Day: " + undergoingExaminationDate[0].ToString();
+                    lblMonth.Text = "Month: " + undergoingExaminationDate[1].ToString();
+                    lblYear.Text = "Year: " + undergoingExaminationDate[2].ToString();
 
                 }
                 catch (Exception)

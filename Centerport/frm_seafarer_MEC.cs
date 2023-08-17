@@ -1901,11 +1901,9 @@ namespace MedicalManagementSoftware
             {
 
 
-                //ClassSql a = new ClassSql(); DataTable dt;
-                //dt = a.Mytable_Proc("Seabase_recomendationFromSearch", "@ID", cn_SeabaseResultMain);
+          
                 var i = db.sp_Seabase_Recomendation(LabID.Text).FirstOrDefault();
-                //foreach (var i in list)
-                //{
+                
 
                 lbl_recomendation_cn.Tag = i.cn.ToString();
 
@@ -1982,7 +1980,6 @@ namespace MedicalManagementSoftware
                 string t_other_srvc_flag_ = i.other_srvc_flag.ToString();
                 if (t_other_srvc_flag_ == "Y") { this.rb_other_Fit.Checked = true; } else if (t_other_srvc_flag_ == "N") { this.rb_other_uFit.Checked = true; } else { rb_other_Fit.Checked = false; rb_other_uFit.Checked = false; }
 
-                //}
 
             }
             catch (Exception ex)
@@ -1990,14 +1987,7 @@ namespace MedicalManagementSoftware
                 MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
 
             }
-            //finally
-            //{
-            //    //if (ClassSql.cnn != null) { ClassSql.DbClose(); }
-            //    if (ClassSql.dr != null) { ClassSql.dr.Close(); }
-            //}
-
-
-
+          
 
         }
 
