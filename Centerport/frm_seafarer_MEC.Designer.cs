@@ -400,6 +400,43 @@
             this.cb_consulted = new System.Windows.Forms.CheckBox();
             this.label141 = new System.Windows.Forms.Label();
             this.txt_consulted = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txt_age = new System.Windows.Forms.TextBox();
+            this.txt_bday = new System.Windows.Forms.TextBox();
+            this.txtFirstname = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtlastname = new System.Windows.Forms.TextBox();
+            this.txtMiddleName = new System.Windows.Forms.TextBox();
+            this.txt_pBirth = new System.Windows.Forms.TextBox();
+            this.txt_nationality = new System.Windows.Forms.TextBox();
+            this.txt_add = new System.Windows.Forms.TextBox();
+            this.txt_employer = new System.Windows.Forms.TextBox();
+            this.txt_passno = new System.Windows.Forms.TextBox();
+            this.txt_gender = new System.Windows.Forms.TextBox();
+            this.txt_position = new System.Windows.Forms.TextBox();
+            this.txt_rel = new System.Windows.Forms.TextBox();
+            this.txt_status = new System.Windows.Forms.TextBox();
+            this.txt_contact = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.shapeContainer5 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape45 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape43 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape42 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape40 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape39 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.overlayShadow1 = new MedicalManagementSoftware.Class.OverlayShadow();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel65 = new System.Windows.Forms.Panel();
             this.rb_blood_N = new System.Windows.Forms.RadioButton();
@@ -546,43 +583,6 @@
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.label40 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.txt_age = new System.Windows.Forms.TextBox();
-            this.txt_bday = new System.Windows.Forms.TextBox();
-            this.txtFirstname = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtlastname = new System.Windows.Forms.TextBox();
-            this.txtMiddleName = new System.Windows.Forms.TextBox();
-            this.txt_pBirth = new System.Windows.Forms.TextBox();
-            this.txt_nationality = new System.Windows.Forms.TextBox();
-            this.txt_add = new System.Windows.Forms.TextBox();
-            this.txt_employer = new System.Windows.Forms.TextBox();
-            this.txt_passno = new System.Windows.Forms.TextBox();
-            this.txt_gender = new System.Windows.Forms.TextBox();
-            this.txt_position = new System.Windows.Forms.TextBox();
-            this.txt_rel = new System.Windows.Forms.TextBox();
-            this.txt_status = new System.Windows.Forms.TextBox();
-            this.txt_contact = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.shapeContainer5 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape45 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape43 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape42 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape40 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape39 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.overlayShadow1 = new MedicalManagementSoftware.Class.OverlayShadow();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.clearToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -655,6 +655,7 @@
             this.panel16.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel21.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel65.SuspendLayout();
             this.panel64.SuspendLayout();
@@ -687,7 +688,6 @@
             this.panel57.SuspendLayout();
             this.panel58.SuspendLayout();
             this.panel59.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.contextMenuStrip3.SuspendLayout();
             this.contextMenuStrip4.SuspendLayout();
@@ -2945,9 +2945,9 @@
             "FIT WITH RESTRICTION",
             "UNFIT",
             "FIT TO WORK"});
-            this.cbo_recomendation.Location = new System.Drawing.Point(167, 1634);
+            this.cbo_recomendation.Location = new System.Drawing.Point(163, 1634);
             this.cbo_recomendation.Name = "cbo_recomendation";
-            this.cbo_recomendation.Size = new System.Drawing.Size(232, 23);
+            this.cbo_recomendation.Size = new System.Drawing.Size(236, 23);
             this.cbo_recomendation.TabIndex = 268;
             this.cbo_recomendation.SelectedIndexChanged += new System.EventHandler(this.cbo_recomendation_SelectedIndexChanged);
             // 
@@ -4986,6 +4986,439 @@
             this.txt_consulted.Size = new System.Drawing.Size(479, 20);
             this.txt_consulted.TabIndex = 273;
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.txt_age);
+            this.groupBox5.Controls.Add(this.txt_bday);
+            this.groupBox5.Controls.Add(this.txtFirstname);
+            this.groupBox5.Controls.Add(this.label3);
+            this.groupBox5.Controls.Add(this.label1);
+            this.groupBox5.Controls.Add(this.label2);
+            this.groupBox5.Controls.Add(this.label4);
+            this.groupBox5.Controls.Add(this.label5);
+            this.groupBox5.Controls.Add(this.label9);
+            this.groupBox5.Controls.Add(this.label7);
+            this.groupBox5.Controls.Add(this.label6);
+            this.groupBox5.Controls.Add(this.label13);
+            this.groupBox5.Controls.Add(this.label12);
+            this.groupBox5.Controls.Add(this.label11);
+            this.groupBox5.Controls.Add(this.txtlastname);
+            this.groupBox5.Controls.Add(this.txtMiddleName);
+            this.groupBox5.Controls.Add(this.txt_pBirth);
+            this.groupBox5.Controls.Add(this.txt_nationality);
+            this.groupBox5.Controls.Add(this.txt_add);
+            this.groupBox5.Controls.Add(this.txt_employer);
+            this.groupBox5.Controls.Add(this.txt_passno);
+            this.groupBox5.Controls.Add(this.txt_gender);
+            this.groupBox5.Controls.Add(this.txt_position);
+            this.groupBox5.Controls.Add(this.txt_rel);
+            this.groupBox5.Controls.Add(this.txt_status);
+            this.groupBox5.Controls.Add(this.txt_contact);
+            this.groupBox5.Controls.Add(this.label17);
+            this.groupBox5.Controls.Add(this.label16);
+            this.groupBox5.Controls.Add(this.label15);
+            this.groupBox5.Location = new System.Drawing.Point(6, 25);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(871, 148);
+            this.groupBox5.TabIndex = 271;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
+            // 
+            // txt_age
+            // 
+            this.txt_age.Location = new System.Drawing.Point(584, 120);
+            this.txt_age.Name = "txt_age";
+            this.txt_age.Size = new System.Drawing.Size(27, 20);
+            this.txt_age.TabIndex = 26;
+            this.txt_age.Visible = false;
+            // 
+            // txt_bday
+            // 
+            this.txt_bday.Location = new System.Drawing.Point(619, 123);
+            this.txt_bday.Name = "txt_bday";
+            this.txt_bday.Size = new System.Drawing.Size(26, 20);
+            this.txt_bday.TabIndex = 25;
+            this.txt_bday.Visible = false;
+            this.txt_bday.TextChanged += new System.EventHandler(this.txt_bday_TextChanged);
+            // 
+            // txtFirstname
+            // 
+            this.txtFirstname.BackColor = System.Drawing.SystemColors.Control;
+            this.txtFirstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFirstname.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtFirstname.Location = new System.Drawing.Point(368, 12);
+            this.txtFirstname.Name = "txtFirstname";
+            this.txtFirstname.ReadOnly = true;
+            this.txtFirstname.Size = new System.Drawing.Size(277, 22);
+            this.txtFirstname.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Control;
+            this.label3.Font = new System.Drawing.Font("Arial", 9F);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(41, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 15);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Name:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("Arial", 9F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(3, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 15);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Place of Birth:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.Font = new System.Drawing.Font("Arial", 9F);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(29, 102);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 15);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Address:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.Control;
+            this.label4.Font = new System.Drawing.Font("Arial", 9F);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(18, 79);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 15);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Nationality:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Control;
+            this.label5.Font = new System.Drawing.Font("Arial", 9F);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(23, 125);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 15);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Employer:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.Control;
+            this.label9.Font = new System.Drawing.Font("Arial", 9F);
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(323, 56);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 15);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Passport No.:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.Control;
+            this.label7.Font = new System.Drawing.Font("Arial", 9F);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(354, 79);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 15);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Gender:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.Control;
+            this.label6.Font = new System.Drawing.Font("Arial", 9F);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(350, 125);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(55, 15);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Position:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.SystemColors.Control;
+            this.label13.Font = new System.Drawing.Font("Arial", 9F);
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(589, 56);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(60, 15);
+            this.label13.TabIndex = 16;
+            this.label13.Text = "Religeon:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.SystemColors.Control;
+            this.label12.Font = new System.Drawing.Font("Arial", 9F);
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(575, 102);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(74, 15);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "Contact No.:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.Control;
+            this.label11.Font = new System.Drawing.Font("Arial", 9F);
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(578, 79);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 15);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Civil Status:";
+            // 
+            // txtlastname
+            // 
+            this.txtlastname.BackColor = System.Drawing.SystemColors.Control;
+            this.txtlastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtlastname.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtlastname.Location = new System.Drawing.Point(88, 12);
+            this.txtlastname.Name = "txtlastname";
+            this.txtlastname.ReadOnly = true;
+            this.txtlastname.Size = new System.Drawing.Size(277, 22);
+            this.txtlastname.TabIndex = 1;
+            // 
+            // txtMiddleName
+            // 
+            this.txtMiddleName.BackColor = System.Drawing.SystemColors.Control;
+            this.txtMiddleName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMiddleName.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtMiddleName.Location = new System.Drawing.Point(648, 12);
+            this.txtMiddleName.Name = "txtMiddleName";
+            this.txtMiddleName.ReadOnly = true;
+            this.txtMiddleName.Size = new System.Drawing.Size(220, 22);
+            this.txtMiddleName.TabIndex = 3;
+            // 
+            // txt_pBirth
+            // 
+            this.txt_pBirth.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_pBirth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_pBirth.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txt_pBirth.Location = new System.Drawing.Point(89, 52);
+            this.txt_pBirth.Name = "txt_pBirth";
+            this.txt_pBirth.ReadOnly = true;
+            this.txt_pBirth.Size = new System.Drawing.Size(230, 22);
+            this.txt_pBirth.TabIndex = 4;
+            // 
+            // txt_nationality
+            // 
+            this.txt_nationality.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_nationality.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_nationality.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txt_nationality.Location = new System.Drawing.Point(89, 75);
+            this.txt_nationality.Name = "txt_nationality";
+            this.txt_nationality.ReadOnly = true;
+            this.txt_nationality.Size = new System.Drawing.Size(230, 22);
+            this.txt_nationality.TabIndex = 7;
+            // 
+            // txt_add
+            // 
+            this.txt_add.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_add.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txt_add.Location = new System.Drawing.Point(89, 98);
+            this.txt_add.Name = "txt_add";
+            this.txt_add.ReadOnly = true;
+            this.txt_add.Size = new System.Drawing.Size(486, 22);
+            this.txt_add.TabIndex = 10;
+            // 
+            // txt_employer
+            // 
+            this.txt_employer.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_employer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_employer.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txt_employer.Location = new System.Drawing.Point(89, 121);
+            this.txt_employer.Name = "txt_employer";
+            this.txt_employer.ReadOnly = true;
+            this.txt_employer.Size = new System.Drawing.Size(230, 22);
+            this.txt_employer.TabIndex = 12;
+            // 
+            // txt_passno
+            // 
+            this.txt_passno.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_passno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_passno.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txt_passno.Location = new System.Drawing.Point(406, 52);
+            this.txt_passno.Name = "txt_passno";
+            this.txt_passno.ReadOnly = true;
+            this.txt_passno.Size = new System.Drawing.Size(169, 22);
+            this.txt_passno.TabIndex = 5;
+            // 
+            // txt_gender
+            // 
+            this.txt_gender.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_gender.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_gender.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txt_gender.Location = new System.Drawing.Point(406, 75);
+            this.txt_gender.Name = "txt_gender";
+            this.txt_gender.ReadOnly = true;
+            this.txt_gender.Size = new System.Drawing.Size(169, 22);
+            this.txt_gender.TabIndex = 8;
+            // 
+            // txt_position
+            // 
+            this.txt_position.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_position.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_position.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txt_position.Location = new System.Drawing.Point(406, 121);
+            this.txt_position.Name = "txt_position";
+            this.txt_position.ReadOnly = true;
+            this.txt_position.Size = new System.Drawing.Size(169, 22);
+            this.txt_position.TabIndex = 13;
+            // 
+            // txt_rel
+            // 
+            this.txt_rel.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_rel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_rel.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txt_rel.Location = new System.Drawing.Point(650, 52);
+            this.txt_rel.Name = "txt_rel";
+            this.txt_rel.ReadOnly = true;
+            this.txt_rel.Size = new System.Drawing.Size(218, 22);
+            this.txt_rel.TabIndex = 6;
+            // 
+            // txt_status
+            // 
+            this.txt_status.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_status.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_status.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txt_status.Location = new System.Drawing.Point(650, 75);
+            this.txt_status.Name = "txt_status";
+            this.txt_status.ReadOnly = true;
+            this.txt_status.Size = new System.Drawing.Size(218, 22);
+            this.txt_status.TabIndex = 9;
+            // 
+            // txt_contact
+            // 
+            this.txt_contact.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_contact.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txt_contact.Location = new System.Drawing.Point(650, 98);
+            this.txt_contact.Name = "txt_contact";
+            this.txt_contact.ReadOnly = true;
+            this.txt_contact.Size = new System.Drawing.Size(218, 22);
+            this.txt_contact.TabIndex = 11;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.SystemColors.Control;
+            this.label17.Font = new System.Drawing.Font("Arial", 8F);
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(187, 33);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(57, 14);
+            this.label17.TabIndex = 20;
+            this.label17.Text = "Last name";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.SystemColors.Control;
+            this.label16.Font = new System.Drawing.Font("Arial", 8F);
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(680, 33);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(66, 14);
+            this.label16.TabIndex = 21;
+            this.label16.Text = "MIddle name";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.SystemColors.Control;
+            this.label15.Font = new System.Drawing.Font("Arial", 8F);
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(442, 33);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(57, 14);
+            this.label15.TabIndex = 22;
+            this.label15.Text = "First name";
+            // 
+            // shapeContainer5
+            // 
+            this.shapeContainer5.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer5.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer5.Name = "shapeContainer5";
+            this.shapeContainer5.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape45,
+            this.lineShape43,
+            this.lineShape42,
+            this.lineShape40,
+            this.lineShape39});
+            this.shapeContainer5.Size = new System.Drawing.Size(887, 2027);
+            this.shapeContainer5.TabIndex = 214;
+            this.shapeContainer5.TabStop = false;
+            // 
+            // lineShape45
+            // 
+            this.lineShape45.BorderColor = System.Drawing.Color.Silver;
+            this.lineShape45.Name = "lineShape45";
+            this.lineShape45.X1 = 6;
+            this.lineShape45.X2 = 885;
+            this.lineShape45.Y1 = 175;
+            this.lineShape45.Y2 = 175;
+            // 
+            // lineShape43
+            // 
+            this.lineShape43.BorderColor = System.Drawing.Color.Silver;
+            this.lineShape43.Name = "lineShape43";
+            this.lineShape43.X1 = 6;
+            this.lineShape43.X2 = 885;
+            this.lineShape43.Y1 = 1618;
+            this.lineShape43.Y2 = 1618;
+            // 
+            // lineShape42
+            // 
+            this.lineShape42.BorderColor = System.Drawing.Color.Silver;
+            this.lineShape42.Name = "lineShape42";
+            this.lineShape42.X1 = 6;
+            this.lineShape42.X2 = 885;
+            this.lineShape42.Y1 = 1398;
+            this.lineShape42.Y2 = 1398;
+            // 
+            // lineShape40
+            // 
+            this.lineShape40.BorderColor = System.Drawing.Color.Silver;
+            this.lineShape40.Name = "lineShape40";
+            this.lineShape40.X1 = 6;
+            this.lineShape40.X2 = 885;
+            this.lineShape40.Y1 = 837;
+            this.lineShape40.Y2 = 837;
+            // 
+            // lineShape39
+            // 
+            this.lineShape39.BorderColor = System.Drawing.Color.Silver;
+            this.lineShape39.Name = "lineShape39";
+            this.lineShape39.X1 = 6;
+            this.lineShape39.X2 = 885;
+            this.lineShape39.Y1 = 518;
+            this.lineShape39.Y2 = 518;
+            // 
+            // overlayShadow1
+            // 
+            this.overlayShadow1.Location = new System.Drawing.Point(1, 25);
+            this.overlayShadow1.Name = "overlayShadow1";
+            this.overlayShadow1.Size = new System.Drawing.Size(883, 1998);
+            this.overlayShadow1.TabIndex = 291;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
@@ -6734,439 +7167,6 @@
             this.label40.TabIndex = 89;
             this.label40.Text = "Others";
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.txt_age);
-            this.groupBox5.Controls.Add(this.txt_bday);
-            this.groupBox5.Controls.Add(this.txtFirstname);
-            this.groupBox5.Controls.Add(this.label3);
-            this.groupBox5.Controls.Add(this.label1);
-            this.groupBox5.Controls.Add(this.label2);
-            this.groupBox5.Controls.Add(this.label4);
-            this.groupBox5.Controls.Add(this.label5);
-            this.groupBox5.Controls.Add(this.label9);
-            this.groupBox5.Controls.Add(this.label7);
-            this.groupBox5.Controls.Add(this.label6);
-            this.groupBox5.Controls.Add(this.label13);
-            this.groupBox5.Controls.Add(this.label12);
-            this.groupBox5.Controls.Add(this.label11);
-            this.groupBox5.Controls.Add(this.txtlastname);
-            this.groupBox5.Controls.Add(this.txtMiddleName);
-            this.groupBox5.Controls.Add(this.txt_pBirth);
-            this.groupBox5.Controls.Add(this.txt_nationality);
-            this.groupBox5.Controls.Add(this.txt_add);
-            this.groupBox5.Controls.Add(this.txt_employer);
-            this.groupBox5.Controls.Add(this.txt_passno);
-            this.groupBox5.Controls.Add(this.txt_gender);
-            this.groupBox5.Controls.Add(this.txt_position);
-            this.groupBox5.Controls.Add(this.txt_rel);
-            this.groupBox5.Controls.Add(this.txt_status);
-            this.groupBox5.Controls.Add(this.txt_contact);
-            this.groupBox5.Controls.Add(this.label17);
-            this.groupBox5.Controls.Add(this.label16);
-            this.groupBox5.Controls.Add(this.label15);
-            this.groupBox5.Location = new System.Drawing.Point(6, 25);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(871, 148);
-            this.groupBox5.TabIndex = 271;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
-            // 
-            // txt_age
-            // 
-            this.txt_age.Location = new System.Drawing.Point(584, 120);
-            this.txt_age.Name = "txt_age";
-            this.txt_age.Size = new System.Drawing.Size(27, 20);
-            this.txt_age.TabIndex = 26;
-            this.txt_age.Visible = false;
-            // 
-            // txt_bday
-            // 
-            this.txt_bday.Location = new System.Drawing.Point(619, 123);
-            this.txt_bday.Name = "txt_bday";
-            this.txt_bday.Size = new System.Drawing.Size(26, 20);
-            this.txt_bday.TabIndex = 25;
-            this.txt_bday.Visible = false;
-            this.txt_bday.TextChanged += new System.EventHandler(this.txt_bday_TextChanged);
-            // 
-            // txtFirstname
-            // 
-            this.txtFirstname.BackColor = System.Drawing.SystemColors.Control;
-            this.txtFirstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFirstname.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txtFirstname.Location = new System.Drawing.Point(368, 12);
-            this.txtFirstname.Name = "txtFirstname";
-            this.txtFirstname.ReadOnly = true;
-            this.txtFirstname.Size = new System.Drawing.Size(277, 22);
-            this.txtFirstname.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Font = new System.Drawing.Font("Arial", 9F);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(41, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 15);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Name:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("Arial", 9F);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(3, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 15);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Place of Birth:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.Font = new System.Drawing.Font("Arial", 9F);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(29, 102);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 15);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Address:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.Font = new System.Drawing.Font("Arial", 9F);
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(18, 79);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 15);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Nationality:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Control;
-            this.label5.Font = new System.Drawing.Font("Arial", 9F);
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(23, 125);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 15);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Employer:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.SystemColors.Control;
-            this.label9.Font = new System.Drawing.Font("Arial", 9F);
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(323, 56);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 15);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Passport No.:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.Control;
-            this.label7.Font = new System.Drawing.Font("Arial", 9F);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(354, 79);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 15);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Gender:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.Control;
-            this.label6.Font = new System.Drawing.Font("Arial", 9F);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(350, 125);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 15);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Position:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.SystemColors.Control;
-            this.label13.Font = new System.Drawing.Font("Arial", 9F);
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(589, 56);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 15);
-            this.label13.TabIndex = 16;
-            this.label13.Text = "Religeon:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.SystemColors.Control;
-            this.label12.Font = new System.Drawing.Font("Arial", 9F);
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(575, 102);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(74, 15);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "Contact No.:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.SystemColors.Control;
-            this.label11.Font = new System.Drawing.Font("Arial", 9F);
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(578, 79);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 15);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Civil Status:";
-            // 
-            // txtlastname
-            // 
-            this.txtlastname.BackColor = System.Drawing.SystemColors.Control;
-            this.txtlastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtlastname.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txtlastname.Location = new System.Drawing.Point(88, 12);
-            this.txtlastname.Name = "txtlastname";
-            this.txtlastname.ReadOnly = true;
-            this.txtlastname.Size = new System.Drawing.Size(277, 22);
-            this.txtlastname.TabIndex = 1;
-            // 
-            // txtMiddleName
-            // 
-            this.txtMiddleName.BackColor = System.Drawing.SystemColors.Control;
-            this.txtMiddleName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMiddleName.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txtMiddleName.Location = new System.Drawing.Point(648, 12);
-            this.txtMiddleName.Name = "txtMiddleName";
-            this.txtMiddleName.ReadOnly = true;
-            this.txtMiddleName.Size = new System.Drawing.Size(220, 22);
-            this.txtMiddleName.TabIndex = 3;
-            // 
-            // txt_pBirth
-            // 
-            this.txt_pBirth.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_pBirth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_pBirth.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txt_pBirth.Location = new System.Drawing.Point(89, 52);
-            this.txt_pBirth.Name = "txt_pBirth";
-            this.txt_pBirth.ReadOnly = true;
-            this.txt_pBirth.Size = new System.Drawing.Size(230, 22);
-            this.txt_pBirth.TabIndex = 4;
-            // 
-            // txt_nationality
-            // 
-            this.txt_nationality.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_nationality.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_nationality.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txt_nationality.Location = new System.Drawing.Point(89, 75);
-            this.txt_nationality.Name = "txt_nationality";
-            this.txt_nationality.ReadOnly = true;
-            this.txt_nationality.Size = new System.Drawing.Size(230, 22);
-            this.txt_nationality.TabIndex = 7;
-            // 
-            // txt_add
-            // 
-            this.txt_add.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_add.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txt_add.Location = new System.Drawing.Point(89, 98);
-            this.txt_add.Name = "txt_add";
-            this.txt_add.ReadOnly = true;
-            this.txt_add.Size = new System.Drawing.Size(486, 22);
-            this.txt_add.TabIndex = 10;
-            // 
-            // txt_employer
-            // 
-            this.txt_employer.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_employer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_employer.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txt_employer.Location = new System.Drawing.Point(89, 121);
-            this.txt_employer.Name = "txt_employer";
-            this.txt_employer.ReadOnly = true;
-            this.txt_employer.Size = new System.Drawing.Size(230, 22);
-            this.txt_employer.TabIndex = 12;
-            // 
-            // txt_passno
-            // 
-            this.txt_passno.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_passno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_passno.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txt_passno.Location = new System.Drawing.Point(406, 52);
-            this.txt_passno.Name = "txt_passno";
-            this.txt_passno.ReadOnly = true;
-            this.txt_passno.Size = new System.Drawing.Size(169, 22);
-            this.txt_passno.TabIndex = 5;
-            // 
-            // txt_gender
-            // 
-            this.txt_gender.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_gender.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_gender.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txt_gender.Location = new System.Drawing.Point(406, 75);
-            this.txt_gender.Name = "txt_gender";
-            this.txt_gender.ReadOnly = true;
-            this.txt_gender.Size = new System.Drawing.Size(169, 22);
-            this.txt_gender.TabIndex = 8;
-            // 
-            // txt_position
-            // 
-            this.txt_position.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_position.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_position.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txt_position.Location = new System.Drawing.Point(406, 121);
-            this.txt_position.Name = "txt_position";
-            this.txt_position.ReadOnly = true;
-            this.txt_position.Size = new System.Drawing.Size(169, 22);
-            this.txt_position.TabIndex = 13;
-            // 
-            // txt_rel
-            // 
-            this.txt_rel.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_rel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_rel.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txt_rel.Location = new System.Drawing.Point(650, 52);
-            this.txt_rel.Name = "txt_rel";
-            this.txt_rel.ReadOnly = true;
-            this.txt_rel.Size = new System.Drawing.Size(218, 22);
-            this.txt_rel.TabIndex = 6;
-            // 
-            // txt_status
-            // 
-            this.txt_status.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_status.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_status.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txt_status.Location = new System.Drawing.Point(650, 75);
-            this.txt_status.Name = "txt_status";
-            this.txt_status.ReadOnly = true;
-            this.txt_status.Size = new System.Drawing.Size(218, 22);
-            this.txt_status.TabIndex = 9;
-            // 
-            // txt_contact
-            // 
-            this.txt_contact.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_contact.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txt_contact.Location = new System.Drawing.Point(650, 98);
-            this.txt_contact.Name = "txt_contact";
-            this.txt_contact.ReadOnly = true;
-            this.txt_contact.Size = new System.Drawing.Size(218, 22);
-            this.txt_contact.TabIndex = 11;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.SystemColors.Control;
-            this.label17.Font = new System.Drawing.Font("Arial", 8F);
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(187, 33);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(57, 14);
-            this.label17.TabIndex = 20;
-            this.label17.Text = "Last name";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.SystemColors.Control;
-            this.label16.Font = new System.Drawing.Font("Arial", 8F);
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(680, 33);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(66, 14);
-            this.label16.TabIndex = 21;
-            this.label16.Text = "MIddle name";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.SystemColors.Control;
-            this.label15.Font = new System.Drawing.Font("Arial", 8F);
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(442, 33);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(57, 14);
-            this.label15.TabIndex = 22;
-            this.label15.Text = "First name";
-            // 
-            // shapeContainer5
-            // 
-            this.shapeContainer5.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer5.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer5.Name = "shapeContainer5";
-            this.shapeContainer5.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape45,
-            this.lineShape43,
-            this.lineShape42,
-            this.lineShape40,
-            this.lineShape39});
-            this.shapeContainer5.Size = new System.Drawing.Size(887, 2027);
-            this.shapeContainer5.TabIndex = 214;
-            this.shapeContainer5.TabStop = false;
-            // 
-            // lineShape45
-            // 
-            this.lineShape45.BorderColor = System.Drawing.Color.Silver;
-            this.lineShape45.Name = "lineShape45";
-            this.lineShape45.X1 = 6;
-            this.lineShape45.X2 = 885;
-            this.lineShape45.Y1 = 175;
-            this.lineShape45.Y2 = 175;
-            // 
-            // lineShape43
-            // 
-            this.lineShape43.BorderColor = System.Drawing.Color.Silver;
-            this.lineShape43.Name = "lineShape43";
-            this.lineShape43.X1 = 6;
-            this.lineShape43.X2 = 885;
-            this.lineShape43.Y1 = 1618;
-            this.lineShape43.Y2 = 1618;
-            // 
-            // lineShape42
-            // 
-            this.lineShape42.BorderColor = System.Drawing.Color.Silver;
-            this.lineShape42.Name = "lineShape42";
-            this.lineShape42.X1 = 6;
-            this.lineShape42.X2 = 885;
-            this.lineShape42.Y1 = 1398;
-            this.lineShape42.Y2 = 1398;
-            // 
-            // lineShape40
-            // 
-            this.lineShape40.BorderColor = System.Drawing.Color.Silver;
-            this.lineShape40.Name = "lineShape40";
-            this.lineShape40.X1 = 6;
-            this.lineShape40.X2 = 885;
-            this.lineShape40.Y1 = 837;
-            this.lineShape40.Y2 = 837;
-            // 
-            // lineShape39
-            // 
-            this.lineShape39.BorderColor = System.Drawing.Color.Silver;
-            this.lineShape39.Name = "lineShape39";
-            this.lineShape39.X1 = 6;
-            this.lineShape39.X2 = 885;
-            this.lineShape39.Y1 = 518;
-            this.lineShape39.Y2 = 518;
-            // 
-            // overlayShadow1
-            // 
-            this.overlayShadow1.Location = new System.Drawing.Point(1, 25);
-            this.overlayShadow1.Name = "overlayShadow1";
-            this.overlayShadow1.Size = new System.Drawing.Size(883, 1998);
-            this.overlayShadow1.TabIndex = 291;
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -7423,6 +7423,8 @@
             this.panel15.PerformLayout();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel65.ResumeLayout(false);
@@ -7487,8 +7489,6 @@
             this.panel58.PerformLayout();
             this.panel59.ResumeLayout(false);
             this.panel59.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.contextMenuStrip2.ResumeLayout(false);
             this.contextMenuStrip3.ResumeLayout(false);
             this.contextMenuStrip4.ResumeLayout(false);

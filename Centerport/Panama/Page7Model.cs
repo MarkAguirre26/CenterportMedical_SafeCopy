@@ -14,6 +14,7 @@ namespace MedicalManagementSoftware.Panama
         public string TestResult { get; set; }
         public string ResultResult { get; set; }
         public string Reason1 { get; set; }
+        public string EZGPerformed { get; set; }
         public string Reason2 { get; set; }
         public string Reason3 { get; set; }
         public string Reason4 { get; set; }

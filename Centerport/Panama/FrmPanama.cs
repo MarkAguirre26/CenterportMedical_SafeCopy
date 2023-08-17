@@ -200,6 +200,7 @@ namespace MedicalManagementSoftware
             model.Restriction3 = txtAssessmentComment3.Text;
             model.Restriction4 = txtAssessmentComment4.Text;
             model.Restriction5 = txtAssessmentComment5.Text;
+            model.EZGPerformed = txtEZGPerformed.Text;
             return model;
 
         }
@@ -608,11 +609,12 @@ namespace MedicalManagementSoftware
             model.PsaNormal = txtPsaNormal.Text;
             model.PsaAbNormal = txtPsaAbNormal.Text;
             model.PsaObservation = txtPsaObservation.Text;
+
             model.Xray = getCheckBoxValue(cbXray);
-            model.XrayPerformed = txtXrayObservation.Text;
-            model.XrayObservation =
-            model.Ekg = getCheckBoxValue(cbEkg);
-            model.EZGPerformed = txtEZGPerformed.Text;
+            model.XrayPerformed = txtXrayPerformed.Text;
+            model.XrayObservation = txtXrayObservation.Text;
+           
+            model.Ekg = getCheckBoxValue(cbEkg);  
             model.EkgObservation = txtEkgObservation.Text;
             return model;
         }
@@ -999,8 +1001,9 @@ namespace MedicalManagementSoftware
 
             //dtEkg.Value = DateTime.Now;
             //checkBox110.Checked = false;
-            txtXrayPerformed.Text = "";
-            txtEZGPerformed.Text = "";
+           
+
+          
 
 
             //dtUndergoingExamination.Value = DateTime.Now;
@@ -2623,17 +2626,37 @@ namespace MedicalManagementSoftware
 
 
                 var i = db.sp_Seabase_Recomendation(txtResultID.Text).FirstOrDefault();
-
+                
 
 
                 rbWithRestrictions.Checked = true;
                 if (i.recommendation.Equals("FIT FOR SEA DUTY") || i.recommendation.Equals("FIT TO WORK"))
                 {
+                    rbNonFitForLookOut.Checked = false;
+                    rbWithRestrictions.Checked = false;
+                    rbFitForLookOut.Checked = true;
                     rbWithOutRestrictions.Checked = true;
+                    //txtAssessmentComment1.Text = "";
+
                 }
-                else
+                else if (i.recommendation.Equals("FIT WITH RESTRICTION"))
                 {
+                    rbNonFitForLookOut.Checked = false;
                     rbWithRestrictions.Checked = true;
+                    rbFitForLookOut.Checked = true;
+                    rbWithOutRestrictions.Checked = false;
+                    txtAssessmentComment1.Text = i.restriction;
+
+                }
+                else if (i.recommendation.Equals("UNFIT"))
+                {
+                    rbNonFitForLookOut.Checked = true;
+                    rbWithRestrictions.Checked = false;
+                    rbFitForLookOut.Checked = false;                   
+                    rbWithOutRestrictions.Checked = false;
+                    //txtAssessmentComment1.Text = "";
+
+
                 }
 
                 
@@ -2805,11 +2828,12 @@ namespace MedicalManagementSoftware
                 setCheckBoxValue(cbXray, cbHidden, i.Xray);
 
                 //validateDate(i.XrayDate, dtXrayDate, checkBox109);
-                txtXrayPerformed.Text = i.XrayDate;
+                txtXrayPerformed.Text = fitnessdate;
                 txtXrayObservation.Text = i.XrayObservation;
                 setCheckBoxValue(cbEkg, cbHidden, i.Ekg);
                 //validateDate(i.Ekg, dtEkg, checkBox110);
-                txtEZGPerformed.Text = i.Ekg;
+                txtEZGPerformed.Text = fitnessdate;
+
                 txtEkgObservation.Text = i.EkgObservation;
 
 
@@ -3109,6 +3133,10 @@ namespace MedicalManagementSoftware
 
                 try
                 {
+
+
+                  
+
                     string[] undergoingExaminationDate = i.fitness_date.ToString().Split('/');
                     lblDayWitness.Text = "Day: " + undergoingExaminationDate[0].ToString();
                     lblMonthWitness.Text = "Month: " + undergoingExaminationDate[1].ToString();
@@ -3297,7 +3325,7 @@ namespace MedicalManagementSoftware
                            getCheckBoxValue(rbWithOutRestrictions),
                            getCheckBoxValue(rbWithRestrictions),
                            getCheckBoxValue(rbVisualAidYes),
-                           getCheckBoxValue(rbVisualAidYes),
+                           getCheckBoxValue(rbVisualAidRequiredNo),
                             txtAssessmentComment1.Text,
                            expiration,
                            issued,

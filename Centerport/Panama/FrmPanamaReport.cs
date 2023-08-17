@@ -851,8 +851,7 @@ namespace MedicalManagementSoftware.Report
                 page6.SetParameterValue("Xray", page6Model.Xray);
                 page6.SetParameterValue("XrayPerformed", page6Model.XrayPerformed);
                 page6.SetParameterValue("XrayObservation", page6Model.XrayObservation);
-                page6.SetParameterValue("Ekg", page6Model.Ekg);
-                page6.SetParameterValue("EZGPerformed", page6Model.EZGPerformed);
+                page6.SetParameterValue("Ekg", page6Model.Ekg);                
                 page6.SetParameterValue("EkgObservation", page6Model.EkgObservation);
                 Viewer1.ReportSource = page6;
 
@@ -898,6 +897,7 @@ namespace MedicalManagementSoftware.Report
                 page7.SetParameterValue("Restriction3", page7Model.Restriction3);
                 page7.SetParameterValue("Restriction4", page7Model.Restriction4);
                 page7.SetParameterValue("Restriction5", page7Model.Restriction5);
+                page7.SetParameterValue("EZGPerformed", page7Model.EZGPerformed);
                 Viewer1.ReportSource = page7;
 
 

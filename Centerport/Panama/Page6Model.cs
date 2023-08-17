@@ -84,7 +84,7 @@ namespace MedicalManagementSoftware.Panama
         public string XrayPerformed { get; set; }
         public string XrayObservation { get; set; }
         public string Ekg { get; set; }
-        public string EZGPerformed { get; set; }
+
         public string EkgObservation { get; set; }
 
     }

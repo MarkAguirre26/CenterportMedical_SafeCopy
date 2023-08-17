@@ -658,7 +658,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_EZGPerformed {
+        public CrystalDecisions.Shared.IParameterField Parameter_EkgObservation {
             get {
                 return this.DataDefinition.ParameterFields[71];
             }
@@ -666,7 +666,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_EkgObservation {
+        public CrystalDecisions.Shared.IParameterField Parameter_HemogramOservation {
             get {
                 return this.DataDefinition.ParameterFields[72];
             }
@@ -674,7 +674,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_HemogramOservation {
+        public CrystalDecisions.Shared.IParameterField Parameter_HemogramAbNormal {
             get {
                 return this.DataDefinition.ParameterFields[73];
             }
@@ -682,7 +682,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_HemogramAbNormal {
+        public CrystalDecisions.Shared.IParameterField Parameter_HemogramNormal {
             get {
                 return this.DataDefinition.ParameterFields[74];
             }
@@ -690,17 +690,9 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_HemogramNormal {
-            get {
-                return this.DataDefinition.ParameterFields[75];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public CrystalDecisions.Shared.IParameterField Parameter_Hemogram {
             get {
-                return this.DataDefinition.ParameterFields[76];
+                return this.DataDefinition.ParameterFields[75];
             }
         }
     }
