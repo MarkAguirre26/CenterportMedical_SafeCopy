@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CMSI_Dataset" targetNamespace="http://tempuri.org/CMSI_Dataset.xsd" xmlns:mstns="http://tempuri.org/CMSI_Dataset.xsd" xmlns="http://tempuri.org/CMSI_Dataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="cmsiConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="cmsiConnectionString (Settings)" ParameterPrefix="@" PropertyReference=""></Connection>
+
+
+        </Connections>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
+    
