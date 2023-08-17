@@ -154,7 +154,7 @@ namespace MedicalManagementSoftware
             print.page6Model = prepareThePage6();
             print.page7Model = prepareThePage7();
             print.page8Model = prepareThePage8();
-            print.ShowDialog();
+            print.Show();
 
         }
 
@@ -3176,7 +3176,7 @@ namespace MedicalManagementSoftware
                 txtHomeAddress.Text = i.HomeAddress;
                 txtDepartment.Text = i.Department;
                 txtPosition.Text = i.position;
-                if (i.gender.ToLower().Equals("Male") || i.gender.ToLower().Equals("M"))
+                if (i.gender.ToLower().Equals("male") || i.gender.ToLower().Equals("M"))
                 {
                     rbMale.Checked = true;
                 }

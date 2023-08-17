@@ -473,7 +473,7 @@ namespace MedicalManagementSoftware.Report
         {
             lblLoading.Visible = true;
             lblLoading.BringToFront();
-            Thread.Sleep(300);
+            Thread.Sleep(100);
             lblLoading.Visible = false;
             if (pageIndex == 1)
             {
