@@ -181,20 +181,28 @@ namespace MedicalManagementSoftware
             model.Reason2 = txtOtherDiagnosticComment2.Text;
             model.Reason3 = txtOtherDiagnosticComment3.Text;
             model.Reason4 = txtOtherDiagnosticComment4.Text;
+           
             model.FirForLookOut = getRadioButtonValue(rbFitForLookOut);
             model.NotFirForLookOut = getRadioButtonValue(rbNonFitForLookOut);
-            model.Fit = getRadioButtonValue(rbFitForLookOut);
-            model.Unfit = getRadioButtonValue(rbNonFitForLookOut);
-            model.EngineServiceFit = getCheckBoxValue(cbDeckServiceFit);
-            model.EngineServiceNotFit = getCheckBoxValue(cbDeckServiceUnFit);
+
+            model.deckFit = getRadioButtonValue(cbDeckServiceFit);
+            model.decUnfit = getRadioButtonValue(cbDeckServiceUnFit);
+
+            model.EngineServiceFit = getCheckBoxValue(cbEngineFit);
+            model.EngineServiceNotFit = getCheckBoxValue(cbEngineUnFit);
+
             model.CateringServiceFit = getCheckBoxValue(cbCateringFit);
             model.CateringServiceNotFit = getCheckBoxValue(cbCateringUnFit);
+
             model.OtherServiceFit = getCheckBoxValue(cbOtherServiceFit);
             model.OtherServiceNotFit = getCheckBoxValue(OtherServiceNotFit);
+
             model.WithoutRestriction = getRadioButtonValue(rbWithOutRestrictions);
             model.WithRestriction = getRadioButtonValue(rbWithRestrictions);
+
             model.VisualReqiuredYes = getRadioButtonValue(rbVisualAidYes);
             model.VisualReqiuredNo = getRadioButtonValue(rbVisualAidRequiredNo);
+          
             model.Restriction1 = txtAssessmentComment1.Text;
             model.Restriction2 = txtAssessmentComment2.Text;
             model.Restriction3 = txtAssessmentComment3.Text;

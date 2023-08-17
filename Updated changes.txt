@@ -1,3 +1,7 @@
 1 . Panama_patient   
 	updated to resulttype = 'SEA'
 2. PanamaClinicalDataSelect
+
+3. Panama_SeaMLC
+	t_result_main.resulttype =  'SEA'
+

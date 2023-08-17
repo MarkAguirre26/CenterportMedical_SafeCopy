@@ -20,8 +20,8 @@ namespace MedicalManagementSoftware.Panama
         public string Reason4 { get; set; }
         public string FirForLookOut { get; set; }
         public string NotFirForLookOut { get; set; }
-        public string Fit { get; set; }
-        public string Unfit { get; set; }
+        public string deckFit { get; set; }
+        public string decUnfit { get; set; }
         public string EngineServiceFit { get; set; }
         public string EngineServiceNotFit { get; set; }
         public string CateringServiceFit { get; set; }

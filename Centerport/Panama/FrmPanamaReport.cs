@@ -880,8 +880,8 @@ namespace MedicalManagementSoftware.Report
                 page7.SetParameterValue("Reason4", page7Model.Reason4);
                 page7.SetParameterValue("FirForLookOut", page7Model.FirForLookOut);
                 page7.SetParameterValue("NotFirForLookOut", page7Model.NotFirForLookOut);
-                page7.SetParameterValue("Fit", page7Model.Fit);
-                page7.SetParameterValue("Unfit", page7Model.Unfit);
+                page7.SetParameterValue("Fit", page7Model.deckFit);
+                page7.SetParameterValue("Unfit", page7Model.decUnfit);
                 page7.SetParameterValue("EngineServiceFit", page7Model.EngineServiceFit);
                 page7.SetParameterValue("EngineServiceNotFit", page7Model.EngineServiceNotFit);
                 page7.SetParameterValue("CateringServiceFit", page7Model.CateringServiceFit);
