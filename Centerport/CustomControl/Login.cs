@@ -149,11 +149,6 @@ namespace MedicalManagementSoftware.UserControlView
             //txt_password.Clear();
 
 
-            //if (System.Environment.MachineName == "CMSISERVER-PC")
-            //{
-            //    ClassSql.ConnectSqlInstance(Properties.Settings.Default.InstanceName);
-            //}
-
 
         }
 

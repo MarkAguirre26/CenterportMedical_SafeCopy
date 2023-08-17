@@ -518,13 +518,6 @@ namespace MedicalManagementSoftware.Model
 			return ((ISingleResult<PanamaAssessmentSelectResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaClinicalDataSelect")]
-		public ISingleResult<PanamaClinicalDataSelectResult> PanamaClinicalDataSelect([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, resultMainUID);
-			return ((ISingleResult<PanamaClinicalDataSelectResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaDataRelatedCovidSelect")]
 		public ISingleResult<PanamaDataRelatedCovidSelectResult> PanamaDataRelatedCovidSelect([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin)
 		{
@@ -586,6 +579,13 @@ namespace MedicalManagementSoftware.Model
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD);
 			return ((ISingleResult<Panama_SeaMLCResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaClinicalDataSelect")]
+		public ISingleResult<PanamaClinicalDataSelectResult> PanamaClinicalDataSelect([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, resultMainUID);
+			return ((ISingleResult<PanamaClinicalDataSelectResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -9715,194 +9715,6 @@ namespace MedicalManagementSoftware.Model
 		}
 	}
 	
-	public partial class PanamaClinicalDataSelectResult
-	{
-		
-		private int _RecId;
-		
-		private string _ResultMainUID;
-		
-		private string _Height;
-		
-		private string _Weight;
-		
-		private string _BMI;
-		
-		private string _Oxygen;
-		
-		private string _HeartRate;
-		
-		private string _Respiratory;
-		
-		private string _BloodPressure;
-		
-		private string _Diatolic;
-		
-		public PanamaClinicalDataSelectResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RecId", DbType="Int NOT NULL")]
-		public int RecId
-		{
-			get
-			{
-				return this._RecId;
-			}
-			set
-			{
-				if ((this._RecId != value))
-				{
-					this._RecId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ResultMainUID", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
-		public string ResultMainUID
-		{
-			get
-			{
-				return this._ResultMainUID;
-			}
-			set
-			{
-				if ((this._ResultMainUID != value))
-				{
-					this._ResultMainUID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Height", DbType="VarChar(100)")]
-		public string Height
-		{
-			get
-			{
-				return this._Height;
-			}
-			set
-			{
-				if ((this._Height != value))
-				{
-					this._Height = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Weight", DbType="VarChar(100)")]
-		public string Weight
-		{
-			get
-			{
-				return this._Weight;
-			}
-			set
-			{
-				if ((this._Weight != value))
-				{
-					this._Weight = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BMI", DbType="VarChar(100)")]
-		public string BMI
-		{
-			get
-			{
-				return this._BMI;
-			}
-			set
-			{
-				if ((this._BMI != value))
-				{
-					this._BMI = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Oxygen", DbType="VarChar(100)")]
-		public string Oxygen
-		{
-			get
-			{
-				return this._Oxygen;
-			}
-			set
-			{
-				if ((this._Oxygen != value))
-				{
-					this._Oxygen = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HeartRate", DbType="VarChar(100)")]
-		public string HeartRate
-		{
-			get
-			{
-				return this._HeartRate;
-			}
-			set
-			{
-				if ((this._HeartRate != value))
-				{
-					this._HeartRate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Respiratory", DbType="VarChar(100)")]
-		public string Respiratory
-		{
-			get
-			{
-				return this._Respiratory;
-			}
-			set
-			{
-				if ((this._Respiratory != value))
-				{
-					this._Respiratory = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BloodPressure", DbType="VarChar(100)")]
-		public string BloodPressure
-		{
-			get
-			{
-				return this._BloodPressure;
-			}
-			set
-			{
-				if ((this._BloodPressure != value))
-				{
-					this._BloodPressure = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Diatolic", DbType="VarChar(100)")]
-		public string Diatolic
-		{
-			get
-			{
-				return this._Diatolic;
-			}
-			set
-			{
-				if ((this._Diatolic != value))
-				{
-					this._Diatolic = value;
-				}
-			}
-		}
-	}
-	
 	public partial class PanamaDataRelatedCovidSelectResult
 	{
 		
@@ -14884,6 +14696,248 @@ namespace MedicalManagementSoftware.Model
 				if ((this._recommendation != value))
 				{
 					this._recommendation = value;
+				}
+			}
+		}
+	}
+	
+	public partial class PanamaClinicalDataSelectResult
+	{
+		
+		private string _ResultMainUID;
+		
+		private string _papin;
+		
+		private string _Height;
+		
+		private string _Weight;
+		
+		private string _BloodPressure;
+		
+		private string _Respiratory;
+		
+		private string _BMI;
+		
+		private string _Diatolic;
+		
+		private string _PULSE;
+		
+		private string _FAR_OD_U;
+		
+		private string _FAR_OS_U;
+		
+		private string _NEAR_ODJ_U;
+		
+		private string _NEAR_OSJ_U;
+		
+		public PanamaClinicalDataSelectResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ResultMainUID", DbType="VarChar(254)")]
+		public string ResultMainUID
+		{
+			get
+			{
+				return this._ResultMainUID;
+			}
+			set
+			{
+				if ((this._ResultMainUID != value))
+				{
+					this._ResultMainUID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_papin", DbType="VarChar(254)")]
+		public string papin
+		{
+			get
+			{
+				return this._papin;
+			}
+			set
+			{
+				if ((this._papin != value))
+				{
+					this._papin = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Height", DbType="VarChar(254)")]
+		public string Height
+		{
+			get
+			{
+				return this._Height;
+			}
+			set
+			{
+				if ((this._Height != value))
+				{
+					this._Height = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Weight", DbType="VarChar(254)")]
+		public string Weight
+		{
+			get
+			{
+				return this._Weight;
+			}
+			set
+			{
+				if ((this._Weight != value))
+				{
+					this._Weight = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BloodPressure", DbType="VarChar(254)")]
+		public string BloodPressure
+		{
+			get
+			{
+				return this._BloodPressure;
+			}
+			set
+			{
+				if ((this._BloodPressure != value))
+				{
+					this._BloodPressure = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Respiratory", DbType="VarChar(254)")]
+		public string Respiratory
+		{
+			get
+			{
+				return this._Respiratory;
+			}
+			set
+			{
+				if ((this._Respiratory != value))
+				{
+					this._Respiratory = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BMI", DbType="VarChar(254)")]
+		public string BMI
+		{
+			get
+			{
+				return this._BMI;
+			}
+			set
+			{
+				if ((this._BMI != value))
+				{
+					this._BMI = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Diatolic", DbType="VarChar(254)")]
+		public string Diatolic
+		{
+			get
+			{
+				return this._Diatolic;
+			}
+			set
+			{
+				if ((this._Diatolic != value))
+				{
+					this._Diatolic = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PULSE", DbType="VarChar(254)")]
+		public string PULSE
+		{
+			get
+			{
+				return this._PULSE;
+			}
+			set
+			{
+				if ((this._PULSE != value))
+				{
+					this._PULSE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FAR_OD_U", DbType="VarChar(254)")]
+		public string FAR_OD_U
+		{
+			get
+			{
+				return this._FAR_OD_U;
+			}
+			set
+			{
+				if ((this._FAR_OD_U != value))
+				{
+					this._FAR_OD_U = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FAR_OS_U", DbType="VarChar(254)")]
+		public string FAR_OS_U
+		{
+			get
+			{
+				return this._FAR_OS_U;
+			}
+			set
+			{
+				if ((this._FAR_OS_U != value))
+				{
+					this._FAR_OS_U = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEAR_ODJ_U", DbType="VarChar(254)")]
+		public string NEAR_ODJ_U
+		{
+			get
+			{
+				return this._NEAR_ODJ_U;
+			}
+			set
+			{
+				if ((this._NEAR_ODJ_U != value))
+				{
+					this._NEAR_ODJ_U = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEAR_OSJ_U", DbType="VarChar(254)")]
+		public string NEAR_OSJ_U
+		{
+			get
+			{
+				return this._NEAR_OSJ_U;
+			}
+			set
+			{
+				if ((this._NEAR_OSJ_U != value))
+				{
+					this._NEAR_OSJ_U = value;
 				}
 			}
 		}

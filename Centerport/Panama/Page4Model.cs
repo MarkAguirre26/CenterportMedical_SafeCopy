@@ -11,7 +11,9 @@ namespace MedicalManagementSoftware.Panama
         public string NameOfWitness { get; set; }
         public string DoctorName { get; set; }
         public string UndergoingExamination { get; set; }
-        public string UndergoingDate { get; set; }
+        public string Day { get; set; }
+        public string Month { get; set; }
+        public string Year { get; set; }
         public string NameOfWitness2 { get; set; }
         public string PreviousMedical { get; set; }
         public string Height { get; set; }

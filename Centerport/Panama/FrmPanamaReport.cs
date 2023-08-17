@@ -662,7 +662,9 @@ namespace MedicalManagementSoftware.Report
 
                 page4.SetParameterValue("NameOfWitness", page4Model.NameOfWitness);
                 page4.SetParameterValue("UndergoingExamination", page4Model.UndergoingExamination);
-                page4.SetParameterValue("UndergoingDate", page4Model.UndergoingDate);
+                page4.SetParameterValue("Day", page4Model.Day);
+                page4.SetParameterValue("Month", page4Model.Month);
+                page4.SetParameterValue("Year", page4Model.Year);
                 page4.SetParameterValue("NameOfWitness2", page4Model.NameOfWitness2);
                 page4.SetParameterValue("PreviousMedical", page4Model.PreviousMedical);
                 page4.SetParameterValue("Height", page4Model.Height);

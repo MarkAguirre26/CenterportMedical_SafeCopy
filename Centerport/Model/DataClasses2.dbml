@@ -935,22 +935,6 @@
       <Column Name="assessmentComment5" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.PanamaClinicalDataSelect" Method="PanamaClinicalDataSelect">
-    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
-    <ElementType Name="PanamaClinicalDataSelectResult">
-      <Column Name="RecId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ResultMainUID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="Height" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Weight" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="BMI" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Oxygen" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="HeartRate" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Respiratory" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="BloodPressure" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Diatolic" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.PanamaDataRelatedCovidSelect" Method="PanamaDataRelatedCovidSelect">
     <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
@@ -1274,6 +1258,25 @@
       <Column Name="PatientName" Type="System.String" DbType="VarChar(153) NOT NULL" CanBeNull="false" />
       <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
       <Column Name="recommendation" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.PanamaClinicalDataSelect" Method="PanamaClinicalDataSelect">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="PanamaClinicalDataSelectResult">
+      <Column Name="ResultMainUID" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Height" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Weight" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BloodPressure" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Respiratory" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BMI" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Diatolic" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PULSE" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FAR_OD_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FAR_OS_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NEAR_ODJ_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NEAR_OSJ_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

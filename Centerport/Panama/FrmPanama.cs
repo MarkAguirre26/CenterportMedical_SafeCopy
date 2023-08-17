@@ -409,14 +409,19 @@ namespace MedicalManagementSoftware
             return model;
         }
 
-
+        //
         private Page4Model prepareThePage4()
         {
             Page4Model model = new Page4Model();
             model.NameOfWitness = txtNameOfWitness.Text;
             model.DoctorName = txtDoctorName.Text;
             model.UndergoingExamination = txtUndergoingExamination.Text;
-            model.UndergoingDate = txtUndergoingDate.Text;
+            //model.UndergoingDate = lblDay.Text + "   " + lblMonth.Text + "   " + lblYear.Text;
+            model.Day = lblDay.Text;
+            model.Month = lblMonth.Text;
+            model.Year = lblYear.Text;
+
+
             model.NameOfWitness2 = txtNameOfWitness2.Text;
             model.PreviousMedical = txtPreviousMedical.Text;
             model.Height = txtHeight.Text;
@@ -443,6 +448,8 @@ namespace MedicalManagementSoftware
             model.DefectiveRightEye = txtDefectiveRightEye.Text;
             model.NormalLeftEye = txtNormalLeftEye.Text;
             model.DefectiveLeftEye = txtDefectiveLeftEye.Text;
+
+
             string ColorVision = "";
             if (cbNonTestedColorVision.Checked)
             {
@@ -784,7 +791,7 @@ namespace MedicalManagementSoftware
             txtIssuedMonth.Text = "00";
             txtIssuedYear.Text = "00";
 
-            txtUndergoingDate.Text = "00/00/0000";
+            //txtUndergoingDate.Text = "00/00/0000";
 
 
             rbWorldWide.Checked = true;
@@ -998,8 +1005,25 @@ namespace MedicalManagementSoftware
 
             //dtUndergoingExamination.Value = DateTime.Now;
             //checkBox107.Checked = false;
-            txtundergoingExaminationDate.Text = fitnessdate;
+            //txtundergoingExaminationDate.Text = fitnessdate;
 
+
+            try
+            {
+                string[] undergoingExaminationDate = fitnessdate.ToString().Split('/');
+                lblDay.Text = "Day: " + undergoingExaminationDate[0].ToString();
+                lblMonth.Text = "Month: " + undergoingExaminationDate[1].ToString();
+                lblYear.Text = "Year: " + undergoingExaminationDate[2].ToString();
+
+            }
+            catch (Exception)
+            {
+
+                lblDay.Text = "Day:";
+                lblMonth.Text = "Month:";
+                lblYear.Text = "Year:";
+
+            }
 
 
 
@@ -2753,11 +2777,16 @@ namespace MedicalManagementSoftware
                 txtHeight.Text = i.Height;
                 txtWeight.Text = i.Weight;
                 txtBMI.Text = i.BMI;
-                txtOxygen.Text = i.Oxygen;
-                txtHeartRate.Text = i.HeartRate;
+                //txtOxygen.Text = i.Oxygen;
+                txtHeartRate.Text = i.PULSE;
                 txtRespiratory.Text = i.Respiratory;
                 txtBloodPressure.Text = i.BloodPressure;
                 txtDiastolic.Text = i.Diatolic;
+
+                txtUnaidedRightEyeDistant.Text = i.FAR_OD_U;
+                txtUnAidedLeftEyeDistant.Text = i.FAR_OS_U;
+                txtUnaidedRightEyeShort.Text ="J/"+ i.NEAR_ODJ_U;
+                txtUnAidedLeftEyeShort.Text = "J/"+i.NEAR_OSJ_U;
 
             }
 
@@ -2769,14 +2798,14 @@ namespace MedicalManagementSoftware
             {
                 //PanamaSightSelect
 
-                txtUnaidedRightEyeDistant.Text = sight.UnaidedRightEyeDistant;
-                txtUnAidedLeftEyeDistant.Text = sight.UnAidedLeftEyeDistant;
+                //txtUnaidedRightEyeDistant.Text = sight.UnaidedRightEyeDistant;
+                //txtUnAidedLeftEyeDistant.Text = sight.UnAidedLeftEyeDistant;
                 txtUnAidedBonocularDistant.Text = sight.UnAidedBonocularDistant;
                 txtAidedRightEyeDistant.Text = sight.AidedRightEyeDistant;
                 txtAidedLeftEyeDistant.Text = sight.AidedLeftEyeDistant;
                 txtAidedBinocularDistant.Text = sight.AidedBinocularDistant;
-                txtUnaidedRightEyeShort.Text = sight.UnaidedRightEyeShort;
-                txtUnAidedLeftEyeShort.Text = sight.UnAidedLeftEyeShort;
+                //txtUnaidedRightEyeShort.Text = sight.UnaidedRightEyeShort;
+                //txtUnAidedLeftEyeShort.Text = sight.UnAidedLeftEyeShort;
                 txtUnAidedBonocularShort.Text = sight.UnAidedBonocularShort;
                 txtAidedRightEyeShort.Text = sight.AidedRightEyeShort;
                 txtAidedLeftEyeShort.Text = sight.AidedLeftEyeShort;
@@ -2862,7 +2891,7 @@ namespace MedicalManagementSoftware
                 // Data Related  to covid
                 setRadioButtonState(cbContactInCovidPositiveYes, cbContactInCovidPositiveNo, i.ContactInCovidPositive);
                 setRadioButtonState(cbCovidTestYes, cbCovidTestNo, i.CovidTest);
-                txtCividTestDate.Text = i.CovidDateTest;
+                txtCividTestDate.Text = "";
                 setRadioButtonState(cbHadFeverLast30DaysYes, cbHadFeverLast30DaysNo, i.HadFeverLast30Days);
                 setRadioButtonState(cbVaccinationCovidYes, cbVaccinationCovidNo, i.VaccinationCovid);
                 txtVaccineType.Text = i.VaccineType;
@@ -2968,7 +2997,28 @@ namespace MedicalManagementSoftware
                 txtPersonundergoingExamination.Text = i.Fullname;
                 txtUndergoingExamination.Text = i.Fullname;
                 txtSpecimenNo.Text = i.specimen_no;
-                txtundergoingExaminationDate.Text = i.fitness_date;
+                
+
+                try
+                {
+                    string[] undergoingExaminationDate = i.fitness_date.ToString().Split('/');
+                    lblDayWitness.Text = "Day: " + undergoingExaminationDate[0].ToString();
+                    lblMonthWitness.Text = "Month: " + undergoingExaminationDate[1].ToString();
+                    lblYearWitness.Text = "Year:" + undergoingExaminationDate[2].ToString();
+
+                }
+                catch (Exception)
+                {
+
+                    lblDayWitness.Text = "Day:";
+                    lblMonthWitness.Text = "Month:";
+                    lblYearWitness.Text = "Year:";
+
+                }
+
+
+
+
                 fitnessdate = i.fitness_date;
 
                 txtDoctorName.Text = i.pathologist;
@@ -2997,7 +3047,28 @@ namespace MedicalManagementSoftware
 
                 txtRhType.Text = "POSITIVE";
 
-                txtUndergoingDate.Text = i.fitness_date;
+                //txtUndergoingDate.Text = i.fitness_date;
+
+
+                try
+                {
+                    string[] undergoingExaminationDate = i.fitness_date.ToString().Split('/');
+                    lblDay.Text ="Day: "+ undergoingExaminationDate[0].ToString();
+                    lblMonth.Text = "Month: "+undergoingExaminationDate[1].ToString();
+                    lblYear.Text = "Year: "+undergoingExaminationDate[2].ToString();
+
+                }
+                catch (Exception)
+                {
+
+                    lblDay.Text = "Day:";
+                    lblMonth.Text = "Month:";
+                    lblYear.Text = "Year:";
+
+                }
+
+
+
 
                 try
                 {
