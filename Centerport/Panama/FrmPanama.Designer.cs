@@ -356,8 +356,6 @@
             this.rjLabel44 = new System.Windows.Forms.Label();
             this.txtPersonundergoingExamination = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.txtundergoingExaminationDate = new System.Windows.Forms.MaskedTextBox();
-            this.label84 = new System.Windows.Forms.Label();
             this.rjLabel80 = new System.Windows.Forms.Label();
             this.txtNameOfWitness = new System.Windows.Forms.TextBox();
             this.txtDoctorName = new System.Windows.Forms.TextBox();
@@ -827,6 +825,9 @@
             this.flowLayoutPanel61 = new System.Windows.Forms.FlowLayoutPanel();
             this.cbRestrictedMobilityYes = new System.Windows.Forms.RadioButton();
             this.cbRestrictedMobilityNo = new System.Windows.Forms.RadioButton();
+            this.lblDay = new System.Windows.Forms.Label();
+            this.lblMonth = new System.Windows.Forms.Label();
+            this.lblYear = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -4196,11 +4197,13 @@
             // cbTakenMedicationsNo
             // 
             this.cbTakenMedicationsNo.AutoSize = true;
+            this.cbTakenMedicationsNo.Checked = true;
             this.cbTakenMedicationsNo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbTakenMedicationsNo.Location = new System.Drawing.Point(632, 52);
             this.cbTakenMedicationsNo.Name = "cbTakenMedicationsNo";
             this.cbTakenMedicationsNo.Size = new System.Drawing.Size(14, 13);
             this.cbTakenMedicationsNo.TabIndex = 37;
+            this.cbTakenMedicationsNo.TabStop = true;
             this.cbTakenMedicationsNo.UseVisualStyleBackColor = true;
             // 
             // rjLabel66
@@ -4360,12 +4363,14 @@
             // cbVaccinationCovidYes
             // 
             this.cbVaccinationCovidYes.AutoSize = true;
+            this.cbVaccinationCovidYes.Checked = true;
             this.cbVaccinationCovidYes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbVaccinationCovidYes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(129)))), ((int)(((byte)(132)))));
             this.cbVaccinationCovidYes.Location = new System.Drawing.Point(15, 25);
             this.cbVaccinationCovidYes.Name = "cbVaccinationCovidYes";
             this.cbVaccinationCovidYes.Size = new System.Drawing.Size(14, 13);
             this.cbVaccinationCovidYes.TabIndex = 21;
+            this.cbVaccinationCovidYes.TabStop = true;
             this.cbVaccinationCovidYes.UseVisualStyleBackColor = true;
             // 
             // cbVaccinationCovidNo
@@ -4428,18 +4433,20 @@
             // cbHadFeverLast30DaysNo
             // 
             this.cbHadFeverLast30DaysNo.AutoSize = true;
+            this.cbHadFeverLast30DaysNo.Checked = true;
             this.cbHadFeverLast30DaysNo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbHadFeverLast30DaysNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(129)))), ((int)(((byte)(132)))));
             this.cbHadFeverLast30DaysNo.Location = new System.Drawing.Point(116, 26);
             this.cbHadFeverLast30DaysNo.Name = "cbHadFeverLast30DaysNo";
             this.cbHadFeverLast30DaysNo.Size = new System.Drawing.Size(14, 13);
             this.cbHadFeverLast30DaysNo.TabIndex = 22;
+            this.cbHadFeverLast30DaysNo.TabStop = true;
             this.cbHadFeverLast30DaysNo.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel8
             // 
-            this.flowLayoutPanel8.Controls.Add(this.txtCividTestDate);
             this.flowLayoutPanel8.Controls.Add(this.label73);
+            this.flowLayoutPanel8.Controls.Add(this.txtCividTestDate);
             this.flowLayoutPanel8.Location = new System.Drawing.Point(509, 104);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             this.flowLayoutPanel8.Size = new System.Drawing.Size(300, 29);
@@ -4447,7 +4454,7 @@
             // 
             // txtCividTestDate
             // 
-            this.txtCividTestDate.Location = new System.Drawing.Point(3, 3);
+            this.txtCividTestDate.Location = new System.Drawing.Point(109, 3);
             this.txtCividTestDate.Mask = "##/##/####";
             this.txtCividTestDate.Name = "txtCividTestDate";
             this.txtCividTestDate.Size = new System.Drawing.Size(100, 20);
@@ -4456,9 +4463,9 @@
             // 
             // label73
             // 
-            this.label73.Location = new System.Drawing.Point(109, 0);
+            this.label73.Location = new System.Drawing.Point(3, 0);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(107, 24);
+            this.label73.Size = new System.Drawing.Size(100, 24);
             this.label73.TabIndex = 46;
             this.label73.Text = "Day/month/year:";
             this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -4501,12 +4508,14 @@
             // cbCovidTestYes
             // 
             this.cbCovidTestYes.AutoSize = true;
+            this.cbCovidTestYes.Checked = true;
             this.cbCovidTestYes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbCovidTestYes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(129)))), ((int)(((byte)(132)))));
             this.cbCovidTestYes.Location = new System.Drawing.Point(15, 26);
             this.cbCovidTestYes.Name = "cbCovidTestYes";
             this.cbCovidTestYes.Size = new System.Drawing.Size(14, 13);
             this.cbCovidTestYes.TabIndex = 21;
+            this.cbCovidTestYes.TabStop = true;
             this.cbCovidTestYes.UseVisualStyleBackColor = true;
             // 
             // cbCovidTestNo
@@ -4717,12 +4726,14 @@
             // cbContactInCovidPositiveNo
             // 
             this.cbContactInCovidPositiveNo.AutoSize = true;
+            this.cbContactInCovidPositiveNo.Checked = true;
             this.cbContactInCovidPositiveNo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbContactInCovidPositiveNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(129)))), ((int)(((byte)(132)))));
             this.cbContactInCovidPositiveNo.Location = new System.Drawing.Point(116, 27);
             this.cbContactInCovidPositiveNo.Name = "cbContactInCovidPositiveNo";
             this.cbContactInCovidPositiveNo.Size = new System.Drawing.Size(14, 13);
             this.cbContactInCovidPositiveNo.TabIndex = 22;
+            this.cbContactInCovidPositiveNo.TabStop = true;
             this.cbContactInCovidPositiveNo.UseVisualStyleBackColor = true;
             // 
             // rjLabel76
@@ -4790,30 +4801,13 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.txtundergoingExaminationDate);
-            this.flowLayoutPanel1.Controls.Add(this.label84);
+            this.flowLayoutPanel1.Controls.Add(this.lblDay);
+            this.flowLayoutPanel1.Controls.Add(this.lblMonth);
+            this.flowLayoutPanel1.Controls.Add(this.lblYear);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(446, 31);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(320, 27);
             this.flowLayoutPanel1.TabIndex = 11;
-            // 
-            // txtundergoingExaminationDate
-            // 
-            this.txtundergoingExaminationDate.Location = new System.Drawing.Point(3, 3);
-            this.txtundergoingExaminationDate.Mask = "##/##/####";
-            this.txtundergoingExaminationDate.Name = "txtundergoingExaminationDate";
-            this.txtundergoingExaminationDate.Size = new System.Drawing.Size(100, 20);
-            this.txtundergoingExaminationDate.TabIndex = 49;
-            this.txtundergoingExaminationDate.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePrompt;
-            // 
-            // label84
-            // 
-            this.label84.Location = new System.Drawing.Point(109, 0);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(107, 24);
-            this.label84.TabIndex = 48;
-            this.label84.Text = "Day/month/year:";
-            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // rjLabel80
             // 
@@ -10276,6 +10270,33 @@
             this.cbRestrictedMobilityNo.TabStop = true;
             this.cbRestrictedMobilityNo.UseVisualStyleBackColor = true;
             // 
+            // lblDay
+            // 
+            this.lblDay.Location = new System.Drawing.Point(3, 0);
+            this.lblDay.Name = "lblDay";
+            this.lblDay.Size = new System.Drawing.Size(100, 23);
+            this.lblDay.TabIndex = 0;
+            this.lblDay.Text = "Day:";
+            this.lblDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMonth
+            // 
+            this.lblMonth.Location = new System.Drawing.Point(109, 0);
+            this.lblMonth.Name = "lblMonth";
+            this.lblMonth.Size = new System.Drawing.Size(100, 23);
+            this.lblMonth.TabIndex = 1;
+            this.lblMonth.Text = "Month:";
+            this.lblMonth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblYear
+            // 
+            this.lblYear.Location = new System.Drawing.Point(215, 0);
+            this.lblYear.Name = "lblYear";
+            this.lblYear.Size = new System.Drawing.Size(100, 23);
+            this.lblYear.TabIndex = 2;
+            this.lblYear.Text = "Year:";
+            this.lblYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FrmPanama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -10418,7 +10439,6 @@
             this.tableLayoutPanel52.ResumeLayout(false);
             this.tableLayoutPanel52.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.flowLayoutPanel5.ResumeLayout(false);
@@ -11323,8 +11343,6 @@
         public System.Windows.Forms.TextBox txtResultID;
         private System.Windows.Forms.RadioButton rbTypeOfShipOther;
         private System.Windows.Forms.MaskedTextBox txtCividTestDate;
-        private System.Windows.Forms.MaskedTextBox txtundergoingExaminationDate;
-        private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.MaskedTextBox txtEZGPerformed;
         private System.Windows.Forms.MaskedTextBox txtXrayPerformed;
@@ -11365,5 +11383,8 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel61;
         private System.Windows.Forms.RadioButton cbRestrictedMobilityYes;
         private System.Windows.Forms.RadioButton cbRestrictedMobilityNo;
+        private System.Windows.Forms.Label lblDay;
+        private System.Windows.Forms.Label lblMonth;
+        private System.Windows.Forms.Label lblYear;
     }
 }
