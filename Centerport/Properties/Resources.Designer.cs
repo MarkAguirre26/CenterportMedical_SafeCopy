@@ -263,6 +263,36 @@ namespace MedicalManagementSoftware.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap left_1 {
+            get {
+                object obj = ResourceManager.GetObject("left_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap left_11 {
+            get {
+                object obj = ResourceManager.GetObject("left_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap left_button_first {
+            get {
+                object obj = ResourceManager.GetObject("left_button_first", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logout {
             get {
                 object obj = ResourceManager.GetObject("logout", resourceCulture);
@@ -446,16 +476,6 @@ namespace MedicalManagementSoftware.Properties {
         internal static System.Drawing.Bitmap ultrasound {
             get {
                 object obj = ResourceManager.GetObject("ultrasound", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WIN_20230212_14_23_48_Pro {
-            get {
-                object obj = ResourceManager.GetObject("WIN_20230212_14_23_48_Pro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

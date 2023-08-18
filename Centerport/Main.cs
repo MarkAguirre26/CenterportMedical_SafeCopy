@@ -171,7 +171,7 @@ namespace MedicalManagementSoftware
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            
+
 
             VisitQueue();
 
@@ -206,7 +206,7 @@ namespace MedicalManagementSoftware
         }
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            
+
             CountTotalPatient();
             PatientProfile();
 
@@ -238,12 +238,12 @@ namespace MedicalManagementSoftware
         }
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-            
+
             ShowLaboratory();
-           
+
 
         }
-   
+
 
         void ShowLaboratory()
         {
@@ -259,7 +259,7 @@ namespace MedicalManagementSoftware
             else
             {
                 (Application.OpenForms["frm_lab"] as frm_lab).BringToFront();
-                
+
             }
         }
 
@@ -278,14 +278,14 @@ namespace MedicalManagementSoftware
             else
             {
                 (Application.OpenForms["Frm_Immunology"] as Frm_Immunology).BringToFront();
-               
+
             }
         }
-      
+
 
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
-            
+
 
 
             ShowLandBase();
@@ -316,7 +316,7 @@ namespace MedicalManagementSoftware
 
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
-            
+
             showSeabase();
 
         }
@@ -342,7 +342,7 @@ namespace MedicalManagementSoftware
         }
         private void toolStripButton10_Click(object sender, EventArgs e)
         {
-            
+
             ShowMLC();
         }
 
@@ -350,7 +350,7 @@ namespace MedicalManagementSoftware
         {
             if ((Application.OpenForms["frm_Seafarer_MLC"] as frm_Seafarer_MLC) == null)
             {
-                MedCertificate = false;    
+                MedCertificate = false;
                 Cursor.Current = Cursors.WaitCursor;
                 frm_Seafarer_MLC med = new frm_Seafarer_MLC(this);
                 med.MdiParent = this;
@@ -360,7 +360,7 @@ namespace MedicalManagementSoftware
             {
                 (Application.OpenForms["frm_Seafarer_MLC"] as frm_Seafarer_MLC).BringToFront();
 
-               
+
             }
         }
 
@@ -369,7 +369,7 @@ namespace MedicalManagementSoftware
         {
             if ((Application.OpenForms["FrmPanama"] as FrmPanama) == null)
             {
-                MedCertificate = false;        
+                MedCertificate = false;
                 Cursor.Current = Cursors.WaitCursor;
                 FrmPanama panama = new FrmPanama(this);
                 panama.MdiParent = this;
@@ -379,7 +379,7 @@ namespace MedicalManagementSoftware
             {
                 (Application.OpenForms["FrmPanama"] as FrmPanama).BringToFront();
 
-              
+
             }
         }
 
@@ -387,7 +387,7 @@ namespace MedicalManagementSoftware
 
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
-          
+
             showUltrasound();
         }
 
@@ -412,7 +412,7 @@ namespace MedicalManagementSoftware
         }
         private void toolStripButton7_Click(object sender, EventArgs e)
         {
-           
+
             ShowXray();
         }
 
@@ -437,7 +437,7 @@ namespace MedicalManagementSoftware
         }
         private void toolStripButton8_Click(object sender, EventArgs e)
         {
-            
+
             showHIV();
         }
 
@@ -462,7 +462,7 @@ namespace MedicalManagementSoftware
         }
         private void toolStripButton9_Click(object sender, EventArgs e)
         {
-            
+
             showPyschoEval();
         }
 
@@ -1296,7 +1296,7 @@ namespace MedicalManagementSoftware
         public void Search_landbase()
         {
 
-            Cursor.Current = Cursors.WaitCursor;           
+            Cursor.Current = Cursors.WaitCursor;
             frm_Landbase.newLandbase = false;
             frm_search_Land frm_land = new frm_search_Land(this);
             frm_land.ShowDialog();
@@ -2253,7 +2253,7 @@ namespace MedicalManagementSoftware
             {
 
                 searchTumor();
-              
+
 
 
             }
@@ -2602,7 +2602,7 @@ namespace MedicalManagementSoftware
         {
             //this.Close();
             //Open Login View
-       
+
             Login loginView = new Login(this);
             loginView.Dock = DockStyle.Fill;
             this.Controls.Add(loginView);
@@ -2712,7 +2712,7 @@ namespace MedicalManagementSoftware
 
         private void stripButton_Immunology_Click(object sender, EventArgs e)
         {
-            
+
             showImmunology();
         }
 
@@ -2762,7 +2762,7 @@ namespace MedicalManagementSoftware
 
         private void tsPanamaSave_Click(object sender, EventArgs e)
         {
-            savePanama(); 
+            savePanama();
         }
 
         public void savePanama()
@@ -2808,11 +2808,63 @@ namespace MedicalManagementSoftware
             }
         }
 
+        private void toolStripButton1_Click_3(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is FrmPanama)
+            {
+                Cursor.Current = Cursors.WaitCursor;
+
+                (Application.OpenForms["FrmPanama"] as FrmPanama).tabNavigator(0);
+
+            }
+        }
+
+        private void toolStripButton2_Click_2(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is FrmPanama)
+            {
+                Cursor.Current = Cursors.WaitCursor;
+                int i = (Application.OpenForms["FrmPanama"] as FrmPanama).tabControl1.SelectedIndex;
+                if (i != 0)
+                {
+                    (Application.OpenForms["FrmPanama"] as FrmPanama).tabNavigator(i - 1);
+                }
+
+
+            }
+        }
+
+        private void toolStripButton3_Click_2(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is FrmPanama)
+            {
+                Cursor.Current = Cursors.WaitCursor;
+                int i = (Application.OpenForms["FrmPanama"] as FrmPanama).tabControl1.SelectedIndex;
+                if (i != 7)
+                {
+                    (Application.OpenForms["FrmPanama"] as FrmPanama).tabNavigator(i + 1);
+                }
+
+                //
+            }
+        }
+
+        private void toolStripButton4_Click_2(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is FrmPanama)
+            {
+                Cursor.Current = Cursors.WaitCursor;
+
+                (Application.OpenForms["FrmPanama"] as FrmPanama).tabNavigator(7);
+
+            }
+        }
 
 
 
 
-       
+
+
 
     }
 }

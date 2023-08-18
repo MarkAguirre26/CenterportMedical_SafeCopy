@@ -181,7 +181,7 @@ namespace MedicalManagementSoftware
             model.Reason2 = txtOtherDiagnosticComment2.Text;
             model.Reason3 = txtOtherDiagnosticComment3.Text;
             model.Reason4 = txtOtherDiagnosticComment4.Text;
-           
+
             model.FirForLookOut = getRadioButtonValue(rbFitForLookOut);
             model.NotFirForLookOut = getRadioButtonValue(rbNonFitForLookOut);
 
@@ -202,7 +202,7 @@ namespace MedicalManagementSoftware
 
             model.VisualReqiuredYes = getRadioButtonValue(rbVisualAidYes);
             model.VisualReqiuredNo = getRadioButtonValue(rbVisualAidRequiredNo);
-          
+
             model.Restriction1 = txtAssessmentComment1.Text;
             model.Restriction2 = txtAssessmentComment2.Text;
             model.Restriction3 = txtAssessmentComment3.Text;
@@ -621,8 +621,8 @@ namespace MedicalManagementSoftware
             model.Xray = getCheckBoxValue(cbXray);
             model.XrayPerformed = txtXrayPerformed.Text;
             model.XrayObservation = txtXrayObservation.Text;
-           
-            model.Ekg = getCheckBoxValue(cbEkg);  
+
+            model.Ekg = getCheckBoxValue(cbEkg);
             model.EkgObservation = txtEkgObservation.Text;
             return model;
         }
@@ -801,7 +801,7 @@ namespace MedicalManagementSoftware
             txtIssuedMonth.Text = "00";
             txtIssuedYear.Text = "00";
 
-            txtXrayPerformed.Text ="00/00/0000";
+            txtXrayPerformed.Text = "00/00/0000";
             txtEZGPerformed.Text = "00/00/0000";
 
 
@@ -835,7 +835,7 @@ namespace MedicalManagementSoftware
             setRadioButtonValue(cbDoyouSmokeYes, cbDoyouSmokeNo, "No");
             setRadioButtonValue(cbSurgeriesYes, cbSurgeriesNo, "No");
             setRadioButtonValue(cbInfectiousYes, cbInfectiousNo, "No");
-            setRadioButtonValue(cbDizzinessFaintingYes, cbDizzinessFaintingNo, "No");          
+            setRadioButtonValue(cbDizzinessFaintingYes, cbDizzinessFaintingNo, "No");
             setRadioButtonValue(cbLossofconsciousnessYes, cbLossofconsciousnessNo, "No");
             setRadioButtonValue(cbPsychiatricProblemYes, cbPsychiatricProblemNo, "No");
             setRadioButtonValue(cbDepressionYes, cbDepressionNo, "No");
@@ -843,7 +843,7 @@ namespace MedicalManagementSoftware
             setRadioButtonValue(cbLossofmemoryYes, cbLossofmemoryNo, "No");
             setRadioButtonValue(cbBalanceProblemsYes, cbBalanceProblemsNo, "No");
             setRadioButtonValue(cbSevereHeadAchesYes, cbSevereHeadAchesNo, "No");
-       
+
 
 
             setRadioButtonValue(cbRestrictedMobilityYes, cbRestrictedMobilityNo, "No");
@@ -851,7 +851,7 @@ namespace MedicalManagementSoftware
             setRadioButtonValue(cbAmputationYes, cbAmputationNo, "No");
             setRadioButtonValue(cbFracturesDislocationYes, cbFracturesDislocationNo, "No");
             setRadioButtonValue(cbCovidYes, cbCovidNo, "No");
-       
+
             setRadioButtonValue(cbRepatriatedYes, cbRepatriatedNo, "No");
             setRadioButtonValue(cbHospitalizedYes, cbHospitalizedNo, "No");
 
@@ -879,7 +879,7 @@ namespace MedicalManagementSoftware
             setRadioButtonValue(cbHernias, cbHerniasNo, "Yes");
             setRadioButtonValue(cbAnus, cbAnusNo, "Yes");
             setRadioButtonValue(cbGu, cbGuNo, "Yes");
-          
+
 
             setRadioButtonValue(cbUpper, cbUpperNo, "Yes");
             setRadioButtonValue(cbSpine, cbSpineNo, "Yes");
@@ -1015,9 +1015,9 @@ namespace MedicalManagementSoftware
 
             //dtEkg.Value = DateTime.Now;
             //checkBox110.Checked = false;
-           
 
-          
+
+
 
 
             //dtUndergoingExamination.Value = DateTime.Now;
@@ -2640,7 +2640,7 @@ namespace MedicalManagementSoftware
 
 
                 var i = db.sp_Seabase_Recomendation(txtResultID.Text).FirstOrDefault();
-                
+
 
 
                 rbWithRestrictions.Checked = true;
@@ -2666,14 +2666,14 @@ namespace MedicalManagementSoftware
                 {
                     rbNonFitForLookOut.Checked = true;
                     rbWithRestrictions.Checked = false;
-                    rbFitForLookOut.Checked = false;                   
+                    rbFitForLookOut.Checked = false;
                     rbWithOutRestrictions.Checked = false;
                     //txtAssessmentComment1.Text = "";
 
 
                 }
 
-                
+
 
 
                 string deck_srvc_flag_ = i.deck_srvc_flag.ToString();
@@ -2681,7 +2681,7 @@ namespace MedicalManagementSoftware
                 string t_engine_srvc_flag_ = i.catering_srvc_flag.ToString();
                 string t_other_srvc_flag_ = i.other_srvc_flag.ToString();
 
-                
+
 
 
                 if (deck_srvc_flag_ == "Y")
@@ -3150,7 +3150,7 @@ namespace MedicalManagementSoftware
                 {
 
 
-                  
+
 
                     string[] undergoingExaminationDate = i.fitness_date.ToString().Split('/');
                     lblDayWitness.Text = "Day: " + undergoingExaminationDate[0].ToString();
@@ -3166,7 +3166,7 @@ namespace MedicalManagementSoftware
                     lblYearWitness.Text = "Year:";
 
                 }
-
+                //
 
 
 
@@ -3542,7 +3542,10 @@ namespace MedicalManagementSoftware
 
 
 
-
+        public void tabNavigator(int index)
+        {
+            tabControl1.SelectedIndex = index;
+        }
 
 
         private void txtResultID_TextChanged(object sender, EventArgs e)
