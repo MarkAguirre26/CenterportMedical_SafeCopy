@@ -44,6 +44,7 @@
             this.btnForward = new System.Windows.Forms.Button();
             this.btnLastPage = new System.Windows.Forms.Button();
             this.lblLoading = new System.Windows.Forms.Label();
+            this.cmdPrint = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Viewer1
@@ -67,7 +68,7 @@
             // 
             this.btn_page8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page8.Location = new System.Drawing.Point(539, 660);
+            this.btn_page8.Location = new System.Drawing.Point(525, 660);
             this.btn_page8.Name = "btn_page8";
             this.btn_page8.Size = new System.Drawing.Size(29, 30);
             this.btn_page8.TabIndex = 37;
@@ -79,7 +80,7 @@
             // 
             this.btn_page7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page7.Location = new System.Drawing.Point(510, 660);
+            this.btn_page7.Location = new System.Drawing.Point(496, 660);
             this.btn_page7.Name = "btn_page7";
             this.btn_page7.Size = new System.Drawing.Size(29, 30);
             this.btn_page7.TabIndex = 36;
@@ -91,7 +92,7 @@
             // 
             this.btn_page6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page6.Location = new System.Drawing.Point(481, 660);
+            this.btn_page6.Location = new System.Drawing.Point(467, 660);
             this.btn_page6.Name = "btn_page6";
             this.btn_page6.Size = new System.Drawing.Size(29, 30);
             this.btn_page6.TabIndex = 35;
@@ -103,7 +104,7 @@
             // 
             this.btn_page2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page2.Location = new System.Drawing.Point(365, 660);
+            this.btn_page2.Location = new System.Drawing.Point(351, 660);
             this.btn_page2.Name = "btn_page2";
             this.btn_page2.Size = new System.Drawing.Size(29, 30);
             this.btn_page2.TabIndex = 34;
@@ -115,7 +116,7 @@
             // 
             this.btn_page3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page3.Location = new System.Drawing.Point(394, 660);
+            this.btn_page3.Location = new System.Drawing.Point(380, 660);
             this.btn_page3.Name = "btn_page3";
             this.btn_page3.Size = new System.Drawing.Size(29, 30);
             this.btn_page3.TabIndex = 33;
@@ -127,7 +128,7 @@
             // 
             this.btn_page4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page4.Location = new System.Drawing.Point(423, 660);
+            this.btn_page4.Location = new System.Drawing.Point(409, 660);
             this.btn_page4.Name = "btn_page4";
             this.btn_page4.Size = new System.Drawing.Size(29, 30);
             this.btn_page4.TabIndex = 32;
@@ -139,7 +140,7 @@
             // 
             this.btn_page5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page5.Location = new System.Drawing.Point(452, 660);
+            this.btn_page5.Location = new System.Drawing.Point(438, 660);
             this.btn_page5.Name = "btn_page5";
             this.btn_page5.Size = new System.Drawing.Size(29, 30);
             this.btn_page5.TabIndex = 31;
@@ -151,7 +152,7 @@
             // 
             this.btn_page1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page1.Location = new System.Drawing.Point(336, 660);
+            this.btn_page1.Location = new System.Drawing.Point(322, 660);
             this.btn_page1.Name = "btn_page1";
             this.btn_page1.Size = new System.Drawing.Size(29, 30);
             this.btn_page1.TabIndex = 30;
@@ -180,7 +181,7 @@
             // 
             this.btnFirstPage.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnFirstPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFirstPage.Location = new System.Drawing.Point(276, 660);
+            this.btnFirstPage.Location = new System.Drawing.Point(262, 660);
             this.btnFirstPage.Name = "btnFirstPage";
             this.btnFirstPage.Size = new System.Drawing.Size(29, 30);
             this.btnFirstPage.TabIndex = 0;
@@ -192,7 +193,7 @@
             // 
             this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Location = new System.Drawing.Point(305, 660);
+            this.btnBack.Location = new System.Drawing.Point(291, 660);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(29, 30);
             this.btnBack.TabIndex = 1;
@@ -204,7 +205,7 @@
             // 
             this.btnForward.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnForward.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnForward.Location = new System.Drawing.Point(570, 660);
+            this.btnForward.Location = new System.Drawing.Point(556, 660);
             this.btnForward.Name = "btnForward";
             this.btnForward.Size = new System.Drawing.Size(29, 30);
             this.btnForward.TabIndex = 2;
@@ -216,7 +217,7 @@
             // 
             this.btnLastPage.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnLastPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLastPage.Location = new System.Drawing.Point(599, 660);
+            this.btnLastPage.Location = new System.Drawing.Point(585, 660);
             this.btnLastPage.Name = "btnLastPage";
             this.btnLastPage.Size = new System.Drawing.Size(29, 30);
             this.btnLastPage.TabIndex = 3;
@@ -237,11 +238,25 @@
             this.lblLoading.Text = "Loading...";
             this.lblLoading.Visible = false;
             // 
+            // cmdPrint
+            // 
+            this.cmdPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.cmdPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdPrint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cmdPrint.Location = new System.Drawing.Point(7, 660);
+            this.cmdPrint.Name = "cmdPrint";
+            this.cmdPrint.Size = new System.Drawing.Size(95, 30);
+            this.cmdPrint.TabIndex = 40;
+            this.cmdPrint.Text = "Print";
+            this.cmdPrint.UseVisualStyleBackColor = true;
+            this.cmdPrint.Click += new System.EventHandler(this.cmdPrint_Click);
+            // 
             // FrmPanamaReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 702);
+            this.Controls.Add(this.cmdPrint);
             this.Controls.Add(this.btnForward);
             this.Controls.Add(this.btnLastPage);
             this.Controls.Add(this.btnFirstPage);
@@ -285,5 +300,6 @@
         private System.Windows.Forms.Button btnForward;
         private System.Windows.Forms.Button btnLastPage;
         private System.Windows.Forms.Label lblLoading;
+        private System.Windows.Forms.Button cmdPrint;
     }
 }
