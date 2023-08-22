@@ -106,7 +106,7 @@
             // 
             this.btn_page2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page2.Location = new System.Drawing.Point(178, 3);
+            this.btn_page2.Location = new System.Drawing.Point(73, 3);
             this.btn_page2.Name = "btn_page2";
             this.btn_page2.Size = new System.Drawing.Size(29, 30);
             this.btn_page2.TabIndex = 34;
@@ -118,7 +118,7 @@
             // 
             this.btn_page3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page3.Location = new System.Drawing.Point(143, 3);
+            this.btn_page3.Location = new System.Drawing.Point(108, 3);
             this.btn_page3.Name = "btn_page3";
             this.btn_page3.Size = new System.Drawing.Size(29, 30);
             this.btn_page3.TabIndex = 33;
@@ -130,7 +130,7 @@
             // 
             this.btn_page4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page4.Location = new System.Drawing.Point(108, 3);
+            this.btn_page4.Location = new System.Drawing.Point(178, 3);
             this.btn_page4.Name = "btn_page4";
             this.btn_page4.Size = new System.Drawing.Size(29, 30);
             this.btn_page4.TabIndex = 32;
@@ -142,7 +142,7 @@
             // 
             this.btn_page5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page5.Location = new System.Drawing.Point(73, 3);
+            this.btn_page5.Location = new System.Drawing.Point(143, 3);
             this.btn_page5.Name = "btn_page5";
             this.btn_page5.Size = new System.Drawing.Size(29, 30);
             this.btn_page5.TabIndex = 31;
@@ -258,10 +258,10 @@
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.btnForward);
             this.flowLayoutPanel1.Controls.Add(this.btn_page1);
+            this.flowLayoutPanel1.Controls.Add(this.btn_page2);
+            this.flowLayoutPanel1.Controls.Add(this.btn_page3);
             this.flowLayoutPanel1.Controls.Add(this.btn_page5);
             this.flowLayoutPanel1.Controls.Add(this.btn_page4);
-            this.flowLayoutPanel1.Controls.Add(this.btn_page3);
-            this.flowLayoutPanel1.Controls.Add(this.btn_page2);
             this.flowLayoutPanel1.Controls.Add(this.btn_page6);
             this.flowLayoutPanel1.Controls.Add(this.btn_page7);
             this.flowLayoutPanel1.Controls.Add(this.btn_page8);

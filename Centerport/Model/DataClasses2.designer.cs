@@ -567,13 +567,6 @@ namespace MedicalManagementSoftware.Model
 			return ((ISingleResult<PanamaSightSelectResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Panama_patient")]
-		public ISingleResult<Panama_patientResult> Panama_patient([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(20)")] string papin)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin);
-			return ((ISingleResult<Panama_patientResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Panama_SeaMLC")]
 		public ISingleResult<Panama_SeaMLCResult> Panama_SeaMLC([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="VarChar(20)")] string iD)
 		{
@@ -586,6 +579,13 @@ namespace MedicalManagementSoftware.Model
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, resultMainUID);
 			return ((ISingleResult<PanamaClinicalDataSelectResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Panama_patient")]
+		public ISingleResult<Panama_patientResult> Panama_patient([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(20)")] string papin)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin);
+			return ((ISingleResult<Panama_patientResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -14253,338 +14253,6 @@ namespace MedicalManagementSoftware.Model
 		}
 	}
 	
-	public partial class Panama_patientResult
-	{
-		
-		private string _papin;
-		
-		private string _Fullname;
-		
-		private string _HomeAddress;
-		
-		private string _Department;
-		
-		private string _position;
-		
-		private string _gender;
-		
-		private string _birthdate;
-		
-		private string _PassportSeamanBookNo;
-		
-		private string _RhTyping;
-		
-		private string _LookOutDuties;
-		
-		private string _EmergencyDuties;
-		
-		private string _TypeOfShip;
-		
-		private string _TradeArea;
-		
-		private string _specimen_no;
-		
-		private string _fitness_date;
-		
-		private string _pathologist;
-		
-		private string _valid_until;
-		
-		private string _resultid;
-		
-		public Panama_patientResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_papin", DbType="VarChar(50)")]
-		public string papin
-		{
-			get
-			{
-				return this._papin;
-			}
-			set
-			{
-				if ((this._papin != value))
-				{
-					this._papin = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fullname", DbType="VarChar(153) NOT NULL", CanBeNull=false)]
-		public string Fullname
-		{
-			get
-			{
-				return this._Fullname;
-			}
-			set
-			{
-				if ((this._Fullname != value))
-				{
-					this._Fullname = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HomeAddress", DbType="VarChar(152) NOT NULL", CanBeNull=false)]
-		public string HomeAddress
-		{
-			get
-			{
-				return this._HomeAddress;
-			}
-			set
-			{
-				if ((this._HomeAddress != value))
-				{
-					this._HomeAddress = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Department", DbType="VarChar(20)")]
-		public string Department
-		{
-			get
-			{
-				return this._Department;
-			}
-			set
-			{
-				if ((this._Department != value))
-				{
-					this._Department = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_position", DbType="VarChar(50)")]
-		public string position
-		{
-			get
-			{
-				return this._position;
-			}
-			set
-			{
-				if ((this._position != value))
-				{
-					this._position = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gender", DbType="VarChar(10)")]
-		public string gender
-		{
-			get
-			{
-				return this._gender;
-			}
-			set
-			{
-				if ((this._gender != value))
-				{
-					this._gender = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_birthdate", DbType="VarChar(50)")]
-		public string birthdate
-		{
-			get
-			{
-				return this._birthdate;
-			}
-			set
-			{
-				if ((this._birthdate != value))
-				{
-					this._birthdate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PassportSeamanBookNo", DbType="VarChar(103) NOT NULL", CanBeNull=false)]
-		public string PassportSeamanBookNo
-		{
-			get
-			{
-				return this._PassportSeamanBookNo;
-			}
-			set
-			{
-				if ((this._PassportSeamanBookNo != value))
-				{
-					this._PassportSeamanBookNo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RhTyping", DbType="VarChar(100)")]
-		public string RhTyping
-		{
-			get
-			{
-				return this._RhTyping;
-			}
-			set
-			{
-				if ((this._RhTyping != value))
-				{
-					this._RhTyping = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LookOutDuties", DbType="VarChar(100)")]
-		public string LookOutDuties
-		{
-			get
-			{
-				return this._LookOutDuties;
-			}
-			set
-			{
-				if ((this._LookOutDuties != value))
-				{
-					this._LookOutDuties = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmergencyDuties", DbType="VarChar(100)")]
-		public string EmergencyDuties
-		{
-			get
-			{
-				return this._EmergencyDuties;
-			}
-			set
-			{
-				if ((this._EmergencyDuties != value))
-				{
-					this._EmergencyDuties = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TypeOfShip", DbType="VarChar(100)")]
-		public string TypeOfShip
-		{
-			get
-			{
-				return this._TypeOfShip;
-			}
-			set
-			{
-				if ((this._TypeOfShip != value))
-				{
-					this._TypeOfShip = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TradeArea", DbType="VarChar(100)")]
-		public string TradeArea
-		{
-			get
-			{
-				return this._TradeArea;
-			}
-			set
-			{
-				if ((this._TradeArea != value))
-				{
-					this._TradeArea = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_specimen_no", DbType="VarChar(254)")]
-		public string specimen_no
-		{
-			get
-			{
-				return this._specimen_no;
-			}
-			set
-			{
-				if ((this._specimen_no != value))
-				{
-					this._specimen_no = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fitness_date", DbType="VarChar(254)")]
-		public string fitness_date
-		{
-			get
-			{
-				return this._fitness_date;
-			}
-			set
-			{
-				if ((this._fitness_date != value))
-				{
-					this._fitness_date = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_pathologist", DbType="VarChar(254)")]
-		public string pathologist
-		{
-			get
-			{
-				return this._pathologist;
-			}
-			set
-			{
-				if ((this._pathologist != value))
-				{
-					this._pathologist = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_valid_until", DbType="VarChar(254)")]
-		public string valid_until
-		{
-			get
-			{
-				return this._valid_until;
-			}
-			set
-			{
-				if ((this._valid_until != value))
-				{
-					this._valid_until = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_resultid", DbType="VarChar(254)")]
-		public string resultid
-		{
-			get
-			{
-				return this._resultid;
-			}
-			set
-			{
-				if ((this._resultid != value))
-				{
-					this._resultid = value;
-				}
-			}
-		}
-	}
-	
 	public partial class Panama_SeaMLCResult
 	{
 		
@@ -14938,6 +14606,356 @@ namespace MedicalManagementSoftware.Model
 				if ((this._NEAR_OSJ_U != value))
 				{
 					this._NEAR_OSJ_U = value;
+				}
+			}
+		}
+	}
+	
+	public partial class Panama_patientResult
+	{
+		
+		private string _papin;
+		
+		private string _Fullname;
+		
+		private string _HomeAddress;
+		
+		private string _Department;
+		
+		private string _position;
+		
+		private string _gender;
+		
+		private string _birthdate;
+		
+		private string _PassportSeamanBookNo;
+		
+		private string _RhTyping;
+		
+		private string _LookOutDuties;
+		
+		private string _EmergencyDuties;
+		
+		private string _TypeOfShip;
+		
+		private string _TradeArea;
+		
+		private string _specimen_no;
+		
+		private string _fitness_date;
+		
+		private string _result_date;
+		
+		private string _pathologist;
+		
+		private string _valid_until;
+		
+		private string _resultid;
+		
+		public Panama_patientResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_papin", DbType="VarChar(50)")]
+		public string papin
+		{
+			get
+			{
+				return this._papin;
+			}
+			set
+			{
+				if ((this._papin != value))
+				{
+					this._papin = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fullname", DbType="VarChar(153) NOT NULL", CanBeNull=false)]
+		public string Fullname
+		{
+			get
+			{
+				return this._Fullname;
+			}
+			set
+			{
+				if ((this._Fullname != value))
+				{
+					this._Fullname = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HomeAddress", DbType="VarChar(152) NOT NULL", CanBeNull=false)]
+		public string HomeAddress
+		{
+			get
+			{
+				return this._HomeAddress;
+			}
+			set
+			{
+				if ((this._HomeAddress != value))
+				{
+					this._HomeAddress = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Department", DbType="VarChar(20)")]
+		public string Department
+		{
+			get
+			{
+				return this._Department;
+			}
+			set
+			{
+				if ((this._Department != value))
+				{
+					this._Department = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_position", DbType="VarChar(50)")]
+		public string position
+		{
+			get
+			{
+				return this._position;
+			}
+			set
+			{
+				if ((this._position != value))
+				{
+					this._position = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gender", DbType="VarChar(10)")]
+		public string gender
+		{
+			get
+			{
+				return this._gender;
+			}
+			set
+			{
+				if ((this._gender != value))
+				{
+					this._gender = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_birthdate", DbType="VarChar(50)")]
+		public string birthdate
+		{
+			get
+			{
+				return this._birthdate;
+			}
+			set
+			{
+				if ((this._birthdate != value))
+				{
+					this._birthdate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PassportSeamanBookNo", DbType="VarChar(103) NOT NULL", CanBeNull=false)]
+		public string PassportSeamanBookNo
+		{
+			get
+			{
+				return this._PassportSeamanBookNo;
+			}
+			set
+			{
+				if ((this._PassportSeamanBookNo != value))
+				{
+					this._PassportSeamanBookNo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RhTyping", DbType="VarChar(100)")]
+		public string RhTyping
+		{
+			get
+			{
+				return this._RhTyping;
+			}
+			set
+			{
+				if ((this._RhTyping != value))
+				{
+					this._RhTyping = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LookOutDuties", DbType="VarChar(100)")]
+		public string LookOutDuties
+		{
+			get
+			{
+				return this._LookOutDuties;
+			}
+			set
+			{
+				if ((this._LookOutDuties != value))
+				{
+					this._LookOutDuties = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmergencyDuties", DbType="VarChar(100)")]
+		public string EmergencyDuties
+		{
+			get
+			{
+				return this._EmergencyDuties;
+			}
+			set
+			{
+				if ((this._EmergencyDuties != value))
+				{
+					this._EmergencyDuties = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TypeOfShip", DbType="VarChar(100)")]
+		public string TypeOfShip
+		{
+			get
+			{
+				return this._TypeOfShip;
+			}
+			set
+			{
+				if ((this._TypeOfShip != value))
+				{
+					this._TypeOfShip = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TradeArea", DbType="VarChar(100)")]
+		public string TradeArea
+		{
+			get
+			{
+				return this._TradeArea;
+			}
+			set
+			{
+				if ((this._TradeArea != value))
+				{
+					this._TradeArea = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_specimen_no", DbType="VarChar(254)")]
+		public string specimen_no
+		{
+			get
+			{
+				return this._specimen_no;
+			}
+			set
+			{
+				if ((this._specimen_no != value))
+				{
+					this._specimen_no = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fitness_date", DbType="VarChar(254)")]
+		public string fitness_date
+		{
+			get
+			{
+				return this._fitness_date;
+			}
+			set
+			{
+				if ((this._fitness_date != value))
+				{
+					this._fitness_date = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_result_date", DbType="VarChar(254)")]
+		public string result_date
+		{
+			get
+			{
+				return this._result_date;
+			}
+			set
+			{
+				if ((this._result_date != value))
+				{
+					this._result_date = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_pathologist", DbType="VarChar(254)")]
+		public string pathologist
+		{
+			get
+			{
+				return this._pathologist;
+			}
+			set
+			{
+				if ((this._pathologist != value))
+				{
+					this._pathologist = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_valid_until", DbType="VarChar(254)")]
+		public string valid_until
+		{
+			get
+			{
+				return this._valid_until;
+			}
+			set
+			{
+				if ((this._valid_until != value))
+				{
+					this._valid_until = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_resultid", DbType="VarChar(254)")]
+		public string resultid
+		{
+			get
+			{
+				return this._resultid;
+			}
+			set
+			{
+				if ((this._resultid != value))
+				{
+					this._resultid = value;
 				}
 			}
 		}

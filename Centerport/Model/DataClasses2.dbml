@@ -1226,29 +1226,6 @@
       <Column Name="Comments" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.Panama_patient" Method="Panama_patient">
-    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(20)" />
-    <ElementType Name="Panama_patientResult">
-      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Fullname" Type="System.String" DbType="VarChar(153) NOT NULL" CanBeNull="false" />
-      <Column Name="HomeAddress" Type="System.String" DbType="VarChar(152) NOT NULL" CanBeNull="false" />
-      <Column Name="Department" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="birthdate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="PassportSeamanBookNo" Type="System.String" DbType="VarChar(103) NOT NULL" CanBeNull="false" />
-      <Column Name="RhTyping" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="LookOutDuties" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="EmergencyDuties" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="TypeOfShip" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="TradeArea" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="specimen_no" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="fitness_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="pathologist" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="valid_until" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.Panama_SeaMLC" Method="Panama_SeaMLC">
     <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
     <ElementType Name="Panama_SeaMLCResult">
@@ -1277,6 +1254,30 @@
       <Column Name="FAR_OS_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
       <Column Name="NEAR_ODJ_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
       <Column Name="NEAR_OSJ_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Panama_patient" Method="Panama_patient">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="Panama_patientResult">
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Fullname" Type="System.String" DbType="VarChar(153) NOT NULL" CanBeNull="false" />
+      <Column Name="HomeAddress" Type="System.String" DbType="VarChar(152) NOT NULL" CanBeNull="false" />
+      <Column Name="Department" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="birthdate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PassportSeamanBookNo" Type="System.String" DbType="VarChar(103) NOT NULL" CanBeNull="false" />
+      <Column Name="RhTyping" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LookOutDuties" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EmergencyDuties" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TypeOfShip" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TradeArea" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="specimen_no" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="fitness_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="pathologist" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="valid_until" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>
