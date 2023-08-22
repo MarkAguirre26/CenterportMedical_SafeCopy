@@ -408,13 +408,13 @@ namespace MedicalManagementSoftware
 
 
 
-            char delimiter = '/';
-            string[] substrings = fitnessdate.Split(delimiter);
+            //char delimiter = '/';
+            //string[] substrings = fitnessdate.Split(delimiter);
 
 
-            model.Day = substrings[0];
-            model.Month = substrings[1];
-            model.Year = substrings[2];
+            model.Day = lblDay.Text.Replace("Day:","");
+            model.Month = lblMonth.Text.Replace("Month:", "");
+            model.Year = lblYear.Text.Replace("Year:","");
 
             return model;
         }
@@ -2456,12 +2456,17 @@ namespace MedicalManagementSoftware
                 try
                 {
                     string[] undergoingExaminationDate = i.result_date.ToString().Split('/');
-                    lblDay.Text = "Day: " + undergoingExaminationDate[1].ToString();
-                    lblMonth.Text = "Month: " + undergoingExaminationDate[0].ToString();
-                    lblYear.Text = "Year: " + undergoingExaminationDate[2].ToString();
+                    string d = undergoingExaminationDate[1].ToString();
+                    string m = undergoingExaminationDate[0].ToString();
+                    string y = undergoingExaminationDate[2].ToString();
 
-                    txtXrayPerformed.Text = i.result_date.ToString();
-                    txtEZGPerformed.Text = i.result_date.ToString();
+                    lblDay.Text = "Day: " + d;
+                    lblMonth.Text = "Month: " + m;
+                    lblYear.Text = "Year: " + y;
+
+
+                    txtXrayPerformed.Text = d + "/" + m + "/" + y;
+                    txtEZGPerformed.Text = d + "/" + m + "/" + y;
 
 
                 }

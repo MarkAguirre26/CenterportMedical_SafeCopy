@@ -505,9 +505,11 @@ namespace MedicalManagementSoftware.Report
                 page1.SetParameterValue("EmergencyDuties", page1Model.EmergencyDuties);
                 page1.SetParameterValue("TypeOfShip", page1Model.TypeOfShip);
                 page1.SetParameterValue("TradeArea", page1Model.TradeArea);
+
                 page1.SetParameterValue("Day", page1Model.Day);
                 page1.SetParameterValue("Month", page1Model.Month);
                 page1.SetParameterValue("Year", page1Model.Year);
+
                 page1.SetParameterValue("HighBloodPressure", page1Model.HighBloodPressure);
                 page1.SetParameterValue("Eyeproblem", page1Model.EyeProblem);
                 page1.SetParameterValue("EarNoseThroat", page1Model.EarNoseThroat);
