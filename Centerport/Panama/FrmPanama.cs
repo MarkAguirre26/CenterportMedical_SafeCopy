@@ -2134,14 +2134,10 @@ namespace MedicalManagementSoftware
                 txtPsaAbNormal.Text = i.PsaAbNormal;
                 txtPsaObservation.Text = i.PsaObservation;
 
-                setCheckBoxValue(cbXray, cbHidden, "Yes");
-
-                //validateDate(i.XrayDate, dtXrayDate, checkBox109);
-                //txtXrayPerformed.Text = fitnessdate;
+                setCheckBoxValue(cbXray, cbHidden, "Yes");         
                 txtXrayObservation.Text = i.XrayObservation;
                 setCheckBoxValue(cbEkg, cbHidden, "Yes");
-                //validateDate(i.Ekg, dtEkg, checkBox110);
-                //txtEZGPerformed.Text = fitnessdate;
+           
 
                 txtEkgObservation.Text = i.EkgObservation;
 
@@ -2284,7 +2280,7 @@ namespace MedicalManagementSoftware
                 txtDefectiveRightEye.Text = sight.DefectiveRightEye;
                 txtDefectiveLeftEye.Text = sight.DefectiveLeftEye;
                 txtSightComment.Text = "ISHIHARA 38";
-
+                
 
             }
 
@@ -2438,10 +2434,7 @@ namespace MedicalManagementSoftware
             if (i != null)
             {
 
-
-
-
-                txtFullaname.Text = i.Fullname;
+                                txtFullaname.Text = i.Fullname;
                 txtPersonundergoingExamination.Text = i.Fullname;
                 txtUndergoingExamination.Text = i.Fullname;
                 txtNumberOfMedicalCertificate.Text = i.specimen_no;
@@ -2453,10 +2446,10 @@ namespace MedicalManagementSoftware
 
 
 
-                    string[] undergoingExaminationDate = i.fitness_date.ToString().Split('/');
-                    lblDayWitness.Text = "Day: " + undergoingExaminationDate[1].ToString();
-                    lblMonthWitness.Text = "Month: " + undergoingExaminationDate[0].ToString();
-                    lblYearWitness.Text = "Year:" + undergoingExaminationDate[2].ToString();
+                    string[] result_date = i.result_date.ToString().Split('/');
+                    lblDayWitness.Text = "Day: " + result_date[1].ToString();
+                    lblMonthWitness.Text = "Month: " + result_date[0].ToString();
+                    lblYearWitness.Text = "Year:" + result_date[2].ToString();
 
                 }
                 catch (Exception)
