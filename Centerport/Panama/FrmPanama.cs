@@ -412,9 +412,9 @@ namespace MedicalManagementSoftware
             //string[] substrings = fitnessdate.Split(delimiter);
 
 
-            model.Day = lblDay.Text.Replace("Day:","");
+            model.Day = lblDay.Text.Replace("Day:", "");
             model.Month = lblMonth.Text.Replace("Month:", "");
-            model.Year = lblYear.Text.Replace("Year:","");
+            model.Year = lblYear.Text.Replace("Year:", "");
 
             return model;
         }
@@ -498,6 +498,18 @@ namespace MedicalManagementSoftware
             model._2kLeftEar = txt2kLeftEar.Text;
             model._3kRightEar = txt3kRightEar.Text;
             model._3kLeftEar = txt3kLeftEar.Text;
+
+            model._4kRightEar = txt4kRight.Text;
+            model._4kLeftEar = txt4kLeft.Text;
+            model._6kRightEar = rxr6kRight.Text;
+            model._6kLeftEar = txt6kLeft.Text;
+            model._8kRightEar = txt8kRight.Text;
+            model._8kLeftEar = txt8kLeft.Text;
+            model._9kRightEar = txt9kRight.Text;
+            model._9kLeftEar = txt9kLeft.Text;
+
+
+
             model.HeadYes = getCheckBoxValue(cbHeadYes);
             model.MouthYes = getCheckBoxValue(cbMouthYes);
             model.Dental = getCheckBoxValue(cbDental);
@@ -1010,6 +1022,10 @@ namespace MedicalManagementSoftware
 
 
 
+
+
+
+
             //dtXrayDate.Value = DateTime.Now;
             //checkBox109.Checked = false;
 
@@ -1081,7 +1097,7 @@ namespace MedicalManagementSoftware
         }
 
 
-     
+
         public void savePanamaRecord()
         {
             string uID = UID.Generate();
@@ -1139,7 +1155,7 @@ namespace MedicalManagementSoftware
             }
         }
 
-       
+
 
 
         private void rbCoastal_CheckedChanged(object sender, EventArgs e)
@@ -1652,7 +1668,15 @@ namespace MedicalManagementSoftware
                 txt500HzLeftEar.Text,
                 txt1kLeftEar.Text,
                 txt2kLeftEar.Text,
-                txt3kLeftEar.Text);
+                txt3kLeftEar.Text,
+                txt4kRight.Text,
+                txt4kLeft.Text,
+                rxr6kRight.Text,
+                txt6kLeft.Text,
+                txt8kRight.Text,
+                txt8kLeft.Text,
+                txt9kRight.Text,
+                txt9kLeft.Text);
 
         }
 
@@ -2265,6 +2289,15 @@ namespace MedicalManagementSoftware
                 txt2kLeftEar.Text = hearing._2kLeftEar;
                 txt3kLeftEar.Text = hearing._3kLeftEar;
 
+                txt4kRight.Text = hearing._4kRight;
+                txt4kLeft.Text = hearing._4kleft;
+                rxr6kRight.Text = hearing._6kRight;
+                txt6kLeft.Text = hearing._6kLeft;
+                txt8kRight.Text = hearing._8kRight;
+                txt8kLeft.Text = hearing._8kLeft;
+                txt9kRight.Text = hearing._9kRight;
+                txt9kLeft.Text = hearing._9kLeft;
+
             }
 
 
@@ -2502,7 +2535,7 @@ namespace MedicalManagementSoftware
 
                 try
                 {
-                    string[] issuedDate = i.fitness_date.ToString().Split('/');
+                    string[] issuedDate = i.result_date.ToString().Split('/');
                     txtIssuedDay.Text = issuedDate[1].ToString();
                     txtIssuedMonth.Text = issuedDate[0].ToString();
                     txtIssuedYear.Text = issuedDate[2].ToString();

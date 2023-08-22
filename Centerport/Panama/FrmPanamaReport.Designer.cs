@@ -70,7 +70,7 @@
             // 
             this.btn_page8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page8.Location = new System.Drawing.Point(283, 3);
+            this.btn_page8.Location = new System.Drawing.Point(318, 3);
             this.btn_page8.Name = "btn_page8";
             this.btn_page8.Size = new System.Drawing.Size(29, 30);
             this.btn_page8.TabIndex = 37;
@@ -82,7 +82,7 @@
             // 
             this.btn_page7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page7.Location = new System.Drawing.Point(248, 3);
+            this.btn_page7.Location = new System.Drawing.Point(283, 3);
             this.btn_page7.Name = "btn_page7";
             this.btn_page7.Size = new System.Drawing.Size(29, 30);
             this.btn_page7.TabIndex = 36;
@@ -94,7 +94,7 @@
             // 
             this.btn_page6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page6.Location = new System.Drawing.Point(213, 3);
+            this.btn_page6.Location = new System.Drawing.Point(248, 3);
             this.btn_page6.Name = "btn_page6";
             this.btn_page6.Size = new System.Drawing.Size(29, 30);
             this.btn_page6.TabIndex = 35;
@@ -106,7 +106,7 @@
             // 
             this.btn_page2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page2.Location = new System.Drawing.Point(73, 3);
+            this.btn_page2.Location = new System.Drawing.Point(108, 3);
             this.btn_page2.Name = "btn_page2";
             this.btn_page2.Size = new System.Drawing.Size(29, 30);
             this.btn_page2.TabIndex = 34;
@@ -118,7 +118,7 @@
             // 
             this.btn_page3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page3.Location = new System.Drawing.Point(108, 3);
+            this.btn_page3.Location = new System.Drawing.Point(143, 3);
             this.btn_page3.Name = "btn_page3";
             this.btn_page3.Size = new System.Drawing.Size(29, 30);
             this.btn_page3.TabIndex = 33;
@@ -142,7 +142,7 @@
             // 
             this.btn_page5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page5.Location = new System.Drawing.Point(143, 3);
+            this.btn_page5.Location = new System.Drawing.Point(213, 3);
             this.btn_page5.Name = "btn_page5";
             this.btn_page5.Size = new System.Drawing.Size(29, 30);
             this.btn_page5.TabIndex = 31;
@@ -154,7 +154,7 @@
             // 
             this.btn_page1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page1.Location = new System.Drawing.Point(38, 3);
+            this.btn_page1.Location = new System.Drawing.Point(73, 3);
             this.btn_page1.Name = "btn_page1";
             this.btn_page1.Size = new System.Drawing.Size(29, 30);
             this.btn_page1.TabIndex = 30;
@@ -183,7 +183,7 @@
             // 
             this.btnFirstPage.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnFirstPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFirstPage.Location = new System.Drawing.Point(353, 3);
+            this.btnFirstPage.Location = new System.Drawing.Point(3, 3);
             this.btnFirstPage.Name = "btnFirstPage";
             this.btnFirstPage.Size = new System.Drawing.Size(29, 30);
             this.btnFirstPage.TabIndex = 0;
@@ -195,7 +195,7 @@
             // 
             this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Location = new System.Drawing.Point(318, 3);
+            this.btnBack.Location = new System.Drawing.Point(38, 3);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(29, 30);
             this.btnBack.TabIndex = 1;
@@ -207,7 +207,7 @@
             // 
             this.btnForward.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnForward.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnForward.Location = new System.Drawing.Point(3, 3);
+            this.btnForward.Location = new System.Drawing.Point(353, 3);
             this.btnForward.Name = "btnForward";
             this.btnForward.Size = new System.Drawing.Size(29, 30);
             this.btnForward.TabIndex = 2;
@@ -256,17 +256,17 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.btnForward);
+            this.flowLayoutPanel1.Controls.Add(this.btnFirstPage);
+            this.flowLayoutPanel1.Controls.Add(this.btnBack);
             this.flowLayoutPanel1.Controls.Add(this.btn_page1);
             this.flowLayoutPanel1.Controls.Add(this.btn_page2);
             this.flowLayoutPanel1.Controls.Add(this.btn_page3);
-            this.flowLayoutPanel1.Controls.Add(this.btn_page5);
             this.flowLayoutPanel1.Controls.Add(this.btn_page4);
+            this.flowLayoutPanel1.Controls.Add(this.btn_page5);
             this.flowLayoutPanel1.Controls.Add(this.btn_page6);
             this.flowLayoutPanel1.Controls.Add(this.btn_page7);
             this.flowLayoutPanel1.Controls.Add(this.btn_page8);
-            this.flowLayoutPanel1.Controls.Add(this.btnBack);
-            this.flowLayoutPanel1.Controls.Add(this.btnFirstPage);
+            this.flowLayoutPanel1.Controls.Add(this.btnForward);
             this.flowLayoutPanel1.Controls.Add(this.btnLastPage);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(224, 657);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";

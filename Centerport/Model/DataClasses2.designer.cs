@@ -327,52 +327,6 @@ namespace MedicalManagementSoftware.Model
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaMedicalExaminationSave")]
-		public int PanamaMedicalExaminationSave(
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Height", DbType="VarChar(100)")] string height, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Weight", DbType="VarChar(100)")] string weight, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="BMI", DbType="VarChar(100)")] string bMI, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Oxygen", DbType="VarChar(100)")] string oxygen, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="HeartRate", DbType="VarChar(100)")] string heartRate, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Respiratory", DbType="VarChar(100)")] string respiratory, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="BloodPressure", DbType="VarChar(100)")] string bloodPressure, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Diatolic", DbType="VarChar(100)")] string diatolic, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="UnaidedRightEyeDistant", DbType="VarChar(100)")] string unaidedRightEyeDistant, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="UnAidedLeftEyeDistant", DbType="VarChar(100)")] string unAidedLeftEyeDistant, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="UnAidedBonocularDistant", DbType="VarChar(100)")] string unAidedBonocularDistant, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AidedRightEyeDistant", DbType="VarChar(100)")] string aidedRightEyeDistant, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AidedLeftEyeDistant", DbType="VarChar(100)")] string aidedLeftEyeDistant, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AidedBinocularDistant", DbType="VarChar(100)")] string aidedBinocularDistant, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="UnaidedRightEyeShort", DbType="VarChar(100)")] string unaidedRightEyeShort, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="UnAidedLeftEyeShort", DbType="VarChar(100)")] string unAidedLeftEyeShort, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="UnAidedBonocularShort", DbType="VarChar(100)")] string unAidedBonocularShort, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AidedRightEyeShort", DbType="VarChar(100)")] string aidedRightEyeShort, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AidedLeftEyeShort", DbType="VarChar(100)")] string aidedLeftEyeShort, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AidedBinocularShort", DbType="VarChar(100)")] string aidedBinocularShort, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="NonTestedColorVision", DbType="VarChar(100)")] string nonTestedColorVision, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="NormalColorVision", DbType="VarChar(100)")] string normalColorVision, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="DoubtfulColorVision", DbType="VarChar(100)")] string doubtfulColorVision, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="DefectiveColorVision", DbType="VarChar(100)")] string defectiveColorVision, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="NormalRightEye", DbType="VarChar(100)")] string normalRightEye, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="NormalLeftEye", DbType="VarChar(100)")] string normalLeftEye, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="DefectiveRightEye", DbType="VarChar(100)")] string defectiveRightEye, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="DefectiveLeftEye", DbType="VarChar(100)")] string defectiveLeftEye, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Comments", DbType="VarChar(100)")] string comments, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="500HzRightEar", DbType="VarChar(100)")] string _500HzRightEar, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="1kRightEar", DbType="VarChar(100)")] string _1kRightEar, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="2kRightEar", DbType="VarChar(100)")] string _2kRightEar, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="3kRightEar", DbType="VarChar(100)")] string _3kRightEar, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="500HzLeftEar", DbType="VarChar(100)")] string _500HzLeftEar, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="1kLeftEar", DbType="VarChar(100)")] string _1kLeftEar, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="2kLeftEar", DbType="VarChar(100)")] string _2kLeftEar, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="3kLeftEar", DbType="VarChar(100)")] string _3kLeftEar)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, resultMainUID, height, weight, bMI, oxygen, heartRate, respiratory, bloodPressure, diatolic, unaidedRightEyeDistant, unAidedLeftEyeDistant, unAidedBonocularDistant, aidedRightEyeDistant, aidedLeftEyeDistant, aidedBinocularDistant, unaidedRightEyeShort, unAidedLeftEyeShort, unAidedBonocularShort, aidedRightEyeShort, aidedLeftEyeShort, aidedBinocularShort, nonTestedColorVision, normalColorVision, doubtfulColorVision, defectiveColorVision, normalRightEye, normalLeftEye, defectiveRightEye, defectiveLeftEye, comments, _500HzRightEar, _1kRightEar, _2kRightEar, _3kRightEar, _500HzLeftEar, _1kLeftEar, _2kLeftEar, _3kLeftEar);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaDiagnosticTestSave")]
 		public ISingleResult<PanamaDiagnosticTestSaveResult> PanamaDiagnosticTestSave(
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, 
@@ -539,13 +493,6 @@ namespace MedicalManagementSoftware.Model
 			return ((ISingleResult<PanamaExamineePersonalDeclarationSelectResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaHearingSelect")]
-		public ISingleResult<PanamaHearingSelectResult> PanamaHearingSelect([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, resultMainUID);
-			return ((ISingleResult<PanamaHearingSelectResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaPhysicalExplorationSelect")]
 		public ISingleResult<PanamaPhysicalExplorationSelectResult> PanamaPhysicalExplorationSelect([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultID", DbType="VarChar(100)")] string resultID)
 		{
@@ -586,6 +533,67 @@ namespace MedicalManagementSoftware.Model
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin);
 			return ((ISingleResult<Panama_patientResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaHearingSelect")]
+		public ISingleResult<PanamaHearingSelectResult> PanamaHearingSelect([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, resultMainUID);
+			return ((ISingleResult<PanamaHearingSelectResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaMedicalExaminationSave")]
+		public int PanamaMedicalExaminationSave(
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Height", DbType="VarChar(100)")] string height, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Weight", DbType="VarChar(100)")] string weight, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="BMI", DbType="VarChar(100)")] string bMI, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Oxygen", DbType="VarChar(100)")] string oxygen, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="HeartRate", DbType="VarChar(100)")] string heartRate, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Respiratory", DbType="VarChar(100)")] string respiratory, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="BloodPressure", DbType="VarChar(100)")] string bloodPressure, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Diatolic", DbType="VarChar(100)")] string diatolic, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="UnaidedRightEyeDistant", DbType="VarChar(100)")] string unaidedRightEyeDistant, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="UnAidedLeftEyeDistant", DbType="VarChar(100)")] string unAidedLeftEyeDistant, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="UnAidedBonocularDistant", DbType="VarChar(100)")] string unAidedBonocularDistant, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AidedRightEyeDistant", DbType="VarChar(100)")] string aidedRightEyeDistant, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AidedLeftEyeDistant", DbType="VarChar(100)")] string aidedLeftEyeDistant, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AidedBinocularDistant", DbType="VarChar(100)")] string aidedBinocularDistant, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="UnaidedRightEyeShort", DbType="VarChar(100)")] string unaidedRightEyeShort, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="UnAidedLeftEyeShort", DbType="VarChar(100)")] string unAidedLeftEyeShort, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="UnAidedBonocularShort", DbType="VarChar(100)")] string unAidedBonocularShort, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AidedRightEyeShort", DbType="VarChar(100)")] string aidedRightEyeShort, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AidedLeftEyeShort", DbType="VarChar(100)")] string aidedLeftEyeShort, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="AidedBinocularShort", DbType="VarChar(100)")] string aidedBinocularShort, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="NonTestedColorVision", DbType="VarChar(100)")] string nonTestedColorVision, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="NormalColorVision", DbType="VarChar(100)")] string normalColorVision, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="DoubtfulColorVision", DbType="VarChar(100)")] string doubtfulColorVision, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="DefectiveColorVision", DbType="VarChar(100)")] string defectiveColorVision, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="NormalRightEye", DbType="VarChar(100)")] string normalRightEye, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="NormalLeftEye", DbType="VarChar(100)")] string normalLeftEye, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="DefectiveRightEye", DbType="VarChar(100)")] string defectiveRightEye, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="DefectiveLeftEye", DbType="VarChar(100)")] string defectiveLeftEye, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Comments", DbType="VarChar(100)")] string comments, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="500HzRightEar", DbType="VarChar(100)")] string _500HzRightEar, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="1kRightEar", DbType="VarChar(100)")] string _1kRightEar, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="2kRightEar", DbType="VarChar(100)")] string _2kRightEar, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="3kRightEar", DbType="VarChar(100)")] string _3kRightEar, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="500HzLeftEar", DbType="VarChar(100)")] string _500HzLeftEar, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="1kLeftEar", DbType="VarChar(100)")] string _1kLeftEar, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="2kLeftEar", DbType="VarChar(100)")] string _2kLeftEar, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="3kLeftEar", DbType="VarChar(100)")] string _3kLeftEar, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="4kRight", DbType="VarChar(100)")] string _4kRight, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="4kLeft", DbType="VarChar(100)")] string _4kLeft, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="6kRight", DbType="VarChar(100)")] string _6kRight, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="6kLeft", DbType="VarChar(100)")] string _6kLeft, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="8kRight", DbType="VarChar(100)")] string _8kRight, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="8kLeft", DbType="VarChar(100)")] string _8kLeft, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="9kRight", DbType="VarChar(100)")] string _9kRight, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="9kLeft", DbType="VarChar(100)")] string _9kLeft)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, resultMainUID, height, weight, bMI, oxygen, heartRate, respiratory, bloodPressure, diatolic, unaidedRightEyeDistant, unAidedLeftEyeDistant, unAidedBonocularDistant, aidedRightEyeDistant, aidedLeftEyeDistant, aidedBinocularDistant, unaidedRightEyeShort, unAidedLeftEyeShort, unAidedBonocularShort, aidedRightEyeShort, aidedLeftEyeShort, aidedBinocularShort, nonTestedColorVision, normalColorVision, doubtfulColorVision, defectiveColorVision, normalRightEye, normalLeftEye, defectiveRightEye, defectiveLeftEye, comments, _500HzRightEar, _1kRightEar, _2kRightEar, _3kRightEar, _500HzLeftEar, _1kLeftEar, _2kLeftEar, _3kLeftEar, _4kRight, _4kLeft, _6kRight, _6kLeft, _8kRight, _8kLeft, _9kRight, _9kLeft);
+			return ((int)(result.ReturnValue));
 		}
 	}
 	
@@ -12637,194 +12645,6 @@ namespace MedicalManagementSoftware.Model
 		}
 	}
 	
-	public partial class PanamaHearingSelectResult
-	{
-		
-		private long _RecId;
-		
-		private string _ResultMainUID;
-		
-		private string @__500HzRightEar;
-		
-		private string @__1kRightEar;
-		
-		private string @__2kRightEar;
-		
-		private string @__3kRightEar;
-		
-		private string @__500HzLeftEar;
-		
-		private string @__1kLeftEar;
-		
-		private string @__2kLeftEar;
-		
-		private string @__3kLeftEar;
-		
-		public PanamaHearingSelectResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RecId", DbType="BigInt NOT NULL")]
-		public long RecId
-		{
-			get
-			{
-				return this._RecId;
-			}
-			set
-			{
-				if ((this._RecId != value))
-				{
-					this._RecId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ResultMainUID", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
-		public string ResultMainUID
-		{
-			get
-			{
-				return this._ResultMainUID;
-			}
-			set
-			{
-				if ((this._ResultMainUID != value))
-				{
-					this._ResultMainUID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[500HzRightEar]", Storage="__500HzRightEar", DbType="VarChar(100)")]
-		public string _500HzRightEar
-		{
-			get
-			{
-				return this.@__500HzRightEar;
-			}
-			set
-			{
-				if ((this.@__500HzRightEar != value))
-				{
-					this.@__500HzRightEar = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[1kRightEar]", Storage="__1kRightEar", DbType="VarChar(100)")]
-		public string _1kRightEar
-		{
-			get
-			{
-				return this.@__1kRightEar;
-			}
-			set
-			{
-				if ((this.@__1kRightEar != value))
-				{
-					this.@__1kRightEar = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[2kRightEar]", Storage="__2kRightEar", DbType="VarChar(100)")]
-		public string _2kRightEar
-		{
-			get
-			{
-				return this.@__2kRightEar;
-			}
-			set
-			{
-				if ((this.@__2kRightEar != value))
-				{
-					this.@__2kRightEar = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[3kRightEar]", Storage="__3kRightEar", DbType="VarChar(100)")]
-		public string _3kRightEar
-		{
-			get
-			{
-				return this.@__3kRightEar;
-			}
-			set
-			{
-				if ((this.@__3kRightEar != value))
-				{
-					this.@__3kRightEar = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[500HzLeftEar]", Storage="__500HzLeftEar", DbType="VarChar(100)")]
-		public string _500HzLeftEar
-		{
-			get
-			{
-				return this.@__500HzLeftEar;
-			}
-			set
-			{
-				if ((this.@__500HzLeftEar != value))
-				{
-					this.@__500HzLeftEar = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[1kLeftEar]", Storage="__1kLeftEar", DbType="VarChar(100)")]
-		public string _1kLeftEar
-		{
-			get
-			{
-				return this.@__1kLeftEar;
-			}
-			set
-			{
-				if ((this.@__1kLeftEar != value))
-				{
-					this.@__1kLeftEar = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[2kLeftEar]", Storage="__2kLeftEar", DbType="VarChar(100)")]
-		public string _2kLeftEar
-		{
-			get
-			{
-				return this.@__2kLeftEar;
-			}
-			set
-			{
-				if ((this.@__2kLeftEar != value))
-				{
-					this.@__2kLeftEar = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[3kLeftEar]", Storage="__3kLeftEar", DbType="VarChar(100)")]
-		public string _3kLeftEar
-		{
-			get
-			{
-				return this.@__3kLeftEar;
-			}
-			set
-			{
-				if ((this.@__3kLeftEar != value))
-				{
-					this.@__3kLeftEar = value;
-				}
-			}
-		}
-	}
-	
 	public partial class PanamaPhysicalExplorationSelectResult
 	{
 		
@@ -14956,6 +14776,338 @@ namespace MedicalManagementSoftware.Model
 				if ((this._resultid != value))
 				{
 					this._resultid = value;
+				}
+			}
+		}
+	}
+	
+	public partial class PanamaHearingSelectResult
+	{
+		
+		private long _RecId;
+		
+		private string _ResultMainUID;
+		
+		private string @__500HzRightEar;
+		
+		private string @__1kRightEar;
+		
+		private string @__2kRightEar;
+		
+		private string @__3kRightEar;
+		
+		private string @__500HzLeftEar;
+		
+		private string @__1kLeftEar;
+		
+		private string @__2kLeftEar;
+		
+		private string @__3kLeftEar;
+		
+		private string @__4kRight;
+		
+		private string @__4kleft;
+		
+		private string @__6kRight;
+		
+		private string @__6kLeft;
+		
+		private string @__8kRight;
+		
+		private string @__8kLeft;
+		
+		private string @__9kRight;
+		
+		private string @__9kLeft;
+		
+		public PanamaHearingSelectResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RecId", DbType="BigInt NOT NULL")]
+		public long RecId
+		{
+			get
+			{
+				return this._RecId;
+			}
+			set
+			{
+				if ((this._RecId != value))
+				{
+					this._RecId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ResultMainUID", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string ResultMainUID
+		{
+			get
+			{
+				return this._ResultMainUID;
+			}
+			set
+			{
+				if ((this._ResultMainUID != value))
+				{
+					this._ResultMainUID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[500HzRightEar]", Storage="__500HzRightEar", DbType="VarChar(100)")]
+		public string _500HzRightEar
+		{
+			get
+			{
+				return this.@__500HzRightEar;
+			}
+			set
+			{
+				if ((this.@__500HzRightEar != value))
+				{
+					this.@__500HzRightEar = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[1kRightEar]", Storage="__1kRightEar", DbType="VarChar(100)")]
+		public string _1kRightEar
+		{
+			get
+			{
+				return this.@__1kRightEar;
+			}
+			set
+			{
+				if ((this.@__1kRightEar != value))
+				{
+					this.@__1kRightEar = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[2kRightEar]", Storage="__2kRightEar", DbType="VarChar(100)")]
+		public string _2kRightEar
+		{
+			get
+			{
+				return this.@__2kRightEar;
+			}
+			set
+			{
+				if ((this.@__2kRightEar != value))
+				{
+					this.@__2kRightEar = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[3kRightEar]", Storage="__3kRightEar", DbType="VarChar(100)")]
+		public string _3kRightEar
+		{
+			get
+			{
+				return this.@__3kRightEar;
+			}
+			set
+			{
+				if ((this.@__3kRightEar != value))
+				{
+					this.@__3kRightEar = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[500HzLeftEar]", Storage="__500HzLeftEar", DbType="VarChar(100)")]
+		public string _500HzLeftEar
+		{
+			get
+			{
+				return this.@__500HzLeftEar;
+			}
+			set
+			{
+				if ((this.@__500HzLeftEar != value))
+				{
+					this.@__500HzLeftEar = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[1kLeftEar]", Storage="__1kLeftEar", DbType="VarChar(100)")]
+		public string _1kLeftEar
+		{
+			get
+			{
+				return this.@__1kLeftEar;
+			}
+			set
+			{
+				if ((this.@__1kLeftEar != value))
+				{
+					this.@__1kLeftEar = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[2kLeftEar]", Storage="__2kLeftEar", DbType="VarChar(100)")]
+		public string _2kLeftEar
+		{
+			get
+			{
+				return this.@__2kLeftEar;
+			}
+			set
+			{
+				if ((this.@__2kLeftEar != value))
+				{
+					this.@__2kLeftEar = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[3kLeftEar]", Storage="__3kLeftEar", DbType="VarChar(100)")]
+		public string _3kLeftEar
+		{
+			get
+			{
+				return this.@__3kLeftEar;
+			}
+			set
+			{
+				if ((this.@__3kLeftEar != value))
+				{
+					this.@__3kLeftEar = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[4kRight]", Storage="__4kRight", DbType="VarChar(1)")]
+		public string _4kRight
+		{
+			get
+			{
+				return this.@__4kRight;
+			}
+			set
+			{
+				if ((this.@__4kRight != value))
+				{
+					this.@__4kRight = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[4kleft]", Storage="__4kleft", DbType="VarChar(1)")]
+		public string _4kleft
+		{
+			get
+			{
+				return this.@__4kleft;
+			}
+			set
+			{
+				if ((this.@__4kleft != value))
+				{
+					this.@__4kleft = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[6kRight]", Storage="__6kRight", DbType="VarChar(1)")]
+		public string _6kRight
+		{
+			get
+			{
+				return this.@__6kRight;
+			}
+			set
+			{
+				if ((this.@__6kRight != value))
+				{
+					this.@__6kRight = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[6kLeft]", Storage="__6kLeft", DbType="VarChar(1)")]
+		public string _6kLeft
+		{
+			get
+			{
+				return this.@__6kLeft;
+			}
+			set
+			{
+				if ((this.@__6kLeft != value))
+				{
+					this.@__6kLeft = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[8kRight]", Storage="__8kRight", DbType="VarChar(1)")]
+		public string _8kRight
+		{
+			get
+			{
+				return this.@__8kRight;
+			}
+			set
+			{
+				if ((this.@__8kRight != value))
+				{
+					this.@__8kRight = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[8kLeft]", Storage="__8kLeft", DbType="VarChar(1)")]
+		public string _8kLeft
+		{
+			get
+			{
+				return this.@__8kLeft;
+			}
+			set
+			{
+				if ((this.@__8kLeft != value))
+				{
+					this.@__8kLeft = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[9kRight]", Storage="__9kRight", DbType="VarChar(1)")]
+		public string _9kRight
+		{
+			get
+			{
+				return this.@__9kRight;
+			}
+			set
+			{
+				if ((this.@__9kRight != value))
+				{
+					this.@__9kRight = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[9kLeft]", Storage="__9kLeft", DbType="VarChar(1)")]
+		public string _9kLeft
+		{
+			get
+			{
+				return this.@__9kLeft;
+			}
+			set
+			{
+				if ((this.@__9kLeft != value))
+				{
+					this.@__9kLeft = value;
 				}
 			}
 		}

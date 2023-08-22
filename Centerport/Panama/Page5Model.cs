@@ -17,6 +17,23 @@ namespace MedicalManagementSoftware.Panama
         public string _2kLeftEar { get; set; }
         public string _3kRightEar { get; set; }
         public string _3kLeftEar { get; set; }
+
+        public string _4kRightEar { get; set; }
+        public string _4kLeftEar { get; set; }
+
+        public string _6kRightEar { get; set; }
+        public string _6kLeftEar { get; set; }
+
+
+
+        public string _8kRightEar { get; set; }
+        public string _8kLeftEar { get; set; }
+
+
+        public string _9kRightEar { get; set; }
+        public string _9kLeftEar { get; set; }
+
+
         public string HeadYes { get; set; }
         public string MouthYes { get; set; }
         public string Dental { get; set; }
