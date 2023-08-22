@@ -1022,6 +1022,22 @@ namespace MedicalManagementSoftware
 
 
 
+            txt500HzRightEar.Text = "20";
+            txt500HzLeftEar.Text = "20";
+            txt1kRightEar.Text = "20";
+            txt1kLeftEar.Text = "20";
+            txt2kRightEar.Text = "20";
+            txt2kLeftEar.Text = "20";
+            txt3kRightEar.Text = "30";
+            txt3kLeftEar.Text = "40";
+            txt4kRight.Text = "40";
+            txt4kLeft.Text = "50";
+            rxr6kRight.Text = "50";
+            txt6kLeft.Text = "70";
+            txt8kRight.Text = "";
+            txt8kLeft.Text = "";
+            txt9kRight.Text = "";
+            txt9kLeft.Text = "";
 
 
 

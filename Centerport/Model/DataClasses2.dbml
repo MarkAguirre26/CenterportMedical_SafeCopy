@@ -623,72 +623,6 @@
     <Parameter Name="TradeArea" Parameter="tradeArea" Type="System.String" DbType="VarChar(100)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.PanamaExamineeSave" Method="PanamaExamineeSave">
-    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="HighBloodPressure" Parameter="highBloodPressure" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Eyeproblem" Parameter="eyeproblem" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="EarNoseThroat" Parameter="earNoseThroat" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="HeartSurgery" Parameter="heartSurgery" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Varicoseveins" Parameter="varicoseveins" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="AsthmaBronchitis" Parameter="asthmaBronchitis" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="BloodDisorder" Parameter="bloodDisorder" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Diabetes" Parameter="diabetes" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ThyroidProblem" Parameter="thyroidProblem" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DigestiveDisorders" Parameter="digestiveDisorders" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="KidneyDisorders" Parameter="kidneyDisorders" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="SkinProblem" Parameter="skinProblem" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Allergies" Parameter="allergies" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Epilipsy" Parameter="epilipsy" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="SickleCell" Parameter="sickleCell" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Herinas" Parameter="herinas" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="GenitalDisorders" Parameter="genitalDisorders" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Pregnancy" Parameter="pregnancy" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Sleepproblem" Parameter="sleepproblem" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DoyouSmoke" Parameter="doyouSmoke" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Surgeries" Parameter="surgeries" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Infectious" Parameter="infectious" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DizzinessFainting" Parameter="dizzinessFainting" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Lossofconsciousness" Parameter="lossofconsciousness" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="PsychiatricProblem" Parameter="psychiatricProblem" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Depression" Parameter="depression" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Attemptedsuicide" Parameter="attemptedsuicide" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Lossofmemory" Parameter="lossofmemory" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="BalanceProblems" Parameter="balanceProblems" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="SevereHeadAches" Parameter="severeHeadAches" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Vasculardisease" Parameter="vasculardisease" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="RestrictedMobility" Parameter="restrictedMobility" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="BackJointProblem" Parameter="backJointProblem" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Amputation" Parameter="amputation" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="FracturesDislocation" Parameter="fracturesDislocation" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Covid19" Parameter="covid19" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Repatriated" Parameter="repatriated" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Hospitalized" Parameter="hospitalized" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="SeaDuty" Parameter="seaDuty" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Revoke" Parameter="revoke" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ConsiderDisease" Parameter="considerDisease" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="FitToPerformDuries" Parameter="fitToPerformDuries" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="AllergicToAnyMedication" Parameter="allergicToAnyMedication" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="AlternativeSupliment" Parameter="alternativeSupliment" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="AlternativeSuplimentComment1" Parameter="alternativeSuplimentComment1" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="TakenMedications" Parameter="takenMedications" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="TakenMedicationsComment1" Parameter="takenMedicationsComment1" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Comment1" Parameter="comment1" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Comment2" Parameter="comment2" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Comment3" Parameter="comment3" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Comment4" Parameter="comment4" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Comment5" Parameter="comment5" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="AlternativeSuplimentComment2" Parameter="alternativeSuplimentComment2" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="AlternativeSuplimentComment3" Parameter="alternativeSuplimentComment3" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="AlternativeSuplimentComment4" Parameter="alternativeSuplimentComment4" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="AlternativeSuplimentComment5" Parameter="alternativeSuplimentComment5" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="TakenMedicationsComment2" Parameter="takenMedicationsComment2" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="TakenMedicationsComment3" Parameter="takenMedicationsComment3" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="TakenMedicationsComment4" Parameter="takenMedicationsComment4" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="TakenMedicationsComment5" Parameter="takenMedicationsComment5" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="AlternativeSuplimentComment6" Parameter="alternativeSuplimentComment6" Type="System.String" DbType="VarChar(100)" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.PanamaResultMainSave" Method="PanamaResultMainSave">
     <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
@@ -1245,6 +1179,72 @@
       <Column Name="[9kRight]" Member="_9kRight" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
       <Column Name="[9kLeft]" Member="_9kLeft" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.PanamaExamineeSave" Method="PanamaExamineeSave">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="HighBloodPressure" Parameter="highBloodPressure" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Eyeproblem" Parameter="eyeproblem" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="EarNoseThroat" Parameter="earNoseThroat" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="HeartSurgery" Parameter="heartSurgery" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Varicoseveins" Parameter="varicoseveins" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AsthmaBronchitis" Parameter="asthmaBronchitis" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="BloodDisorder" Parameter="bloodDisorder" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Diabetes" Parameter="diabetes" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ThyroidProblem" Parameter="thyroidProblem" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DigestiveDisorders" Parameter="digestiveDisorders" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="KidneyDisorders" Parameter="kidneyDisorders" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SkinProblem" Parameter="skinProblem" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Allergies" Parameter="allergies" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Epilipsy" Parameter="epilipsy" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SickleCell" Parameter="sickleCell" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Herinas" Parameter="herinas" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="GenitalDisorders" Parameter="genitalDisorders" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Pregnancy" Parameter="pregnancy" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Sleepproblem" Parameter="sleepproblem" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DoyouSmoke" Parameter="doyouSmoke" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Surgeries" Parameter="surgeries" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Infectious" Parameter="infectious" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DizzinessFainting" Parameter="dizzinessFainting" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Lossofconsciousness" Parameter="lossofconsciousness" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="PsychiatricProblem" Parameter="psychiatricProblem" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Depression" Parameter="depression" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Attemptedsuicide" Parameter="attemptedsuicide" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Lossofmemory" Parameter="lossofmemory" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="BalanceProblems" Parameter="balanceProblems" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SevereHeadAches" Parameter="severeHeadAches" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Vasculardisease" Parameter="vasculardisease" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="RestrictedMobility" Parameter="restrictedMobility" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="BackJointProblem" Parameter="backJointProblem" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Amputation" Parameter="amputation" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="FracturesDislocation" Parameter="fracturesDislocation" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Covid19" Parameter="covid19" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Repatriated" Parameter="repatriated" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Hospitalized" Parameter="hospitalized" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SeaDuty" Parameter="seaDuty" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Revoke" Parameter="revoke" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ConsiderDisease" Parameter="considerDisease" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="FitToPerformDuries" Parameter="fitToPerformDuries" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AllergicToAnyMedication" Parameter="allergicToAnyMedication" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AlternativeSupliment" Parameter="alternativeSupliment" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AlternativeSuplimentComment1" Parameter="alternativeSuplimentComment1" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="TakenMedications" Parameter="takenMedications" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="TakenMedicationsComment1" Parameter="takenMedicationsComment1" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Comment1" Parameter="comment1" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Comment2" Parameter="comment2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Comment3" Parameter="comment3" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Comment4" Parameter="comment4" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Comment5" Parameter="comment5" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AlternativeSuplimentComment2" Parameter="alternativeSuplimentComment2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AlternativeSuplimentComment3" Parameter="alternativeSuplimentComment3" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AlternativeSuplimentComment4" Parameter="alternativeSuplimentComment4" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AlternativeSuplimentComment5" Parameter="alternativeSuplimentComment5" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="TakenMedicationsComment2" Parameter="takenMedicationsComment2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="TakenMedicationsComment3" Parameter="takenMedicationsComment3" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="TakenMedicationsComment4" Parameter="takenMedicationsComment4" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="TakenMedicationsComment5" Parameter="takenMedicationsComment5" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AlternativeSuplimentComment6" Parameter="alternativeSuplimentComment6" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.PanamaMedicalExaminationSave" Method="PanamaMedicalExaminationSave">
     <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />

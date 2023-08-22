@@ -726,6 +726,19 @@ namespace MedicalManagementSoftware.Report
                 page5.SetParameterValue("_2kLeftEar", page5Model._2kLeftEar);
                 page5.SetParameterValue("_3kRightEar", page5Model._3kRightEar);
                 page5.SetParameterValue("_3kLeftEar", page5Model._3kLeftEar);
+
+                page5.SetParameterValue("4kr", page5Model._4kRightEar);
+                page5.SetParameterValue("4kl", page5Model._4kLeftEar);
+
+                page5.SetParameterValue("6kr", page5Model._6kRightEar);
+                page5.SetParameterValue("6kl", page5Model._6kLeftEar);
+
+                page5.SetParameterValue("8kr", page5Model._8kRightEar);
+                page5.SetParameterValue("8kl", page5Model._8kLeftEar);
+
+                page5.SetParameterValue("9kr", page5Model._9kRightEar);
+                page5.SetParameterValue("9kl", page5Model._9kLeftEar);
+
                 page5.SetParameterValue("HeadYes", page5Model.HeadYes);
                 page5.SetParameterValue("MouthYes", page5Model.MouthYes);
                 page5.SetParameterValue("Dental", page5Model.Dental);

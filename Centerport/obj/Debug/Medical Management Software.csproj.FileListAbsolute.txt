@@ -422,8 +422,6 @@ D:\Files\Devs\Project\Centerport\SafeCopy\MedicalAndPanama-main\Centerport\obj\D
 D:\Files\Devs\Project\Centerport\SafeCopy\MedicalAndPanama-main\Centerport\obj\Debug\Medical Management Software.exe.manifest
 D:\Files\Devs\Project\Centerport\SafeCopy\MedicalAndPanama-main\Centerport\obj\Debug\Medical Management Software.application
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\Medical Management Software.exe.config
-D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.exe
-D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.pdb
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\SqlServerTypes\x64\msvcr100.dll
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\SqlServerTypes\x64\SqlServerSpatial110.dll
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\SqlServerTypes\x86\msvcr100.dll
@@ -527,3 +525,5 @@ D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.TrustInfo.xml
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.exe.manifest
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.application
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.exe
+D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.pdb
