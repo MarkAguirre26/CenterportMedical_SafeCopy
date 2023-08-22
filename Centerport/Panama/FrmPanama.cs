@@ -999,7 +999,7 @@ namespace MedicalManagementSoftware
 
             txtEkgObservation.Text = "NORMAL";
 
-            txtSarsCovidByAntigens.Text = "";
+
 
             txtNameOfWitness.Text = "MARIA VICTORIA T. NOHAY";
 
@@ -1059,8 +1059,6 @@ namespace MedicalManagementSoftware
 
 
 
-            txtSarsCovidByPcr.Text = "";
-            txtSarsCovidByAntigens.Text = "";
 
 
             txtOtherDiagnosticTest.Text = "";

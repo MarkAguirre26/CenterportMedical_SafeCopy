@@ -816,6 +816,9 @@
             this.cbHemogram = new System.Windows.Forms.CheckBox();
             this.label72 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.txtAssessmentComment5 = new System.Windows.Forms.TextBox();
+            this.txtAssessmentComment4 = new System.Windows.Forms.TextBox();
+            this.txtEZGPerformed = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -955,6 +958,7 @@
             this.flowLayoutPanel9.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.tableLayoutPanel22.SuspendLayout();
             this.SuspendLayout();
             // 
             // backgroundWorker1
@@ -9900,7 +9904,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(906, 817);
+            this.tabPage7.Size = new System.Drawing.Size(906, 790);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Page 7";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -9908,6 +9912,8 @@
             // panel9
             // 
             this.panel9.AutoScroll = true;
+            this.panel9.Controls.Add(this.txtAssessmentComment5);
+            this.panel9.Controls.Add(this.txtAssessmentComment4);
             this.panel9.Controls.Add(this.tableLayoutPanel22);
             this.panel9.Controls.Add(this.flowLayoutPanel13);
             this.panel9.Controls.Add(this.flowLayoutPanel10);
@@ -9933,7 +9939,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(3, 3);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(900, 811);
+            this.panel9.Size = new System.Drawing.Size(900, 784);
             this.panel9.TabIndex = 0;
             // 
             // flowLayoutPanel13
@@ -10067,11 +10073,12 @@
             this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.20755F));
             this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 235F));
             this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(19, 23);
+            this.tableLayoutPanel22.Controls.Add(this.txtEZGPerformed, 2, 0);
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(19, 54);
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 1;
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(699, 42);
+            this.tableLayoutPanel22.Size = new System.Drawing.Size(699, 29);
             this.tableLayoutPanel22.TabIndex = 58;
             // 
             // label43
@@ -10145,6 +10152,29 @@
             this.label15.Size = new System.Drawing.Size(247, 16);
             this.label15.TabIndex = 35;
             this.label15.Text = "iii. HEARING: (Tonal Audiometric)";
+            // 
+            // txtAssessmentComment5
+            // 
+            this.txtAssessmentComment5.Font = new System.Drawing.Font("Verdana", 9.5F);
+            this.txtAssessmentComment5.Location = new System.Drawing.Point(14, 722);
+            this.txtAssessmentComment5.Name = "txtAssessmentComment5";
+            this.txtAssessmentComment5.Size = new System.Drawing.Size(704, 23);
+            this.txtAssessmentComment5.TabIndex = 60;
+            // 
+            // txtAssessmentComment4
+            // 
+            this.txtAssessmentComment4.Font = new System.Drawing.Font("Verdana", 9.5F);
+            this.txtAssessmentComment4.Location = new System.Drawing.Point(14, 697);
+            this.txtAssessmentComment4.Name = "txtAssessmentComment4";
+            this.txtAssessmentComment4.Size = new System.Drawing.Size(704, 23);
+            this.txtAssessmentComment4.TabIndex = 59;
+            // 
+            // txtEZGPerformed
+            // 
+            this.txtEZGPerformed.Location = new System.Drawing.Point(239, 4);
+            this.txtEZGPerformed.Name = "txtEZGPerformed";
+            this.txtEZGPerformed.Size = new System.Drawing.Size(224, 20);
+            this.txtEZGPerformed.TabIndex = 0;
             // 
             // FrmPanama
             // 
@@ -10423,6 +10453,8 @@
             this.tabPage8.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.tableLayoutPanel22.ResumeLayout(false);
+            this.tableLayoutPanel22.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -11217,5 +11249,8 @@
         private System.Windows.Forms.CheckBox cbHemogram;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtAssessmentComment5;
+        private System.Windows.Forms.TextBox txtAssessmentComment4;
+        private System.Windows.Forms.TextBox txtEZGPerformed;
     }
 }
