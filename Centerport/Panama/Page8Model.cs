@@ -18,6 +18,9 @@ public string  IssuedDay { get; set; }
 public string  IssuedMonth { get; set; }
 public string  IssuedYear { get; set; }
 public string PhysicianName { get; set; }
+      public string NumberOfMedical { get; set; }
+
+      
 
 
 

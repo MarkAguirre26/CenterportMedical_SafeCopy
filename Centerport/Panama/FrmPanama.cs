@@ -168,6 +168,7 @@ namespace MedicalManagementSoftware
             model.IssuedMonth = txtIssuedMonth.Text;
             model.IssuedYear = txtIssuedYear.Text;
             model.PhysicianName = txtPhysicianName.Text;
+            model.NumberOfMedical = txtNumberOfMedicalCertificate.Text;
 
             return model;
         }

@@ -925,6 +925,9 @@ namespace MedicalManagementSoftware.Report
                 page8.SetParameterValue("IssuedMonth", page8Model.IssuedMonth);
                 page8.SetParameterValue("IssuedYear", page8Model.IssuedYear);
                 page8.SetParameterValue("PhysicianName", page8Model.PhysicianName);
+                page8.SetParameterValue("NumberOfMedical", page8Model.NumberOfMedical);
+
+                
                 Viewer1.ReportSource = page8;
 
                 
