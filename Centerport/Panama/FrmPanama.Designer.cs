@@ -303,9 +303,6 @@
             this.txt8kLeft = new System.Windows.Forms.TextBox();
             this.txt9kRight = new System.Windows.Forms.TextBox();
             this.txt9kLeft = new System.Windows.Forms.TextBox();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.rjLabel117 = new System.Windows.Forms.Label();
             this.rjLabel118 = new System.Windows.Forms.Label();
@@ -834,6 +831,10 @@
             this.tabPage6overlay = new MedicalManagementSoftware.Class.OverlayShadow();
             this.tabPage7overlay = new MedicalManagementSoftware.Class.OverlayShadow();
             this.tabPage8overlay = new MedicalManagementSoftware.Class.OverlayShadow();
+            this.txt4kheader = new System.Windows.Forms.TextBox();
+            this.txt6kHeader = new System.Windows.Forms.TextBox();
+            this.txt8kHeader = new System.Windows.Forms.TextBox();
+            this.txt9kHeader = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel51.SuspendLayout();
             this.flowLayoutPanel34.SuspendLayout();
             this.flowLayoutPanel33.SuspendLayout();
@@ -3934,12 +3935,12 @@
             this.tableLayoutPanel16.Controls.Add(this.rjLabel116, 1, 0);
             this.tableLayoutPanel16.Controls.Add(this.tableLayoutPanel17, 1, 1);
             this.tableLayoutPanel16.Controls.Add(this.tableLayoutPanel18, 0, 1);
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(10, 41);
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(10, 32);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 2;
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(611, 105);
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(611, 122);
             this.tableLayoutPanel16.TabIndex = 27;
             // 
             // rjLabel116
@@ -3986,9 +3987,10 @@
             this.tableLayoutPanel17.Controls.Add(this.txt8kLeft, 6, 2);
             this.tableLayoutPanel17.Controls.Add(this.txt9kRight, 7, 1);
             this.tableLayoutPanel17.Controls.Add(this.txt9kLeft, 7, 2);
-            this.tableLayoutPanel17.Controls.Add(this.label84, 4, 0);
-            this.tableLayoutPanel17.Controls.Add(this.label85, 5, 0);
-            this.tableLayoutPanel17.Controls.Add(this.label93, 6, 0);
+            this.tableLayoutPanel17.Controls.Add(this.txt4kheader, 4, 0);
+            this.tableLayoutPanel17.Controls.Add(this.txt6kHeader, 5, 0);
+            this.tableLayoutPanel17.Controls.Add(this.txt8kHeader, 6, 0);
+            this.tableLayoutPanel17.Controls.Add(this.txt9kHeader, 7, 0);
             this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel17.Location = new System.Drawing.Point(92, 36);
             this.tableLayoutPanel17.Name = "tableLayoutPanel17";
@@ -3996,7 +3998,7 @@
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(516, 66);
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(516, 83);
             this.tableLayoutPanel17.TabIndex = 1;
             // 
             // rjLabel119
@@ -4007,7 +4009,7 @@
             this.rjLabel119.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(129)))), ((int)(((byte)(132)))));
             this.rjLabel119.Location = new System.Drawing.Point(3, 0);
             this.rjLabel119.Name = "rjLabel119";
-            this.rjLabel119.Size = new System.Drawing.Size(55, 16);
+            this.rjLabel119.Size = new System.Drawing.Size(55, 26);
             this.rjLabel119.TabIndex = 0;
             this.rjLabel119.Text = "500 Hz";
             this.rjLabel119.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4020,7 +4022,7 @@
             this.rjLabel120.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(129)))), ((int)(((byte)(132)))));
             this.rjLabel120.Location = new System.Drawing.Point(64, 0);
             this.rjLabel120.Name = "rjLabel120";
-            this.rjLabel120.Size = new System.Drawing.Size(55, 16);
+            this.rjLabel120.Size = new System.Drawing.Size(55, 26);
             this.rjLabel120.TabIndex = 1;
             this.rjLabel120.Text = "1,000 Hz";
             this.rjLabel120.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4033,7 +4035,7 @@
             this.rjLabel121.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(129)))), ((int)(((byte)(132)))));
             this.rjLabel121.Location = new System.Drawing.Point(125, 0);
             this.rjLabel121.Name = "rjLabel121";
-            this.rjLabel121.Size = new System.Drawing.Size(55, 16);
+            this.rjLabel121.Size = new System.Drawing.Size(55, 26);
             this.rjLabel121.TabIndex = 2;
             this.rjLabel121.Text = "2,000 Hz";
             this.rjLabel121.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4046,105 +4048,105 @@
             this.rjLabel122.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(129)))), ((int)(((byte)(132)))));
             this.rjLabel122.Location = new System.Drawing.Point(186, 0);
             this.rjLabel122.Name = "rjLabel122";
-            this.rjLabel122.Size = new System.Drawing.Size(58, 16);
+            this.rjLabel122.Size = new System.Drawing.Size(58, 26);
             this.rjLabel122.TabIndex = 3;
             this.rjLabel122.Text = "3000 Hz";
             this.rjLabel122.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt500HzRightEar
             // 
-            this.txt500HzRightEar.Location = new System.Drawing.Point(3, 19);
+            this.txt500HzRightEar.Location = new System.Drawing.Point(3, 29);
             this.txt500HzRightEar.Name = "txt500HzRightEar";
             this.txt500HzRightEar.Size = new System.Drawing.Size(55, 20);
             this.txt500HzRightEar.TabIndex = 1;
             // 
             // txt500HzLeftEar
             // 
-            this.txt500HzLeftEar.Location = new System.Drawing.Point(3, 45);
+            this.txt500HzLeftEar.Location = new System.Drawing.Point(3, 55);
             this.txt500HzLeftEar.Name = "txt500HzLeftEar";
             this.txt500HzLeftEar.Size = new System.Drawing.Size(55, 20);
             this.txt500HzLeftEar.TabIndex = 5;
             // 
             // txt1kRightEar
             // 
-            this.txt1kRightEar.Location = new System.Drawing.Point(64, 19);
+            this.txt1kRightEar.Location = new System.Drawing.Point(64, 29);
             this.txt1kRightEar.Name = "txt1kRightEar";
             this.txt1kRightEar.Size = new System.Drawing.Size(55, 20);
             this.txt1kRightEar.TabIndex = 2;
             // 
             // txt1kLeftEar
             // 
-            this.txt1kLeftEar.Location = new System.Drawing.Point(64, 45);
+            this.txt1kLeftEar.Location = new System.Drawing.Point(64, 55);
             this.txt1kLeftEar.Name = "txt1kLeftEar";
             this.txt1kLeftEar.Size = new System.Drawing.Size(55, 20);
             this.txt1kLeftEar.TabIndex = 6;
             // 
             // txt2kRightEar
             // 
-            this.txt2kRightEar.Location = new System.Drawing.Point(125, 19);
+            this.txt2kRightEar.Location = new System.Drawing.Point(125, 29);
             this.txt2kRightEar.Name = "txt2kRightEar";
             this.txt2kRightEar.Size = new System.Drawing.Size(55, 20);
             this.txt2kRightEar.TabIndex = 3;
             // 
             // txt2kLeftEar
             // 
-            this.txt2kLeftEar.Location = new System.Drawing.Point(125, 45);
+            this.txt2kLeftEar.Location = new System.Drawing.Point(125, 55);
             this.txt2kLeftEar.Name = "txt2kLeftEar";
             this.txt2kLeftEar.Size = new System.Drawing.Size(55, 20);
             this.txt2kLeftEar.TabIndex = 7;
             // 
             // txt3kRightEar
             // 
-            this.txt3kRightEar.Location = new System.Drawing.Point(186, 19);
+            this.txt3kRightEar.Location = new System.Drawing.Point(186, 29);
             this.txt3kRightEar.Name = "txt3kRightEar";
             this.txt3kRightEar.Size = new System.Drawing.Size(58, 20);
             this.txt3kRightEar.TabIndex = 4;
             // 
             // txt3kLeftEar
             // 
-            this.txt3kLeftEar.Location = new System.Drawing.Point(186, 45);
+            this.txt3kLeftEar.Location = new System.Drawing.Point(186, 55);
             this.txt3kLeftEar.Name = "txt3kLeftEar";
             this.txt3kLeftEar.Size = new System.Drawing.Size(58, 20);
             this.txt3kLeftEar.TabIndex = 8;
             // 
             // txt4kRight
             // 
-            this.txt4kRight.Location = new System.Drawing.Point(250, 19);
+            this.txt4kRight.Location = new System.Drawing.Point(250, 29);
             this.txt4kRight.Name = "txt4kRight";
             this.txt4kRight.Size = new System.Drawing.Size(58, 20);
             this.txt4kRight.TabIndex = 9;
             // 
             // txt4kLeft
             // 
-            this.txt4kLeft.Location = new System.Drawing.Point(250, 45);
+            this.txt4kLeft.Location = new System.Drawing.Point(250, 55);
             this.txt4kLeft.Name = "txt4kLeft";
             this.txt4kLeft.Size = new System.Drawing.Size(58, 20);
             this.txt4kLeft.TabIndex = 10;
             // 
             // rxr6kRight
             // 
-            this.rxr6kRight.Location = new System.Drawing.Point(314, 19);
+            this.rxr6kRight.Location = new System.Drawing.Point(314, 29);
             this.rxr6kRight.Name = "rxr6kRight";
             this.rxr6kRight.Size = new System.Drawing.Size(58, 20);
             this.rxr6kRight.TabIndex = 11;
             // 
             // txt6kLeft
             // 
-            this.txt6kLeft.Location = new System.Drawing.Point(314, 45);
+            this.txt6kLeft.Location = new System.Drawing.Point(314, 55);
             this.txt6kLeft.Name = "txt6kLeft";
             this.txt6kLeft.Size = new System.Drawing.Size(58, 20);
             this.txt6kLeft.TabIndex = 12;
             // 
             // txt8kRight
             // 
-            this.txt8kRight.Location = new System.Drawing.Point(378, 19);
+            this.txt8kRight.Location = new System.Drawing.Point(378, 29);
             this.txt8kRight.Name = "txt8kRight";
             this.txt8kRight.Size = new System.Drawing.Size(58, 20);
             this.txt8kRight.TabIndex = 13;
             // 
             // txt8kLeft
             // 
-            this.txt8kLeft.Location = new System.Drawing.Point(378, 45);
+            this.txt8kLeft.Location = new System.Drawing.Point(378, 55);
             this.txt8kLeft.Name = "txt8kLeft";
             this.txt8kLeft.Size = new System.Drawing.Size(58, 20);
             this.txt8kLeft.TabIndex = 14;
@@ -4156,7 +4158,7 @@
             "NORMAL"});
             this.txt9kRight.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txt9kRight.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txt9kRight.Location = new System.Drawing.Point(442, 19);
+            this.txt9kRight.Location = new System.Drawing.Point(442, 29);
             this.txt9kRight.Name = "txt9kRight";
             this.txt9kRight.Size = new System.Drawing.Size(74, 20);
             this.txt9kRight.TabIndex = 15;
@@ -4169,44 +4171,11 @@
             "NORMAL"});
             this.txt9kLeft.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txt9kLeft.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txt9kLeft.Location = new System.Drawing.Point(442, 45);
+            this.txt9kLeft.Location = new System.Drawing.Point(442, 55);
             this.txt9kLeft.Name = "txt9kLeft";
             this.txt9kLeft.Size = new System.Drawing.Size(74, 20);
             this.txt9kLeft.TabIndex = 16;
             this.txt9kLeft.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt9kLeft_KeyPress);
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label84.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(129)))), ((int)(((byte)(132)))));
-            this.label84.Location = new System.Drawing.Point(250, 0);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(53, 13);
-            this.label84.TabIndex = 17;
-            this.label84.Text = "4000 Hz";
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(129)))), ((int)(((byte)(132)))));
-            this.label85.Location = new System.Drawing.Point(314, 0);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(53, 13);
-            this.label85.TabIndex = 18;
-            this.label85.Text = "6000 Hz";
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.label93.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(129)))), ((int)(((byte)(132)))));
-            this.label93.Location = new System.Drawing.Point(378, 0);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(35, 13);
-            this.label93.TabIndex = 19;
-            this.label93.Text = "8000";
             // 
             // tableLayoutPanel18
             // 
@@ -10342,6 +10311,34 @@
             this.tabPage8overlay.Size = new System.Drawing.Size(742, 234);
             this.tabPage8overlay.TabIndex = 125;
             // 
+            // txt4kheader
+            // 
+            this.txt4kheader.Location = new System.Drawing.Point(250, 3);
+            this.txt4kheader.Name = "txt4kheader";
+            this.txt4kheader.Size = new System.Drawing.Size(58, 20);
+            this.txt4kheader.TabIndex = 17;
+            // 
+            // txt6kHeader
+            // 
+            this.txt6kHeader.Location = new System.Drawing.Point(314, 3);
+            this.txt6kHeader.Name = "txt6kHeader";
+            this.txt6kHeader.Size = new System.Drawing.Size(58, 20);
+            this.txt6kHeader.TabIndex = 18;
+            // 
+            // txt8kHeader
+            // 
+            this.txt8kHeader.Location = new System.Drawing.Point(378, 3);
+            this.txt8kHeader.Name = "txt8kHeader";
+            this.txt8kHeader.Size = new System.Drawing.Size(58, 20);
+            this.txt8kHeader.TabIndex = 19;
+            // 
+            // txt9kHeader
+            // 
+            this.txt9kHeader.Location = new System.Drawing.Point(442, 3);
+            this.txt9kHeader.Name = "txt9kHeader";
+            this.txt9kHeader.Size = new System.Drawing.Size(74, 20);
+            this.txt9kHeader.TabIndex = 20;
+            // 
             // FrmPanama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -11250,9 +11247,6 @@
         private System.Windows.Forms.TextBox txt8kLeft;
         private System.Windows.Forms.TextBox txt9kRight;
         private System.Windows.Forms.TextBox txt9kLeft;
-        private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Panel panel14;
         public System.Windows.Forms.TextBox txtResultID;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -11436,5 +11430,9 @@
         private Class.OverlayShadow tabPage6overlay;
         private Class.OverlayShadow tabPage7overlay;
         private Class.OverlayShadow tabPage8overlay;
+        private System.Windows.Forms.TextBox txt4kheader;
+        private System.Windows.Forms.TextBox txt6kHeader;
+        private System.Windows.Forms.TextBox txt8kHeader;
+        private System.Windows.Forms.TextBox txt9kHeader;
     }
 }

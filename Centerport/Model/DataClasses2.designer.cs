@@ -465,13 +465,6 @@ namespace MedicalManagementSoftware.Model
 			return ((ISingleResult<Panama_patientResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaHearingSelect")]
-		public ISingleResult<PanamaHearingSelectResult> PanamaHearingSelect([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, resultMainUID);
-			return ((ISingleResult<PanamaHearingSelectResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaExamineeSave")]
 		public int PanamaExamineeSave(
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, 
@@ -590,10 +583,21 @@ namespace MedicalManagementSoftware.Model
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="8kRight", DbType="VarChar(100)")] string _8kRight, 
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="8kLeft", DbType="VarChar(100)")] string _8kLeft, 
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="9kRight", DbType="VarChar(100)")] string _9kRight, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="9kLeft", DbType="VarChar(100)")] string _9kLeft)
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="9kLeft", DbType="VarChar(100)")] string _9kLeft, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="4kHeader", DbType="VarChar(100)")] string _4kHeader, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="6kHeader", DbType="VarChar(100)")] string _6kHeader, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="8kHeader", DbType="VarChar(100)")] string _8kHeader, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="9kHeader", DbType="VarChar(100)")] string _9kHeader)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, resultMainUID, height, weight, bMI, oxygen, heartRate, respiratory, bloodPressure, diatolic, unaidedRightEyeDistant, unAidedLeftEyeDistant, unAidedBonocularDistant, aidedRightEyeDistant, aidedLeftEyeDistant, aidedBinocularDistant, unaidedRightEyeShort, unAidedLeftEyeShort, unAidedBonocularShort, aidedRightEyeShort, aidedLeftEyeShort, aidedBinocularShort, nonTestedColorVision, normalColorVision, doubtfulColorVision, defectiveColorVision, normalRightEye, normalLeftEye, defectiveRightEye, defectiveLeftEye, comments, _500HzRightEar, _1kRightEar, _2kRightEar, _3kRightEar, _500HzLeftEar, _1kLeftEar, _2kLeftEar, _3kLeftEar, _4kRight, _4kLeft, _6kRight, _6kLeft, _8kRight, _8kLeft, _9kRight, _9kLeft);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, resultMainUID, height, weight, bMI, oxygen, heartRate, respiratory, bloodPressure, diatolic, unaidedRightEyeDistant, unAidedLeftEyeDistant, unAidedBonocularDistant, aidedRightEyeDistant, aidedLeftEyeDistant, aidedBinocularDistant, unaidedRightEyeShort, unAidedLeftEyeShort, unAidedBonocularShort, aidedRightEyeShort, aidedLeftEyeShort, aidedBinocularShort, nonTestedColorVision, normalColorVision, doubtfulColorVision, defectiveColorVision, normalRightEye, normalLeftEye, defectiveRightEye, defectiveLeftEye, comments, _500HzRightEar, _1kRightEar, _2kRightEar, _3kRightEar, _500HzLeftEar, _1kLeftEar, _2kLeftEar, _3kLeftEar, _4kRight, _4kLeft, _6kRight, _6kLeft, _8kRight, _8kLeft, _9kRight, _9kLeft, _4kHeader, _6kHeader, _8kHeader, _9kHeader);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaHearingSelect")]
+		public ISingleResult<PanamaHearingSelectResult> PanamaHearingSelect([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, resultMainUID);
+			return ((ISingleResult<PanamaHearingSelectResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -14820,6 +14824,14 @@ namespace MedicalManagementSoftware.Model
 		
 		private string @__9kLeft;
 		
+		private string @__4kHeader;
+		
+		private string @__6kHeader;
+		
+		private string @__8kHeader;
+		
+		private string @__9kHeader;
+		
 		public PanamaHearingSelectResult()
 		{
 		}
@@ -14984,7 +14996,7 @@ namespace MedicalManagementSoftware.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[4kRight]", Storage="__4kRight", DbType="VarChar(1)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[4kRight]", Storage="__4kRight", DbType="VarChar(100)")]
 		public string _4kRight
 		{
 			get
@@ -15000,7 +15012,7 @@ namespace MedicalManagementSoftware.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[4kleft]", Storage="__4kleft", DbType="VarChar(1)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[4kleft]", Storage="__4kleft", DbType="VarChar(100)")]
 		public string _4kleft
 		{
 			get
@@ -15016,7 +15028,7 @@ namespace MedicalManagementSoftware.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[6kRight]", Storage="__6kRight", DbType="VarChar(1)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[6kRight]", Storage="__6kRight", DbType="VarChar(100)")]
 		public string _6kRight
 		{
 			get
@@ -15032,7 +15044,7 @@ namespace MedicalManagementSoftware.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[6kLeft]", Storage="__6kLeft", DbType="VarChar(1)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[6kLeft]", Storage="__6kLeft", DbType="VarChar(100)")]
 		public string _6kLeft
 		{
 			get
@@ -15048,7 +15060,7 @@ namespace MedicalManagementSoftware.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[8kRight]", Storage="__8kRight", DbType="VarChar(1)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[8kRight]", Storage="__8kRight", DbType="VarChar(100)")]
 		public string _8kRight
 		{
 			get
@@ -15064,7 +15076,7 @@ namespace MedicalManagementSoftware.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[8kLeft]", Storage="__8kLeft", DbType="VarChar(1)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[8kLeft]", Storage="__8kLeft", DbType="VarChar(100)")]
 		public string _8kLeft
 		{
 			get
@@ -15080,7 +15092,7 @@ namespace MedicalManagementSoftware.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[9kRight]", Storage="__9kRight", DbType="VarChar(1)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[9kRight]", Storage="__9kRight", DbType="VarChar(100)")]
 		public string _9kRight
 		{
 			get
@@ -15096,7 +15108,7 @@ namespace MedicalManagementSoftware.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[9kLeft]", Storage="__9kLeft", DbType="VarChar(1)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[9kLeft]", Storage="__9kLeft", DbType="VarChar(100)")]
 		public string _9kLeft
 		{
 			get
@@ -15108,6 +15120,70 @@ namespace MedicalManagementSoftware.Model
 				if ((this.@__9kLeft != value))
 				{
 					this.@__9kLeft = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[4kHeader]", Storage="__4kHeader", DbType="VarChar(100)")]
+		public string _4kHeader
+		{
+			get
+			{
+				return this.@__4kHeader;
+			}
+			set
+			{
+				if ((this.@__4kHeader != value))
+				{
+					this.@__4kHeader = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[6kHeader]", Storage="__6kHeader", DbType="VarChar(100)")]
+		public string _6kHeader
+		{
+			get
+			{
+				return this.@__6kHeader;
+			}
+			set
+			{
+				if ((this.@__6kHeader != value))
+				{
+					this.@__6kHeader = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[8kHeader]", Storage="__8kHeader", DbType="VarChar(100)")]
+		public string _8kHeader
+		{
+			get
+			{
+				return this.@__8kHeader;
+			}
+			set
+			{
+				if ((this.@__8kHeader != value))
+				{
+					this.@__8kHeader = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[9kHeader]", Storage="__9kHeader", DbType="VarChar(100)")]
+		public string _9kHeader
+		{
+			get
+			{
+				return this.@__9kHeader;
+			}
+			set
+			{
+				if ((this.@__9kHeader != value))
+				{
+					this.@__9kHeader = value;
 				}
 			}
 		}

@@ -738,6 +738,13 @@ namespace MedicalManagementSoftware.Report
 
                 page5.SetParameterValue("9kr", page5Model._9kRightEar);
                 page5.SetParameterValue("9kl", page5Model._9kLeftEar);
+                //
+
+                page5.SetParameterValue("4kHeader", page5Model._4kHEader);
+                page5.SetParameterValue("6kHeader", page5Model._6kheader);
+                page5.SetParameterValue("8kHeader", page5Model._8kheader);
+                page5.SetParameterValue("9kHeader", page5Model._9kheader);
+
 
                 page5.SetParameterValue("HeadYes", page5Model.HeadYes);
                 page5.SetParameterValue("MouthYes", page5Model.MouthYes);

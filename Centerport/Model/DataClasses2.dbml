@@ -1156,30 +1156,6 @@
       <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.PanamaHearingSelect" Method="PanamaHearingSelect">
-    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
-    <ElementType Name="PanamaHearingSelectResult">
-      <Column Name="RecId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="ResultMainUID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="[500HzRightEar]" Member="_500HzRightEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="[1kRightEar]" Member="_1kRightEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="[2kRightEar]" Member="_2kRightEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="[3kRightEar]" Member="_3kRightEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="[500HzLeftEar]" Member="_500HzLeftEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="[1kLeftEar]" Member="_1kLeftEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="[2kLeftEar]" Member="_2kLeftEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="[3kLeftEar]" Member="_3kLeftEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="[4kRight]" Member="_4kRight" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
-      <Column Name="[4kleft]" Member="_4kleft" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
-      <Column Name="[6kRight]" Member="_6kRight" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
-      <Column Name="[6kLeft]" Member="_6kLeft" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
-      <Column Name="[8kRight]" Member="_8kRight" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
-      <Column Name="[8kLeft]" Member="_8kLeft" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
-      <Column Name="[9kRight]" Member="_9kRight" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
-      <Column Name="[9kLeft]" Member="_9kLeft" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.PanamaExamineeSave" Method="PanamaExamineeSave">
     <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
@@ -1294,6 +1270,38 @@
     <Parameter Name="8kLeft" Parameter="_8kLeft" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="9kRight" Parameter="_9kRight" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="9kLeft" Parameter="_9kLeft" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="4kHeader" Parameter="_4kHeader" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="6kHeader" Parameter="_6kHeader" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="8kHeader" Parameter="_8kHeader" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="9kHeader" Parameter="_9kHeader" Type="System.String" DbType="VarChar(100)" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PanamaHearingSelect" Method="PanamaHearingSelect">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="PanamaHearingSelectResult">
+      <Column Name="RecId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ResultMainUID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[500HzRightEar]" Member="_500HzRightEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[1kRightEar]" Member="_1kRightEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[2kRightEar]" Member="_2kRightEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[3kRightEar]" Member="_3kRightEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[500HzLeftEar]" Member="_500HzLeftEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[1kLeftEar]" Member="_1kLeftEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[2kLeftEar]" Member="_2kLeftEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[3kLeftEar]" Member="_3kLeftEar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[4kRight]" Member="_4kRight" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[4kleft]" Member="_4kleft" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[6kRight]" Member="_6kRight" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[6kLeft]" Member="_6kLeft" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[8kRight]" Member="_8kRight" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[8kLeft]" Member="_8kLeft" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[9kRight]" Member="_9kRight" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[9kLeft]" Member="_9kLeft" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[4kHeader]" Member="_4kHeader" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[6kHeader]" Member="_6kHeader" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[8kHeader]" Member="_8kHeader" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[9kHeader]" Member="_9kHeader" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
   </Function>
 </Database>

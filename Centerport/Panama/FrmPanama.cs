@@ -508,6 +508,11 @@ namespace MedicalManagementSoftware
             model._9kRightEar = txt9kRight.Text;
             model._9kLeftEar = txt9kLeft.Text;
 
+            model._4kHEader = txt4kheader.Text;
+            model._6kheader = txt6kHeader.Text;
+            model._8kheader = txt8kHeader.Text;
+            model._9kheader = txt9kHeader.Text;
+
 
 
             model.HeadYes = getCheckBoxValue(cbHeadYes);
@@ -1030,12 +1035,12 @@ namespace MedicalManagementSoftware
             txt2kLeftEar.Text = "20";
             txt3kRightEar.Text = "20";
             txt3kLeftEar.Text = "20";
-            txt4kRight.Text = "20";
-            txt4kLeft.Text = "20";
-            rxr6kRight.Text = "20";
-            txt6kLeft.Text = "20";
-            txt8kRight.Text = "20";
-            txt8kLeft.Text = "20";
+            txt4kRight.Text = "";
+            txt4kLeft.Text = "";
+            rxr6kRight.Text = "";
+            txt6kLeft.Text = "";
+            txt8kRight.Text = "";
+            txt8kLeft.Text = "";
             txt9kRight.Text = "";
             txt9kLeft.Text = "";
 
@@ -1692,7 +1697,11 @@ namespace MedicalManagementSoftware
                 txt8kRight.Text,
                 txt8kLeft.Text,
                 txt9kRight.Text,
-                txt9kLeft.Text);
+                txt9kLeft.Text,
+                txt4kheader.Text,
+                txt6kHeader.Text,
+                txt8kHeader.Text,
+                txt9kHeader.Text);
 
         }
 
@@ -2309,6 +2318,10 @@ namespace MedicalManagementSoftware
                 txt8kLeft.Text = hearing._8kLeft;
                 txt9kRight.Text = hearing._9kRight;
                 txt9kLeft.Text = hearing._9kLeft;
+                txt4kheader.Text = hearing._4kHeader;
+                txt6kHeader.Text = hearing._6kHeader;
+                txt8kHeader.Text = hearing._8kHeader;
+                txt9kHeader.Text = hearing._9kHeader;
 
             }
             else
@@ -2900,12 +2913,12 @@ namespace MedicalManagementSoftware
 
         private void txt9kRight_KeyPress(object sender, KeyPressEventArgs e)
         {
-             e.KeyChar = Char.ToUpper(e.KeyChar)
+            e.KeyChar = Char.ToUpper(e.KeyChar);
         }
 
         private void txt9kLeft_KeyPress(object sender, KeyPressEventArgs e)
         {
-             e.KeyChar = Char.ToUpper(e.KeyChar)
+            e.KeyChar = Char.ToUpper(e.KeyChar);
         }
 
 
