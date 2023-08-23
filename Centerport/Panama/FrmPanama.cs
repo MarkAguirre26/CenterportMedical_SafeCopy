@@ -1028,14 +1028,14 @@ namespace MedicalManagementSoftware
             txt1kLeftEar.Text = "20";
             txt2kRightEar.Text = "20";
             txt2kLeftEar.Text = "20";
-            txt3kRightEar.Text = "30";
-            txt3kLeftEar.Text = "40";
-            txt4kRight.Text = "40";
-            txt4kLeft.Text = "50";
-            rxr6kRight.Text = "50";
-            txt6kLeft.Text = "70";
-            txt8kRight.Text = "";
-            txt8kLeft.Text = "";
+            txt3kRightEar.Text = "20";
+            txt3kLeftEar.Text = "20";
+            txt4kRight.Text = "20";
+            txt4kLeft.Text = "20";
+            rxr6kRight.Text = "20";
+            txt6kLeft.Text = "20";
+            txt8kRight.Text = "20";
+            txt8kLeft.Text = "20";
             txt9kRight.Text = "";
             txt9kLeft.Text = "";
 
@@ -2311,6 +2311,11 @@ namespace MedicalManagementSoftware
                 txt9kLeft.Text = hearing._9kLeft;
 
             }
+            else
+            {
+
+              
+            }
 
 
 
@@ -2507,8 +2512,8 @@ namespace MedicalManagementSoftware
                     lblYear.Text = "Year: " + y;
 
 
-                    txtXrayPerformed.Text = d + "/" + m + "/" + y;
-                    txtEZGPerformed.Text = d + "/" + m + "/" + y;
+                    txtXrayPerformed.Text = d + " / " + m + " / " + y;
+                    txtEZGPerformed.Text = d + " / " + m + " / " + y;
 
 
                 }
@@ -2891,6 +2896,16 @@ namespace MedicalManagementSoftware
             {
                 txtTypeShipOther.Text = "";
             }
+        }
+
+        private void txt9kRight_KeyPress(object sender, KeyPressEventArgs e)
+        {
+             e.KeyChar = Char.ToUpper(e.KeyChar)
+        }
+
+        private void txt9kLeft_KeyPress(object sender, KeyPressEventArgs e)
+        {
+             e.KeyChar = Char.ToUpper(e.KeyChar)
         }
 
 
