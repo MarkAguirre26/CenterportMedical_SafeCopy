@@ -218,7 +218,7 @@ namespace MedicalManagementSoftware
         {
             Page1Model model = new Page1Model();
 
-            model.Fullname = txtFullaname.Text;
+            model.Fullname = txtFullName.Text;
             model.HomeAddress = txtHomeAddress.Text;
             model.Department = txtDepartment.Text;
             model.Position = txtPosition.Text;
@@ -403,7 +403,7 @@ namespace MedicalManagementSoftware
             model.NumberofDoses = txtNumberofDoses.Text;
             model.Booster = txtBooster.Text;
 
-            model.NameOfUndergoingExamination = txtFullaname.Text;
+            model.NameOfUndergoingExamination = txtFullName.Text;
 
 
 
@@ -655,7 +655,22 @@ namespace MedicalManagementSoftware
             Availability(tabPage7overlay, false);
             Availability(tabPage8overlay, false);
 
+            if (fmain.Tag != null)
+            {
+                searchPanamaRecord(fmain.Tag.ToString());
+            }
+            
 
+
+        }
+
+
+        public void searchFromOutside()
+        {
+            if (fmain.Tag != null)
+            {
+                searchPanamaRecord(fmain.Tag.ToString());
+            }
         }
 
 
@@ -808,7 +823,7 @@ namespace MedicalManagementSoftware
         void clearFields()
         {
 
-
+            this.Text = "Panama Information";
             //txtValidUntilDate.Text = "00/00/0000";
             //txtIssuedDate.Text = "00/00/0000";
             txtExpirationDay.Text = "00";
@@ -1037,20 +1052,32 @@ namespace MedicalManagementSoftware
             txt2kLeftEar.Text = "20";
             txt3kRightEar.Text = "20";
             txt3kLeftEar.Text = "20";
-            txt4kRight.Text = "20";
-            txt4kLeft.Text = "20";
-            rxr6kRight.Text = "20";
-            txt6kLeft.Text = "20";
-            txt8kRight.Text = "20";
-            txt8kLeft.Text = "20";
-            txt9kRight.Text = "NORMAL";
-            txt9kLeft.Text = "NORMAL";
+            txt4kRight.Text = "NORMAL";
+            txt4kLeft.Text = "NORMAL";
+            rxr6kRight.Text = "";
+            txt6kLeft.Text = "";
+            txt8kRight.Text = "";
+            txt8kLeft.Text = "";
+            txt9kRight.Text = "";
+            txt9kLeft.Text = "";
 
 
+
+
+
+            txtHeight.Text = "";
+            txtWeight.Text = "";
+            txtBMI.Text = "";
+            txtOxygen.Text = "";
+            txtHeartRate.Text = "";
+            txtRespiratory.Text = "";
+            txtBloodPressure.Text = "";
+            txtDiastolic.Text = "";
             txtUnaidedRightEyeDistant.Text = "20/20";
             txtUnAidedLeftEyeDistant.Text = "20/20";
-txtUnaidedRightEyeShort.Text = "J/1";
-txtUnAidedLeftEyeShort.Text = "J/1";
+            txtUnaidedRightEyeShort.Text = "J/1";
+            txtUnAidedLeftEyeShort.Text = "J/1";
+
 
 
             //dtXrayDate.Value = DateTime.Now;
@@ -1435,6 +1462,13 @@ txtUnAidedLeftEyeShort.Text = "J/1";
                 Edit();
 
             }
+            else if (e.KeyCode == Keys.F5)
+            {
+
+                searchPanamaRecord(txtPapin.Text);
+
+            }
+
 
 
 
@@ -2251,6 +2285,7 @@ txtUnAidedLeftEyeShort.Text = "J/1";
                 txtUnAidedLeftEyeShort.Text = "J/" + i.NEAR_OSJ_U;
 
             }
+            
 
 
             var sight = db.PanamaSightSelect(txtPapin.Text, txtResultID.Text).FirstOrDefault();
@@ -2470,11 +2505,11 @@ txtUnAidedLeftEyeShort.Text = "J/1";
             if (i != null)
             {
 
-                txtFullaname.Text = i.Fullname;
+                txtFullName.Text = i.Fullname;
                 txtPersonundergoingExamination.Text = i.Fullname;
                 txtUndergoingExamination.Text = i.Fullname;
                 txtNumberOfMedicalCertificate.Text = i.specimen_no;
-
+               
 
                 try
                 {
@@ -2534,9 +2569,12 @@ txtUnAidedLeftEyeShort.Text = "J/1";
 
                 clearFields();
 
+                this.Text = "Panama Information (" + txtFullName.Text + ")";
+
+
                 txtRhType.Text = "POSITIVE";
 
-                //txtUndergoingDate.Text = i.fitness_date;
+                
 
 
                 try
@@ -2755,7 +2793,7 @@ txtUnAidedLeftEyeShort.Text = "J/1";
                 if (i.papin != null || i.papin != "")
                 {
 
-                    txtFullaname.Text = i.Fullname;
+                    txtFullName.Text = i.Fullname;
                     txtPersonundergoingExamination.Text = i.Fullname;
                     txtUndergoingExamination.Text = i.Fullname;
 
@@ -3001,6 +3039,21 @@ txtUnAidedLeftEyeShort.Text = "J/1";
         }
 
         private void txt9kLeft_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.KeyChar = Char.ToUpper(e.KeyChar);
+        }
+
+        private void txtVaccineType_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.KeyChar = Char.ToUpper(e.KeyChar);
+        }
+
+        private void txtBooster_KeyDown(object sender, KeyEventArgs e)
+        {
+           
+        }
+
+        private void FrmPanama_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.KeyChar = Char.ToUpper(e.KeyChar);
         }

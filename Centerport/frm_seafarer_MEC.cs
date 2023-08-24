@@ -128,14 +128,7 @@ namespace MedicalManagementSoftware
             txt_Papin.Select();
             Load_Medical();
 
-            //if (!Directory.Exists(ClassSql.SeabaseImage))
-            //{
-            //    DirectoryInfo di = Directory.CreateDirectory(ClassSql.SeabaseImage);
-            //}
-
-
-            //if (!backgroundWorker2.IsBusy)
-            //{ backgroundWorker2.RunWorkerAsync(); }
+            
         }
 
 

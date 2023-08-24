@@ -122,7 +122,7 @@ namespace MedicalManagementSoftware
                 //FrmPanama.cn_SeabaseResultMain = this.dg_result.SelectedRows[0].Cells[0].Value.ToString();
 
 
-
+                fmain.Tag = papin;
                 (Application.OpenForms["FrmPanama"] as FrmPanama).ClearAll();
                 (Application.OpenForms["FrmPanama"] as FrmPanama).searchPanamaRecord(papin);
       

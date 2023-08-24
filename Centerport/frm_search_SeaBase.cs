@@ -49,10 +49,12 @@ namespace MedicalManagementSoftware
                 Cursor.Current = Cursors.WaitCursor;
                 frm_seafarer_MEC.LabID.Clear();
                 frm_seafarer_MEC.LabID.Text = this.dg_result.SelectedRows[0].Cells[2].Value.ToString();
-                frm_seafarer_MEC.pin.Clear();                
+                frm_seafarer_MEC.pin.Clear();
+                string p = this.dg_result.SelectedRows[0].Cells[1].Value.ToString();
                 frm_seafarer_MEC.pin.Text = this.dg_result.SelectedRows[0].Cells[1].Value.ToString();
                 frm_seafarer_MEC.cn_SeabaseResultMain = this.dg_result.SelectedRows[0].Cells[0].Value.ToString();
-                
+                fmain.Tag = p;
+      
                 (Application.OpenForms["frm_seafarer_MEC"] as frm_seafarer_MEC).ClearAll();
                 (Application.OpenForms["frm_seafarer_MEC"] as frm_seafarer_MEC).Search_Patient();
                 (Application.OpenForms["frm_seafarer_MEC"] as frm_seafarer_MEC).Search_MedicalHistory();
@@ -61,6 +63,11 @@ namespace MedicalManagementSoftware
                 (Application.OpenForms["frm_seafarer_MEC"] as frm_seafarer_MEC).Search_others();
                 (Application.OpenForms["frm_seafarer_MEC"] as frm_seafarer_MEC).search_Ancillary();
                 (Application.OpenForms["frm_seafarer_MEC"] as frm_seafarer_MEC).search_RecomendationFromSearch();
+
+                if ((Application.OpenForms["FrmPanama"] as FrmPanama) != null)
+                {
+                    (Application.OpenForms["FrmPanama"] as FrmPanama).searchFromOutside();
+                }
                
              
                 fmain.ts_add_sea.Enabled = true; fmain.ts_edit_sea.Enabled = true; fmain.ts_delete_sea.Enabled = false; fmain.ts_save_sea.Enabled = false; fmain.ts_search_sea.Enabled = true; fmain.ts_print_sea.Enabled = true; fmain.ts_cancel_sea.Enabled = false;

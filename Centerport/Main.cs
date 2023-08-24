@@ -2843,9 +2843,7 @@ namespace MedicalManagementSoftware
                 if (i != 7)
                 {
                     (Application.OpenForms["FrmPanama"] as FrmPanama).tabNavigator(i + 1);
-                }
-
-                //
+                }              
             }
         }
 
@@ -2858,6 +2856,11 @@ namespace MedicalManagementSoftware
                 (Application.OpenForms["FrmPanama"] as FrmPanama).tabNavigator(7);
 
             }
+        }
+
+        private void toolStripButton5_Click_2(object sender, EventArgs e)
+        {
+            (Application.OpenForms["FrmPanama"] as FrmPanama).searchPanamaRecord(this.Tag.ToString());
         }
 
 
