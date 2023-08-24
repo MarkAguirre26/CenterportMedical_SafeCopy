@@ -825,6 +825,8 @@ namespace MedicalManagementSoftware
 
             //txtUndergoingDate.Text = "00/00/0000";
 
+            txtOxygen.Text = "";
+
 
             rbWorldWide.Checked = true;
             cbNormalColorVision.Checked = true;
@@ -1035,16 +1037,20 @@ namespace MedicalManagementSoftware
             txt2kLeftEar.Text = "20";
             txt3kRightEar.Text = "20";
             txt3kLeftEar.Text = "20";
-            txt4kRight.Text = "";
-            txt4kLeft.Text = "";
-            rxr6kRight.Text = "";
-            txt6kLeft.Text = "";
-            txt8kRight.Text = "";
-            txt8kLeft.Text = "";
-            txt9kRight.Text = "";
-            txt9kLeft.Text = "";
+            txt4kRight.Text = "20";
+            txt4kLeft.Text = "20";
+            rxr6kRight.Text = "20";
+            txt6kLeft.Text = "20";
+            txt8kRight.Text = "20";
+            txt8kLeft.Text = "20";
+            txt9kRight.Text = "NORMAL";
+            txt9kLeft.Text = "NORMAL";
 
 
+            txtUnaidedRightEyeDistant.Text = "20/20";
+            txtUnAidedLeftEyeDistant.Text = "20/20";
+txtUnaidedRightEyeShort.Text = "J/1";
+txtUnAidedLeftEyeShort.Text = "J/1";
 
 
             //dtXrayDate.Value = DateTime.Now;
@@ -1065,10 +1071,23 @@ namespace MedicalManagementSoftware
 
             try
             {
-                string[] undergoingExaminationDate = fitnessdate.ToString().Split('/');
-                lblDay.Text = "Day: " + undergoingExaminationDate[1].ToString();
-                lblMonth.Text = "Month: " + undergoingExaminationDate[0].ToString();
-                lblYear.Text = "Year: " + undergoingExaminationDate[2].ToString();
+
+
+                string[] fitnessdateArray = new string[] { };
+                if (fitnessdate.Contains("/"))
+                {
+                    fitnessdateArray = fitnessdate.ToString().Split('/');
+                }
+                else
+                {
+                    fitnessdateArray = fitnessdate.ToString().Split('-');
+
+
+                }
+                //string[] undergoingExaminationDate = fitnessdate.ToString().Split('/');
+                lblDay.Text = "Day: " + fitnessdateArray[1].ToString();
+                lblMonth.Text = "Month: " + fitnessdateArray[0].ToString();
+                lblYear.Text = "Year: " + fitnessdateArray[2].ToString();
 
             }
             catch (Exception)
@@ -1504,7 +1523,7 @@ namespace MedicalManagementSoftware
 
         private void flowLayoutPanel53_Paint(object sender, PaintEventArgs e)
         {
-
+            //
         }
 
         private void FrmPanama_Enter(object sender, EventArgs e)
@@ -2143,10 +2162,10 @@ namespace MedicalManagementSoftware
                 txtPsaAbNormal.Text = i.PsaAbNormal;
                 txtPsaObservation.Text = i.PsaObservation;
 
-                setCheckBoxValue(cbXray, cbHidden, "Yes");         
+                setCheckBoxValue(cbXray, cbHidden, "Yes");
                 txtXrayObservation.Text = i.XrayObservation;
                 setCheckBoxValue(cbEkg, cbHidden, "Yes");
-           
+
 
                 txtEkgObservation.Text = i.EkgObservation;
 
@@ -2204,7 +2223,7 @@ namespace MedicalManagementSoftware
                 txtPhysicalExploration3.Text = i.PhysicalExplorationComment3;
                 txtPhysicalExploration4.Text = i.PhysicalExplorationComment4;
 
-
+                //
             }
         }
 
@@ -2221,12 +2240,11 @@ namespace MedicalManagementSoftware
                 txtHeight.Text = i.Height;
                 txtWeight.Text = i.Weight;
                 txtBMI.Text = i.BMI;
-                //txtOxygen.Text = i.Oxygen;
+                txtOxygen.Text = i.Oxygen;
                 txtHeartRate.Text = i.PULSE;
                 txtRespiratory.Text = i.Respiratory;
                 txtBloodPressure.Text = i.BloodPressure;
                 txtDiastolic.Text = i.Diatolic;
-
                 txtUnaidedRightEyeDistant.Text = i.FAR_OD_U;
                 txtUnAidedLeftEyeDistant.Text = i.FAR_OS_U;
                 txtUnaidedRightEyeShort.Text = "J/" + i.NEAR_ODJ_U;
@@ -2289,7 +2307,7 @@ namespace MedicalManagementSoftware
                 txtDefectiveRightEye.Text = sight.DefectiveRightEye;
                 txtDefectiveLeftEye.Text = sight.DefectiveLeftEye;
                 txtSightComment.Text = "ISHIHARA 38";
-                
+
 
             }
 
@@ -2327,7 +2345,7 @@ namespace MedicalManagementSoftware
             else
             {
 
-              
+
             }
 
 
@@ -2452,7 +2470,7 @@ namespace MedicalManagementSoftware
             if (i != null)
             {
 
-                                txtFullaname.Text = i.Fullname;
+                txtFullaname.Text = i.Fullname;
                 txtPersonundergoingExamination.Text = i.Fullname;
                 txtUndergoingExamination.Text = i.Fullname;
                 txtNumberOfMedicalCertificate.Text = i.specimen_no;
@@ -2462,9 +2480,17 @@ namespace MedicalManagementSoftware
                 {
 
 
+                    string resultDate = i.result_date.ToString();
+                    string[] result_date = new string[] { };
+                    if (resultDate.Contains("/"))
+                    {
+                        result_date = resultDate.ToString().Split('/');
+                    }
+                    else
+                    {
+                        result_date = resultDate.ToString().Split('-');
+                    }
 
-
-                    string[] result_date = i.result_date.ToString().Split('/');
                     lblDayWitness.Text = "Day: " + result_date[1].ToString();
                     lblMonthWitness.Text = "Month: " + result_date[0].ToString();
                     lblYearWitness.Text = "Year:" + result_date[2].ToString();
@@ -2515,10 +2541,24 @@ namespace MedicalManagementSoftware
 
                 try
                 {
-                    string[] undergoingExaminationDate = i.result_date.ToString().Split('/');
-                    string d = undergoingExaminationDate[1].ToString();
-                    string m = undergoingExaminationDate[0].ToString();
-                    string y = undergoingExaminationDate[2].ToString();
+
+                    string resultDate = i.result_date.ToString();
+                    string[] result_date = new string[] { };
+                    if (resultDate.Contains("/"))
+                    {
+                        result_date = resultDate.ToString().Split('/');
+                    }
+                    else
+                    {
+                        result_date = resultDate.ToString().Split('-');
+
+
+
+                    }
+                    //string[] undergoingExaminationDate = i.result_date.ToString().Split('/');
+                    string d = result_date[1].ToString();
+                    string m = result_date[0].ToString();
+                    string y = result_date[2].ToString();
 
                     lblDay.Text = "Day: " + d;
                     lblMonth.Text = "Month: " + m;
@@ -2544,10 +2584,23 @@ namespace MedicalManagementSoftware
 
                 try
                 {
-                    string[] validUntilDate = i.valid_until.ToString().Split('/');
-                    txtExpirationDay.Text = validUntilDate[1].ToString();
-                    txtExpirationMonth.Text = validUntilDate[0].ToString();
-                    txtExpirationYear.Text = validUntilDate[2].ToString();
+
+                    string validUntil = i.valid_until.ToString();
+                    string[] valid_until = new string[] { };
+                    if (validUntil.Contains("/"))
+                    {
+                        valid_until = validUntil.ToString().Split('/');
+                    }
+                    else
+                    {
+                        valid_until = validUntil.ToString().Split('-');
+                    }
+
+
+                    //string[] validUntilDate = i.valid_until.ToString().Split('/');
+                    txtExpirationDay.Text = valid_until[1].ToString();
+                    txtExpirationMonth.Text = valid_until[0].ToString();
+                    txtExpirationYear.Text = valid_until[2].ToString();
 
                 }
                 catch (Exception)
@@ -2562,10 +2615,23 @@ namespace MedicalManagementSoftware
 
                 try
                 {
-                    string[] issuedDate = i.result_date.ToString().Split('/');
-                    txtIssuedDay.Text = issuedDate[1].ToString();
-                    txtIssuedMonth.Text = issuedDate[0].ToString();
-                    txtIssuedYear.Text = issuedDate[2].ToString();
+
+                    string resultDate = i.result_date.ToString();
+                    string[] result_date = new string[] { };
+                    if (resultDate.Contains("/"))
+                    {
+                        result_date = resultDate.ToString().Split('/');
+                    }
+                    else
+                    {
+                        result_date = resultDate.ToString().Split('-');
+                    }
+
+
+                    
+                    txtIssuedDay.Text = result_date[1].ToString();
+                    txtIssuedMonth.Text = result_date[0].ToString();
+                    txtIssuedYear.Text = result_date[2].ToString();
                 }
                 catch (Exception)
                 {
@@ -2727,19 +2793,37 @@ namespace MedicalManagementSoftware
                     //txtValidUntilDate.Text = i.valid_until.ToString();
                     //txtIssuedDate.Text = i.fitness_date.ToString();
 
+                    string validUntil = i.valid_until.ToString();
+                    string[] valid_until = new string[] { };
+                    if (validUntil.Contains("/"))
+                    {
+                        valid_until = validUntil.ToString().Split('/');
+                    }
+                    else
+                    {
+                        valid_until = validUntil.ToString().Split('-');
+                    }
+                    
+
+                    txtExpirationDay.Text = valid_until[1].ToString();
+                    txtExpirationMonth.Text = valid_until[0].ToString();
+                    txtExpirationYear.Text = valid_until[2].ToString();
 
 
-                    string[] validUntilDate = i.valid_until.ToString().Split('/');
-                    txtExpirationDay.Text = validUntilDate[1].ToString();
-                    txtExpirationMonth.Text = validUntilDate[0].ToString();
-                    txtExpirationYear.Text = validUntilDate[2].ToString();
-
-
-
-                    string[] issuedDate = i.fitness_date.ToString().Split('/');
-                    txtIssuedDay.Text = issuedDate[1].ToString();
-                    txtIssuedMonth.Text = issuedDate[0].ToString();
-                    txtIssuedYear.Text = issuedDate[2].ToString();
+                    string fitnessDate = i.fitness_date.ToString();
+                    string[] fitness_date = new string[] { };
+                    if (fitnessDate.Contains("/"))
+                    {
+                        fitness_date = fitnessDate.ToString().Split('/');
+                    }
+                    else
+                    {
+                        fitness_date = fitnessDate.ToString().Split('-');
+                    }
+                                        
+                    txtIssuedDay.Text = fitness_date[1].ToString();
+                    txtIssuedMonth.Text = fitness_date[0].ToString();
+                    txtIssuedYear.Text = fitness_date[2].ToString();
 
 
 

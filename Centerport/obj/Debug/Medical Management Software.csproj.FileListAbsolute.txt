@@ -452,7 +452,6 @@ D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\AForge.xml
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\AForge.Video.xml
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\bin\Debug\EntityFramework.xml
-D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.csprojResolveAssemblyReference.cache
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.CustomControl.PanamaView.resources
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.FrmSearchPanama.resources
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.Frm_Immunology.resources
