@@ -659,7 +659,7 @@ namespace MedicalManagementSoftware
             {
                 searchPanamaRecord(fmain.Tag.ToString());
             }
-            
+
 
 
         }
@@ -1914,7 +1914,7 @@ namespace MedicalManagementSoftware
             txtPapin.Text = papin;
 
             clearFields();
-
+            //
 
             searchPanamaPatient();
             searchPanamaExamineePersonalDeclaration();
@@ -2279,13 +2279,35 @@ namespace MedicalManagementSoftware
                 txtRespiratory.Text = i.Respiratory;
                 txtBloodPressure.Text = i.BloodPressure;
                 txtDiastolic.Text = i.Diatolic;
-                txtUnaidedRightEyeDistant.Text = i.FAR_OD_U;
-                txtUnAidedLeftEyeDistant.Text = i.FAR_OS_U;
+
+                //txtUnaidedRightEyeDistant.Text = i.FAR_OD_U;
+
+                string FAR_OD_U = i.FAR_OD_U;
+                txtUnaidedRightEyeDistant.Text = FAR_OD_U;
+                if (FAR_OD_U.Contains("/"))
+                {
+                    string[] far = FAR_OD_U.Split('/');
+                    txtUnaidedRightEyeDistant.Text = far[1] + "/" + far[0];
+                }
+
+
+                //txtUnAidedLeftEyeDistant.Text = i.FAR_OS_U;
+
+
+                string FAR_OS_U = i.FAR_OS_U;
+                txtUnAidedLeftEyeDistant.Text = FAR_OS_U;
+                if (FAR_OS_U.Contains("/"))
+                {
+                    string[] farOs = FAR_OS_U.Split('/');
+                    txtUnAidedLeftEyeDistant.Text = farOs[1] + "/" + farOs[0];
+                }
+
+
                 txtUnaidedRightEyeShort.Text = "J/" + i.NEAR_ODJ_U;
                 txtUnAidedLeftEyeShort.Text = "J/" + i.NEAR_OSJ_U;
 
             }
-            
+
 
 
             var sight = db.PanamaSightSelect(txtPapin.Text, txtResultID.Text).FirstOrDefault();
@@ -2509,7 +2531,7 @@ namespace MedicalManagementSoftware
                 txtPersonundergoingExamination.Text = i.Fullname;
                 txtUndergoingExamination.Text = i.Fullname;
                 txtNumberOfMedicalCertificate.Text = i.specimen_no;
-               
+
 
                 try
                 {
@@ -2574,7 +2596,7 @@ namespace MedicalManagementSoftware
 
                 txtRhType.Text = "POSITIVE";
 
-                
+
 
 
                 try
@@ -2666,7 +2688,7 @@ namespace MedicalManagementSoftware
                     }
 
 
-                    
+
                     txtIssuedDay.Text = result_date[1].ToString();
                     txtIssuedMonth.Text = result_date[0].ToString();
                     txtIssuedYear.Text = result_date[2].ToString();
@@ -2841,7 +2863,7 @@ namespace MedicalManagementSoftware
                     {
                         valid_until = validUntil.ToString().Split('-');
                     }
-                    
+
 
                     txtExpirationDay.Text = valid_until[1].ToString();
                     txtExpirationMonth.Text = valid_until[0].ToString();
@@ -2858,7 +2880,7 @@ namespace MedicalManagementSoftware
                     {
                         fitness_date = fitnessDate.ToString().Split('-');
                     }
-                                        
+
                     txtIssuedDay.Text = fitness_date[1].ToString();
                     txtIssuedMonth.Text = fitness_date[0].ToString();
                     txtIssuedYear.Text = fitness_date[2].ToString();
@@ -3050,7 +3072,7 @@ namespace MedicalManagementSoftware
 
         private void txtBooster_KeyDown(object sender, KeyEventArgs e)
         {
-           
+
         }
 
         private void FrmPanama_KeyPress(object sender, KeyPressEventArgs e)
