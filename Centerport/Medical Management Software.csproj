@@ -312,6 +312,24 @@
     <Compile Include="Panama\Page6Model.cs" />
     <Compile Include="Panama\Page7Model.cs" />
     <Compile Include="Panama\Page8Model.cs" />
+    <Compile Include="PhysicalExaminationReport\FrmPhysicalExamination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhysicalExaminationReport\FrmPhysicalExamination.Designer.cs">
+      <DependentUpon>FrmPhysicalExamination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicalExaminationReport\FrmSearchPhyExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhysicalExaminationReport\FrmSearchPhyExam.Designer.cs">
+      <DependentUpon>FrmSearchPhyExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicalExaminationReport\PhysicalExaminationReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysicalExaminationReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -979,6 +997,16 @@
     <EmbeddedResource Include="Panama\FrmPanama.resx">
       <DependentUpon>FrmPanama.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PhysicalExaminationReport\FrmPhysicalExamination.resx">
+      <DependentUpon>FrmPhysicalExamination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhysicalExaminationReport\FrmSearchPhyExam.resx">
+      <DependentUpon>FrmSearchPhyExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhysicalExaminationReport\PhysicalExaminationReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PhysicalExaminationReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="RDLC\frm_LabPrintChoices.resx">
       <DependentUpon>frm_LabPrintChoices.cs</DependentUpon>
     </EmbeddedResource>
@@ -1538,6 +1566,7 @@
     <None Include="Resources\left_1.png" />
     <None Include="Resources\left_11.png" />
     <None Include="Resources\left_button_first.png" />
+    <None Include="Resources\examination.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <None Include="Resources\lab_others.png" />
     <Content Include="rsz_centerport_logo_resize.ico" />

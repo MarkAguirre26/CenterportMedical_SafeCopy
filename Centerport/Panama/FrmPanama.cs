@@ -16,9 +16,7 @@ namespace MedicalManagementSoftware
 {
     public partial class FrmPanama : Form, MyInter
     {
-        Main fmain;
-        //public static TextBox pin;
-        //public static string cn_SeabaseResultMain;
+        Main fmain;       
         public DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
         public List<Panama_SeaMLC> Panama_SeaMLC_model = new List<Panama_SeaMLC>();
 
@@ -35,7 +33,7 @@ namespace MedicalManagementSoftware
         public void New()
         {
 
-            //fmain.tsPanamaNew.Enabled = false;
+      
             fmain.tsPanamaEdit.Enabled = false;
             fmain.tsPanamaDelete.Enabled = false;
             fmain.tsPanamaSave.Enabled = true;
@@ -86,7 +84,7 @@ namespace MedicalManagementSoftware
 
         public void Edit()
         {
-            //fmain.tsPanamaNew.Enabled = false;
+           
 
             if (txtPapin.Text != "")
             {
@@ -684,6 +682,7 @@ namespace MedicalManagementSoftware
             }
             else
             {
+                txtPapin.Focus();
                 overlay.Visible = true;
                 overlay.BringToFront();
             }
@@ -1482,10 +1481,7 @@ namespace MedicalManagementSoftware
 
         public void OpenSearchList()
         {
-            //using (FromSearchPanama frmSearch = new FromSearchPanama(this))
-            //{
-            //    frmSearch.ShowDialog();
-            //}
+           
         }
 
         private void txtNumberOfMedicalCertificate_TextChanged(object sender, EventArgs e)
@@ -1914,8 +1910,7 @@ namespace MedicalManagementSoftware
             txtPapin.Text = papin;
 
             clearFields();
-            //
-
+            
             searchPanamaPatient();
             searchPanamaExamineePersonalDeclaration();
             searchPanamaDataRelatedCovid();

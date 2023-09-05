@@ -11,7 +11,7 @@ namespace MedicalManagementSoftware
     {
       public static void EndProcessQueryManagerr()
       {
-          Process[] workers = Process.GetProcessesByName("MMS_query_manager");
+          Process[] workers = Process.GetProcessesByName("Medical Management Software");
           foreach (Process worker in workers)
           {
               worker.Kill();

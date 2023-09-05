@@ -24,6 +24,7 @@ using MedicalManagementSoftware.DataSource;
 using MedicalManagementSoftware.UserControlView;
 using MedicalManagementSoftware.CustomControl;
 using MedicalManagementSoftware.Server;
+using MedicalManagementSoftware.PhysicalExaminationReport;
 //using Centerport.Accounting;
 
 
@@ -107,6 +108,7 @@ namespace MedicalManagementSoftware
             toolStripHIV.Visible = false;
             toolStripPsychology.Visible = false;
             toolStripPanama.Visible = false;
+            toolStripPhysicalExamination.Visible = false;
 
             MenuItemlaboratory.Visible = false;
             MenuItemoverseasLandBased.Visible = false;
@@ -135,6 +137,7 @@ namespace MedicalManagementSoftware
                     MenuItemoverseasLandBased.Visible = true;
                     MenuItemseaferers.Visible = true;
                     MenuItemseaferersMLC.Visible = true;
+                    toolStripPhysicalExamination.Visible = true;
 
                     break;
                 case 3: //Lab
@@ -382,6 +385,26 @@ namespace MedicalManagementSoftware
 
             }
         }
+
+
+        void ShowPhysicalExamination()
+        {
+            if ((Application.OpenForms["FrmPhysicalExamination"] as FrmPhysicalExamination) == null)
+            {
+                MedCertificate = false;
+                Cursor.Current = Cursors.WaitCursor;
+                FrmPhysicalExamination PhyExam = new FrmPhysicalExamination(this);
+                PhyExam.MdiParent = this;
+                PhyExam.Show();
+            }
+            else
+            {
+                (Application.OpenForms["FrmPhysicalExamination"] as FrmPhysicalExamination).BringToFront();
+
+
+            }
+        }
+
 
 
 
@@ -720,7 +743,7 @@ namespace MedicalManagementSoftware
                 Strip_hiv.Visible = false;
                 strip_Psy_eval.Visible = false;
                 StripPanama.Visible = false;
-                //Strip_Immonology.Visible = false;
+                toolStripPhyExam.Visible = false;
             }
             else if (this.ActiveMdiChild is frm_patientInfo)
             {
@@ -736,7 +759,7 @@ namespace MedicalManagementSoftware
                 Strip_hiv.Visible = false;
                 strip_Psy_eval.Visible = false;
                 StripPanama.Visible = false;
-                //Strip_Immonology.Visible = false;
+                toolStripPhyExam.Visible = false;
 
             }
             else if (this.ActiveMdiChild is frm_lab)
@@ -753,7 +776,7 @@ namespace MedicalManagementSoftware
                 Strip_hiv.Visible = false;
                 strip_Psy_eval.Visible = false;
                 StripPanama.Visible = false;
-                //Strip_Immonology.Visible = false;
+                toolStripPhyExam.Visible = false;
             }
             else if (this.ActiveMdiChild is frm_Landbase)
             {
@@ -769,7 +792,7 @@ namespace MedicalManagementSoftware
                 Strip_hiv.Visible = false;
                 strip_Psy_eval.Visible = false;
                 StripPanama.Visible = false;
-                //Strip_Immonology.Visible = false;
+                toolStripPhyExam.Visible = false;
             }
             else if (this.ActiveMdiChild is frm_seafarer_MEC)
             {
@@ -785,7 +808,7 @@ namespace MedicalManagementSoftware
                 Strip_hiv.Visible = false;
                 strip_Psy_eval.Visible = false;
                 StripPanama.Visible = false;
-                //Strip_Immonology.Visible = false;
+                toolStripPhyExam.Visible = false;
             }
             else if (this.ActiveMdiChild is frm_Seafarer_MLC)
             {
@@ -801,7 +824,7 @@ namespace MedicalManagementSoftware
                 Strip_hiv.Visible = false;
                 strip_Psy_eval.Visible = false;
                 StripPanama.Visible = false;
-                //Strip_Immonology.Visible = false;
+                toolStripPhyExam.Visible = false;
 
             }
             else if (this.ActiveMdiChild is frm_Ultrasound)
@@ -818,7 +841,7 @@ namespace MedicalManagementSoftware
                 Strip_hiv.Visible = false;
                 strip_Psy_eval.Visible = false;
                 StripPanama.Visible = false;
-                //Strip_Immonology.Visible = false;
+                toolStripPhyExam.Visible = false;
 
             }
             else if (this.ActiveMdiChild is frm_xray)
@@ -835,7 +858,7 @@ namespace MedicalManagementSoftware
                 Strip_hiv.Visible = false;
                 strip_Psy_eval.Visible = false;
                 StripPanama.Visible = false;
-                //Strip_Immonology.Visible = false;
+                toolStripPhyExam.Visible = false;
 
             }
             else if (this.ActiveMdiChild is frm_HIV)
@@ -852,7 +875,7 @@ namespace MedicalManagementSoftware
                 Strip_hiv.Visible = true;
                 strip_Psy_eval.Visible = false;
                 StripPanama.Visible = false;
-                //Strip_Immonology.Visible = false;
+                toolStripPhyExam.Visible = false;
 
             }
             else if (this.ActiveMdiChild is frm_Psych_Evaluation)
@@ -869,7 +892,7 @@ namespace MedicalManagementSoftware
                 Strip_hiv.Visible = false;
                 strip_Psy_eval.Visible = true;
                 StripPanama.Visible = false;
-                //Strip_Immonology.Visible = false;
+                toolStripPhyExam.Visible = false;
 
             }
             else if (this.ActiveMdiChild is Frm_Immunology)
@@ -887,6 +910,8 @@ namespace MedicalManagementSoftware
                 strip_Psy_eval.Visible = false;
                 StripPanama.Visible = false;
 
+                toolStripPhyExam.Visible = false;
+
             }
             else if (this.ActiveMdiChild is FrmPanama)
             {
@@ -902,7 +927,24 @@ namespace MedicalManagementSoftware
                 Strip_Xray.Visible = false;
                 Strip_hiv.Visible = false;
                 strip_Psy_eval.Visible = false;
+                toolStripPhyExam.Visible = false;
 
+            }
+            else if (this.ActiveMdiChild is FrmPhysicalExamination)
+            {
+                StripPanama.Visible = false;
+                stripImmunology.Visible = false;
+                Strip_Visit.Visible = false;
+                strip_profil.Visible = false;
+                Strip_lab.Visible = false;
+                Strip_Land.Visible = false;
+                Strip_Sea.Visible = false;
+                Strip_Seafarer_MLC.Visible = false;
+                Strip_Ultra.Visible = false;
+                Strip_Xray.Visible = false;
+                Strip_hiv.Visible = false;
+                strip_Psy_eval.Visible = false;
+                toolStripPhyExam.Visible = true;
             }
             else
             {
@@ -918,6 +960,7 @@ namespace MedicalManagementSoftware
                 Strip_Xray.Visible = false;
                 Strip_hiv.Visible = false;
                 strip_Psy_eval.Visible = false;
+                toolStripPhyExam.Visible = false;
             }
         }
         public void add_Visit()
@@ -1310,6 +1353,19 @@ namespace MedicalManagementSoftware
             FrmSearchPanama frm = new FrmSearchPanama(this);
             frm.ShowDialog();
         }
+
+
+        public void SearchPhysicalExam()
+        {
+
+            Cursor.Current = Cursors.WaitCursor;
+
+            FrmSearchPhyExam frm = new FrmSearchPhyExam(this);
+            frm.ShowDialog();
+        }
+
+
+
         private void ts_search_land_Click(object sender, EventArgs e)
         {
             if (this.ActiveMdiChild is frm_Landbase)
@@ -2148,7 +2204,7 @@ namespace MedicalManagementSoftware
 
             //if (MessageBox.Show("You're about to exit the application. Are you sure?", "Exit Application", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             //{
-            //    //EndProcess.EndProcessQueryManagerr();
+            EndProcess.EndProcessQueryManagerr();
             Application.Exit();
             //    e.Cancel = false;
 
@@ -2843,7 +2899,7 @@ namespace MedicalManagementSoftware
                 if (i != 7)
                 {
                     (Application.OpenForms["FrmPanama"] as FrmPanama).tabNavigator(i + 1);
-                }              
+                }
             }
         }
 
@@ -2861,6 +2917,70 @@ namespace MedicalManagementSoftware
         private void toolStripButton5_Click_2(object sender, EventArgs e)
         {
             (Application.OpenForms["FrmPanama"] as FrmPanama).searchPanamaRecord(this.Tag.ToString());
+        }
+
+        private void toolStripPhysicalExamination_Click(object sender, EventArgs e)
+        {
+            ShowPhysicalExamination();
+        }
+
+        private void toolStripPhyExamSearch_Click(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is FrmPhysicalExamination)
+            {
+
+                SearchPhysicalExam();
+
+            }
+        }
+
+        private void toolStripPhyExamClose_Click(object sender, EventArgs e)
+        {
+            (Application.OpenForms["FrmPhysicalExamination"] as FrmPhysicalExamination).Close();
+        }
+
+        private void toolStripPhyExamPrint_Click(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is FrmPhysicalExamination)
+            {
+                Cursor.Current = Cursors.WaitCursor;
+                ((MyInter)this.ActiveMdiChild).Print();
+
+
+            }
+        }
+
+        private void toolStripPhyExamEdit_Click(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is FrmPhysicalExamination)
+            {
+                Cursor.Current = Cursors.WaitCursor;
+                ((MyInter)this.ActiveMdiChild).Edit();
+
+
+            }
+        }
+
+        private void toolStripPhyExamCancel_Click(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is FrmPhysicalExamination)
+            {
+                Cursor.Current = Cursors.WaitCursor;
+                ((MyInter)this.ActiveMdiChild).Cancel();
+
+
+            }
+        }
+
+        private void toolStripPhyExamSave_Click(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is FrmPhysicalExamination)
+            {
+                Cursor.Current = Cursors.WaitCursor;
+                ((MyInter)this.ActiveMdiChild).Save();
+
+
+            }
         }
 
 
