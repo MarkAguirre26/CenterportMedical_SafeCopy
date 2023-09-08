@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbFemale = new System.Windows.Forms.RadioButton();
+            this.rbMale = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.txtFirstname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,8 +38,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtlastname = new System.Windows.Forms.TextBox();
             this.txtMiddleName = new System.Windows.Forms.TextBox();
-            this.txt_pBirth = new System.Windows.Forms.TextBox();
-            this.txt_add = new System.Windows.Forms.TextBox();
+            this.txtBirthDate = new System.Windows.Forms.TextBox();
+            this.txtPlaceOfBirth = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -56,19 +56,19 @@
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtHomeAddress = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtHeight = new System.Windows.Forms.TextBox();
+            this.txtWeight = new System.Windows.Forms.TextBox();
+            this.txtBloodPressure = new System.Windows.Forms.TextBox();
+            this.txtPulse = new System.Windows.Forms.TextBox();
+            this.txtRespiration = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtGeneralAppearance = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -79,11 +79,11 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtRightEyeWithOutGlasses = new System.Windows.Forms.TextBox();
+            this.txtLeftEyeWithOutGlasses = new System.Windows.Forms.TextBox();
+            this.txtLeftEyeWithGlasses = new System.Windows.Forms.TextBox();
+            this.txtRightEyeWithGlasses = new System.Windows.Forms.TextBox();
+            this.txtDateOfColorVisionTest = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
@@ -98,21 +98,21 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtHearingRight = new System.Windows.Forms.TextBox();
+            this.txthearingLeft = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtHeart = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtLungs = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.txtSpeach = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.txtExtremitiesLower = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.txtExtremitiesUpper = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
@@ -120,15 +120,15 @@
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.txtSignatureOfApplicant = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.txtDateOfExam = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.txtExpirydate = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.txtNameOfApplicant = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
@@ -138,12 +138,12 @@
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.txtNameOfPhysician = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtPhysicianCertificatingAuthority = new System.Windows.Forms.TextBox();
+            this.txtDateOfIssuePhysicianCertificate = new System.Windows.Forms.TextBox();
+            this.txtSignatureOfPhyysician = new System.Windows.Forms.TextBox();
+            this.txtPhysicianDateOfExam = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.txtPapin = new System.Windows.Forms.TextBox();
@@ -156,8 +156,8 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.radioButton2);
-            this.groupBox5.Controls.Add(this.radioButton1);
+            this.groupBox5.Controls.Add(this.rbFemale);
+            this.groupBox5.Controls.Add(this.rbMale);
             this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Controls.Add(this.txtFirstname);
             this.groupBox5.Controls.Add(this.label3);
@@ -165,8 +165,8 @@
             this.groupBox5.Controls.Add(this.label4);
             this.groupBox5.Controls.Add(this.txtlastname);
             this.groupBox5.Controls.Add(this.txtMiddleName);
-            this.groupBox5.Controls.Add(this.txt_pBirth);
-            this.groupBox5.Controls.Add(this.txt_add);
+            this.groupBox5.Controls.Add(this.txtBirthDate);
+            this.groupBox5.Controls.Add(this.txtPlaceOfBirth);
             this.groupBox5.Controls.Add(this.label17);
             this.groupBox5.Controls.Add(this.label16);
             this.groupBox5.Controls.Add(this.label15);
@@ -177,27 +177,27 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = ".";
             // 
-            // radioButton2
+            // rbFemale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(760, 54);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(59, 17);
-            this.radioButton2.TabIndex = 25;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.Location = new System.Drawing.Point(760, 54);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(59, 17);
+            this.rbFemale.TabIndex = 25;
+            this.rbFemale.TabStop = true;
+            this.rbFemale.Text = "Female";
+            this.rbFemale.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbMale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(703, 54);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(48, 17);
-            this.radioButton1.TabIndex = 24;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbMale.AutoSize = true;
+            this.rbMale.Location = new System.Drawing.Point(703, 54);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(48, 17);
+            this.rbMale.TabIndex = 24;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "Male";
+            this.rbMale.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -280,27 +280,27 @@
             this.txtMiddleName.Size = new System.Drawing.Size(171, 22);
             this.txtMiddleName.TabIndex = 3;
             // 
-            // txt_pBirth
+            // txtBirthDate
             // 
-            this.txt_pBirth.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_pBirth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_pBirth.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txt_pBirth.Location = new System.Drawing.Point(89, 51);
-            this.txt_pBirth.Name = "txt_pBirth";
-            this.txt_pBirth.ReadOnly = true;
-            this.txt_pBirth.Size = new System.Drawing.Size(188, 22);
-            this.txt_pBirth.TabIndex = 4;
+            this.txtBirthDate.BackColor = System.Drawing.SystemColors.Control;
+            this.txtBirthDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBirthDate.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtBirthDate.Location = new System.Drawing.Point(89, 51);
+            this.txtBirthDate.Name = "txtBirthDate";
+            this.txtBirthDate.ReadOnly = true;
+            this.txtBirthDate.Size = new System.Drawing.Size(188, 22);
+            this.txtBirthDate.TabIndex = 4;
             // 
-            // txt_add
+            // txtPlaceOfBirth
             // 
-            this.txt_add.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_add.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txt_add.Location = new System.Drawing.Point(368, 51);
-            this.txt_add.Name = "txt_add";
-            this.txt_add.ReadOnly = true;
-            this.txt_add.Size = new System.Drawing.Size(277, 22);
-            this.txt_add.TabIndex = 10;
+            this.txtPlaceOfBirth.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPlaceOfBirth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPlaceOfBirth.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtPlaceOfBirth.Location = new System.Drawing.Point(368, 51);
+            this.txtPlaceOfBirth.Name = "txtPlaceOfBirth";
+            this.txtPlaceOfBirth.ReadOnly = true;
+            this.txtPlaceOfBirth.Size = new System.Drawing.Size(277, 22);
+            this.txtPlaceOfBirth.TabIndex = 10;
             // 
             // label17
             // 
@@ -480,17 +480,17 @@
             this.label6.TabIndex = 277;
             this.label6.Text = "MAILING ADDRESS OF APPLICANT";
             // 
-            // textBox1
+            // txtHomeAddress
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox1.Location = new System.Drawing.Point(372, 144);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(463, 89);
-            this.textBox1.TabIndex = 278;
+            this.txtHomeAddress.BackColor = System.Drawing.SystemColors.Control;
+            this.txtHomeAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtHomeAddress.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtHomeAddress.Location = new System.Drawing.Point(372, 144);
+            this.txtHomeAddress.Multiline = true;
+            this.txtHomeAddress.Name = "txtHomeAddress";
+            this.txtHomeAddress.ReadOnly = true;
+            this.txtHomeAddress.Size = new System.Drawing.Size(463, 89);
+            this.txtHomeAddress.TabIndex = 278;
             // 
             // label7
             // 
@@ -553,60 +553,60 @@
             this.label11.TabIndex = 282;
             this.label11.Text = "Blood Pressure";
             // 
-            // textBox2
+            // txtHeight
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox2.Location = new System.Drawing.Point(14, 286);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(74, 22);
-            this.textBox2.TabIndex = 283;
+            this.txtHeight.BackColor = System.Drawing.SystemColors.Control;
+            this.txtHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtHeight.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtHeight.Location = new System.Drawing.Point(14, 286);
+            this.txtHeight.Name = "txtHeight";
+            this.txtHeight.ReadOnly = true;
+            this.txtHeight.Size = new System.Drawing.Size(74, 22);
+            this.txtHeight.TabIndex = 283;
             // 
-            // textBox3
+            // txtWeight
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox3.Location = new System.Drawing.Point(93, 286);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(74, 22);
-            this.textBox3.TabIndex = 284;
+            this.txtWeight.BackColor = System.Drawing.SystemColors.Control;
+            this.txtWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtWeight.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtWeight.Location = new System.Drawing.Point(93, 286);
+            this.txtWeight.Name = "txtWeight";
+            this.txtWeight.ReadOnly = true;
+            this.txtWeight.Size = new System.Drawing.Size(74, 22);
+            this.txtWeight.TabIndex = 284;
             // 
-            // textBox4
+            // txtBloodPressure
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox4.Location = new System.Drawing.Point(172, 286);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 285;
+            this.txtBloodPressure.BackColor = System.Drawing.SystemColors.Control;
+            this.txtBloodPressure.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBloodPressure.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtBloodPressure.Location = new System.Drawing.Point(172, 286);
+            this.txtBloodPressure.Name = "txtBloodPressure";
+            this.txtBloodPressure.ReadOnly = true;
+            this.txtBloodPressure.Size = new System.Drawing.Size(100, 22);
+            this.txtBloodPressure.TabIndex = 285;
             // 
-            // textBox5
+            // txtPulse
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox5.Location = new System.Drawing.Point(278, 286);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(74, 22);
-            this.textBox5.TabIndex = 286;
+            this.txtPulse.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPulse.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPulse.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtPulse.Location = new System.Drawing.Point(278, 286);
+            this.txtPulse.Name = "txtPulse";
+            this.txtPulse.ReadOnly = true;
+            this.txtPulse.Size = new System.Drawing.Size(74, 22);
+            this.txtPulse.TabIndex = 286;
             // 
-            // textBox6
+            // txtRespiration
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox6.Location = new System.Drawing.Point(365, 286);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(215, 22);
-            this.textBox6.TabIndex = 288;
+            this.txtRespiration.BackColor = System.Drawing.SystemColors.Control;
+            this.txtRespiration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRespiration.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtRespiration.Location = new System.Drawing.Point(365, 286);
+            this.txtRespiration.Name = "txtRespiration";
+            this.txtRespiration.ReadOnly = true;
+            this.txtRespiration.Size = new System.Drawing.Size(215, 22);
+            this.txtRespiration.TabIndex = 288;
             // 
             // label12
             // 
@@ -620,16 +620,16 @@
             this.label12.TabIndex = 287;
             this.label12.Text = "Respiration";
             // 
-            // textBox7
+            // txtGeneralAppearance
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox7.Location = new System.Drawing.Point(586, 286);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(215, 22);
-            this.textBox7.TabIndex = 290;
+            this.txtGeneralAppearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txtGeneralAppearance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGeneralAppearance.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtGeneralAppearance.Location = new System.Drawing.Point(586, 286);
+            this.txtGeneralAppearance.Name = "txtGeneralAppearance";
+            this.txtGeneralAppearance.ReadOnly = true;
+            this.txtGeneralAppearance.Size = new System.Drawing.Size(215, 22);
+            this.txtGeneralAppearance.TabIndex = 290;
             // 
             // label13
             // 
@@ -748,60 +748,60 @@
             this.label25.TabIndex = 299;
             this.label25.Text = "RIGHT EYE";
             // 
-            // textBox8
+            // txtRightEyeWithOutGlasses
             // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox8.Location = new System.Drawing.Point(214, 340);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(75, 22);
-            this.textBox8.TabIndex = 300;
+            this.txtRightEyeWithOutGlasses.BackColor = System.Drawing.SystemColors.Control;
+            this.txtRightEyeWithOutGlasses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRightEyeWithOutGlasses.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtRightEyeWithOutGlasses.Location = new System.Drawing.Point(214, 340);
+            this.txtRightEyeWithOutGlasses.Name = "txtRightEyeWithOutGlasses";
+            this.txtRightEyeWithOutGlasses.ReadOnly = true;
+            this.txtRightEyeWithOutGlasses.Size = new System.Drawing.Size(75, 22);
+            this.txtRightEyeWithOutGlasses.TabIndex = 300;
             // 
-            // textBox9
+            // txtLeftEyeWithOutGlasses
             // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox9.Location = new System.Drawing.Point(291, 340);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(75, 22);
-            this.textBox9.TabIndex = 301;
+            this.txtLeftEyeWithOutGlasses.BackColor = System.Drawing.SystemColors.Control;
+            this.txtLeftEyeWithOutGlasses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLeftEyeWithOutGlasses.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtLeftEyeWithOutGlasses.Location = new System.Drawing.Point(291, 340);
+            this.txtLeftEyeWithOutGlasses.Name = "txtLeftEyeWithOutGlasses";
+            this.txtLeftEyeWithOutGlasses.ReadOnly = true;
+            this.txtLeftEyeWithOutGlasses.Size = new System.Drawing.Size(75, 22);
+            this.txtLeftEyeWithOutGlasses.TabIndex = 301;
             // 
-            // textBox10
+            // txtLeftEyeWithGlasses
             // 
-            this.textBox10.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox10.Location = new System.Drawing.Point(291, 363);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(75, 22);
-            this.textBox10.TabIndex = 303;
+            this.txtLeftEyeWithGlasses.BackColor = System.Drawing.SystemColors.Control;
+            this.txtLeftEyeWithGlasses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLeftEyeWithGlasses.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtLeftEyeWithGlasses.Location = new System.Drawing.Point(291, 363);
+            this.txtLeftEyeWithGlasses.Name = "txtLeftEyeWithGlasses";
+            this.txtLeftEyeWithGlasses.ReadOnly = true;
+            this.txtLeftEyeWithGlasses.Size = new System.Drawing.Size(75, 22);
+            this.txtLeftEyeWithGlasses.TabIndex = 303;
             // 
-            // textBox11
+            // txtRightEyeWithGlasses
             // 
-            this.textBox11.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox11.Location = new System.Drawing.Point(214, 363);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(75, 22);
-            this.textBox11.TabIndex = 302;
+            this.txtRightEyeWithGlasses.BackColor = System.Drawing.SystemColors.Control;
+            this.txtRightEyeWithGlasses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRightEyeWithGlasses.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtRightEyeWithGlasses.Location = new System.Drawing.Point(214, 363);
+            this.txtRightEyeWithGlasses.Name = "txtRightEyeWithGlasses";
+            this.txtRightEyeWithGlasses.ReadOnly = true;
+            this.txtRightEyeWithGlasses.Size = new System.Drawing.Size(75, 22);
+            this.txtRightEyeWithGlasses.TabIndex = 302;
             // 
-            // textBox12
+            // txtDateOfColorVisionTest
             // 
-            this.textBox12.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox12.Location = new System.Drawing.Point(291, 386);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(75, 22);
-            this.textBox12.TabIndex = 304;
+            this.txtDateOfColorVisionTest.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDateOfColorVisionTest.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDateOfColorVisionTest.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtDateOfColorVisionTest.Location = new System.Drawing.Point(291, 386);
+            this.txtDateOfColorVisionTest.Name = "txtDateOfColorVisionTest";
+            this.txtDateOfColorVisionTest.ReadOnly = true;
+            this.txtDateOfColorVisionTest.Size = new System.Drawing.Size(75, 22);
+            this.txtDateOfColorVisionTest.TabIndex = 304;
             // 
             // label26
             // 
@@ -956,27 +956,27 @@
             this.label33.TabIndex = 315;
             this.label33.Text = "With Glasses";
             // 
-            // textBox13
+            // txtHearingRight
             // 
-            this.textBox13.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox13.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox13.Location = new System.Drawing.Point(140, 463);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(248, 22);
-            this.textBox13.TabIndex = 316;
+            this.txtHearingRight.BackColor = System.Drawing.SystemColors.Control;
+            this.txtHearingRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtHearingRight.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtHearingRight.Location = new System.Drawing.Point(140, 463);
+            this.txtHearingRight.Name = "txtHearingRight";
+            this.txtHearingRight.ReadOnly = true;
+            this.txtHearingRight.Size = new System.Drawing.Size(248, 22);
+            this.txtHearingRight.TabIndex = 316;
             // 
-            // textBox14
+            // txthearingLeft
             // 
-            this.textBox14.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox14.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox14.Location = new System.Drawing.Point(428, 463);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(248, 22);
-            this.textBox14.TabIndex = 318;
+            this.txthearingLeft.BackColor = System.Drawing.SystemColors.Control;
+            this.txthearingLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txthearingLeft.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txthearingLeft.Location = new System.Drawing.Point(428, 463);
+            this.txthearingLeft.Name = "txthearingLeft";
+            this.txthearingLeft.ReadOnly = true;
+            this.txthearingLeft.Size = new System.Drawing.Size(248, 22);
+            this.txthearingLeft.TabIndex = 318;
             // 
             // label34
             // 
@@ -1013,16 +1013,16 @@
             this.label36.Text = "_________________________________________________________________________________" +
     "_________________________________________________________";
             // 
-            // textBox15
+            // txtHeart
             // 
-            this.textBox15.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox15.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox15.Location = new System.Drawing.Point(428, 526);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(248, 22);
-            this.textBox15.TabIndex = 321;
+            this.txtHeart.BackColor = System.Drawing.SystemColors.Control;
+            this.txtHeart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtHeart.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtHeart.Location = new System.Drawing.Point(428, 526);
+            this.txtHeart.Name = "txtHeart";
+            this.txtHeart.ReadOnly = true;
+            this.txtHeart.Size = new System.Drawing.Size(248, 22);
+            this.txtHeart.TabIndex = 321;
             // 
             // label37
             // 
@@ -1036,16 +1036,16 @@
             this.label37.TabIndex = 322;
             this.label37.Text = "LUNGS:";
             // 
-            // textBox16
+            // txtLungs
             // 
-            this.textBox16.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox16.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox16.Location = new System.Drawing.Point(140, 590);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(248, 22);
-            this.textBox16.TabIndex = 323;
+            this.txtLungs.BackColor = System.Drawing.SystemColors.Control;
+            this.txtLungs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLungs.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtLungs.Location = new System.Drawing.Point(140, 590);
+            this.txtLungs.Name = "txtLungs";
+            this.txtLungs.ReadOnly = true;
+            this.txtLungs.Size = new System.Drawing.Size(248, 22);
+            this.txtLungs.TabIndex = 323;
             // 
             // label38
             // 
@@ -1071,16 +1071,16 @@
             this.label39.Text = "SPEACH (DECK/NAVIGATIONAL OFFICER AND RADIO OFFICER)\r\nIS SPEECH UNIMPAIRED FOR NO" +
     "RMAL VOICE COMMUNICATION?";
             // 
-            // textBox17
+            // txtSpeach
             // 
-            this.textBox17.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox17.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox17.Location = new System.Drawing.Point(428, 590);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(248, 22);
-            this.textBox17.TabIndex = 326;
+            this.txtSpeach.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSpeach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSpeach.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtSpeach.Location = new System.Drawing.Point(428, 590);
+            this.txtSpeach.Name = "txtSpeach";
+            this.txtSpeach.ReadOnly = true;
+            this.txtSpeach.Size = new System.Drawing.Size(248, 22);
+            this.txtSpeach.TabIndex = 326;
             // 
             // label40
             // 
@@ -1093,16 +1093,16 @@
             this.label40.Text = "_________________________________________________________________________________" +
     "_________________________________________________________";
             // 
-            // textBox18
+            // txtExtremitiesLower
             // 
-            this.textBox18.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox18.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox18.Location = new System.Drawing.Point(428, 621);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(248, 22);
-            this.textBox18.TabIndex = 332;
+            this.txtExtremitiesLower.BackColor = System.Drawing.SystemColors.Control;
+            this.txtExtremitiesLower.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtExtremitiesLower.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtExtremitiesLower.Location = new System.Drawing.Point(428, 621);
+            this.txtExtremitiesLower.Name = "txtExtremitiesLower";
+            this.txtExtremitiesLower.ReadOnly = true;
+            this.txtExtremitiesLower.Size = new System.Drawing.Size(248, 22);
+            this.txtExtremitiesLower.TabIndex = 332;
             // 
             // label41
             // 
@@ -1116,16 +1116,16 @@
             this.label41.TabIndex = 331;
             this.label41.Text = "LOWER";
             // 
-            // textBox19
+            // txtExtremitiesUpper
             // 
-            this.textBox19.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox19.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox19.Location = new System.Drawing.Point(140, 621);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(248, 22);
-            this.textBox19.TabIndex = 330;
+            this.txtExtremitiesUpper.BackColor = System.Drawing.SystemColors.Control;
+            this.txtExtremitiesUpper.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtExtremitiesUpper.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtExtremitiesUpper.Location = new System.Drawing.Point(140, 621);
+            this.txtExtremitiesUpper.Name = "txtExtremitiesUpper";
+            this.txtExtremitiesUpper.ReadOnly = true;
+            this.txtExtremitiesUpper.Size = new System.Drawing.Size(248, 22);
+            this.txtExtremitiesUpper.TabIndex = 330;
             // 
             // label42
             // 
@@ -1210,16 +1210,16 @@
             this.label47.Text = "_________________________________________________________________________________" +
     "_________________________________________________________";
             // 
-            // textBox21
+            // txtSignatureOfApplicant
             // 
-            this.textBox21.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox21.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox21.Location = new System.Drawing.Point(46, 712);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.ReadOnly = true;
-            this.textBox21.Size = new System.Drawing.Size(248, 22);
-            this.textBox21.TabIndex = 339;
+            this.txtSignatureOfApplicant.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSignatureOfApplicant.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSignatureOfApplicant.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtSignatureOfApplicant.Location = new System.Drawing.Point(46, 712);
+            this.txtSignatureOfApplicant.Name = "txtSignatureOfApplicant";
+            this.txtSignatureOfApplicant.ReadOnly = true;
+            this.txtSignatureOfApplicant.Size = new System.Drawing.Size(248, 22);
+            this.txtSignatureOfApplicant.TabIndex = 339;
             // 
             // label48
             // 
@@ -1233,16 +1233,16 @@
             this.label48.TabIndex = 338;
             this.label48.Text = "SIGNATURE OF APPLICANT";
             // 
-            // textBox22
+            // txtDateOfExam
             // 
-            this.textBox22.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox22.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox22.Location = new System.Drawing.Point(304, 712);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.ReadOnly = true;
-            this.textBox22.Size = new System.Drawing.Size(248, 22);
-            this.textBox22.TabIndex = 341;
+            this.txtDateOfExam.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDateOfExam.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDateOfExam.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtDateOfExam.Location = new System.Drawing.Point(304, 712);
+            this.txtDateOfExam.Name = "txtDateOfExam";
+            this.txtDateOfExam.ReadOnly = true;
+            this.txtDateOfExam.Size = new System.Drawing.Size(248, 22);
+            this.txtDateOfExam.TabIndex = 341;
             // 
             // label49
             // 
@@ -1256,16 +1256,16 @@
             this.label49.TabIndex = 340;
             this.label49.Text = "DATE OF EXAM";
             // 
-            // textBox23
+            // txtExpirydate
             // 
-            this.textBox23.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox23.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox23.Location = new System.Drawing.Point(558, 712);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.ReadOnly = true;
-            this.textBox23.Size = new System.Drawing.Size(248, 22);
-            this.textBox23.TabIndex = 343;
+            this.txtExpirydate.BackColor = System.Drawing.SystemColors.Control;
+            this.txtExpirydate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtExpirydate.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtExpirydate.Location = new System.Drawing.Point(558, 712);
+            this.txtExpirydate.Name = "txtExpirydate";
+            this.txtExpirydate.ReadOnly = true;
+            this.txtExpirydate.Size = new System.Drawing.Size(248, 22);
+            this.txtExpirydate.TabIndex = 343;
             // 
             // label50
             // 
@@ -1303,16 +1303,16 @@
             this.label52.TabIndex = 345;
             this.label52.Text = "THIS SIGNATURE SHOULD BE AFFIXED IN THE PRESENCE OF THE EXAMINING PHYSICIAN";
             // 
-            // textBox24
+            // txtNameOfApplicant
             // 
-            this.textBox24.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox24.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox24.Location = new System.Drawing.Point(492, 779);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.ReadOnly = true;
-            this.textBox24.Size = new System.Drawing.Size(248, 22);
-            this.textBox24.TabIndex = 346;
+            this.txtNameOfApplicant.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNameOfApplicant.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNameOfApplicant.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtNameOfApplicant.Location = new System.Drawing.Point(492, 779);
+            this.txtNameOfApplicant.Name = "txtNameOfApplicant";
+            this.txtNameOfApplicant.ReadOnly = true;
+            this.txtNameOfApplicant.Size = new System.Drawing.Size(314, 22);
+            this.txtNameOfApplicant.TabIndex = 346;
             // 
             // label53
             // 
@@ -1320,7 +1320,7 @@
             this.label53.BackColor = System.Drawing.SystemColors.Control;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.label53.ForeColor = System.Drawing.Color.Black;
-            this.label53.Location = new System.Drawing.Point(570, 804);
+            this.label53.Location = new System.Drawing.Point(606, 804);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(119, 13);
             this.label53.TabIndex = 347;
@@ -1356,7 +1356,7 @@
             this.label56.BackColor = System.Drawing.SystemColors.Control;
             this.label56.Font = new System.Drawing.Font("Arial", 8F);
             this.label56.ForeColor = System.Drawing.Color.Black;
-            this.label56.Location = new System.Drawing.Point(103, 858);
+            this.label56.Location = new System.Drawing.Point(20, 858);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(186, 14);
             this.label56.TabIndex = 350;
@@ -1368,7 +1368,7 @@
             this.label57.BackColor = System.Drawing.SystemColors.Control;
             this.label57.Font = new System.Drawing.Font("Arial", 8F);
             this.label57.ForeColor = System.Drawing.Color.Black;
-            this.label57.Location = new System.Drawing.Point(230, 881);
+            this.label57.Location = new System.Drawing.Point(20, 881);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(59, 14);
             this.label57.TabIndex = 351;
@@ -1380,7 +1380,7 @@
             this.label58.BackColor = System.Drawing.SystemColors.Control;
             this.label58.Font = new System.Drawing.Font("Arial", 8F);
             this.label58.ForeColor = System.Drawing.Color.Black;
-            this.label58.Location = new System.Drawing.Point(31, 904);
+            this.label58.Location = new System.Drawing.Point(20, 904);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(258, 14);
             this.label58.TabIndex = 352;
@@ -1392,7 +1392,7 @@
             this.label59.BackColor = System.Drawing.SystemColors.Control;
             this.label59.Font = new System.Drawing.Font("Arial", 8F);
             this.label59.ForeColor = System.Drawing.Color.Black;
-            this.label59.Location = new System.Drawing.Point(56, 927);
+            this.label59.Location = new System.Drawing.Point(20, 927);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(233, 14);
             this.label59.TabIndex = 353;
@@ -1404,7 +1404,7 @@
             this.label60.BackColor = System.Drawing.SystemColors.Control;
             this.label60.Font = new System.Drawing.Font("Arial", 8F);
             this.label60.ForeColor = System.Drawing.Color.Black;
-            this.label60.Location = new System.Drawing.Point(148, 951);
+            this.label60.Location = new System.Drawing.Point(20, 951);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(141, 14);
             this.label60.TabIndex = 354;
@@ -1416,77 +1416,77 @@
             this.label61.BackColor = System.Drawing.SystemColors.Control;
             this.label61.Font = new System.Drawing.Font("Arial", 8F);
             this.label61.ForeColor = System.Drawing.Color.Black;
-            this.label61.Location = new System.Drawing.Point(518, 950);
+            this.label61.Location = new System.Drawing.Point(540, 950);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(124, 14);
             this.label61.TabIndex = 355;
             this.label61.Text = "DATE OF EXAMINATION:";
             // 
-            // textBox25
+            // txtNameOfPhysician
             // 
-            this.textBox25.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox25.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox25.Location = new System.Drawing.Point(304, 854);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.ReadOnly = true;
-            this.textBox25.Size = new System.Drawing.Size(502, 22);
-            this.textBox25.TabIndex = 357;
+            this.txtNameOfPhysician.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNameOfPhysician.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNameOfPhysician.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtNameOfPhysician.Location = new System.Drawing.Point(212, 854);
+            this.txtNameOfPhysician.Name = "txtNameOfPhysician";
+            this.txtNameOfPhysician.ReadOnly = true;
+            this.txtNameOfPhysician.Size = new System.Drawing.Size(616, 22);
+            this.txtNameOfPhysician.TabIndex = 357;
             // 
-            // textBox26
+            // txtAddress
             // 
-            this.textBox26.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox26.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox26.Location = new System.Drawing.Point(304, 877);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.ReadOnly = true;
-            this.textBox26.Size = new System.Drawing.Size(502, 22);
-            this.textBox26.TabIndex = 358;
+            this.txtAddress.BackColor = System.Drawing.SystemColors.Control;
+            this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAddress.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtAddress.Location = new System.Drawing.Point(85, 877);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.ReadOnly = true;
+            this.txtAddress.Size = new System.Drawing.Size(743, 22);
+            this.txtAddress.TabIndex = 358;
             // 
-            // textBox27
+            // txtPhysicianCertificatingAuthority
             // 
-            this.textBox27.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox27.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox27.Location = new System.Drawing.Point(304, 900);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.ReadOnly = true;
-            this.textBox27.Size = new System.Drawing.Size(502, 22);
-            this.textBox27.TabIndex = 359;
+            this.txtPhysicianCertificatingAuthority.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPhysicianCertificatingAuthority.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPhysicianCertificatingAuthority.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtPhysicianCertificatingAuthority.Location = new System.Drawing.Point(284, 900);
+            this.txtPhysicianCertificatingAuthority.Name = "txtPhysicianCertificatingAuthority";
+            this.txtPhysicianCertificatingAuthority.ReadOnly = true;
+            this.txtPhysicianCertificatingAuthority.Size = new System.Drawing.Size(544, 22);
+            this.txtPhysicianCertificatingAuthority.TabIndex = 359;
             // 
-            // textBox28
+            // txtDateOfIssuePhysicianCertificate
             // 
-            this.textBox28.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox28.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox28.Location = new System.Drawing.Point(304, 923);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.ReadOnly = true;
-            this.textBox28.Size = new System.Drawing.Size(502, 22);
-            this.textBox28.TabIndex = 360;
+            this.txtDateOfIssuePhysicianCertificate.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDateOfIssuePhysicianCertificate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDateOfIssuePhysicianCertificate.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtDateOfIssuePhysicianCertificate.Location = new System.Drawing.Point(259, 923);
+            this.txtDateOfIssuePhysicianCertificate.Name = "txtDateOfIssuePhysicianCertificate";
+            this.txtDateOfIssuePhysicianCertificate.ReadOnly = true;
+            this.txtDateOfIssuePhysicianCertificate.Size = new System.Drawing.Size(569, 22);
+            this.txtDateOfIssuePhysicianCertificate.TabIndex = 360;
             // 
-            // textBox29
+            // txtSignatureOfPhyysician
             // 
-            this.textBox29.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox29.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox29.Location = new System.Drawing.Point(304, 946);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.ReadOnly = true;
-            this.textBox29.Size = new System.Drawing.Size(204, 22);
-            this.textBox29.TabIndex = 361;
+            this.txtSignatureOfPhyysician.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSignatureOfPhyysician.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSignatureOfPhyysician.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtSignatureOfPhyysician.Location = new System.Drawing.Point(167, 946);
+            this.txtSignatureOfPhyysician.Name = "txtSignatureOfPhyysician";
+            this.txtSignatureOfPhyysician.ReadOnly = true;
+            this.txtSignatureOfPhyysician.Size = new System.Drawing.Size(363, 22);
+            this.txtSignatureOfPhyysician.TabIndex = 361;
             // 
-            // textBox30
+            // txtPhysicianDateOfExam
             // 
-            this.textBox30.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox30.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.textBox30.Location = new System.Drawing.Point(648, 946);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.ReadOnly = true;
-            this.textBox30.Size = new System.Drawing.Size(158, 22);
-            this.textBox30.TabIndex = 362;
+            this.txtPhysicianDateOfExam.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPhysicianDateOfExam.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPhysicianDateOfExam.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.txtPhysicianDateOfExam.Location = new System.Drawing.Point(670, 946);
+            this.txtPhysicianDateOfExam.Name = "txtPhysicianDateOfExam";
+            this.txtPhysicianDateOfExam.ReadOnly = true;
+            this.txtPhysicianDateOfExam.Size = new System.Drawing.Size(158, 22);
+            this.txtPhysicianDateOfExam.TabIndex = 362;
             // 
             // label62
             // 
@@ -1517,7 +1517,7 @@
             // 
             this.overlayShadow1.Location = new System.Drawing.Point(6, 124);
             this.overlayShadow1.Name = "overlayShadow1";
-            this.overlayShadow1.Size = new System.Drawing.Size(85, 855);
+            this.overlayShadow1.Size = new System.Drawing.Size(64, 855);
             this.overlayShadow1.TabIndex = 364;
             // 
             // FrmPhysicalExamination
@@ -1529,12 +1529,12 @@
             this.Controls.Add(this.overlayShadow1);
             this.Controls.Add(this.txtPapin);
             this.Controls.Add(this.label62);
-            this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox25);
+            this.Controls.Add(this.txtPhysicianDateOfExam);
+            this.Controls.Add(this.txtSignatureOfPhyysician);
+            this.Controls.Add(this.txtDateOfIssuePhysicianCertificate);
+            this.Controls.Add(this.txtPhysicianCertificatingAuthority);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtNameOfPhysician);
             this.Controls.Add(this.label61);
             this.Controls.Add(this.label60);
             this.Controls.Add(this.label59);
@@ -1543,32 +1543,32 @@
             this.Controls.Add(this.label56);
             this.Controls.Add(this.label54);
             this.Controls.Add(this.label53);
-            this.Controls.Add(this.textBox24);
+            this.Controls.Add(this.txtNameOfApplicant);
             this.Controls.Add(this.label52);
             this.Controls.Add(this.label51);
-            this.Controls.Add(this.textBox23);
+            this.Controls.Add(this.txtExpirydate);
             this.Controls.Add(this.label50);
-            this.Controls.Add(this.textBox22);
+            this.Controls.Add(this.txtDateOfExam);
             this.Controls.Add(this.label49);
-            this.Controls.Add(this.textBox21);
+            this.Controls.Add(this.txtSignatureOfApplicant);
             this.Controls.Add(this.label48);
             this.Controls.Add(this.label46);
             this.Controls.Add(this.textBox20);
             this.Controls.Add(this.label45);
-            this.Controls.Add(this.textBox18);
+            this.Controls.Add(this.txtExtremitiesLower);
             this.Controls.Add(this.label41);
-            this.Controls.Add(this.textBox19);
+            this.Controls.Add(this.txtExtremitiesUpper);
             this.Controls.Add(this.label42);
             this.Controls.Add(this.label43);
-            this.Controls.Add(this.textBox17);
+            this.Controls.Add(this.txtSpeach);
             this.Controls.Add(this.label39);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.txtLungs);
             this.Controls.Add(this.label37);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.txtHeart);
             this.Controls.Add(this.label35);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.txthearingLeft);
             this.Controls.Add(this.label34);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.txtHearingRight);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label30);
@@ -1576,31 +1576,31 @@
             this.Controls.Add(this.checkBox9);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtDateOfColorVisionTest);
+            this.Controls.Add(this.txtLeftEyeWithGlasses);
+            this.Controls.Add(this.txtRightEyeWithGlasses);
+            this.Controls.Add(this.txtLeftEyeWithOutGlasses);
+            this.Controls.Add(this.txtRightEyeWithOutGlasses);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtGeneralAppearance);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtRespiration);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPulse);
+            this.Controls.Add(this.txtBloodPressure);
+            this.Controls.Add(this.txtWeight);
+            this.Controls.Add(this.txtHeight);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtHomeAddress);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label5);
@@ -1649,14 +1649,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtlastname;
         private System.Windows.Forms.TextBox txtMiddleName;
-        private System.Windows.Forms.TextBox txt_pBirth;
-        private System.Windows.Forms.TextBox txt_add;
+        private System.Windows.Forms.TextBox txtBirthDate;
+        private System.Windows.Forms.TextBox txtPlaceOfBirth;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbFemale;
+        private System.Windows.Forms.RadioButton rbMale;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -1670,19 +1670,19 @@
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtHomeAddress;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtHeight;
+        private System.Windows.Forms.TextBox txtWeight;
+        private System.Windows.Forms.TextBox txtBloodPressure;
+        private System.Windows.Forms.TextBox txtPulse;
+        private System.Windows.Forms.TextBox txtRespiration;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtGeneralAppearance;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label18;
@@ -1693,11 +1693,11 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtRightEyeWithOutGlasses;
+        private System.Windows.Forms.TextBox txtLeftEyeWithOutGlasses;
+        private System.Windows.Forms.TextBox txtLeftEyeWithGlasses;
+        private System.Windows.Forms.TextBox txtRightEyeWithGlasses;
+        private System.Windows.Forms.TextBox txtDateOfColorVisionTest;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.CheckBox checkBox9;
@@ -1712,21 +1712,21 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtHearingRight;
+        private System.Windows.Forms.TextBox txthearingLeft;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtHeart;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtLungs;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox txtSpeach;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox txtExtremitiesLower;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox txtExtremitiesUpper;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
@@ -1734,15 +1734,15 @@
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox txtSignatureOfApplicant;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox txtDateOfExam;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox txtExpirydate;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox txtNameOfApplicant;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
@@ -1752,12 +1752,12 @@
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.TextBox txtNameOfPhysician;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtPhysicianCertificatingAuthority;
+        private System.Windows.Forms.TextBox txtDateOfIssuePhysicianCertificate;
+        private System.Windows.Forms.TextBox txtSignatureOfPhyysician;
+        private System.Windows.Forms.TextBox txtPhysicianDateOfExam;
         private System.Windows.Forms.Label label62;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         public System.Windows.Forms.TextBox txtPapin;

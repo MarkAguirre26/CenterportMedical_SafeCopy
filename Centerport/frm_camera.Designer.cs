@@ -32,20 +32,19 @@
             this.cmd_reset = new System.Windows.Forms.Button();
             this.cmd_save = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.imgVideo = new System.Windows.Forms.PictureBox();
-            this.imgCapture = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.cboCamera = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.imgVideo = new System.Windows.Forms.PictureBox();
+            this.imgCapture = new System.Windows.Forms.PictureBox();
+            this.cmdCancel = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgVideo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCapture)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmd_capture
             // 
             this.cmd_capture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmd_capture.Enabled = false;
             this.cmd_capture.Location = new System.Drawing.Point(75, 3);
             this.cmd_capture.Name = "cmd_capture";
             this.cmd_capture.Size = new System.Drawing.Size(66, 23);
@@ -57,13 +56,13 @@
             // cmd_reset
             // 
             this.cmd_reset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmd_reset.Enabled = false;
             this.cmd_reset.Location = new System.Drawing.Point(147, 3);
             this.cmd_reset.Name = "cmd_reset";
             this.cmd_reset.Size = new System.Drawing.Size(66, 23);
             this.cmd_reset.TabIndex = 2;
             this.cmd_reset.Text = "Reset";
             this.cmd_reset.UseVisualStyleBackColor = true;
+            this.cmd_reset.Visible = false;
             this.cmd_reset.Click += new System.EventHandler(this.cmd_reset_Click);
             // 
             // cmd_save
@@ -81,6 +80,26 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.cmd_save);
+            this.flowLayoutPanel1.Controls.Add(this.cmd_capture);
+            this.flowLayoutPanel1.Controls.Add(this.cmd_reset);
+            this.flowLayoutPanel1.Controls.Add(this.cmdCancel);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(57, 292);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(292, 30);
+            this.flowLayoutPanel1.TabIndex = 9;
+            // 
+            // cboCamera
+            // 
+            this.cboCamera.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cboCamera.FormattingEnabled = true;
+            this.cboCamera.Location = new System.Drawing.Point(0, 325);
+            this.cboCamera.Name = "cboCamera";
+            this.cboCamera.Size = new System.Drawing.Size(339, 21);
+            this.cboCamera.TabIndex = 10;
             // 
             // imgVideo
             // 
@@ -107,41 +126,23 @@
             this.imgCapture.MouseMove += new System.Windows.Forms.MouseEventHandler(this.imgCapture_MouseMove);
             this.imgCapture.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imgCapture_MouseUp);
             // 
-            // flowLayoutPanel1
+            // cmdCancel
             // 
-            this.flowLayoutPanel1.Controls.Add(this.cmd_save);
-            this.flowLayoutPanel1.Controls.Add(this.cmd_capture);
-            this.flowLayoutPanel1.Controls.Add(this.cmd_reset);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(57, 292);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 30);
-            this.flowLayoutPanel1.TabIndex = 9;
-            // 
-            // cboCamera
-            // 
-            this.cboCamera.FormattingEnabled = true;
-            this.cboCamera.Location = new System.Drawing.Point(29, 368);
-            this.cboCamera.Name = "cboCamera";
-            this.cboCamera.Size = new System.Drawing.Size(270, 21);
-            this.cboCamera.TabIndex = 10;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(229, 339);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button2_Click);
+            this.cmdCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdCancel.Location = new System.Drawing.Point(219, 3);
+            this.cmdCancel.Name = "cmdCancel";
+            this.cmdCancel.Size = new System.Drawing.Size(66, 23);
+            this.cmdCancel.TabIndex = 4;
+            this.cmdCancel.Text = "Cancel";
+            this.cmdCancel.UseVisualStyleBackColor = true;
+            this.cmdCancel.Click += new System.EventHandler(this.cmdCancel_Click);
             // 
             // frm_camera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(339, 407);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(339, 346);
             this.Controls.Add(this.cboCamera);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.imgVideo);
@@ -156,9 +157,9 @@
             this.Text = "Capture Image";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_camera_FormClosing);
             this.Load += new System.EventHandler(this.frm_camera_Load);
+            this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgVideo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCapture)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -173,6 +174,6 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.ComboBox cboCamera;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cmdCancel;
     }
 }

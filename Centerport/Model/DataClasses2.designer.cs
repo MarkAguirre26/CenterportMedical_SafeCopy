@@ -599,6 +599,13 @@ namespace MedicalManagementSoftware.Model
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, resultMainUID);
 			return ((ISingleResult<PanamaClinicalDataSelectResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PhysicalExamplePatient")]
+		public ISingleResult<PhysicalExamplePatientResult> PhysicalExamplePatient([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(20)")] string papin)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin);
+			return ((ISingleResult<PhysicalExamplePatientResult>)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_userLevelResult
@@ -15202,6 +15209,554 @@ namespace MedicalManagementSoftware.Model
 				if ((this._Oxygen != value))
 				{
 					this._Oxygen = value;
+				}
+			}
+		}
+	}
+	
+	public partial class PhysicalExamplePatientResult
+	{
+		
+		private string _papin;
+		
+		private string _lastname;
+		
+		private string _firstname;
+		
+		private string _middlename;
+		
+		private string _place_of_birth;
+		
+		private string _HomeAddress;
+		
+		private string _Department;
+		
+		private string _position;
+		
+		private string _gender;
+		
+		private string _birthdate;
+		
+		private string _specimen_no;
+		
+		private string _fitness_date;
+		
+		private string _result_date;
+		
+		private string _pathologist;
+		
+		private string _valid_until;
+		
+		private string _resultid;
+		
+		private string _Height;
+		
+		private string _Weight;
+		
+		private string _BloodPressure;
+		
+		private string _Respiratory;
+		
+		private string _BMI;
+		
+		private string _Diatolic;
+		
+		private string _PULSE;
+		
+		private string _FAR_OD_U;
+		
+		private string _FAR_OS_U;
+		
+		private string _NEAR_ODJ_U;
+		
+		private string _NEAR_OSJ_U;
+		
+		private string _HEARING_RIGHT;
+		
+		private string _HEARING_LEFT;
+		
+		private string _COLOR_VISION_DATE_TAKEN;
+		
+		public PhysicalExamplePatientResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_papin", DbType="VarChar(50)")]
+		public string papin
+		{
+			get
+			{
+				return this._papin;
+			}
+			set
+			{
+				if ((this._papin != value))
+				{
+					this._papin = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_lastname", DbType="VarChar(50)")]
+		public string lastname
+		{
+			get
+			{
+				return this._lastname;
+			}
+			set
+			{
+				if ((this._lastname != value))
+				{
+					this._lastname = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_firstname", DbType="VarChar(50)")]
+		public string firstname
+		{
+			get
+			{
+				return this._firstname;
+			}
+			set
+			{
+				if ((this._firstname != value))
+				{
+					this._firstname = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_middlename", DbType="VarChar(50)")]
+		public string middlename
+		{
+			get
+			{
+				return this._middlename;
+			}
+			set
+			{
+				if ((this._middlename != value))
+				{
+					this._middlename = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_place_of_birth", DbType="VarChar(50)")]
+		public string place_of_birth
+		{
+			get
+			{
+				return this._place_of_birth;
+			}
+			set
+			{
+				if ((this._place_of_birth != value))
+				{
+					this._place_of_birth = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HomeAddress", DbType="VarChar(152) NOT NULL", CanBeNull=false)]
+		public string HomeAddress
+		{
+			get
+			{
+				return this._HomeAddress;
+			}
+			set
+			{
+				if ((this._HomeAddress != value))
+				{
+					this._HomeAddress = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Department", DbType="VarChar(20)")]
+		public string Department
+		{
+			get
+			{
+				return this._Department;
+			}
+			set
+			{
+				if ((this._Department != value))
+				{
+					this._Department = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_position", DbType="VarChar(50)")]
+		public string position
+		{
+			get
+			{
+				return this._position;
+			}
+			set
+			{
+				if ((this._position != value))
+				{
+					this._position = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gender", DbType="VarChar(10)")]
+		public string gender
+		{
+			get
+			{
+				return this._gender;
+			}
+			set
+			{
+				if ((this._gender != value))
+				{
+					this._gender = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_birthdate", DbType="VarChar(50)")]
+		public string birthdate
+		{
+			get
+			{
+				return this._birthdate;
+			}
+			set
+			{
+				if ((this._birthdate != value))
+				{
+					this._birthdate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_specimen_no", DbType="VarChar(254)")]
+		public string specimen_no
+		{
+			get
+			{
+				return this._specimen_no;
+			}
+			set
+			{
+				if ((this._specimen_no != value))
+				{
+					this._specimen_no = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fitness_date", DbType="VarChar(254)")]
+		public string fitness_date
+		{
+			get
+			{
+				return this._fitness_date;
+			}
+			set
+			{
+				if ((this._fitness_date != value))
+				{
+					this._fitness_date = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_result_date", DbType="VarChar(254)")]
+		public string result_date
+		{
+			get
+			{
+				return this._result_date;
+			}
+			set
+			{
+				if ((this._result_date != value))
+				{
+					this._result_date = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_pathologist", DbType="VarChar(254)")]
+		public string pathologist
+		{
+			get
+			{
+				return this._pathologist;
+			}
+			set
+			{
+				if ((this._pathologist != value))
+				{
+					this._pathologist = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_valid_until", DbType="VarChar(254)")]
+		public string valid_until
+		{
+			get
+			{
+				return this._valid_until;
+			}
+			set
+			{
+				if ((this._valid_until != value))
+				{
+					this._valid_until = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_resultid", DbType="VarChar(254)")]
+		public string resultid
+		{
+			get
+			{
+				return this._resultid;
+			}
+			set
+			{
+				if ((this._resultid != value))
+				{
+					this._resultid = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Height", DbType="VarChar(254)")]
+		public string Height
+		{
+			get
+			{
+				return this._Height;
+			}
+			set
+			{
+				if ((this._Height != value))
+				{
+					this._Height = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Weight", DbType="VarChar(254)")]
+		public string Weight
+		{
+			get
+			{
+				return this._Weight;
+			}
+			set
+			{
+				if ((this._Weight != value))
+				{
+					this._Weight = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BloodPressure", DbType="VarChar(254)")]
+		public string BloodPressure
+		{
+			get
+			{
+				return this._BloodPressure;
+			}
+			set
+			{
+				if ((this._BloodPressure != value))
+				{
+					this._BloodPressure = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Respiratory", DbType="VarChar(254)")]
+		public string Respiratory
+		{
+			get
+			{
+				return this._Respiratory;
+			}
+			set
+			{
+				if ((this._Respiratory != value))
+				{
+					this._Respiratory = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BMI", DbType="VarChar(254)")]
+		public string BMI
+		{
+			get
+			{
+				return this._BMI;
+			}
+			set
+			{
+				if ((this._BMI != value))
+				{
+					this._BMI = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Diatolic", DbType="VarChar(254)")]
+		public string Diatolic
+		{
+			get
+			{
+				return this._Diatolic;
+			}
+			set
+			{
+				if ((this._Diatolic != value))
+				{
+					this._Diatolic = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PULSE", DbType="VarChar(254)")]
+		public string PULSE
+		{
+			get
+			{
+				return this._PULSE;
+			}
+			set
+			{
+				if ((this._PULSE != value))
+				{
+					this._PULSE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FAR_OD_U", DbType="VarChar(254)")]
+		public string FAR_OD_U
+		{
+			get
+			{
+				return this._FAR_OD_U;
+			}
+			set
+			{
+				if ((this._FAR_OD_U != value))
+				{
+					this._FAR_OD_U = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FAR_OS_U", DbType="VarChar(254)")]
+		public string FAR_OS_U
+		{
+			get
+			{
+				return this._FAR_OS_U;
+			}
+			set
+			{
+				if ((this._FAR_OS_U != value))
+				{
+					this._FAR_OS_U = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEAR_ODJ_U", DbType="VarChar(254)")]
+		public string NEAR_ODJ_U
+		{
+			get
+			{
+				return this._NEAR_ODJ_U;
+			}
+			set
+			{
+				if ((this._NEAR_ODJ_U != value))
+				{
+					this._NEAR_ODJ_U = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEAR_OSJ_U", DbType="VarChar(254)")]
+		public string NEAR_OSJ_U
+		{
+			get
+			{
+				return this._NEAR_OSJ_U;
+			}
+			set
+			{
+				if ((this._NEAR_OSJ_U != value))
+				{
+					this._NEAR_OSJ_U = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HEARING_RIGHT", DbType="VarChar(254)")]
+		public string HEARING_RIGHT
+		{
+			get
+			{
+				return this._HEARING_RIGHT;
+			}
+			set
+			{
+				if ((this._HEARING_RIGHT != value))
+				{
+					this._HEARING_RIGHT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HEARING_LEFT", DbType="VarChar(254)")]
+		public string HEARING_LEFT
+		{
+			get
+			{
+				return this._HEARING_LEFT;
+			}
+			set
+			{
+				if ((this._HEARING_LEFT != value))
+				{
+					this._HEARING_LEFT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COLOR_VISION_DATE_TAKEN", DbType="VarChar(254)")]
+		public string COLOR_VISION_DATE_TAKEN
+		{
+			get
+			{
+				return this._COLOR_VISION_DATE_TAKEN;
+			}
+			set
+			{
+				if ((this._COLOR_VISION_DATE_TAKEN != value))
+				{
+					this._COLOR_VISION_DATE_TAKEN = value;
 				}
 			}
 		}

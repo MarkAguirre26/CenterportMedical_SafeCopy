@@ -1305,4 +1305,39 @@
       <Column Name="Oxygen" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.PhysicalExamplePatient" Method="PhysicalExamplePatient">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="PhysicalExamplePatientResult">
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="firstname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="middlename" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="place_of_birth" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HomeAddress" Type="System.String" DbType="VarChar(152) NOT NULL" CanBeNull="false" />
+      <Column Name="Department" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="birthdate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="specimen_no" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="fitness_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="pathologist" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="valid_until" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Height" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Weight" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BloodPressure" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Respiratory" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BMI" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Diatolic" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PULSE" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FAR_OD_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FAR_OS_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NEAR_ODJ_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NEAR_OSJ_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HEARING_RIGHT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HEARING_LEFT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="COLOR_VISION_DATE_TAKEN" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

@@ -122,19 +122,19 @@ namespace MedicalManagementSoftware
 
         private void frm_camera_FormClosing(object sender, FormClosingEventArgs e)
         {
-            try
-            {
-                webcam.Stop();
-                imgCapture.Image.Dispose();
-                imgCapture.Image = null;
+            //try
+            //{
+            //    webcam.Stop();
+            //    imgCapture.Image.Dispose();
+            //    imgCapture.Image = null;
 
 
-            }
-            catch
-            { }
+            //}
+            //catch
+            //{ }
 
 
-            //closeCamera();
+            closeCamera();
 
            
         }
@@ -200,14 +200,12 @@ namespace MedicalManagementSoftware
 
             imgVideo.Visible = false;
             imgCapture.Visible = true;
-            cmd_reset.Enabled = true; 
+            cmd_reset.Visible = true;
+            cmdCancel.Visible = false;
             cmd_save.Enabled = true; 
             cmd_capture.Enabled = false;
-
-
-
             closeCamera();
-            //
+            
         }
            
 
@@ -224,7 +222,8 @@ namespace MedicalManagementSoftware
                
                
 
-                cmd_reset.Enabled = false; 
+                cmd_reset.Visible = false;
+                cmdCancel.Visible = true;
                 cmd_save.Enabled = false;
 
                 cmd_capture.Enabled = true;
@@ -359,26 +358,22 @@ namespace MedicalManagementSoftware
 
             imgVideo.Visible = true;
             //imgCapture.Visible = true;
+            cmd_reset.Visible = false;
             cmd_reset.Enabled = false;
+            cmdCancel.Visible = true;
             cmd_save.Enabled = false;
+           
             cmd_capture.Enabled = true;
             //cmdStartCamera.Enabled = false;
         }
-        private void button2_Click(object sender, EventArgs e)
+
+        private void cmdCancel_Click(object sender, EventArgs e)
         {
-            imgVideo.Visible = true;
-            //imgCapture.Visible = true;
-            cmd_reset.Enabled = false;
-            cmd_save.Enabled = false;
-            cmd_capture.Enabled = true;
-            //cmdStartCamera.Enabled = false;
-
-            videoCaptureDevice = new VideoCaptureDevice(filterInfoCollection[cboCamera.SelectedIndex].MonikerString);
-            videoCaptureDevice.NewFrame += VideoCaptureDevice_NewFrame;
-
-            videoCaptureDevice.Start();
-
+           
+            closeCamera();
+            this.Close();
         }
+       
        
      
 

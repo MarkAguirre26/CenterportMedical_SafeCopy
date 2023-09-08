@@ -164,6 +164,7 @@
             this.dt_regDate.Size = new System.Drawing.Size(49, 22);
             this.dt_regDate.TabIndex = 2;
             this.dt_regDate.TabStop = false;
+            this.dt_regDate.Visible = false;
             // 
             // txt_address1
             // 

@@ -318,12 +318,19 @@
     <Compile Include="PhysicalExaminationReport\FrmPhysicalExamination.Designer.cs">
       <DependentUpon>FrmPhysicalExamination.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhysicalExaminationReport\FrmPhysicalExaminationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhysicalExaminationReport\FrmPhysicalExaminationReport.Designer.cs">
+      <DependentUpon>FrmPhysicalExaminationReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhysicalExaminationReport\FrmSearchPhyExam.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PhysicalExaminationReport\FrmSearchPhyExam.Designer.cs">
       <DependentUpon>FrmSearchPhyExam.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhysicalExaminationReport\PhysicalExaminationMedicalRecordModel.cs" />
     <Compile Include="PhysicalExaminationReport\PhysicalExaminationReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -999,6 +1006,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PhysicalExaminationReport\FrmPhysicalExamination.resx">
       <DependentUpon>FrmPhysicalExamination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhysicalExaminationReport\FrmPhysicalExaminationReport.resx">
+      <DependentUpon>FrmPhysicalExaminationReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhysicalExaminationReport\FrmSearchPhyExam.resx">
       <DependentUpon>FrmSearchPhyExam.cs</DependentUpon>
