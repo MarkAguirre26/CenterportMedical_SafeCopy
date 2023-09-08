@@ -15277,6 +15277,10 @@ namespace MedicalManagementSoftware.Model
 		
 		private string _COLOR_VISION_DATE_TAKEN;
 		
+		private string _SATISFACTORY_SIGHT_UNAID;
+		
+		private string _CLARITY_OF_SPEECH;
+		
 		public PhysicalExamplePatientResult()
 		{
 		}
@@ -15757,6 +15761,38 @@ namespace MedicalManagementSoftware.Model
 				if ((this._COLOR_VISION_DATE_TAKEN != value))
 				{
 					this._COLOR_VISION_DATE_TAKEN = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SATISFACTORY_SIGHT_UNAID", DbType="VarChar(254)")]
+		public string SATISFACTORY_SIGHT_UNAID
+		{
+			get
+			{
+				return this._SATISFACTORY_SIGHT_UNAID;
+			}
+			set
+			{
+				if ((this._SATISFACTORY_SIGHT_UNAID != value))
+				{
+					this._SATISFACTORY_SIGHT_UNAID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CLARITY_OF_SPEECH", DbType="VarChar(254)")]
+		public string CLARITY_OF_SPEECH
+		{
+			get
+			{
+				return this._CLARITY_OF_SPEECH;
+			}
+			set
+			{
+				if ((this._CLARITY_OF_SPEECH != value))
+				{
+					this._CLARITY_OF_SPEECH = value;
 				}
 			}
 		}

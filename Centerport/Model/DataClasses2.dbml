@@ -1338,6 +1338,8 @@
       <Column Name="HEARING_RIGHT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
       <Column Name="HEARING_LEFT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
       <Column Name="COLOR_VISION_DATE_TAKEN" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="SATISFACTORY_SIGHT_UNAID" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="CLARITY_OF_SPEECH" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

@@ -155,8 +155,17 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                     rbFemale.Checked = true;
                 }
 
+            
 
 
+                txtHearingRight.Text = i.HEARING_RIGHT == "A" ? "NORMAL": "NOT NORMAL";
+                txthearingLeft.Text = i.HEARING_LEFT == "A" ? "NORMAL" : "NOT NORMAL";
+
+                textBox20.Text = i.SATISFACTORY_SIGHT_UNAID;
+
+              
+               txtSpeach.Text = i.CLARITY_OF_SPEECH == "A" ? "NORMAL" : "NOT NORMAL";
+               
                 txtNameOfPhysician.Text = nameOfPhysician;
                 txtAddress.Text = addressOfPhysician;
                 txtPhysicianCertificatingAuthority.Text = nameOfPhysicianCertificating;

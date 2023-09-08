@@ -952,9 +952,9 @@
             this.label33.ForeColor = System.Drawing.Color.Black;
             this.label33.Location = new System.Drawing.Point(140, 486);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(66, 13);
+            this.label33.Size = new System.Drawing.Size(47, 13);
             this.label33.TabIndex = 315;
-            this.label33.Text = "With Glasses";
+            this.label33.Text = "RT. EAR";
             // 
             // txtHearingRight
             // 
@@ -1525,7 +1525,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(862, 631);
+            this.ClientSize = new System.Drawing.Size(862, 485);
             this.Controls.Add(this.overlayShadow1);
             this.Controls.Add(this.txtPapin);
             this.Controls.Add(this.label62);
