@@ -482,7 +482,7 @@
             // 
             // txtHomeAddress
             // 
-            this.txtHomeAddress.BackColor = System.Drawing.SystemColors.Control;
+            this.txtHomeAddress.BackColor = System.Drawing.Color.White;
             this.txtHomeAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHomeAddress.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtHomeAddress.Location = new System.Drawing.Point(372, 144);
@@ -555,56 +555,51 @@
             // 
             // txtHeight
             // 
-            this.txtHeight.BackColor = System.Drawing.SystemColors.Control;
+            this.txtHeight.BackColor = System.Drawing.Color.White;
             this.txtHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHeight.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtHeight.Location = new System.Drawing.Point(14, 286);
             this.txtHeight.Name = "txtHeight";
-            this.txtHeight.ReadOnly = true;
             this.txtHeight.Size = new System.Drawing.Size(74, 22);
             this.txtHeight.TabIndex = 283;
             // 
             // txtWeight
             // 
-            this.txtWeight.BackColor = System.Drawing.SystemColors.Control;
+            this.txtWeight.BackColor = System.Drawing.Color.White;
             this.txtWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtWeight.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtWeight.Location = new System.Drawing.Point(93, 286);
             this.txtWeight.Name = "txtWeight";
-            this.txtWeight.ReadOnly = true;
             this.txtWeight.Size = new System.Drawing.Size(74, 22);
             this.txtWeight.TabIndex = 284;
             // 
             // txtBloodPressure
             // 
-            this.txtBloodPressure.BackColor = System.Drawing.SystemColors.Control;
+            this.txtBloodPressure.BackColor = System.Drawing.Color.White;
             this.txtBloodPressure.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBloodPressure.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtBloodPressure.Location = new System.Drawing.Point(172, 286);
             this.txtBloodPressure.Name = "txtBloodPressure";
-            this.txtBloodPressure.ReadOnly = true;
             this.txtBloodPressure.Size = new System.Drawing.Size(100, 22);
             this.txtBloodPressure.TabIndex = 285;
             // 
             // txtPulse
             // 
-            this.txtPulse.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPulse.BackColor = System.Drawing.Color.White;
             this.txtPulse.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPulse.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtPulse.Location = new System.Drawing.Point(278, 286);
             this.txtPulse.Name = "txtPulse";
-            this.txtPulse.ReadOnly = true;
             this.txtPulse.Size = new System.Drawing.Size(74, 22);
             this.txtPulse.TabIndex = 286;
             // 
             // txtRespiration
             // 
-            this.txtRespiration.BackColor = System.Drawing.SystemColors.Control;
+            this.txtRespiration.BackColor = System.Drawing.Color.White;
             this.txtRespiration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRespiration.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtRespiration.Location = new System.Drawing.Point(365, 286);
             this.txtRespiration.Name = "txtRespiration";
-            this.txtRespiration.ReadOnly = true;
             this.txtRespiration.Size = new System.Drawing.Size(215, 22);
             this.txtRespiration.TabIndex = 288;
             // 
@@ -622,12 +617,11 @@
             // 
             // txtGeneralAppearance
             // 
-            this.txtGeneralAppearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txtGeneralAppearance.BackColor = System.Drawing.Color.White;
             this.txtGeneralAppearance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGeneralAppearance.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtGeneralAppearance.Location = new System.Drawing.Point(586, 286);
             this.txtGeneralAppearance.Name = "txtGeneralAppearance";
-            this.txtGeneralAppearance.ReadOnly = true;
             this.txtGeneralAppearance.Size = new System.Drawing.Size(215, 22);
             this.txtGeneralAppearance.TabIndex = 290;
             // 
@@ -750,56 +744,51 @@
             // 
             // txtRightEyeWithOutGlasses
             // 
-            this.txtRightEyeWithOutGlasses.BackColor = System.Drawing.SystemColors.Control;
+            this.txtRightEyeWithOutGlasses.BackColor = System.Drawing.Color.White;
             this.txtRightEyeWithOutGlasses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRightEyeWithOutGlasses.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtRightEyeWithOutGlasses.Location = new System.Drawing.Point(214, 340);
             this.txtRightEyeWithOutGlasses.Name = "txtRightEyeWithOutGlasses";
-            this.txtRightEyeWithOutGlasses.ReadOnly = true;
             this.txtRightEyeWithOutGlasses.Size = new System.Drawing.Size(75, 22);
             this.txtRightEyeWithOutGlasses.TabIndex = 300;
             // 
             // txtLeftEyeWithOutGlasses
             // 
-            this.txtLeftEyeWithOutGlasses.BackColor = System.Drawing.SystemColors.Control;
+            this.txtLeftEyeWithOutGlasses.BackColor = System.Drawing.Color.White;
             this.txtLeftEyeWithOutGlasses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLeftEyeWithOutGlasses.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtLeftEyeWithOutGlasses.Location = new System.Drawing.Point(291, 340);
             this.txtLeftEyeWithOutGlasses.Name = "txtLeftEyeWithOutGlasses";
-            this.txtLeftEyeWithOutGlasses.ReadOnly = true;
             this.txtLeftEyeWithOutGlasses.Size = new System.Drawing.Size(75, 22);
             this.txtLeftEyeWithOutGlasses.TabIndex = 301;
             // 
             // txtLeftEyeWithGlasses
             // 
-            this.txtLeftEyeWithGlasses.BackColor = System.Drawing.SystemColors.Control;
+            this.txtLeftEyeWithGlasses.BackColor = System.Drawing.Color.White;
             this.txtLeftEyeWithGlasses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLeftEyeWithGlasses.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtLeftEyeWithGlasses.Location = new System.Drawing.Point(291, 363);
             this.txtLeftEyeWithGlasses.Name = "txtLeftEyeWithGlasses";
-            this.txtLeftEyeWithGlasses.ReadOnly = true;
             this.txtLeftEyeWithGlasses.Size = new System.Drawing.Size(75, 22);
             this.txtLeftEyeWithGlasses.TabIndex = 303;
             // 
             // txtRightEyeWithGlasses
             // 
-            this.txtRightEyeWithGlasses.BackColor = System.Drawing.SystemColors.Control;
+            this.txtRightEyeWithGlasses.BackColor = System.Drawing.Color.White;
             this.txtRightEyeWithGlasses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRightEyeWithGlasses.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtRightEyeWithGlasses.Location = new System.Drawing.Point(214, 363);
             this.txtRightEyeWithGlasses.Name = "txtRightEyeWithGlasses";
-            this.txtRightEyeWithGlasses.ReadOnly = true;
             this.txtRightEyeWithGlasses.Size = new System.Drawing.Size(75, 22);
             this.txtRightEyeWithGlasses.TabIndex = 302;
             // 
             // txtDateOfColorVisionTest
             // 
-            this.txtDateOfColorVisionTest.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDateOfColorVisionTest.BackColor = System.Drawing.Color.White;
             this.txtDateOfColorVisionTest.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDateOfColorVisionTest.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtDateOfColorVisionTest.Location = new System.Drawing.Point(291, 386);
             this.txtDateOfColorVisionTest.Name = "txtDateOfColorVisionTest";
-            this.txtDateOfColorVisionTest.ReadOnly = true;
             this.txtDateOfColorVisionTest.Size = new System.Drawing.Size(75, 22);
             this.txtDateOfColorVisionTest.TabIndex = 304;
             // 
@@ -958,23 +947,21 @@
             // 
             // txtHearingRight
             // 
-            this.txtHearingRight.BackColor = System.Drawing.SystemColors.Control;
+            this.txtHearingRight.BackColor = System.Drawing.Color.White;
             this.txtHearingRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHearingRight.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtHearingRight.Location = new System.Drawing.Point(140, 463);
             this.txtHearingRight.Name = "txtHearingRight";
-            this.txtHearingRight.ReadOnly = true;
             this.txtHearingRight.Size = new System.Drawing.Size(248, 22);
             this.txtHearingRight.TabIndex = 316;
             // 
             // txthearingLeft
             // 
-            this.txthearingLeft.BackColor = System.Drawing.SystemColors.Control;
+            this.txthearingLeft.BackColor = System.Drawing.Color.White;
             this.txthearingLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txthearingLeft.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txthearingLeft.Location = new System.Drawing.Point(428, 463);
             this.txthearingLeft.Name = "txthearingLeft";
-            this.txthearingLeft.ReadOnly = true;
             this.txthearingLeft.Size = new System.Drawing.Size(248, 22);
             this.txthearingLeft.TabIndex = 318;
             // 
@@ -1015,12 +1002,11 @@
             // 
             // txtHeart
             // 
-            this.txtHeart.BackColor = System.Drawing.SystemColors.Control;
+            this.txtHeart.BackColor = System.Drawing.Color.White;
             this.txtHeart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHeart.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtHeart.Location = new System.Drawing.Point(428, 526);
             this.txtHeart.Name = "txtHeart";
-            this.txtHeart.ReadOnly = true;
             this.txtHeart.Size = new System.Drawing.Size(248, 22);
             this.txtHeart.TabIndex = 321;
             // 
@@ -1038,12 +1024,11 @@
             // 
             // txtLungs
             // 
-            this.txtLungs.BackColor = System.Drawing.SystemColors.Control;
+            this.txtLungs.BackColor = System.Drawing.Color.White;
             this.txtLungs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLungs.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtLungs.Location = new System.Drawing.Point(140, 590);
             this.txtLungs.Name = "txtLungs";
-            this.txtLungs.ReadOnly = true;
             this.txtLungs.Size = new System.Drawing.Size(248, 22);
             this.txtLungs.TabIndex = 323;
             // 
@@ -1073,12 +1058,11 @@
             // 
             // txtSpeach
             // 
-            this.txtSpeach.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSpeach.BackColor = System.Drawing.Color.White;
             this.txtSpeach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSpeach.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtSpeach.Location = new System.Drawing.Point(428, 590);
             this.txtSpeach.Name = "txtSpeach";
-            this.txtSpeach.ReadOnly = true;
             this.txtSpeach.Size = new System.Drawing.Size(248, 22);
             this.txtSpeach.TabIndex = 326;
             // 
@@ -1095,12 +1079,11 @@
             // 
             // txtExtremitiesLower
             // 
-            this.txtExtremitiesLower.BackColor = System.Drawing.SystemColors.Control;
+            this.txtExtremitiesLower.BackColor = System.Drawing.Color.White;
             this.txtExtremitiesLower.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtExtremitiesLower.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtExtremitiesLower.Location = new System.Drawing.Point(428, 621);
             this.txtExtremitiesLower.Name = "txtExtremitiesLower";
-            this.txtExtremitiesLower.ReadOnly = true;
             this.txtExtremitiesLower.Size = new System.Drawing.Size(248, 22);
             this.txtExtremitiesLower.TabIndex = 332;
             // 
@@ -1118,12 +1101,11 @@
             // 
             // txtExtremitiesUpper
             // 
-            this.txtExtremitiesUpper.BackColor = System.Drawing.SystemColors.Control;
+            this.txtExtremitiesUpper.BackColor = System.Drawing.Color.White;
             this.txtExtremitiesUpper.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtExtremitiesUpper.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtExtremitiesUpper.Location = new System.Drawing.Point(140, 621);
             this.txtExtremitiesUpper.Name = "txtExtremitiesUpper";
-            this.txtExtremitiesUpper.ReadOnly = true;
             this.txtExtremitiesUpper.Size = new System.Drawing.Size(248, 22);
             this.txtExtremitiesUpper.TabIndex = 330;
             // 
@@ -1177,12 +1159,11 @@
             // 
             // textBox20
             // 
-            this.textBox20.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox20.BackColor = System.Drawing.Color.White;
             this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox20.Font = new System.Drawing.Font("Arial", 9.75F);
             this.textBox20.Location = new System.Drawing.Point(778, 679);
             this.textBox20.Name = "textBox20";
-            this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(50, 22);
             this.textBox20.TabIndex = 335;
             // 
@@ -1212,12 +1193,11 @@
             // 
             // txtSignatureOfApplicant
             // 
-            this.txtSignatureOfApplicant.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSignatureOfApplicant.BackColor = System.Drawing.Color.White;
             this.txtSignatureOfApplicant.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSignatureOfApplicant.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtSignatureOfApplicant.Location = new System.Drawing.Point(46, 712);
             this.txtSignatureOfApplicant.Name = "txtSignatureOfApplicant";
-            this.txtSignatureOfApplicant.ReadOnly = true;
             this.txtSignatureOfApplicant.Size = new System.Drawing.Size(248, 22);
             this.txtSignatureOfApplicant.TabIndex = 339;
             // 
@@ -1235,12 +1215,11 @@
             // 
             // txtDateOfExam
             // 
-            this.txtDateOfExam.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDateOfExam.BackColor = System.Drawing.Color.White;
             this.txtDateOfExam.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDateOfExam.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtDateOfExam.Location = new System.Drawing.Point(304, 712);
             this.txtDateOfExam.Name = "txtDateOfExam";
-            this.txtDateOfExam.ReadOnly = true;
             this.txtDateOfExam.Size = new System.Drawing.Size(248, 22);
             this.txtDateOfExam.TabIndex = 341;
             // 
@@ -1258,12 +1237,11 @@
             // 
             // txtExpirydate
             // 
-            this.txtExpirydate.BackColor = System.Drawing.SystemColors.Control;
+            this.txtExpirydate.BackColor = System.Drawing.Color.White;
             this.txtExpirydate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtExpirydate.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtExpirydate.Location = new System.Drawing.Point(558, 712);
             this.txtExpirydate.Name = "txtExpirydate";
-            this.txtExpirydate.ReadOnly = true;
             this.txtExpirydate.Size = new System.Drawing.Size(248, 22);
             this.txtExpirydate.TabIndex = 343;
             // 
@@ -1305,12 +1283,11 @@
             // 
             // txtNameOfApplicant
             // 
-            this.txtNameOfApplicant.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNameOfApplicant.BackColor = System.Drawing.Color.White;
             this.txtNameOfApplicant.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNameOfApplicant.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtNameOfApplicant.Location = new System.Drawing.Point(492, 779);
             this.txtNameOfApplicant.Name = "txtNameOfApplicant";
-            this.txtNameOfApplicant.ReadOnly = true;
             this.txtNameOfApplicant.Size = new System.Drawing.Size(314, 22);
             this.txtNameOfApplicant.TabIndex = 346;
             // 
@@ -1424,67 +1401,61 @@
             // 
             // txtNameOfPhysician
             // 
-            this.txtNameOfPhysician.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNameOfPhysician.BackColor = System.Drawing.Color.White;
             this.txtNameOfPhysician.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNameOfPhysician.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtNameOfPhysician.Location = new System.Drawing.Point(212, 854);
             this.txtNameOfPhysician.Name = "txtNameOfPhysician";
-            this.txtNameOfPhysician.ReadOnly = true;
             this.txtNameOfPhysician.Size = new System.Drawing.Size(616, 22);
             this.txtNameOfPhysician.TabIndex = 357;
             // 
             // txtAddress
             // 
-            this.txtAddress.BackColor = System.Drawing.SystemColors.Control;
+            this.txtAddress.BackColor = System.Drawing.Color.White;
             this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAddress.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtAddress.Location = new System.Drawing.Point(85, 877);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.ReadOnly = true;
             this.txtAddress.Size = new System.Drawing.Size(743, 22);
             this.txtAddress.TabIndex = 358;
             // 
             // txtPhysicianCertificatingAuthority
             // 
-            this.txtPhysicianCertificatingAuthority.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPhysicianCertificatingAuthority.BackColor = System.Drawing.Color.White;
             this.txtPhysicianCertificatingAuthority.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPhysicianCertificatingAuthority.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtPhysicianCertificatingAuthority.Location = new System.Drawing.Point(284, 900);
             this.txtPhysicianCertificatingAuthority.Name = "txtPhysicianCertificatingAuthority";
-            this.txtPhysicianCertificatingAuthority.ReadOnly = true;
             this.txtPhysicianCertificatingAuthority.Size = new System.Drawing.Size(544, 22);
             this.txtPhysicianCertificatingAuthority.TabIndex = 359;
             // 
             // txtDateOfIssuePhysicianCertificate
             // 
-            this.txtDateOfIssuePhysicianCertificate.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDateOfIssuePhysicianCertificate.BackColor = System.Drawing.Color.White;
             this.txtDateOfIssuePhysicianCertificate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDateOfIssuePhysicianCertificate.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtDateOfIssuePhysicianCertificate.Location = new System.Drawing.Point(259, 923);
             this.txtDateOfIssuePhysicianCertificate.Name = "txtDateOfIssuePhysicianCertificate";
-            this.txtDateOfIssuePhysicianCertificate.ReadOnly = true;
             this.txtDateOfIssuePhysicianCertificate.Size = new System.Drawing.Size(569, 22);
             this.txtDateOfIssuePhysicianCertificate.TabIndex = 360;
             // 
             // txtSignatureOfPhyysician
             // 
-            this.txtSignatureOfPhyysician.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSignatureOfPhyysician.BackColor = System.Drawing.Color.White;
             this.txtSignatureOfPhyysician.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSignatureOfPhyysician.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtSignatureOfPhyysician.Location = new System.Drawing.Point(167, 946);
             this.txtSignatureOfPhyysician.Name = "txtSignatureOfPhyysician";
-            this.txtSignatureOfPhyysician.ReadOnly = true;
             this.txtSignatureOfPhyysician.Size = new System.Drawing.Size(363, 22);
             this.txtSignatureOfPhyysician.TabIndex = 361;
             // 
             // txtPhysicianDateOfExam
             // 
-            this.txtPhysicianDateOfExam.BackColor = System.Drawing.SystemColors.Control;
+            this.txtPhysicianDateOfExam.BackColor = System.Drawing.Color.White;
             this.txtPhysicianDateOfExam.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPhysicianDateOfExam.Font = new System.Drawing.Font("Arial", 9.75F);
             this.txtPhysicianDateOfExam.Location = new System.Drawing.Point(670, 946);
             this.txtPhysicianDateOfExam.Name = "txtPhysicianDateOfExam";
-            this.txtPhysicianDateOfExam.ReadOnly = true;
             this.txtPhysicianDateOfExam.Size = new System.Drawing.Size(158, 22);
             this.txtPhysicianDateOfExam.TabIndex = 362;
             // 

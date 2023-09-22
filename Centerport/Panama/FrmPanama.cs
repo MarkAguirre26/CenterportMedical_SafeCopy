@@ -1131,7 +1131,14 @@ namespace MedicalManagementSoftware
 
             rbFitForLookOut.Checked = true;
             rbWithOutRestrictions.Checked = true;
+
             rbVisualAidRequiredNo.Checked = true;
+            //rbVisualAidYes.Checked = true;
+
+           
+
+
+
 
             txtAssessmentComment1.Text = "";
             txtAssessmentComment2.Text = "";
@@ -2024,7 +2031,7 @@ namespace MedicalManagementSoftware
 
                 }
 
-
+               
 
 
                 string deck_srvc_flag_ = i.deck_srvc_flag.ToString();
@@ -2274,6 +2281,17 @@ namespace MedicalManagementSoftware
                 txtRespiratory.Text = i.Respiratory;
                 txtBloodPressure.Text = i.BloodPressure;
                 txtDiastolic.Text = i.Diatolic;
+
+                string VISUAL_AIDS_REQUIRED = i.VISUAL_AIDS_REQUIRED.ToLower();
+
+                if (VISUAL_AIDS_REQUIRED.Equals("yes"))
+                {
+                    rbVisualAidYes.Checked = true;
+                }
+                else
+                {
+                    rbVisualAidRequiredNo.Checked = false;
+                }
 
                 //txtUnaidedRightEyeDistant.Text = i.FAR_OD_U;
 
@@ -2576,14 +2594,14 @@ namespace MedicalManagementSoftware
                 }
 
                 DateTime bdate = Convert.ToDateTime(i.birthdate);
-                txtbDay.Text = bdate.Day.ToString();
+                txtbDay.Text = bdate.ToString("dd");
                 txtBMonth.Text = bdate.ToString("MMM");
                 txtBYear.Text = bdate.Year.ToString();
                 txtPassportNumber.Text = i.PassportSeamanBookNo;
                 txtPerformLookout.Text = i.LookOutDuties;
                 txtRoutine.Text = i.EmergencyDuties;
 
-
+                
                 clearFields();
 
                 this.Text = "Panama Information (" + txtFullName.Text + ")";

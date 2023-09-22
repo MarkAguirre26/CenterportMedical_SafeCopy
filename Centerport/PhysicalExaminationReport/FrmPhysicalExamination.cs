@@ -296,15 +296,19 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             string Position = "";
             string ColorVisionMeetsStandard = "";
             string ColorTestType = "";
+
+            DateTime bdate = Convert.ToDateTime(txtBirthDate.Text);
+
+
             PhysicalExaminationMedicalRecordModel physicalExaminationMedicalRecordModel = new PhysicalExaminationMedicalRecordModel();
 
             physicalExaminationMedicalRecordModel.LastName = txtlastname.Text;
             physicalExaminationMedicalRecordModel.FirstName = txtFirstname.Text;
             physicalExaminationMedicalRecordModel.MiddleName = txtMiddleName.Text;
-            physicalExaminationMedicalRecordModel.Month = "";
-            physicalExaminationMedicalRecordModel.Day = "";
-            physicalExaminationMedicalRecordModel.Year = "";
-            physicalExaminationMedicalRecordModel.City = "";
+            physicalExaminationMedicalRecordModel.Month = bdate.ToString("MMM");
+            physicalExaminationMedicalRecordModel.Day = bdate.Day.ToString();
+            physicalExaminationMedicalRecordModel.Year =bdate.Year.ToString();
+            physicalExaminationMedicalRecordModel.City = txtPlaceOfBirth.Text;
             physicalExaminationMedicalRecordModel.Country = "";
             physicalExaminationMedicalRecordModel.Gender = g;
             physicalExaminationMedicalRecordModel.Position = Position;
