@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MedicalManagementSoftware.PhysicalExaminationReport
 {
-public    class PhysicalExaminationMedicalRecordModel
+    public class PhysicalExaminationMedicalRecordModel
     {
         public string LastName { get; set; }
         public string FirstName { get; set; }
@@ -43,12 +43,12 @@ public    class PhysicalExaminationMedicalRecordModel
         public string MailingAddress { get; set; }
         public string Speech { get; set; }
 
-    public string nameOfPhysician { get; set; }
-    public string addressOfPhysician { get; set; }
-    public string nameOfPhysicianCertificating { get; set; }
-    public string dateOfPhysicianCertificate { get; set; }
+        public string nameOfPhysician { get; set; }
+        public string addressOfPhysician { get; set; }
+        public string nameOfPhysicianCertificating { get; set; }
+        public string dateOfPhysicianCertificate { get; set; }
 
-    
+
 
 
 

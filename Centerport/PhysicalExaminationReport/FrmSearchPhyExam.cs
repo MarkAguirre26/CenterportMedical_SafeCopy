@@ -129,9 +129,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 
                 (Application.OpenForms["FrmPhysicalExamination"] as FrmPhysicalExamination).ClearAll();
                 (Application.OpenForms["FrmPhysicalExamination"] as FrmPhysicalExamination).searchPhyExamRecord(papin);
-
-
-
+                
              
 
                 //fmain.tsPanamaNew.Enabled = false;
@@ -167,6 +165,11 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
         {
             if (e.KeyCode == Keys.Enter)
             { SelectItem(); }
+        }
+
+        private void txt_search_TextChanged_1(object sender, EventArgs e)
+        {
+            FillDataGridView();
         }
 
 

@@ -16,7 +16,7 @@ namespace MedicalManagementSoftware
         private static bool bl;
         public static string Papin;
         public static string Action_PatientInfo;
-        public static string version = " 2023.08.17";
+        public static string version = " 2023.10.17";
         
         public static string ReplaceString(string str)
         {

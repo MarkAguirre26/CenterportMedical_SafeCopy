@@ -126,16 +126,15 @@ namespace MedicalManagementSoftware
                 (Application.OpenForms["FrmPanama"] as FrmPanama).ClearAll();
                 (Application.OpenForms["FrmPanama"] as FrmPanama).searchPanamaRecord(papin);
       
+                          
 
-           
-
-                //fmain.tsPanamaNew.Enabled = false;
-                fmain.tsPanamaEdit.Enabled = true;
-                fmain.tsPanamaDelete.Enabled = false;
-                fmain.tsPanamaSave.Enabled = false;
-                fmain.tsPanamaCancel.Enabled = false;
-                fmain.tsPanamaPrint.Enabled = true;
-                fmain.tsPanamaSearch.Enabled = true;
+                ////fmain.tsPanamaNew.Enabled = false;
+                //fmain.tsPanamaEdit.Enabled = true;
+                //fmain.tsPanamaDelete.Enabled = false;
+                //fmain.tsPanamaSave.Enabled = false;
+                //fmain.tsPanamaCancel.Enabled = false;
+                //fmain.tsPanamaPrint.Enabled = true;
+                //fmain.tsPanamaSearch.Enabled = true;
 
 
 

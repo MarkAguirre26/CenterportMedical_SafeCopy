@@ -70,7 +70,13 @@ namespace MedicalManagementSoftware
                 }
                
              
-                fmain.ts_add_sea.Enabled = true; fmain.ts_edit_sea.Enabled = true; fmain.ts_delete_sea.Enabled = false; fmain.ts_save_sea.Enabled = false; fmain.ts_search_sea.Enabled = true; fmain.ts_print_sea.Enabled = true; fmain.ts_cancel_sea.Enabled = false;
+                fmain.ts_add_sea.Enabled = true;
+                fmain.ts_edit_sea.Enabled = true; 
+                fmain.ts_delete_sea.Enabled = false;
+                fmain.ts_save_sea.Enabled = false; 
+                fmain.ts_search_sea.Enabled = true;
+                fmain.ts_print_sea.Enabled = true;
+                fmain.ts_cancel_sea.Enabled = false;
                 Cursor.Current = Cursors.Default;
        
 
@@ -144,38 +150,7 @@ namespace MedicalManagementSoftware
             if (!backgroundWorker1.IsBusy)
             { backgroundWorker1.RunWorkerAsync(); }
 
-          //  Search("%");
-            //try
-            //{
-
-            //    ClassSql a = new ClassSql(); DataTable dt;
-            //    //
-            //    dt = a.Table("SELECT t_result_main.cn, t_result_main.resultid, t_result_main.resulttype,t_result_main.status, t_result_main.papin, m_patient.lastname, m_patient.firstname, m_patient.middlename, t_result_main.result_date, t_result_main.remarks FROM t_result_main Inner Join m_patient ON t_result_main.papin = m_patient.papin WHERE t_result_main.resulttype =  'SEA'ORDER BY m_patient.lastname ASC LIMIT 10");
-            //    this.dg_result.Rows.Clear();
-            //    Cursor.Current = Cursors.WaitCursor;
-            //    foreach (DataRow dr in dt.Rows)
-            //    {
-            //        //DateTime Date = Convert.ToDateTime(dr["result_date"].ToString());
-            //        string name = dr["lastname"].ToString() + " , " + dr["firstname"].ToString() + " " + dr["middlename"].ToString();
-            //        string[] rows = new string[] { dr["cn"].ToString(), dr["papin"].ToString(), dr["resultid"].ToString(), name.ToString(), dr["result_date"].ToString(), dr["status"].ToString() };
-            //        dg_result.Rows.Add(rows);
-
-
-            //    }
-
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
-
-            //}
-            //finally
-            //{
-            //    //if (ClassSql.cnn != null) { ClassSql.DbClose(); }
-            //    if (ClassSql.dr != null) { ClassSql.dr.Close(); }
-            //    Cursor.Current = Cursors.Default;
-            //}
+        
 
         }
 

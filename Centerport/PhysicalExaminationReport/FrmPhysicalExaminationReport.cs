@@ -73,5 +73,10 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
 
             Viewer1.ReportSource = report;
         }
+
+        private void cmdPrint_Click(object sender, EventArgs e)
+        {
+            Viewer1.PrintReport();
+        }
     }
 }

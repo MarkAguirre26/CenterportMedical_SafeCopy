@@ -42,6 +42,7 @@
             this.cmdPrint.TabIndex = 1;
             this.cmdPrint.Text = "Print";
             this.cmdPrint.UseVisualStyleBackColor = true;
+            this.cmdPrint.Click += new System.EventHandler(this.cmdPrint_Click);
             // 
             // cmdCancel
             // 

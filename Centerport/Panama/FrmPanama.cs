@@ -1928,6 +1928,26 @@ namespace MedicalManagementSoftware
             search_RecomendationFromSearch();
 
 
+            //fmain.tsPanamaEdit.Enabled = true;
+            //fmain.tsPanamaDelete.Enabled = true;
+            //fmain.tsPanamaSave.Enabled = false;
+            //fmain.tsPanamaCancel.Enabled = false;
+            //fmain.tsPanamaPrint.Enabled = true;
+            //fmain.tsPanamaSearch.Enabled = true;
+
+
+
+            //fmain.tsPanamaNew.Enabled = false;
+            fmain.tsPanamaEdit.Enabled = true;
+            fmain.tsPanamaDelete.Enabled = false;
+            fmain.tsPanamaSave.Enabled = false;
+            fmain.tsPanamaCancel.Enabled = false;
+            fmain.tsPanamaPrint.Enabled = true;
+            fmain.tsPanamaSearch.Enabled = true;
+
+
+
+
         }
 
         private void searchPanamaResultMain()
@@ -2290,7 +2310,7 @@ namespace MedicalManagementSoftware
                 }
                 else
                 {
-                    rbVisualAidRequiredNo.Checked = false;
+                    rbVisualAidRequiredNo.Checked = true;
                 }
 
                 //txtUnaidedRightEyeDistant.Text = i.FAR_OD_U;
@@ -2574,7 +2594,7 @@ namespace MedicalManagementSoftware
                     lblYearWitness.Text = "Year:";
 
                 }
-                //
+                
 
 
 

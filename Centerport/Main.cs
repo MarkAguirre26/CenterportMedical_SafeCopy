@@ -72,7 +72,7 @@ namespace MedicalManagementSoftware
             InitializeComponent();
         }
 
-
+        //
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -2922,6 +2922,7 @@ namespace MedicalManagementSoftware
         private void toolStripPhysicalExamination_Click(object sender, EventArgs e)
         {
             ShowPhysicalExamination();
+            //MessageBox.Show("NOT AVAILABLE");
         }
 
         private void toolStripPhyExamSearch_Click(object sender, EventArgs e)

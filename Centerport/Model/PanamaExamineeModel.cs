@@ -73,8 +73,7 @@ namespace MedicalManagementSoftware.Model
             string TakenMedicationsComment3,
             string TakenMedicationsComment4,
             string TakenMedicationsComment5,
-            string AlternativeSuplimentComment6
-                         )
+            string AlternativeSuplimentComment6)
         {
             DataClasses2DataContext db = new DataClasses2DataContext(Database.connectionString);
             db.PanamaExamineeSave(Papin,

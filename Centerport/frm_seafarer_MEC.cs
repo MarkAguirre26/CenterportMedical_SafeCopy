@@ -128,7 +128,15 @@ namespace MedicalManagementSoftware
             txt_Papin.Select();
             Load_Medical();
 
-            
+            //fmain.ts_add_sea.Enabled = true;
+            fmain.ts_edit_sea.Enabled = false;
+            //fmain.ts_delete_sea.Enabled = false;
+            //fmain.ts_save_sea.Enabled = false;
+            //fmain.ts_cancel_sea.Enabled = false;
+            //fmain.ts_search_sea.Enabled = true;
+            //fmain.ts_print_sea.Enabled = false;
+
+
         }
 
 
@@ -215,7 +223,7 @@ namespace MedicalManagementSoftware
 
 
 
-           
+
 
         }
 
@@ -327,8 +335,24 @@ namespace MedicalManagementSoftware
                 if (rb_clarity_Speech_AD.Checked == true) { CLARITY_OF_SPEECH_ = "A"; } else if (rb_clarity_Speech_IN.Checked == true) { CLARITY_OF_SPEECH_ = "I"; } else { CLARITY_OF_SPEECH_ = "-"; }
                 if (rb_fit_lookOut_Y.Checked == true) { FIT_FOR_LOOKOUT_ = "YES"; } else if (rb_fit_lookOut_N.Checked == true) { FIT_FOR_LOOKOUT_ = "NO"; } else { FIT_FOR_LOOKOUT_ = "-"; }
 
-                if (rb_hearingRight_AD.Checked == true) { HEARING_RIGHT_ = "A"; } else if (rb_hearingRight_IA.Checked == true) { HEARING_RIGHT_ = "I"; } else { HEARING_RIGHT_ = "-"; }
-                if (rb_hearingLeft_AD.Checked == true) { HEARING_LEFT_ = "A"; } else if (rb_hearingLeft_IA.Checked == true) { HEARING_LEFT_ = "I"; } else { HEARING_LEFT_ = "-"; }
+                //----------------------------
+                if (rb_hearingRight_AD.Checked == true) {
+                    HEARING_RIGHT_ = "A";
+                } else if (rb_hearingRight_IA.Checked == true) {
+                    HEARING_RIGHT_ = "I";
+                } else {
+                    HEARING_RIGHT_ = "-"; 
+                }
+                //---------------
+                if (rb_hearingLeft_AD.Checked == true) { 
+                    HEARING_LEFT_ = "A";
+                } else if (rb_hearingLeft_IA.Checked == true) {
+                    HEARING_LEFT_ = "I";
+                } else {
+                    HEARING_LEFT_ = "-";
+                }
+                //----------------------
+
                 if (rb_visualReq_Y.Checked == true) { VISUAL_AIDS_REQUIRED_ = "YES"; } else if (rb_visualReq_N.Checked == true) { VISUAL_AIDS_REQUIRED_ = "NO"; } else { VISUAL_AIDS_REQUIRED_ = "-"; }
 
                 if (rb_visual_worn_Spectacles.Checked == true) { VISUAL_AIDS_WORN_ = "SPECTACLES"; } else if (rb_visual_worn_ContactLenses.Checked == true) { VISUAL_AIDS_WORN_ = "CONTACTLENS"; } else { VISUAL_AIDS_WORN_ = "-"; }
@@ -417,7 +441,13 @@ namespace MedicalManagementSoftware
                 //Tool.MessageBoxSave();
                 Availability(false);
                 pin.Select();
-                fmain.ts_add_sea.Enabled = true; fmain.ts_edit_sea.Enabled = true; fmain.ts_delete_sea.Enabled = false; fmain.ts_save_sea.Enabled = false; fmain.ts_cancel_sea.Enabled = false; fmain.ts_search_sea.Enabled = true; fmain.ts_print_sea.Enabled = true;
+                fmain.ts_add_sea.Enabled = true;
+                fmain.ts_edit_sea.Enabled = true;
+                fmain.ts_delete_sea.Enabled = false;
+                fmain.ts_save_sea.Enabled = false;
+                fmain.ts_cancel_sea.Enabled = false;
+                fmain.ts_search_sea.Enabled = true;
+                fmain.ts_print_sea.Enabled = true;
 
 
 
@@ -449,39 +479,7 @@ namespace MedicalManagementSoftware
             {
 
 
-                //if (rb_head_Y.Checked == true) { rb_head_ = "Y"; } else { rb_head_ = "N"; }
-                //if (rb_freqHead_Y.Checked == true) { rb_freqHead_ = "Y"; } else { rb_freqHead_ = "N"; }
-                //if (rb_dizziness_Y.Checked == true) { rb_dizziness_ = "Y"; } else { rb_dizziness_ = "N"; }
-                //if (rb_spells_Y.Checked == true) { rb_spells_ = "Y"; } else { rb_spells_ = "N"; }
-                //if (rb_Insomia_Y.Checked == true) { rb_Insomia_ = "Y"; } else { rb_Insomia_ = "N"; }
-                //if (rb_depression_Y.Checked == true) { rb_depression_ = "Y"; } else { rb_depression_ = "N"; }
-                //if (rb_trachoma_Y.Checked == true) { rb_trachoma_ = "Y"; } else { rb_trachoma_ = "N"; }
-                //if (rb_deaf_Y.Checked == true) { rb_deaf_ = "Y"; } else { rb_deaf_ = "N"; }
-                //if (rb_nose_Y.Checked == true) { rb_nose_ = "Y"; } else { rb_nose_ = "N"; }
-                //if (rb_tuberculosis_Y.Checked == true) { rb_tuberculosis_ = "Y"; } else { rb_tuberculosis_ = "N"; }
-                //if (rb_lung_Y.Checked == true) { rb_lung_ = "Y"; } else { rb_lung_ = "N"; }
-                //if (rb_HighBlood_Y.Checked == true) { rb_HighBlood_ = "Y"; } else { rb_HighBlood_ = "N"; }
-                //if (rb_Heart_Y.Checked == true) { rb_Heart_ = "Y"; } else { rb_Heart_ = "N"; }
-                //if (rb_fever_Y.Checked == true) { rb_fever_ = "Y"; } else { rb_fever_ = "N"; }
-                //if (rb_diabetes_Y.Checked == true) { rb_diabetes_ = "Y"; } else { rb_diabetes_ = "N"; }
-                //if (rb_endocrine_Y.Checked == true) { rb_endocrine_ = "Y"; } else { rb_endocrine_ = "N"; }
-                //if (rb_cancer_Y.Checked == true) { rb_cancer_ = "Y"; } else { rb_cancer_ = "N"; }
-                //if (rb_blood_Y.Checked == true) { rb_blood_ = "Y"; } else { rb_blood_ = "N"; }
-                //if (rb_stomach_Y.Checked == true) { rb_stomach_ = "Y"; } else { rb_stomach_ = "N"; }
-                //if (rb_abdominal_Y.Checked == true) { rb_abdominal_ = "Y"; } else { rb_abdominal_ = "N"; }
-                //if (rb_kidney_Y.Checked == true) { rb_kidney_ = "Y"; } else { rb_kidney_ = "N"; }
-                //if (rb_back_Y.Checked == true) { rb_back_ = "Y"; } else { rb_back_ = "N"; }
-                //if (rb_Genetic_Y.Checked == true) { rb_Genetic_ = "Y"; } else { rb_Genetic_ = "N"; }
-                //if (rb_sexual_Y.Checked == true) { rb_sexual_ = "Y"; } else { rb_sexual_ = "N"; }
-                //if (rb_last_Y.Checked == true) { rb_last_ = "Y"; } else { rb_last_ = "N"; }
-                //if (rb_tropical_Y.Checked == true) { rb_tropical_ = "Y"; } else { rb_tropical_ = "N"; }
-                //if (rb_schis_Y.Checked == true) { rb_schis_ = "Y"; } else { rb_schis_ = "N"; }
-                //if (rb_asthma_Y.Checked == true) { rb_asthma_ = "Y"; } else { rb_asthma_ = "N"; }
-                //if (rb_allergies_Y.Checked == true) { rb_allergies_ = "Y"; } else { rb_allergies_ = "N"; }
-                //if (rb_gyn_Y.Checked == true) { rb_gyn_ = "Y"; } else { rb_gyn_ = "N"; }
-                //if (rb_operational_Y.Checked == true) { rb_operational_ = "Y"; } else { rb_operational_ = "N"; }
-                //if (cb_consulted.Checked == true) { cb_consulted_ = "Y"; } else { cb_consulted_ = "N"; }            
-                //if (operations_tag_ == "N") { rb_operational_N.Checked = true; } else { rb_operational_Y.Checked = true; }
+
                 if (rb_head_Y.Checked == true) { rb_head_ = "Y"; } else if (rb_head_N.Checked == true) { rb_head_ = "N"; } else { rb_head_ = "-"; }
                 if (rb_freqHead_Y.Checked == true) { rb_freqHead_ = "Y"; } else if (rb_freqHead_N.Checked == true) { rb_freqHead_ = "N"; } else { rb_freqHead_ = "-"; }
                 if (rb_dizziness_Y.Checked == true) { rb_dizziness_ = "Y"; } else if (rb_dizziness_N.Checked == true) { rb_dizziness_ = "N"; } else { rb_dizziness_ = "-"; }
@@ -578,18 +576,7 @@ namespace MedicalManagementSoftware
                 if (rb_catering_fit.Checked == true) { catering_srvc_flag_ = "Y"; } else if (this.rb_catering_Ufit.Checked == true) { catering_srvc_flag_ = "N"; } else { catering_srvc_flag_ = "-"; }
                 if (rb_other_Fit.Checked == true) { other_srvc_flag_ = "Y"; } else if (this.rb_other_uFit.Checked == true) { other_srvc_flag_ = "N"; } else { other_srvc_flag_ = "-"; }
 
-                //ClassSql a = new ClassSql();           //rb_head_;                                             rb_freqHead_;                                             rb_dizziness_;                                          rb_spells_;                                rb_Insomia_;                                    rb_depression_;                                               rb_trachoma_;                    rb_deaf_;                                                             rb_nose_;                               rb_tuberculosis_;                                           rb_lung_;                                          rb_HighBlood_;                                          rb_Heart_;                                  rb_fever_;                                          rb_diabetes_;                                rb_endocrine_;                                                      rb_cancer_;                                rb_blood_;                                      rb_stomach_;                                                                    rb_abdominal_;                                      rb_kidney_;                                         rb_back_;                                         rb_Genetic_;                                         rb_sexual_;                                                      rb_last_;                                                                            rb_tropical_;                      rb_schis_; rb_asthma_; ; ; rb_operational
-                // string a =  "UPDATE `t_med_history` SET `head_injury`={0}, `frequent_headaches`={1}, `frequent_dizziness`={2}, `fainting_spells`={3}, `insomnia`={4}, `depression`={5}, `trachoma`={6}, `deafness`={7}, `nose_throat_disorder`={8}, `tuberculosis`={9}, `other_lung_disorder`={10}, `high_blood_pressure`={11}, `heart_disease`={12}, `rheumatic_fever`={13}, `diabetes_mellitus`={14}, `other_endocrine_disorder`={15}, `cancer_tumor`={16}, `blood_disorders`={17}, `stomach_pain`={18}, `other_abdominal_disorder`={19}, `kidney_bladder_disorder`={20}, `back_injury`={21}, `genetic_hereditary`={22}, `sexually_transmit_disease`={23}, `tropical_disease`={24}, `asthma`={25}, `allergies`={26}, `gynecological_disorder`={27}, `operations`={28}, `operations_specify`={29}, `others`={30}, `consulted`={31}, `consulted_specify`={32}, `maintenance_meds`={33}, `operations_tag`={34}, `schistosomiasis`={35}, `last_menstrual_period`={36}, `allergies_specify`={37}, `other_abdominal_specify`={38} WHERE (`cn`={39})";
-                // string b =  "UPDATE `t_med_history2` SET `column1`='" + q1_.ToString() + "', `column2`='" + q2_.ToString() + "', `column3`='" + q3_.ToString() + "', `column4`='" + q4_.ToString() + "', `column5`='" + q5_.ToString() + "', `column6`='" + q6_.ToString() + "', `column7`='" + q7_.ToString() + "', `column7_comment`='" + Tool.ReplaceString(txt_q7_Comment.Text) + "', `column8`='" + q8_.ToString() + "', `column8_comment`='" + Tool.ReplaceString(txt_q8_comment.Text) + "' WHERE (`cn`='" + lbl_history2_cn.Tag.ToString() + "') LIMIT 1";
-                //string c =  "UPDATE `t_phy_exam` SET `HEIGHT`='" + Tool.ReplaceString(x_height.Text) + "', `WEIGHT`='" + Tool.ReplaceString(x_weight.Text) + "', `BP`='" + Tool.ReplaceString(this.x_bp.Text) + "', `PULSE`='" + Tool.ReplaceString(this.x_pulse.Text) + "', `RESPIRATION`='" + Tool.ReplaceString(this.x_respiration.Text) + "', `BODY_BUILD`='" + Tool.ReplaceString(this.x_body_Build.Text) + "', `FAR_OD_U`='" + Tool.ReplaceString(this.x_far_u.Text) + "', `FAR_OD_C`='" + Tool.ReplaceString(this.x_far_c.Text) + "', `FAR_OS_U`='" + Tool.ReplaceString(this.x_far_os_u.Text) + "', `FAR_OS_C`='" + Tool.ReplaceString(this.x_far_os_c.Text) + "', `NEAR_ODJ_U`='" + Tool.ReplaceString(this.x_Near_odj_u.Text) + "', `NEAR_ODJ_C`='" + Tool.ReplaceString(this.x_near_odj_c.Text) + "', `NEAR_OSJ_U`='" + Tool.ReplaceString(this.x_near_osj_u.Text) + "', `NEAR_OSJ_C`='" + Tool.ReplaceString(this.x_near_osj_c.Text) + "', `ISHIHARA_U`='" + ISHIHARA_U_.ToString() + "', `ISHIHARA_C`='" + Tool.ReplaceString(cbo_ishihara_c.Text) + "', `HEARING_AD`='" + Tool.ReplaceString(this.x_hearing_Ad.Text) + "', `HEARING_AS`='" + Tool.ReplaceString(this.x_hearing_as.Text) + "',  `CONVERSATIONAL_AD`='" + Tool.ReplaceString(this.x_Con_ad.Text) + "', `CONVERSATIONAL_AS`='"+con_as.ToString() +"',`SATISFACTORY_HEARING`='" + Tool.ReplaceString(this.cb_satisfactory_Hearing.Text) + "',  `SATISFACTORY_SIGHT_UNAID`='" + Tool.ReplaceString(cbo_satisfactory_Unaided.Text) + "',  `VISUAL_AIDS`='" + Tool.ReplaceString(cbo_visual_Aids.Text) + "', `FIT_FOR_LOOKOUT`='" + FIT_FOR_LOOKOUT_.ToString() + "', `HEARING_RIGHT`='" + HEARING_RIGHT_.ToString() + "', `HEARING_LEFT`='" + HEARING_LEFT_.ToString() + "', `CLARITY_OF_SPEECH`='" + CLARITY_OF_SPEECH_.ToString() + "', `VISUAL_AIDS_REQUIRED`='" + VISUAL_AIDS_REQUIRED_.ToString() + "', `BP_DIASTOLIC`='" + Tool.ReplaceString(x_bp_dias.Text) + "', `RHYTHM`='" + Tool.ReplaceString(x_rhythm.Text) + "', `VISUAL_AIDS_WORN`='" + VISUAL_AIDS_WORN_.ToString() + "', `COLOR_VISION_DATE_TAKEN`='" + Tool.ReplaceString(dt_dateTaken.Text) + "', `UNAIDED_HEARING_SATISFACTORY`='" + Tool.ReplaceString(cbo_unaided_hearing.Text) + "', `IDENTITY_CONFIRMED`='" + IDENTITY_CONFIRMED_.ToString() + "' WHERE (`cn`='" + lbl_physicalExam_cn.Tag.ToString() + "') LIMIT 1";
 
-                // string d =    "UPDATE `t_others` SET `SKIN_TAG`='" + cb_skin_.ToString() + "', `SKIN`='" + Tool.ReplaceString(x_skin.Text) + "', `HEAD_NECK_SCALP_TAG`='" + cb_neck_.ToString() + "', `HEAD_NECK_SCALP`='" + Tool.ReplaceString(x_neck.Text) + "', `EYES_TAG`='" + cb_eyes_.ToString() + "', `EYES`='" + Tool.ReplaceString(x_eyes.Text) + "', `PUPILS_TAG`='" + cb_pupils_.ToString() + "', `PUPILS`='" + Tool.ReplaceString(x_pupils.Text) + "', `EARS_EARDRUM_TAG`='" + cb_ears_.ToString() + "', `EARS_EARDRUM`='" + Tool.ReplaceString(x_ears.Text) + "', `NOSE_SINUSES_TAG`='" + cb_nose_.ToString() + "', `NOSE_SINUSES`='" + Tool.ReplaceString(x_nose.Text) + "', `MOUTH_THROAT_TAG`='" + cb_mought_.ToString() + "', `MOUTH_THROAT`='" + Tool.ReplaceString(x_mouth.Text) + "', `NECK_LN_THYROID_TAG`='" + cb_neck_.ToString() + "', `NECK_LN_THYROID`='" + Tool.ReplaceString(x_thyroid.Text) + "', `CHEST_BREAST_AXILLA_TAG`='" + cb_breast_.ToString() + "', `CHEST_BREAST_AXILLA`='" + Tool.ReplaceString(x_breast.Text) + "', `LUNGS_TAG`='" + cb_lungs_.ToString() + "', `LUNGS`='" + Tool.ReplaceString(x_lungs.Text) + "', `HEART_TAG`='" + cb_heart_.ToString() + "', `HEART`='" + Tool.ReplaceString(x_heart.Text) + "', `ABDOMEN_TAG`='" + cb_abdomen_.ToString() + "', `ABDOMEN`='" + Tool.ReplaceString(x_abdomen.Text) + "', `BACK_FLANK_TAG`='" + cb_back_.ToString() + "', `BACK_FLANK`='" + Tool.ReplaceString(x_back.Text) + "', `ANUS_RECTUM_TAG`='" + cb_anus_.ToString() + "', `ANUS_RECTUM`='" + Tool.ReplaceString(x_anus.Text) + "', `GU_SYSTEM_TAG`='" + cb_gu_.ToString() + "', `GU_SYSTEM`='" + Tool.ReplaceString(x_gu.Text) + "', `INGUINALS_GENITALS_TAG`='" + cb_inguinals_.ToString() + "', `INGUINALS_GENITALS`='" + Tool.ReplaceString(x_inguinals.Text) + "', `REFLEXES_TAG`='" + cb_reflexes_.ToString() + "', `REFLEXES`='" + Tool.ReplaceString(x_reflexes.Text) + "', `EXTREMITIES_TAG`='" + cb_extremeties_.ToString() + "', `EXTREMITIES`='" + Tool.ReplaceString(x_extremeties.Text) + "', `DENTAL`='" + Tool.ReplaceString(x_dental.Text) + "', `DENTAL_TAG`='" + cb_dental_.ToString() + "' WHERE (`cn`='" + lbl_other_cn.Tag.ToString() + "') LIMIT 1";
-                // string e =    "UPDATE `t_ancillary` SET `cxr`='" + cxr_normal_.ToString() + "', `ecg`='" + ecg_normal_.ToString() + "', `cbc`='" + cbd_normal_.ToString() + "', `pregnancy_test`='" + Tool.ReplaceString(cbo_pregnancyTest.Text) + "', `urinalysis`='" + urinal_normal_.ToString() + "', `stool_exam`='" + stool_normal_.ToString() + "', `hbsag`='" + hb_Nonreactive_.ToString() + "', `hiv`='" + hiv_NonReactive_.ToString() + "', `rpr`='" + rpr_NonReactive_.ToString() + "', `blood_type`='" + Tool.ReplaceString(cbo_bloodType.Text) + "',  `psychological_exam`='" + psychological_exam_.ToString() + "', `additional_test`='" + Tool.ReplaceString(x_add_test1.Text) + "', `remarks`='" + Tool.ReplaceString(x_remark.Text) + "', `additional_test2`='" + Tool.ReplaceString(x_add_test2.Text) + "' WHERE (`cn`='" + lbl_cn_acillary.Tag.ToString() + "') LIMIT 1";
-                // string f =    "UPDATE `t_result_main` SET `result_date`='" + dt_resultDate.Text + "', `pathologist`='" + Tool.ReplaceString(txt_medDir_Cbo.Text) + "', `fitness_date`='" + dt_fitness_Date.Text + "', `valid_until`='" + dt_validUntil.Text + "', `remarks`='" + Tool.ReplaceString(x_remark_rec.Text) + "', `restriction`='" + Tool.ReplaceString(x_restriction.Text) + "', `specimen_no`='" + Tool.ReplaceString(x_speciment.Text) + "', `medtech`='" + Tool.ReplaceString(cbo_medtech.Text) + "', medtech_license ='" + MedtectLicence.ToString() + "', `basic_doh_exam`='" + rb_doh_pass_.ToString() + "', `add_lab_tests`='" + rb_ladTest_pass_.ToString() + "', `flag_medlab_req`='" + rb_flag_pass_.ToString() + "',`deck_srvc_flag`='" + deck_srvc_flag_.ToString() + "', `engine_srvc_flag`='" + engine_srvc_flag_.ToString() + "', `catering_srvc_flag`='" + catering_srvc_flag_.ToString() + "', `other_srvc_flag`='" + other_srvc_flag_.ToString() + "' ,`recommendation`='" + Tool.ReplaceString(cbo_recomendation.Text) + "' WHERE (`cn`='" + lbl_recomendation_cn.Tag.ToString() + "') LIMIT 1";
-
-                //Search_MedicalHistory(); search_Ancillary(); Search_medicalHistory2(); Search_others();  Search_PhyExam(); search_Recomendation();
-                //    var arr = new[] { a,b,c,d,e,f };`
-                // File.WriteAllLines(ClassSql.tmp_path, arr);
 
                 db.ExecuteCommand("UPDATE t_med_history SET head_injury={0}, frequent_headaches={1}, frequent_dizziness={2}, fainting_spells={3}, insomnia={4}, depression={5}, trachoma={6}, deafness={7}, nose_throat_disorder={8}, tuberculosis={9}, other_lung_disorder={10}, high_blood_pressure={11}, heart_disease={12}, rheumatic_fever={13}, diabetes_mellitus={14}, other_endocrine_disorder={15}, cancer_tumor={16}, blood_disorders={17}, stomach_pain={18}, other_abdominal_disorder={19}, kidney_bladder_disorder={20}, back_injury={21}, genetic_hereditary={22}, sexually_transmit_disease={23}, tropical_disease={24}, asthma={25}, allergies={26}, gynecological_disorder={27}, operations={28}, operations_specify={29}, others={30}, consulted={31}, consulted_specify={32}, maintenance_meds={33}, operations_tag={34}, schistosomiasis={35}, last_menstrual_period={36}, allergies_specify={37}, other_abdominal_specify={38} WHERE (cn={39})", rb_head_.ToString(), rb_freqHead_.ToString(), rb_dizziness_.ToString(), rb_spells_.ToString(), rb_Insomia_.ToString(), rb_depression_.ToString(), rb_trachoma_.ToString(), rb_deaf_.ToString(), rb_nose_.ToString(), rb_tuberculosis_.ToString(), rb_lung_.ToString(), rb_HighBlood_.ToString(), rb_Heart_.ToString(), rb_fever_.ToString(), rb_diabetes_.ToString(), rb_endocrine_.ToString(), rb_cancer_.ToString(), rb_blood_.ToString(), rb_stomach_.ToString(), rb_abdominal_.ToString(), rb_kidney_.ToString(), rb_back_.ToString(), rb_Genetic_.ToString(), rb_sexual_.ToString(), rb_tropical_.ToString(), rb_asthma_.ToString(), rb_allergies_.ToString(), rb_gyn_.ToString(), rb_operational_.ToString(), Tool.ReplaceString(txt_operational_specify.Text), Tool.ReplaceString(tx_other_History.Text), cb_consulted_.ToString(), Tool.ReplaceString(txt_consulted.Text), Tool.ReplaceString(txt_maintenance.Text), rb_operational_.ToString(), rb_schis_.ToString(), rb_last_.ToString(), Tool.ReplaceString(txt_allergies_specify.Text), Tool.ReplaceString(txt_abdominal_specify.Text), lbl_history1_cn.Tag.ToString());
                 db.ExecuteCommand("UPDATE t_med_history2 SET column1={0}, column2={1}, column3={2}, column4={3}, column5={4}, column6={5}, column7={6}, column7_comment={7}, column8={8}, column8_comment={9},column1_comment={10},column2_comment={11},column3_comment={12},column4_comment={13},column5_comment={14},column6_comment={15} WHERE cn={16}", q1_.ToString(), q2_.ToString(), q3_.ToString(), q4_.ToString(), q5_.ToString(), q6_.ToString(), q7_.ToString(), txt_q7_Comment.Text, q8_.ToString(), txt_q8_comment.Text, txt_comment_1.Text, txt_comment_2.Text, txt_comment_3.Text, txt_comment_4.Text, txt_comment_5.Text, txt_comment_6.Text, lbl_history2_cn.Tag.ToString());
@@ -599,15 +586,28 @@ namespace MedicalManagementSoftware
                 db.ExecuteCommand("UPDATE t_result_main SET result_date={0},     pathologist={1},    fitness_date={2},   valid_until={3},    remarks={4},        restriction={5},    specimen_no={6}, medtech={7},     medtech_license ={8},       basic_doh_exam={9},        add_lab_tests={10},        flag_medlab_req={11},        deck_srvc_flag={12},          engine_srvc_flag={13},       catering_srvc_flag={14},       other_srvc_flag={15} ,   recommendation={16} WHERE cn={17}", dt_resultDate.Text, txt_medDir_Cbo.Text, dt_fitness_Date.Text, dt_validUntil.Text, x_remark_rec.Text, x_restriction.Text, x_speciment.Text, cbo_medtech.Text, MedtectLicence.ToString(), rb_doh_pass_.ToString(), rb_ladTest_pass_.ToString(), rb_flag_pass_.ToString(), deck_srvc_flag_.ToString(), engine_srvc_flag_.ToString(), catering_srvc_flag_.ToString(), other_srvc_flag_.ToString(), cbo_recomendation.Text, lbl_recomendation_cn.Tag.ToString());
 
 
-                //dt_resultDate.Text, txt_medDir_Cbo.Text, dt_fitness_Date.Text, dt_validUntil.Text, x_remark_rec.Text, x_restriction.Text, x_speciment.Text, cbo_medtech.Text, MedtectLicence.ToString(), rb_doh_pass_.ToString(), rb_ladTest_pass_.ToString(), deck_srvc_flag_.ToString(), engine_srvc_flag_.ToString(), catering_srvc_flag_.ToString(), other_srvc_flag_.ToString(), cbo_recomendation.Text, lbl_recomendation_cn.Tag.ToString()
-                //Tool.MessageBoxUpdate();
                 pin.Select();
                 NewSeabase = true;
                 Availability(false);
-                fmain.ts_add_sea.Enabled = true; fmain.ts_edit_sea.Enabled = true; fmain.ts_delete_sea.Enabled = false; fmain.ts_save_sea.Enabled = false; fmain.ts_cancel_sea.Enabled = false; fmain.ts_search_sea.Enabled = true; fmain.ts_print_sea.Enabled = true;
+                fmain.ts_add_sea.Enabled = true;
+                fmain.ts_edit_sea.Enabled = true;
+                fmain.ts_delete_sea.Enabled = false;
+                fmain.ts_save_sea.Enabled = false; 
+                fmain.ts_cancel_sea.Enabled = false;
+                fmain.ts_search_sea.Enabled = true;
+                fmain.ts_print_sea.Enabled = true;
 
                 txt_operational_specify.Enabled = false;
                 tx_other_History.Enabled = false;
+
+
+
+                if ((Application.OpenForms["FrmPanama"] as FrmPanama) != null)
+                {
+                    (Application.OpenForms["FrmPanama"] as FrmPanama).searchFromOutside();
+                }
+
+
 
 
             }
@@ -784,7 +784,13 @@ namespace MedicalManagementSoftware
             {
                 NewSeabase = false;
                 Availability(true);
-                fmain.ts_add_sea.Enabled = false; fmain.ts_edit_sea.Enabled = false; fmain.ts_delete_sea.Enabled = false; fmain.ts_save_sea.Enabled = true; fmain.ts_cancel_sea.Enabled = true; fmain.ts_search_sea.Enabled = false; fmain.ts_print_sea.Enabled = false;
+                fmain.ts_add_sea.Enabled = false;
+                fmain.ts_edit_sea.Enabled = false;
+                fmain.ts_delete_sea.Enabled = false;
+                fmain.ts_save_sea.Enabled = true;
+                fmain.ts_cancel_sea.Enabled = true;
+                fmain.ts_search_sea.Enabled = false;
+                fmain.ts_print_sea.Enabled = false;
 
             }
             else
@@ -808,14 +814,28 @@ namespace MedicalManagementSoftware
                 this.txt_Papin.Clear();
                 ClearAll();
                 Availability(false);
-                fmain.ts_add_sea.Enabled = true; fmain.ts_edit_sea.Enabled = false; fmain.ts_delete_sea.Enabled = false; fmain.ts_save_sea.Enabled = false; fmain.ts_search_sea.Enabled = true; fmain.ts_print_sea.Enabled = false; fmain.ts_cancel_sea.Enabled = false;
+                fmain.ts_add_sea.Enabled = true;
+                fmain.ts_edit_sea.Enabled = false;
+                fmain.ts_delete_sea.Enabled = false;
+                fmain.ts_save_sea.Enabled = false;
+                fmain.ts_search_sea.Enabled = true;
+                fmain.ts_print_sea.Enabled = false;
+                fmain.ts_cancel_sea.Enabled = false;
             }
+
+
             else
             {
                 Availability(false);
                 ClearAll();
                 Search_Patient(); Search_MedicalHistory(); Search_medicalHistory2(); Search_PhyExam(); Search_others(); search_Ancillary(); search_RecomendationFromSearch();
-                fmain.ts_add_sea.Enabled = true; fmain.ts_edit_sea.Enabled = true; fmain.ts_delete_sea.Enabled = false; fmain.ts_save_sea.Enabled = false; fmain.ts_search_sea.Enabled = true; fmain.ts_print_sea.Enabled = true; fmain.ts_cancel_sea.Enabled = false;
+                fmain.ts_add_sea.Enabled = true;
+                fmain.ts_edit_sea.Enabled = true;
+                fmain.ts_delete_sea.Enabled = false;
+                fmain.ts_save_sea.Enabled = false;
+                fmain.ts_search_sea.Enabled = true;
+                fmain.ts_print_sea.Enabled = true;
+                fmain.ts_cancel_sea.Enabled = false;
             }
 
         }
@@ -1145,18 +1165,20 @@ namespace MedicalManagementSoftware
                 MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
 
             }
- 
+
 
         }
 
         public void Availability(bool bl)
         {
-           
+
 
             if (bl == true)
-            { overlayShadow1.Visible = false; overlayShadow1.SendToBack(); }
+            { overlayShadow1.Visible = false; 
+                overlayShadow1.SendToBack(); }
             else
-            { overlayShadow1.Visible = true; overlayShadow1.BringToFront(); }
+            { overlayShadow1.Visible = true; 
+                overlayShadow1.BringToFront(); }
 
         }
         public void ClearAll()
@@ -1170,7 +1192,7 @@ namespace MedicalManagementSoftware
             Tool.ClearFields(panel62);
             Tool.ClearFields(panel33);
             Tool.ClearFields(panel64);
-            Tool.ClearFields(panel36);           
+            Tool.ClearFields(panel36);
             Tool.ClearFields(panel34);
             Tool.ClearFields(panel63);
             Tool.ClearFields(panel26);
@@ -1231,7 +1253,7 @@ namespace MedicalManagementSoftware
             Tool.ClearFields(panel5);
             Tool.ClearFields(panel72);
             Tool.ClearFields(panel60);
-           
+
 
 
         }
@@ -1696,9 +1718,9 @@ namespace MedicalManagementSoftware
             {
 
 
-           
+
                 var i = db.sp_Seabase_Anillary(LabID.Text).FirstOrDefault();
-              
+
                 lbl_cn_acillary.Tag = i.cn.ToString();
 
                 string cxr = i.cxr.ToString();
@@ -1733,7 +1755,7 @@ namespace MedicalManagementSoftware
                 }
                 cbo_bloodType.Text = blood;
 
-              
+
                 // string blood_chemistries = dr["blood_chemistries"].ToString();
                 string psychological_exam = i.psychological_exam.ToString();
                 if (psychological_exam == "RECOMMEND") { rb_psych_recomend.Checked = true; }
@@ -1894,9 +1916,9 @@ namespace MedicalManagementSoftware
             {
 
 
-          
+
                 var i = db.sp_Seabase_Recomendation(LabID.Text).FirstOrDefault();
-                
+
 
                 lbl_recomendation_cn.Tag = i.cn.ToString();
 
@@ -1980,7 +2002,7 @@ namespace MedicalManagementSoftware
                 MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
 
             }
-          
+
 
         }
 
@@ -2335,9 +2357,9 @@ namespace MedicalManagementSoftware
             try
             {
 
-                
-                var list = db.sp_Seabase_SearchList("%","SEA");
-                Cursor.Current = Cursors.WaitCursor;                
+
+                var list = db.sp_Seabase_SearchList("%", "SEA");
+                Cursor.Current = Cursors.WaitCursor;
                 foreach (var i in list)
                 {
                     Seabase_SearchList_Model.Add(new Seabase_SearchList_Model
@@ -2351,10 +2373,10 @@ namespace MedicalManagementSoftware
 
                     });
 
-                   
+
 
                 }
-             
+
 
             }
             catch (Exception ex)
@@ -2362,7 +2384,7 @@ namespace MedicalManagementSoftware
                 MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
 
             }
-           
+
         }
 
         private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
@@ -2422,7 +2444,7 @@ namespace MedicalManagementSoftware
 
 
 
-           
+
 
         }
 

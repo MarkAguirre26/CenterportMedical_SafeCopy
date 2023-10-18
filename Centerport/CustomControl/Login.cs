@@ -132,7 +132,6 @@ namespace MedicalManagementSoftware.UserControlView
                     EmployerName = dr["EmployerName"].ToString()
                 });
 
-
             }
 
             EmployerList.employerList = employerList;
@@ -145,10 +144,7 @@ namespace MedicalManagementSoftware.UserControlView
             ViewMainForm(false);
 
             this.Text = Properties.Settings.Default.SystemName + Tool.version;
-            txt_username.Clear();
-            txt_password.Clear();
-
-
+      
 
         }
 

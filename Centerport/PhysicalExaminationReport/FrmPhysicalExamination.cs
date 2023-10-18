@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -122,31 +123,50 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
         {
 
             DataClasses2DataContext db = new DataClasses2DataContext(Properties.Settings.Default.MyConString);
-            var i = db.PhysicalExamplePatient(txtPapin.Text).FirstOrDefault();
+            var l = db.spLiberiaSelect(txtPapin.Text).FirstOrDefault();
 
 
 
-            if (i != null)
+            if (l != null)
             {
 
-                txtlastname.Text = i.lastname;
-                txtFirstname.Text = i.firstname;
-                txtMiddleName.Text = i.middlename;
-                txtBirthDate.Text = i.birthdate;
-                txtPlaceOfBirth.Text = i.place_of_birth;
-                txtHomeAddress.Text = i.HomeAddress;
-                txtHeight.Text = i.Height;
-                txtWeight.Text = i.Weight;
-                txtBloodPressure.Text = i.BloodPressure;
-                txtPulse.Text = i.PULSE;
-                txtRespiration.Text = i.Respiratory;
-                txtDateOfColorVisionTest.Text = i.COLOR_VISION_DATE_TAKEN;
+                txtlastname.Text = l.lastname;
+                txtFirstname.Text = l.firstname;
+                txtMiddleName.Text = l.middlename;
+                txtBirthDate.Text = l.birthdate;
+                txtPlaceOfBirth.Text = l.place_of_birth;
+                txtHomeAddress.Text = l.HomeAddress;
+
+                txtHeight.Text = l.Height + " CM";
+                txtWeight.Text = l.Weight + " KG";
+                string bp_diastolic =  l.BP+"/"+l.BP_DIASTOLIC;
+                txtBloodPressure.Text = l.BloodPressure ==null?bp_diastolic:l.BloodPressure;
+                txtPulse.Text = l.Pulse+"/MIN.";
+                txtRespiration.Text = l.Respiration + "/MIN.";
+
+                txtRightEyeWithOutGlasses.Text = l.VissionRightEye == null ? "20/20" : l.VissionRightEye;
+                txtLeftEyeWithOutGlasses.Text = l.VissionLeftEye == null ? "20/20" : l.VissionLeftEye;
+                txtRightEyeWithGlasses.Text = l.VissionWithGlassRight == null ? "20/20" : l.VissionWithGlassRight;
+                txtLeftEyeWithGlasses.Text = l.VissionWithGlassLeft == null ? "20/20" : l.VissionWithGlassLeft;
+
+                string d = l.COLOR_VISION_DATE_TAKEN.ToString();
+                DateTime temp;
+                if (DateTime.TryParse(d, out temp))
+                {
+                    txtDateOfColorVisionTest.Text = d;
+                }
+                else
+                {
+                    txtDateOfColorVisionTest.Text = DateTime.Now.ToShortDateString();
+                }
+
+
                 string fullname = txtlastname.Text + ", " + txtFirstname.Text + " " + txtMiddleName.Text;
                 txtNameOfApplicant.Text = fullname;
-                txtDateOfExam.Text = i.result_date;
-                txtExpirydate.Text = i.valid_until;
+                txtDateOfExam.Text = l.result_date == null? l.fitnessDate:l.result_date;
+                txtExpirydate.Text = l.valid_until == null ? l.expiryDate : l.valid_until;
 
-                if (i.gender.ToLower().Equals("male") || i.gender.ToLower().Equals("M"))
+                if (l.gender.ToLower().Equals("male") || l.gender.ToLower().Equals("M"))
                 {
                     rbMale.Checked = true;
                 }
@@ -155,40 +175,100 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                     rbFemale.Checked = true;
                 }
 
-            
+                if (l.ColorVissionMeetsStandard == null)
+                {
+                    rbColorVissionMeetsYes.Checked = true;
+                    rbColorVissionMeetsNo.Checked = false;
+                }
+                else
+                {
+                    if (l.ColorVissionMeetsStandard.Equals("Y"))
+                    {
+                        rbColorVissionMeetsYes.Checked = true;
+                        rbColorVissionMeetsNo.Checked = false;
+                    }
+                    else
+                    {
+                        rbColorVissionMeetsNo.Checked = true;
+                        rbColorVissionMeetsYes.Checked = false;
+                    }
+                }
 
-
-                txtHearingRight.Text = i.HEARING_RIGHT == "A" ? "NORMAL": "NOT NORMAL";
-                txthearingLeft.Text = i.HEARING_LEFT == "A" ? "NORMAL" : "NOT NORMAL";
-
-                textBox20.Text = i.SATISFACTORY_SIGHT_UNAID;
-
-              
-               txtSpeach.Text = i.CLARITY_OF_SPEECH == "A" ? "NORMAL" : "NOT NORMAL";
                
+
+                //-----------------------------------
+                CbColorTestTypeYellow.Checked = false;
+                CbColorTestTypeRed.Checked = false;
+                CbColorTestTypeGreen.Checked = false;
+                CbColorTestTypeBlue.Checked = false;
+
+                if (l.ColorTestType == null)
+                {
+                    CbColorTestTypeRed.Checked = true;
+                    CbColorTestTypeGreen.Checked = true;
+                }
+                else
+                {
+                    if (l.ColorTestType.Contains("Yellow"))
+                    {
+                        CbColorTestTypeYellow.Checked = true;
+
+                    }
+                    else if (l.ColorTestType.Contains("Red"))
+                    {
+                        CbColorTestTypeRed.Checked = true;
+                    }
+                    else if (l.ColorTestType.Contains("Green"))
+                    {
+                        CbColorTestTypeGreen.Checked = true;
+                    }
+                    else if (l.ColorTestType.Contains("Blue"))
+                    {
+                        CbColorTestTypeBlue.Checked = true;
+                    }
+                }
+
+               
+
+
+                txtHeart.Text = l.Heart ==null?"NORMAL":l.Heart;
+                txtLungs.Text = l.Lungs == null ? "NORMAL CHEST  FINDINGS" : l.Lungs;
+
+                txtExtremitiesUpper.Text = l.ExtremitiesUpper == null ? "NORMAL" : l.ExtremitiesUpper;
+                txtExtremitiesLower.Text = l.ExtremitiesLower == null ? "NORMAL" : l.ExtremitiesLower;
+
+                txtGeneralAppearance.Text = l.GeneralAppearance == null ? "NORMAL" : l.GeneralAppearance;
+
+
+                txtHearingRight.Text = l.HearingRight == null ? "NORMAL HEARING ACUTY" : l.HearingRight;
+                txthearingLeft.Text = l.HearingLeft == null ? "NORMAL HEARING ACUTY" : l.HearingLeft;
+
+                cbo_satisfactory_Unaided.Text = l.SATISFACTORY_SIGHT_UNAID;
+
+                txtSpeach.Text = l.Speach;
+
                 txtNameOfPhysician.Text = nameOfPhysician;
                 txtAddress.Text = addressOfPhysician;
                 txtPhysicianCertificatingAuthority.Text = nameOfPhysicianCertificating;
                 txtDateOfIssuePhysicianCertificate.Text = dateOfPhysicianCertificate;
             }
+            else
+            {
+
+
+
+            }
+
         }
 
 
         public void searchPhyExamRecord(string papin)
         {
             clearFields();
-
-
             txtPapin.Text = papin;
-
-
             searchPatient();
 
-
-
         }
-
-
 
 
         public void New()
@@ -201,9 +281,6 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             fmain.toolStripPhyExamSearch.Enabled = false;
 
 
-
-
-
         }
 
         public void Save()
@@ -214,10 +291,45 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             fmain.toolStripPhyExamCancel.Enabled = false;
             fmain.toolStripPhyExamPrint.Enabled = true;
             fmain.toolStripPhyExamSearch.Enabled = true;
-
             Availability(overlayShadow1, false);
+            saveLiberia();
+        }
 
 
+        private void saveLiberia()
+        {
+            string ExaminationForDuty = "";
+
+            string ColorVissionMeetsStandard = "N";
+
+            if (rbColorVissionMeetsYes.Checked)
+            {
+                ColorVissionMeetsStandard = "Y";
+            }
+
+            string ColorTestType = "";
+            if (CbColorTestTypeYellow.Checked)
+            {
+                ColorTestType += "Yellow";
+            }
+            else if (CbColorTestTypeRed.Checked)
+            {
+                ColorTestType += "Red";
+            }
+            else if (CbColorTestTypeGreen.Checked)
+            {
+                ColorTestType += "Green";
+            }
+            else if (CbColorTestTypeBlue.Checked)
+            {
+                ColorTestType += "Blue";
+            }
+
+
+
+
+            LiberiaModel liberiaModel = new LiberiaModel();
+            liberiaModel.save(txtPapin.Text, ExaminationForDuty, txtHeight.Text, txtWeight.Text, txtBloodPressure.Text, txtPulse.Text, txtRespiration.Text, txtGeneralAppearance.Text, txtRightEyeWithOutGlasses.Text, txtLeftEyeWithOutGlasses.Text, txtRightEyeWithGlasses.Text, txtLeftEyeWithGlasses.Text, ColorVissionMeetsStandard, ColorTestType, txtHearingRight.Text, txthearingLeft.Text, txtHeart.Text, txtLungs.Text, txtSpeach.Text, txtExtremitiesUpper.Text, txtExtremitiesLower.Text, txtDateOfColorVisionTest.Text, cbo_satisfactory_Unaided.Text, "", txtDateOfExam.Text, txtExpirydate.Text);
         }
 
         public void Availability(Control overlay, bool bl)
@@ -294,8 +406,35 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 g = "F";
             }
             string Position = "";
-            string ColorVisionMeetsStandard = "";
+            //string ColorVisionMeetsStandard = "";
+            //string ColorTestType = "";
+
+            string ColorVissionMeetsStandard = "N";
+            if (rbColorVissionMeetsYes.Checked)
+            {
+                ColorVissionMeetsStandard = "Y";
+            }
+
             string ColorTestType = "";
+            if (CbColorTestTypeYellow.Checked)
+            {
+                ColorTestType += "Yellow";
+            }
+            else if (CbColorTestTypeRed.Checked)
+            {
+                ColorTestType += "Red";
+            }
+            else if (CbColorTestTypeGreen.Checked)
+            {
+                ColorTestType += "Green";
+            }
+            else if (CbColorTestTypeBlue.Checked)
+            {
+                ColorTestType += "Blue";
+            }
+
+
+
 
             DateTime bdate = Convert.ToDateTime(txtBirthDate.Text);
 
@@ -307,7 +446,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             physicalExaminationMedicalRecordModel.MiddleName = txtMiddleName.Text;
             physicalExaminationMedicalRecordModel.Month = bdate.ToString("MMM");
             physicalExaminationMedicalRecordModel.Day = bdate.Day.ToString();
-            physicalExaminationMedicalRecordModel.Year =bdate.Year.ToString();
+            physicalExaminationMedicalRecordModel.Year = bdate.Year.ToString();
             physicalExaminationMedicalRecordModel.City = txtPlaceOfBirth.Text;
             physicalExaminationMedicalRecordModel.Country = "";
             physicalExaminationMedicalRecordModel.Gender = g;
@@ -323,7 +462,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             physicalExaminationMedicalRecordModel.VisionWithOutGlassLeft = txtLeftEyeWithOutGlasses.Text;
             physicalExaminationMedicalRecordModel.VisionWithGlassLeft = txtLeftEyeWithGlasses.Text;
             physicalExaminationMedicalRecordModel.DateOfVisionTest = txtDateOfColorVisionTest.Text;
-            physicalExaminationMedicalRecordModel.ColorVisionMeetsStandard = ColorVisionMeetsStandard;
+            physicalExaminationMedicalRecordModel.ColorVisionMeetsStandard = ColorVissionMeetsStandard;
             physicalExaminationMedicalRecordModel.ColorTestType = ColorTestType;
             physicalExaminationMedicalRecordModel.HearingRight = txtHearingRight.Text;
             physicalExaminationMedicalRecordModel.HearingLeft = txthearingLeft.Text;
@@ -412,8 +551,23 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
 
 
             }
+            //
 
+        }
 
+        private void txtDateOfColorVisionTest_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete)
+            {
+                txtDateOfColorVisionTest.Format = DateTimePickerFormat.Custom;
+                txtDateOfColorVisionTest.CustomFormat = "00/00/0000";
+            }
+        }
+
+        private void txtDateOfColorVisionTest_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtDateOfColorVisionTest.Format = DateTimePickerFormat.Custom;
+            txtDateOfColorVisionTest.CustomFormat = "MM/dd/yyyy";
         }
     }
 }

@@ -368,7 +368,7 @@
             this.toolStripPhysicalExamination.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripPhysicalExamination.Name = "toolStripPhysicalExamination";
             this.toolStripPhysicalExamination.Size = new System.Drawing.Size(54, 69);
-            this.toolStripPhysicalExamination.Text = "P. Exam";
+            this.toolStripPhysicalExamination.Text = "Liberia";
             this.toolStripPhysicalExamination.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripPhysicalExamination.ToolTipText = "Panama";
             this.toolStripPhysicalExamination.Visible = false;
@@ -2272,7 +2272,6 @@
             this.toolStripPhyExamEdit.Name = "toolStripPhyExamEdit";
             this.toolStripPhyExamEdit.Size = new System.Drawing.Size(28, 25);
             this.toolStripPhyExamEdit.ToolTipText = "F4";
-            this.toolStripPhyExamEdit.Visible = false;
             this.toolStripPhyExamEdit.Click += new System.EventHandler(this.toolStripPhyExamEdit_Click);
             // 
             // toolStripPhyExamDelete
@@ -2354,7 +2353,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1074, 631);
             this.Controls.Add(this.strip_Psy_eval);
-            this.Controls.Add(this.toolStripPhyExam);
             this.Controls.Add(this.Strip_Sea);
             this.Controls.Add(this.Strip_Visit);
             this.Controls.Add(this.strip_profil);
@@ -2366,6 +2364,7 @@
             this.Controls.Add(this.Strip_hiv);
             this.Controls.Add(this.stripImmunology);
             this.Controls.Add(this.StripPanama);
+            this.Controls.Add(this.toolStripPhyExam);
             this.Controls.Add(this.toolStripTop);
             this.Controls.Add(this.menuStripTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

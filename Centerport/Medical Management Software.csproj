@@ -214,6 +214,9 @@
     <Compile Include="Dataset\ds_report1.cs">
       <DependentUpon>ds_report1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Model\DataClasses2.cs">
+      <DependentUpon>DataClasses2.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Panama\FrmSearchPanama.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -330,6 +333,7 @@
     <Compile Include="PhysicalExaminationReport\FrmSearchPhyExam.Designer.cs">
       <DependentUpon>FrmSearchPhyExam.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhysicalExaminationReport\LiberiaModel.cs" />
     <Compile Include="PhysicalExaminationReport\PhysicalExaminationMedicalRecordModel.cs" />
     <Compile Include="PhysicalExaminationReport\PhysicalExaminationReport.cs">
       <AutoGen>True</AutoGen>
