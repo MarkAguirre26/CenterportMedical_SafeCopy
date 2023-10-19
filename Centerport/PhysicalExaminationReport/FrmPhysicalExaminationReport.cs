@@ -41,7 +41,11 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             report.SetParameterValue("City", physicalExaminationMedicalRecordModel.City);
             report.SetParameterValue("Country", physicalExaminationMedicalRecordModel.Country);
             report.SetParameterValue("Gender", physicalExaminationMedicalRecordModel.Gender);
-            report.SetParameterValue("Position", physicalExaminationMedicalRecordModel.Position);
+            report.SetParameterValue("forDuty", physicalExaminationMedicalRecordModel.forDuty);
+            report.SetParameterValue("PositionMaster", physicalExaminationMedicalRecordModel.PositionMaster);
+            report.SetParameterValue("PositionMate", physicalExaminationMedicalRecordModel.PositionMate);
+            report.SetParameterValue("PositionEngineer", physicalExaminationMedicalRecordModel.PositionEngineer);
+            report.SetParameterValue("PositionRating", physicalExaminationMedicalRecordModel.PositionRating);
             report.SetParameterValue("Height", physicalExaminationMedicalRecordModel.Height);
             report.SetParameterValue("Weight", physicalExaminationMedicalRecordModel.Weight);
             report.SetParameterValue("Bp", physicalExaminationMedicalRecordModel.Bp);

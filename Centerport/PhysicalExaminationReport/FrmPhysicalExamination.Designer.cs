@@ -46,15 +46,15 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.cbMaster = new System.Windows.Forms.CheckBox();
+            this.cbMate = new System.Windows.Forms.CheckBox();
+            this.cbEngineer = new System.Windows.Forms.CheckBox();
+            this.cbRadioOff = new System.Windows.Forms.CheckBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.cbRating = new System.Windows.Forms.CheckBox();
+            this.cbMouDeck = new System.Windows.Forms.CheckBox();
+            this.cbMouMakina = new System.Windows.Forms.CheckBox();
+            this.cbSuperNumerary = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtHomeAddress = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -88,6 +88,10 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.CbColorTestTypeYellow = new System.Windows.Forms.CheckBox();
+            this.CbColorTestTypeRed = new System.Windows.Forms.CheckBox();
+            this.CbColorTestTypeGreen = new System.Windows.Forms.CheckBox();
+            this.CbColorTestTypeBlue = new System.Windows.Forms.CheckBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
@@ -144,11 +148,12 @@
             this.rbColorVissionMeetsNo = new System.Windows.Forms.RadioButton();
             this.cbo_satisfactory_Unaided = new System.Windows.Forms.ComboBox();
             this.txtDateOfColorVisionTest = new System.Windows.Forms.DateTimePicker();
-            this.CbColorTestTypeYellow = new System.Windows.Forms.CheckBox();
-            this.CbColorTestTypeRed = new System.Windows.Forms.CheckBox();
-            this.CbColorTestTypeGreen = new System.Windows.Forms.CheckBox();
-            this.CbColorTestTypeBlue = new System.Windows.Forms.CheckBox();
             this.overlayShadow1 = new MedicalManagementSoftware.Class.OverlayShadow();
+            this.txtMasterPosition = new System.Windows.Forms.TextBox();
+            this.txtMatePosition = new System.Windows.Forms.TextBox();
+            this.txtEngineerPosition = new System.Windows.Forms.TextBox();
+            this.txtRatingPosition = new System.Windows.Forms.TextBox();
+            this.txtLicenceNumber = new System.Windows.Forms.TextBox();
             this.groupBox5.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -366,109 +371,109 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox3);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox4);
+            this.flowLayoutPanel1.Controls.Add(this.cbMaster);
+            this.flowLayoutPanel1.Controls.Add(this.cbMate);
+            this.flowLayoutPanel1.Controls.Add(this.cbEngineer);
+            this.flowLayoutPanel1.Controls.Add(this.cbRadioOff);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(65, 140);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 140);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(123, 92);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(86, 92);
             this.flowLayoutPanel1.TabIndex = 275;
             // 
-            // checkBox1
+            // cbMaster
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(3, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(71, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "MASTER";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbMaster.AutoSize = true;
+            this.cbMaster.Location = new System.Drawing.Point(3, 3);
+            this.cbMaster.Name = "cbMaster";
+            this.cbMaster.Size = new System.Drawing.Size(71, 17);
+            this.cbMaster.TabIndex = 0;
+            this.cbMaster.Text = "MASTER";
+            this.cbMaster.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // cbMate
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(3, 26);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(56, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "MATE";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbMate.AutoSize = true;
+            this.cbMate.Location = new System.Drawing.Point(3, 26);
+            this.cbMate.Name = "cbMate";
+            this.cbMate.Size = new System.Drawing.Size(56, 17);
+            this.cbMate.TabIndex = 1;
+            this.cbMate.Text = "MATE";
+            this.cbMate.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // cbEngineer
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(3, 49);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(82, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "ENGINEER";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cbEngineer.AutoSize = true;
+            this.cbEngineer.Location = new System.Drawing.Point(3, 49);
+            this.cbEngineer.Name = "cbEngineer";
+            this.cbEngineer.Size = new System.Drawing.Size(82, 17);
+            this.cbEngineer.TabIndex = 2;
+            this.cbEngineer.Text = "ENGINEER";
+            this.cbEngineer.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // cbRadioOff
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(3, 72);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(83, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "RADIO OFF";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.cbRadioOff.AutoSize = true;
+            this.cbRadioOff.Location = new System.Drawing.Point(3, 72);
+            this.cbRadioOff.Name = "cbRadioOff";
+            this.cbRadioOff.Size = new System.Drawing.Size(83, 17);
+            this.cbRadioOff.TabIndex = 3;
+            this.cbRadioOff.Text = "RADIO OFF";
+            this.cbRadioOff.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(this.checkBox5);
-            this.flowLayoutPanel2.Controls.Add(this.checkBox6);
-            this.flowLayoutPanel2.Controls.Add(this.checkBox7);
-            this.flowLayoutPanel2.Controls.Add(this.checkBox8);
+            this.flowLayoutPanel2.Controls.Add(this.cbRating);
+            this.flowLayoutPanel2.Controls.Add(this.cbMouDeck);
+            this.flowLayoutPanel2.Controls.Add(this.cbMouMakina);
+            this.flowLayoutPanel2.Controls.Add(this.cbSuperNumerary);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(197, 140);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(185, 140);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(135, 92);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(129, 92);
             this.flowLayoutPanel2.TabIndex = 276;
             // 
-            // checkBox5
+            // cbRating
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Checked = true;
-            this.checkBox5.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox5.Location = new System.Drawing.Point(3, 3);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(67, 17);
-            this.checkBox5.TabIndex = 0;
-            this.checkBox5.Text = "RATING";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.cbRating.AutoSize = true;
+            this.cbRating.Checked = true;
+            this.cbRating.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbRating.Location = new System.Drawing.Point(3, 3);
+            this.cbRating.Name = "cbRating";
+            this.cbRating.Size = new System.Drawing.Size(67, 17);
+            this.cbRating.TabIndex = 0;
+            this.cbRating.Text = "RATING";
+            this.cbRating.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // cbMouDeck
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(3, 26);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(83, 17);
-            this.checkBox6.TabIndex = 1;
-            this.checkBox6.Text = "MOU DECK";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.cbMouDeck.AutoSize = true;
+            this.cbMouDeck.Location = new System.Drawing.Point(3, 26);
+            this.cbMouDeck.Name = "cbMouDeck";
+            this.cbMouDeck.Size = new System.Drawing.Size(83, 17);
+            this.cbMouDeck.TabIndex = 1;
+            this.cbMouDeck.Text = "MOU DECK";
+            this.cbMouDeck.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // cbMouMakina
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(3, 49);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(110, 17);
-            this.checkBox7.TabIndex = 2;
-            this.checkBox7.Text = "MOU ENGINEER";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.cbMouMakina.AutoSize = true;
+            this.cbMouMakina.Location = new System.Drawing.Point(3, 49);
+            this.cbMouMakina.Name = "cbMouMakina";
+            this.cbMouMakina.Size = new System.Drawing.Size(95, 17);
+            this.cbMouMakina.TabIndex = 2;
+            this.cbMouMakina.Text = "MOU ENGINE";
+            this.cbMouMakina.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // cbSuperNumerary
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(3, 72);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(125, 17);
-            this.checkBox8.TabIndex = 3;
-            this.checkBox8.Text = "SUPERNUMERARY";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.cbSuperNumerary.AutoSize = true;
+            this.cbSuperNumerary.Location = new System.Drawing.Point(3, 72);
+            this.cbSuperNumerary.Name = "cbSuperNumerary";
+            this.cbSuperNumerary.Size = new System.Drawing.Size(125, 17);
+            this.cbSuperNumerary.TabIndex = 3;
+            this.cbSuperNumerary.Text = "SUPERNUMERARY";
+            this.cbSuperNumerary.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -839,6 +844,54 @@
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(284, 24);
             this.flowLayoutPanel3.TabIndex = 312;
+            // 
+            // CbColorTestTypeYellow
+            // 
+            this.CbColorTestTypeYellow.AutoSize = true;
+            this.CbColorTestTypeYellow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CbColorTestTypeYellow.Location = new System.Drawing.Point(3, 3);
+            this.CbColorTestTypeYellow.Name = "CbColorTestTypeYellow";
+            this.CbColorTestTypeYellow.Size = new System.Drawing.Size(71, 17);
+            this.CbColorTestTypeYellow.TabIndex = 319;
+            this.CbColorTestTypeYellow.Text = "YELLOW";
+            this.CbColorTestTypeYellow.UseVisualStyleBackColor = true;
+            // 
+            // CbColorTestTypeRed
+            // 
+            this.CbColorTestTypeRed.AutoSize = true;
+            this.CbColorTestTypeRed.Checked = true;
+            this.CbColorTestTypeRed.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CbColorTestTypeRed.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CbColorTestTypeRed.Location = new System.Drawing.Point(80, 3);
+            this.CbColorTestTypeRed.Name = "CbColorTestTypeRed";
+            this.CbColorTestTypeRed.Size = new System.Drawing.Size(49, 17);
+            this.CbColorTestTypeRed.TabIndex = 320;
+            this.CbColorTestTypeRed.Text = "RED";
+            this.CbColorTestTypeRed.UseVisualStyleBackColor = true;
+            // 
+            // CbColorTestTypeGreen
+            // 
+            this.CbColorTestTypeGreen.AutoSize = true;
+            this.CbColorTestTypeGreen.Checked = true;
+            this.CbColorTestTypeGreen.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CbColorTestTypeGreen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CbColorTestTypeGreen.Location = new System.Drawing.Point(135, 3);
+            this.CbColorTestTypeGreen.Name = "CbColorTestTypeGreen";
+            this.CbColorTestTypeGreen.Size = new System.Drawing.Size(64, 17);
+            this.CbColorTestTypeGreen.TabIndex = 321;
+            this.CbColorTestTypeGreen.Text = "GREEN";
+            this.CbColorTestTypeGreen.UseVisualStyleBackColor = true;
+            // 
+            // CbColorTestTypeBlue
+            // 
+            this.CbColorTestTypeBlue.AutoSize = true;
+            this.CbColorTestTypeBlue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CbColorTestTypeBlue.Location = new System.Drawing.Point(205, 3);
+            this.CbColorTestTypeBlue.Name = "CbColorTestTypeBlue";
+            this.CbColorTestTypeBlue.Size = new System.Drawing.Size(54, 17);
+            this.CbColorTestTypeBlue.TabIndex = 322;
+            this.CbColorTestTypeBlue.Text = "BLUE";
+            this.CbColorTestTypeBlue.UseVisualStyleBackColor = true;
             // 
             // label31
             // 
@@ -1408,11 +1461,12 @@
             this.txtPapin.BackColor = System.Drawing.SystemColors.Control;
             this.txtPapin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPapin.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.txtPapin.Location = new System.Drawing.Point(554, 12);
+            this.txtPapin.Location = new System.Drawing.Point(234, 10);
             this.txtPapin.Name = "txtPapin";
             this.txtPapin.ReadOnly = true;
             this.txtPapin.Size = new System.Drawing.Size(277, 22);
             this.txtPapin.TabIndex = 26;
+            this.txtPapin.Visible = false;
             // 
             // flowLayoutPanel4
             // 
@@ -1469,54 +1523,6 @@
             this.txtDateOfColorVisionTest.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDateOfColorVisionTest_KeyDown);
             this.txtDateOfColorVisionTest.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtDateOfColorVisionTest_MouseDown);
             // 
-            // CbColorTestTypeYellow
-            // 
-            this.CbColorTestTypeYellow.AutoSize = true;
-            this.CbColorTestTypeYellow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CbColorTestTypeYellow.Location = new System.Drawing.Point(3, 3);
-            this.CbColorTestTypeYellow.Name = "CbColorTestTypeYellow";
-            this.CbColorTestTypeYellow.Size = new System.Drawing.Size(71, 17);
-            this.CbColorTestTypeYellow.TabIndex = 319;
-            this.CbColorTestTypeYellow.Text = "YELLOW";
-            this.CbColorTestTypeYellow.UseVisualStyleBackColor = true;
-            // 
-            // CbColorTestTypeRed
-            // 
-            this.CbColorTestTypeRed.AutoSize = true;
-            this.CbColorTestTypeRed.Checked = true;
-            this.CbColorTestTypeRed.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CbColorTestTypeRed.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CbColorTestTypeRed.Location = new System.Drawing.Point(80, 3);
-            this.CbColorTestTypeRed.Name = "CbColorTestTypeRed";
-            this.CbColorTestTypeRed.Size = new System.Drawing.Size(49, 17);
-            this.CbColorTestTypeRed.TabIndex = 320;
-            this.CbColorTestTypeRed.Text = "RED";
-            this.CbColorTestTypeRed.UseVisualStyleBackColor = true;
-            // 
-            // CbColorTestTypeGreen
-            // 
-            this.CbColorTestTypeGreen.AutoSize = true;
-            this.CbColorTestTypeGreen.Checked = true;
-            this.CbColorTestTypeGreen.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CbColorTestTypeGreen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CbColorTestTypeGreen.Location = new System.Drawing.Point(135, 3);
-            this.CbColorTestTypeGreen.Name = "CbColorTestTypeGreen";
-            this.CbColorTestTypeGreen.Size = new System.Drawing.Size(64, 17);
-            this.CbColorTestTypeGreen.TabIndex = 321;
-            this.CbColorTestTypeGreen.Text = "GREEN";
-            this.CbColorTestTypeGreen.UseVisualStyleBackColor = true;
-            // 
-            // CbColorTestTypeBlue
-            // 
-            this.CbColorTestTypeBlue.AutoSize = true;
-            this.CbColorTestTypeBlue.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CbColorTestTypeBlue.Location = new System.Drawing.Point(205, 3);
-            this.CbColorTestTypeBlue.Name = "CbColorTestTypeBlue";
-            this.CbColorTestTypeBlue.Size = new System.Drawing.Size(54, 17);
-            this.CbColorTestTypeBlue.TabIndex = 322;
-            this.CbColorTestTypeBlue.Text = "BLUE";
-            this.CbColorTestTypeBlue.UseVisualStyleBackColor = true;
-            // 
             // overlayShadow1
             // 
             this.overlayShadow1.Location = new System.Drawing.Point(9, 123);
@@ -1524,12 +1530,53 @@
             this.overlayShadow1.Size = new System.Drawing.Size(64, 855);
             this.overlayShadow1.TabIndex = 364;
             // 
+            // txtMasterPosition
+            // 
+            this.txtMasterPosition.Location = new System.Drawing.Point(100, 141);
+            this.txtMasterPosition.Name = "txtMasterPosition";
+            this.txtMasterPosition.Size = new System.Drawing.Size(77, 20);
+            this.txtMasterPosition.TabIndex = 369;
+            // 
+            // txtMatePosition
+            // 
+            this.txtMatePosition.Location = new System.Drawing.Point(100, 163);
+            this.txtMatePosition.Name = "txtMatePosition";
+            this.txtMatePosition.Size = new System.Drawing.Size(77, 20);
+            this.txtMatePosition.TabIndex = 370;
+            // 
+            // txtEngineerPosition
+            // 
+            this.txtEngineerPosition.Location = new System.Drawing.Point(100, 186);
+            this.txtEngineerPosition.Name = "txtEngineerPosition";
+            this.txtEngineerPosition.Size = new System.Drawing.Size(77, 20);
+            this.txtEngineerPosition.TabIndex = 371;
+            // 
+            // txtRatingPosition
+            // 
+            this.txtRatingPosition.Location = new System.Drawing.Point(261, 140);
+            this.txtRatingPosition.Name = "txtRatingPosition";
+            this.txtRatingPosition.Size = new System.Drawing.Size(114, 20);
+            this.txtRatingPosition.TabIndex = 372;
+            // 
+            // txtLicenceNumber
+            // 
+            this.txtLicenceNumber.Enabled = false;
+            this.txtLicenceNumber.Location = new System.Drawing.Point(660, 13);
+            this.txtLicenceNumber.Name = "txtLicenceNumber";
+            this.txtLicenceNumber.Size = new System.Drawing.Size(178, 20);
+            this.txtLicenceNumber.TabIndex = 373;
+            // 
             // FrmPhysicalExamination
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(865, 485);
+            this.ClientSize = new System.Drawing.Size(861, 485);
+            this.Controls.Add(this.txtLicenceNumber);
+            this.Controls.Add(this.txtRatingPosition);
+            this.Controls.Add(this.txtEngineerPosition);
+            this.Controls.Add(this.txtMatePosition);
+            this.Controls.Add(this.txtMasterPosition);
             this.Controls.Add(this.txtDateOfColorVisionTest);
             this.Controls.Add(this.cbo_satisfactory_Unaided);
             this.Controls.Add(this.flowLayoutPanel4);
@@ -1665,15 +1712,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox cbMaster;
+        private System.Windows.Forms.CheckBox cbMate;
+        private System.Windows.Forms.CheckBox cbEngineer;
+        private System.Windows.Forms.CheckBox cbRadioOff;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox cbRating;
+        private System.Windows.Forms.CheckBox cbMouDeck;
+        private System.Windows.Forms.CheckBox cbMouMakina;
+        private System.Windows.Forms.CheckBox cbSuperNumerary;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtHomeAddress;
         private System.Windows.Forms.Label label7;
@@ -1768,6 +1815,11 @@
         private System.Windows.Forms.CheckBox CbColorTestTypeRed;
         private System.Windows.Forms.CheckBox CbColorTestTypeGreen;
         private System.Windows.Forms.CheckBox CbColorTestTypeBlue;
+        private System.Windows.Forms.TextBox txtMasterPosition;
+        private System.Windows.Forms.TextBox txtMatePosition;
+        private System.Windows.Forms.TextBox txtEngineerPosition;
+        private System.Windows.Forms.TextBox txtRatingPosition;
+        private System.Windows.Forms.TextBox txtLicenceNumber;
 
     }
 }

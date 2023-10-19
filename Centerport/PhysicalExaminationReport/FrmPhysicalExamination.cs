@@ -129,27 +129,28 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
 
             if (l != null)
             {
-
+                
                 txtlastname.Text = l.lastname;
                 txtFirstname.Text = l.firstname;
                 txtMiddleName.Text = l.middlename;
                 txtBirthDate.Text = l.birthdate;
                 txtPlaceOfBirth.Text = l.place_of_birth;
                 txtHomeAddress.Text = l.HomeAddress;
+                txtLicenceNumber.Text = l.LiberiaLicenseNumber == null ? "" : l.LiberiaLicenseNumber;
 
                 txtHeight.Text = l.Height + " CM";
                 txtWeight.Text = l.Weight + " KG";
                 string bp_diastolic =  l.BP+"/"+l.BP_DIASTOLIC;
                 txtBloodPressure.Text = l.BloodPressure ==null?bp_diastolic:l.BloodPressure;
                 txtPulse.Text = l.Pulse+"/MIN.";
-                txtRespiration.Text = l.Respiration + "/MIN.";
+                txtRespiration.Text = l.RESPIRATION_exam == null ? l.Respiration + "/MIN." : l.RESPIRATION_exam + "/MIN.";
 
                 txtRightEyeWithOutGlasses.Text = l.VissionRightEye == null ? "20/20" : l.VissionRightEye;
                 txtLeftEyeWithOutGlasses.Text = l.VissionLeftEye == null ? "20/20" : l.VissionLeftEye;
                 txtRightEyeWithGlasses.Text = l.VissionWithGlassRight == null ? "20/20" : l.VissionWithGlassRight;
                 txtLeftEyeWithGlasses.Text = l.VissionWithGlassLeft == null ? "20/20" : l.VissionWithGlassLeft;
 
-                string d = l.COLOR_VISION_DATE_TAKEN.ToString();
+                string d = l.COLOR_VISION_DATE_TAKEN ==null ? l.COLOR_VISION_DATE_TAKEN_exam.ToString(): l.COLOR_VISION_DATE_TAKEN.ToString();
                 DateTime temp;
                 if (DateTime.TryParse(d, out temp))
                 {
@@ -174,6 +175,14 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 {
                     rbFemale.Checked = true;
                 }
+
+
+                txtMasterPosition.Text = l.PositionMaster == null ? "" : l.PositionMaster;
+                txtMatePosition.Text = l.PositionMate == null ? "" : l.PositionMate;
+                txtEngineerPosition.Text = l.PositionEngineer == null ? "" : l.PositionEngineer;
+                txtRatingPosition.Text = l.PositionRating == null ? "" : l.PositionRating;
+
+
 
                 if (l.ColorVissionMeetsStandard == null)
                 {
@@ -202,6 +211,58 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 CbColorTestTypeGreen.Checked = false;
                 CbColorTestTypeBlue.Checked = false;
 
+
+
+                if (l.forDuty == null)
+                {
+                    foreach(Control  control in flowLayoutPanel1.Controls){
+                         if (control is CheckBox){
+                             ((CheckBox)control).Checked = false;
+                         }
+                    }
+
+                    foreach (Control control in flowLayoutPanel2.Controls)
+                    {
+                        if (control is CheckBox)
+                        {
+                            ((CheckBox)control).Checked = false;
+                        }
+                    }
+                
+                }
+                else
+                {
+                    foreach (Control control in flowLayoutPanel1.Controls)
+                    {
+                        if ((control is CheckBox) && l.forDuty.Contains(((CheckBox)control).Name.Replace("cb","")))
+                        {
+                            ((CheckBox)control).Checked = true;
+                        }
+                        else
+                        {
+                            ((CheckBox)control).Checked = false;
+                        }
+                    }
+
+
+                    foreach (Control control in flowLayoutPanel2.Controls)
+                    {
+                        if ((control is CheckBox) && l.forDuty.Contains(((CheckBox)control).Name.Replace("cb", "")))
+                        {
+                            ((CheckBox)control).Checked = true;
+                        }
+                        else
+                        {
+                            ((CheckBox)control).Checked = false;
+                        }
+                    }
+
+
+
+                }
+
+
+
                 if (l.ColorTestType == null)
                 {
                     CbColorTestTypeRed.Checked = true;
@@ -209,20 +270,21 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 }
                 else
                 {
+                    
                     if (l.ColorTestType.Contains("Yellow"))
                     {
                         CbColorTestTypeYellow.Checked = true;
 
                     }
-                    else if (l.ColorTestType.Contains("Red"))
+                     if (l.ColorTestType.Contains("Red"))
                     {
                         CbColorTestTypeRed.Checked = true;
                     }
-                    else if (l.ColorTestType.Contains("Green"))
+                     if (l.ColorTestType.Contains("Green"))
                     {
                         CbColorTestTypeGreen.Checked = true;
                     }
-                    else if (l.ColorTestType.Contains("Blue"))
+                     if (l.ColorTestType.Contains("Blue"))
                     {
                         CbColorTestTypeBlue.Checked = true;
                     }
@@ -240,8 +302,8 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 txtGeneralAppearance.Text = l.GeneralAppearance == null ? "NORMAL" : l.GeneralAppearance;
 
 
-                txtHearingRight.Text = l.HearingRight == null ? "NORMAL HEARING ACUTY" : l.HearingRight;
-                txthearingLeft.Text = l.HearingLeft == null ? "NORMAL HEARING ACUTY" : l.HearingLeft;
+                txtHearingRight.Text = l.HearingRight == null ? "NORMAL HEARING ACUITY" : l.HearingRight;
+                txthearingLeft.Text = l.HearingLeft == null ? "NORMAL HEARING ACUITY" : l.HearingLeft;
 
                 cbo_satisfactory_Unaided.Text = l.SATISFACTORY_SIGHT_UNAID;
 
@@ -280,6 +342,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             fmain.toolStripPhyExamPrint.Enabled = true;
             fmain.toolStripPhyExamSearch.Enabled = false;
 
+          
 
         }
 
@@ -300,6 +363,104 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
         {
             string ExaminationForDuty = "";
 
+
+            foreach (Control control in flowLayoutPanel1.Controls)
+            {
+                if ((control is CheckBox) && ((CheckBox)control).Checked)
+                {
+                    if (control.Name.Equals("cbMaster"))
+                    {
+                        ExaminationForDuty += "Master";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("Master", "");
+                    }
+
+                    if (control.Name.Equals("cbMate"))
+                    {
+                        ExaminationForDuty += "Mate";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("Mate", "");
+                    }
+
+                    if (control.Name.Equals("cbEngineer"))
+                    {
+                        ExaminationForDuty += "Engineer";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("Engineer", "");
+                    }
+
+
+                    if (control.Name.Equals("cbRadioOff"))
+                    {
+                        ExaminationForDuty += "RadioOff";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("RadioOff", "");
+                    }
+                    
+                }
+
+            }
+
+
+
+            foreach (Control control in flowLayoutPanel2.Controls)
+            {
+                if ((control is CheckBox) && ((CheckBox)control).Checked)
+                {
+                    if (control.Name.Equals("cbRating"))
+                    {
+                        ExaminationForDuty += "Rating";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("Rating", "");
+                    }
+
+                    if (control.Name.Equals("cbMouDeck"))
+                    {
+                        ExaminationForDuty += "MouDeck";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("MouDeck", "");
+                    }
+
+                    if (control.Name.Equals("cbMouMakina"))
+                    {
+                        ExaminationForDuty += "MouMakina";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("MouMakina", "");
+                    }
+
+
+                    if (control.Name.Equals("cbSuperNumerary"))
+                    {
+                        ExaminationForDuty += "SuperNumerary";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("SuperNumerary", "");
+                    }
+
+                }
+
+            }
+
+            //Console.WriteLine(ExaminationForDuty);
+
+
+
+
             string ColorVissionMeetsStandard = "N";
 
             if (rbColorVissionMeetsYes.Checked)
@@ -307,29 +468,61 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 ColorVissionMeetsStandard = "Y";
             }
 
-            string ColorTestType = "";
-            if (CbColorTestTypeYellow.Checked)
+            string ColorTestType = "";        
+
+
+            foreach (Control control in flowLayoutPanel3.Controls)
             {
-                ColorTestType += "Yellow";
-            }
-            else if (CbColorTestTypeRed.Checked)
-            {
-                ColorTestType += "Red";
-            }
-            else if (CbColorTestTypeGreen.Checked)
-            {
-                ColorTestType += "Green";
-            }
-            else if (CbColorTestTypeBlue.Checked)
-            {
-                ColorTestType += "Blue";
+                if ((control is CheckBox) && ((CheckBox)control).Checked)  
+                {
+                  if(control.Name.Equals("CbColorTestTypeYellow")){
+                      ColorTestType += "Yellow";
+                  }
+                  else
+                  {
+                      ColorTestType.Replace("Yellow","");
+                  }
+
+                  if (control.Name.Equals("CbColorTestTypeRed"))
+                  {
+                      ColorTestType += "Red";
+                  }
+                  else
+                  {
+                      ColorTestType.Replace("Red", "");
+                  }
+
+
+                  if (control.Name.Equals("CbColorTestTypeGreen"))
+                  {
+                      ColorTestType += "Green";
+                  }
+                  else
+                  {
+                      ColorTestType.Replace("Green", "");
+                  }
+
+
+                  if (control.Name.Equals("CbColorTestTypeBlue"))
+                  {
+                      ColorTestType += "Blue";
+                  }
+                  else
+                  {
+                      ColorTestType.Replace("Blue", "");
+                  }
+
+                }
+
+
+                //Console.WriteLine(ColorTestType);
             }
 
 
 
 
             LiberiaModel liberiaModel = new LiberiaModel();
-            liberiaModel.save(txtPapin.Text, ExaminationForDuty, txtHeight.Text, txtWeight.Text, txtBloodPressure.Text, txtPulse.Text, txtRespiration.Text, txtGeneralAppearance.Text, txtRightEyeWithOutGlasses.Text, txtLeftEyeWithOutGlasses.Text, txtRightEyeWithGlasses.Text, txtLeftEyeWithGlasses.Text, ColorVissionMeetsStandard, ColorTestType, txtHearingRight.Text, txthearingLeft.Text, txtHeart.Text, txtLungs.Text, txtSpeach.Text, txtExtremitiesUpper.Text, txtExtremitiesLower.Text, txtDateOfColorVisionTest.Text, cbo_satisfactory_Unaided.Text, "", txtDateOfExam.Text, txtExpirydate.Text);
+            liberiaModel.save(txtPapin.Text, ExaminationForDuty, txtHeight.Text, txtWeight.Text, txtBloodPressure.Text, txtPulse.Text, txtRespiration.Text, txtGeneralAppearance.Text, txtRightEyeWithOutGlasses.Text, txtLeftEyeWithOutGlasses.Text, txtRightEyeWithGlasses.Text, txtLeftEyeWithGlasses.Text, ColorVissionMeetsStandard, ColorTestType, txtHearingRight.Text, txthearingLeft.Text, txtHeart.Text, txtLungs.Text, txtSpeach.Text, txtExtremitiesUpper.Text, txtExtremitiesLower.Text, txtDateOfColorVisionTest.Text, cbo_satisfactory_Unaided.Text, "", txtDateOfExam.Text, txtExpirydate.Text,txtMasterPosition.Text,txtMatePosition.Text,txtEngineerPosition.Text,txtRatingPosition.Text,txtLicenceNumber.Text);
         }
 
         public void Availability(Control overlay, bool bl)
@@ -339,12 +532,14 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             {
                 overlay.Visible = false;
                 overlay.SendToBack();
+                txtLicenceNumber.Enabled = true;
             }
             else
             {
                 txtPapin.Focus();
                 overlay.Visible = true;
                 overlay.BringToFront();
+                txtLicenceNumber.Enabled = false;
             }
 
         }
@@ -383,7 +578,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             fmain.toolStripPhyExamCancel.Enabled = false;
             fmain.toolStripPhyExamPrint.Enabled = false;
             fmain.toolStripPhyExamSearch.Enabled = true;
-
+            searchPatient();
             Availability(overlayShadow1, false);
         }
 
@@ -405,7 +600,108 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             {
                 g = "F";
             }
-            string Position = "";
+
+
+
+            string ExaminationForDuty = "";
+
+
+            foreach (Control control in flowLayoutPanel1.Controls)
+            {
+                if ((control is CheckBox) && ((CheckBox)control).Checked)
+                {
+                    if (control.Name.Equals("cbMaster"))
+                    {
+                        ExaminationForDuty += "Master";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("Master", "");
+                    }
+
+                    if (control.Name.Equals("cbMate"))
+                    {
+                        ExaminationForDuty += "Mate";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("Mate", "");
+                    }
+
+                    if (control.Name.Equals("cbEngineer"))
+                    {
+                        ExaminationForDuty += "Engineer";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("Engineer", "");
+                    }
+
+
+                    if (control.Name.Equals("cbRadioOff"))
+                    {
+                        ExaminationForDuty += "RadioOff";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("RadioOff", "");
+                    }
+
+                }
+
+            }
+
+
+
+            foreach (Control control in flowLayoutPanel2.Controls)
+            {
+                if ((control is CheckBox) && ((CheckBox)control).Checked)
+                {
+                    if (control.Name.Equals("cbRating"))
+                    {
+                        ExaminationForDuty += "Rating";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("Rating", "");
+                    }
+
+                    if (control.Name.Equals("cbMouDeck"))
+                    {
+                        ExaminationForDuty += "MouDeck";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("MouDeck", "");
+                    }
+
+                    if (control.Name.Equals("cbMouMakina"))
+                    {
+                        ExaminationForDuty += "MouMakina";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("MouMakina", "");
+                    }
+
+
+                    if (control.Name.Equals("cbSuperNumerary"))
+                    {
+                        ExaminationForDuty += "SuperNumerary";
+                    }
+                    else
+                    {
+                        ExaminationForDuty.Replace("SuperNumerary", "");
+                    }
+
+                }
+
+            }
+
+
+
+
+
             //string ColorVisionMeetsStandard = "";
             //string ColorTestType = "";
 
@@ -416,22 +712,55 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             }
 
             string ColorTestType = "";
-            if (CbColorTestTypeYellow.Checked)
+          
+            foreach (Control control in flowLayoutPanel3.Controls)
             {
-                ColorTestType += "Yellow";
+                if ((control is CheckBox) && ((CheckBox)control).Checked)
+                {
+                    if (control.Name.Equals("CbColorTestTypeYellow"))
+                    {
+                        ColorTestType += "Yellow";
+                    }
+                    else
+                    {
+                        ColorTestType.Replace("Yellow", "");
+                    }
+
+                    if (control.Name.Equals("CbColorTestTypeRed"))
+                    {
+                        ColorTestType += "Red";
+                    }
+                    else
+                    {
+                        ColorTestType.Replace("Red", "");
+                    }
+
+
+                    if (control.Name.Equals("CbColorTestTypeGreen"))
+                    {
+                        ColorTestType += "Green";
+                    }
+                    else
+                    {
+                        ColorTestType.Replace("Green", "");
+                    }
+
+
+                    if (control.Name.Equals("CbColorTestTypeBlue"))
+                    {
+                        ColorTestType += "Blue";
+                    }
+                    else
+                    {
+                        ColorTestType.Replace("Blue", "");
+                    }
+
+                }
+
+
+                //Console.WriteLine(ColorTestType);
             }
-            else if (CbColorTestTypeRed.Checked)
-            {
-                ColorTestType += "Red";
-            }
-            else if (CbColorTestTypeGreen.Checked)
-            {
-                ColorTestType += "Green";
-            }
-            else if (CbColorTestTypeBlue.Checked)
-            {
-                ColorTestType += "Blue";
-            }
+
 
 
 
@@ -447,10 +776,14 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             physicalExaminationMedicalRecordModel.Month = bdate.ToString("MMM");
             physicalExaminationMedicalRecordModel.Day = bdate.Day.ToString();
             physicalExaminationMedicalRecordModel.Year = bdate.Year.ToString();
-            physicalExaminationMedicalRecordModel.City = txtPlaceOfBirth.Text;
+            physicalExaminationMedicalRecordModel.City = txtPlaceOfBirth.Text;  
             physicalExaminationMedicalRecordModel.Country = "";
             physicalExaminationMedicalRecordModel.Gender = g;
-            physicalExaminationMedicalRecordModel.Position = Position;
+            physicalExaminationMedicalRecordModel.PositionMaster = txtMasterPosition.Text;
+            physicalExaminationMedicalRecordModel.PositionMate = txtMatePosition.Text;
+            physicalExaminationMedicalRecordModel.PositionEngineer = txtEngineerPosition.Text;
+            physicalExaminationMedicalRecordModel.PositionRating = txtRatingPosition.Text;
+            physicalExaminationMedicalRecordModel.forDuty = ExaminationForDuty;
             physicalExaminationMedicalRecordModel.Height = txtHeight.Text;
             physicalExaminationMedicalRecordModel.Weight = txtWeight.Text;
             physicalExaminationMedicalRecordModel.Bp = txtBloodPressure.Text;

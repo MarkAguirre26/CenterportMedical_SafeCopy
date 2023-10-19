@@ -12,12 +12,18 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string Month { get; set; }
+
         public string Day { get; set; }
         public string Year { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
         public string Gender { get; set; }
-        public string Position { get; set; }
+        public string forDuty { get; set; }
+        public string PositionMaster { get; set; }
+        public string PositionMate { get; set; }
+        public string PositionRating { get; set; }
+        public string PositionEngineer { get; set; }
+
         public string Height { get; set; }
         public string Weight { get; set; }
         public string Bp { get; set; }

@@ -163,7 +163,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Position {
+        public CrystalDecisions.Shared.IParameterField Parameter_Height {
             get {
                 return this.DataDefinition.ParameterFields[9];
             }
@@ -171,7 +171,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Height {
+        public CrystalDecisions.Shared.IParameterField Parameter_Weight {
             get {
                 return this.DataDefinition.ParameterFields[10];
             }
@@ -179,7 +179,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Weight {
+        public CrystalDecisions.Shared.IParameterField Parameter_Bp {
             get {
                 return this.DataDefinition.ParameterFields[11];
             }
@@ -187,7 +187,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Bp {
+        public CrystalDecisions.Shared.IParameterField Parameter_Pulse {
             get {
                 return this.DataDefinition.ParameterFields[12];
             }
@@ -195,7 +195,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Pulse {
+        public CrystalDecisions.Shared.IParameterField Parameter_Respiration {
             get {
                 return this.DataDefinition.ParameterFields[13];
             }
@@ -203,7 +203,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Respiration {
+        public CrystalDecisions.Shared.IParameterField Parameter_GeneralAppearance {
             get {
                 return this.DataDefinition.ParameterFields[14];
             }
@@ -211,7 +211,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_GeneralAppearance {
+        public CrystalDecisions.Shared.IParameterField Parameter_VisionWithOutGlassRight {
             get {
                 return this.DataDefinition.ParameterFields[15];
             }
@@ -219,7 +219,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_VisionWithOutGlassRight {
+        public CrystalDecisions.Shared.IParameterField Parameter_VisionWithGlassRight {
             get {
                 return this.DataDefinition.ParameterFields[16];
             }
@@ -227,7 +227,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_VisionWithGlassRight {
+        public CrystalDecisions.Shared.IParameterField Parameter_VisionWithGlassLeft {
             get {
                 return this.DataDefinition.ParameterFields[17];
             }
@@ -235,7 +235,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_VisionWithGlassLeft {
+        public CrystalDecisions.Shared.IParameterField Parameter_VisionWithOutGlassLeft {
             get {
                 return this.DataDefinition.ParameterFields[18];
             }
@@ -243,7 +243,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_VisionWithOutGlassLeft {
+        public CrystalDecisions.Shared.IParameterField Parameter_dateOfVisionTest {
             get {
                 return this.DataDefinition.ParameterFields[19];
             }
@@ -251,7 +251,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_dateOfVisionTest {
+        public CrystalDecisions.Shared.IParameterField Parameter_ColorVisionMeetsStandard {
             get {
                 return this.DataDefinition.ParameterFields[20];
             }
@@ -259,7 +259,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_ColorVisionMeetsStandard {
+        public CrystalDecisions.Shared.IParameterField Parameter_ColorTestType {
             get {
                 return this.DataDefinition.ParameterFields[21];
             }
@@ -267,7 +267,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_ColorTestType {
+        public CrystalDecisions.Shared.IParameterField Parameter_HearingRight {
             get {
                 return this.DataDefinition.ParameterFields[22];
             }
@@ -275,7 +275,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_HearingRight {
+        public CrystalDecisions.Shared.IParameterField Parameter_HearingLeft {
             get {
                 return this.DataDefinition.ParameterFields[23];
             }
@@ -283,7 +283,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_HearingLeft {
+        public CrystalDecisions.Shared.IParameterField Parameter_Heart {
             get {
                 return this.DataDefinition.ParameterFields[24];
             }
@@ -291,7 +291,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Heart {
+        public CrystalDecisions.Shared.IParameterField Parameter_Lungs {
             get {
                 return this.DataDefinition.ParameterFields[25];
             }
@@ -299,7 +299,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Lungs {
+        public CrystalDecisions.Shared.IParameterField Parameter_ExtremitiesUpper {
             get {
                 return this.DataDefinition.ParameterFields[26];
             }
@@ -307,7 +307,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_ExtremitiesUpper {
+        public CrystalDecisions.Shared.IParameterField Parameter_ExtremitiesLower {
             get {
                 return this.DataDefinition.ParameterFields[27];
             }
@@ -315,7 +315,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_ExtremitiesLower {
+        public CrystalDecisions.Shared.IParameterField Parameter_DateOfExam {
             get {
                 return this.DataDefinition.ParameterFields[28];
             }
@@ -323,7 +323,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_DateOfExam {
+        public CrystalDecisions.Shared.IParameterField Parameter_ExpiryDate {
             get {
                 return this.DataDefinition.ParameterFields[29];
             }
@@ -331,7 +331,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_ExpiryDate {
+        public CrystalDecisions.Shared.IParameterField Parameter_NameOfApplicant {
             get {
                 return this.DataDefinition.ParameterFields[30];
             }
@@ -339,7 +339,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_NameOfApplicant {
+        public CrystalDecisions.Shared.IParameterField Parameter_nameOfPhysician {
             get {
                 return this.DataDefinition.ParameterFields[31];
             }
@@ -347,7 +347,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_nameOfPhysician {
+        public CrystalDecisions.Shared.IParameterField Parameter_addressOfPhysician {
             get {
                 return this.DataDefinition.ParameterFields[32];
             }
@@ -355,7 +355,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_addressOfPhysician {
+        public CrystalDecisions.Shared.IParameterField Parameter_nameOfPhysicianCertificating {
             get {
                 return this.DataDefinition.ParameterFields[33];
             }
@@ -363,7 +363,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_nameOfPhysicianCertificating {
+        public CrystalDecisions.Shared.IParameterField Parameter_dateOfPhysicianCertificate {
             get {
                 return this.DataDefinition.ParameterFields[34];
             }
@@ -371,7 +371,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_dateOfPhysicianCertificate {
+        public CrystalDecisions.Shared.IParameterField Parameter_mailingAddress {
             get {
                 return this.DataDefinition.ParameterFields[35];
             }
@@ -379,7 +379,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_mailingAddress {
+        public CrystalDecisions.Shared.IParameterField Parameter_Speach {
             get {
                 return this.DataDefinition.ParameterFields[36];
             }
@@ -387,9 +387,41 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Speach {
+        public CrystalDecisions.Shared.IParameterField Parameter_ForDuty {
             get {
                 return this.DataDefinition.ParameterFields[37];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_PositionMaster {
+            get {
+                return this.DataDefinition.ParameterFields[38];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_PositionMate {
+            get {
+                return this.DataDefinition.ParameterFields[39];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_PositionEngineer {
+            get {
+                return this.DataDefinition.ParameterFields[40];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_PositionRating {
+            get {
+                return this.DataDefinition.ParameterFields[41];
             }
         }
     }

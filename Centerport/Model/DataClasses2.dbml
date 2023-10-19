@@ -1343,6 +1343,60 @@
       <Column Name="Oxygen" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.spLiberiaSelect" Method="spLiberiaSelect">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="spLiberiaSelectResult">
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="firstname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="middlename" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="birthdate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="place_of_birth" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="forDuty" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HomeAddress" Type="System.String" DbType="VarChar(152) NOT NULL" CanBeNull="false" />
+      <Column Name="Height" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Weight" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BloodPressure" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Pulse" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Respiration" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="GeneralAppearance" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="VissionRightEye" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="VissionLeftEye" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="VissionWithGlassRight" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="VissionWithGlassLeft" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ColorVissionMeetsStandard" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ColorTestType" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HearingRight" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HearingLeft" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Heart" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Lungs" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Speach" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ExtremitiesUpper" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ExtremitiesLower" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="COLOR_VISION_DATE_TAKEN" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="SATISFACTORY_SIGHT_UNAID" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="CLARITY_OF_SPEECH" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="valid_until" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="EventDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="PositionMaster" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PositionMate" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PositionEngineer" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PositionRating" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="fitnessDate" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="expiryDate" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HEIGHT1" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="WEIGHT1" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BP" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BP_DIASTOLIC" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PULSE1" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="RESPIRATION_exam" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BODY_BUILD" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="COLOR_VISION_DATE_TAKEN_exam" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="LiberiaLicenseNumber" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
   <Function Name="dbo.sp_Liberia" Method="sp_Liberia">
     <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(50)" />
     <Parameter Name="ExaminationForDuty" Parameter="examinationForDuty" Type="System.String" DbType="VarChar(50)" />
@@ -1370,54 +1424,11 @@
     <Parameter Name="CLARITY_OF_SPEECH" Parameter="cLARITY_OF_SPEECH" Type="System.String" DbType="VarChar(50)" />
     <Parameter Name="result_date" Type="System.String" DbType="VarChar(50)" />
     <Parameter Name="valid_until" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PositionMaster" Parameter="positionMaster" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PositionMate" Parameter="positionMate" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PositionEngineer" Parameter="positionEngineer" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PositionRating" Parameter="positionRating" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="LiberiaLicenseNumber" Parameter="liberiaLicenseNumber" Type="System.String" DbType="VarChar(50)" />
     <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.spLiberiaSelect" Method="spLiberiaSelect">
-    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(50)" />
-    <ElementType Name="spLiberiaSelectResult">
-      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="lastname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="firstname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="middlename" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="birthdate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="place_of_birth" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="HomeAddress" Type="System.String" DbType="VarChar(152) NOT NULL" CanBeNull="false" />
-      <Column Name="Height" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="Weight" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="BloodPressure" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="Pulse" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="Respiration" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="GeneralAppearance" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="VissionRightEye" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="VissionLeftEye" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="VissionWithGlassRight" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="VissionWithGlassLeft" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="ColorVissionMeetsStandard" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="ColorTestType" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="HearingRight" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="HearingLeft" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="Heart" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="Lungs" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="Speach" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="ExtremitiesUpper" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="ExtremitiesLower" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="COLOR_VISION_DATE_TAKEN" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="SATISFACTORY_SIGHT_UNAID" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="CLARITY_OF_SPEECH" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="valid_until" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="EventDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
-      <Column Name="fitnessDate" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="expiryDate" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="HEIGHT1" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="WEIGHT1" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="BP" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="BP_DIASTOLIC" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="PULSE1" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="RESPIRATION1" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="BODY_BUILD" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="COLOR_VISION_DATE_TAKEN1" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-    </ElementType>
   </Function>
 </Database>

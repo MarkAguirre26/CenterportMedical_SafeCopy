@@ -607,6 +607,13 @@ namespace MedicalManagementSoftware.Model
 			return ((ISingleResult<PanamaClinicalDataSelectResult>)(result.ReturnValue));
 		}
 		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.spLiberiaSelect")]
+		public ISingleResult<spLiberiaSelectResult> spLiberiaSelect([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(50)")] string papin)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin);
+			return ((ISingleResult<spLiberiaSelectResult>)(result.ReturnValue));
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Liberia")]
 		public int sp_Liberia(
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(50)")] string papin, 
@@ -634,17 +641,15 @@ namespace MedicalManagementSoftware.Model
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="SATISFACTORY_SIGHT_UNAID", DbType="VarChar(50)")] string sATISFACTORY_SIGHT_UNAID, 
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="CLARITY_OF_SPEECH", DbType="VarChar(50)")] string cLARITY_OF_SPEECH, 
 					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string result_date, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string valid_until)
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string valid_until, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PositionMaster", DbType="VarChar(50)")] string positionMaster, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PositionMate", DbType="VarChar(50)")] string positionMate, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PositionEngineer", DbType="VarChar(50)")] string positionEngineer, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PositionRating", DbType="VarChar(50)")] string positionRating, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="LiberiaLicenseNumber", DbType="VarChar(50)")] string liberiaLicenseNumber)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, examinationForDuty, height, weight, bloodPressure, pulse, respiration, generalAppearance, vissionRightEye, vissionLeftEye, vissionWithGlassRight, vissionWithGlassLeft, colorVissionMeetsStandard, colorTestType, hearingRight, hearingLeft, heart, lungs, speach, extremitiesUpper, extremitiesLower, cOLOR_VISION_DATE_TAKEN, sATISFACTORY_SIGHT_UNAID, cLARITY_OF_SPEECH, result_date, valid_until);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, examinationForDuty, height, weight, bloodPressure, pulse, respiration, generalAppearance, vissionRightEye, vissionLeftEye, vissionWithGlassRight, vissionWithGlassLeft, colorVissionMeetsStandard, colorTestType, hearingRight, hearingLeft, heart, lungs, speach, extremitiesUpper, extremitiesLower, cOLOR_VISION_DATE_TAKEN, sATISFACTORY_SIGHT_UNAID, cLARITY_OF_SPEECH, result_date, valid_until, positionMaster, positionMate, positionEngineer, positionRating, liberiaLicenseNumber);
 			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.spLiberiaSelect")]
-		public ISingleResult<spLiberiaSelectResult> spLiberiaSelect([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(50)")] string papin)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin);
-			return ((ISingleResult<spLiberiaSelectResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -15873,6 +15878,8 @@ namespace MedicalManagementSoftware.Model
 		
 		private string _place_of_birth;
 		
+		private string _forDuty;
+		
 		private string _HomeAddress;
 		
 		private string _Height;
@@ -15925,6 +15932,14 @@ namespace MedicalManagementSoftware.Model
 		
 		private System.Nullable<System.DateTime> _EventDate;
 		
+		private string _PositionMaster;
+		
+		private string _PositionMate;
+		
+		private string _PositionEngineer;
+		
+		private string _PositionRating;
+		
 		private string _fitnessDate;
 		
 		private string _expiryDate;
@@ -15939,11 +15954,13 @@ namespace MedicalManagementSoftware.Model
 		
 		private string _PULSE1;
 		
-		private string _RESPIRATION1;
+		private string _RESPIRATION_exam;
 		
 		private string _BODY_BUILD;
 		
-		private string _COLOR_VISION_DATE_TAKEN1;
+		private string _COLOR_VISION_DATE_TAKEN_exam;
+		
+		private string _LiberiaLicenseNumber;
 		
 		public spLiberiaSelectResult()
 		{
@@ -16057,6 +16074,22 @@ namespace MedicalManagementSoftware.Model
 				if ((this._place_of_birth != value))
 				{
 					this._place_of_birth = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_forDuty", DbType="VarChar(254)")]
+		public string forDuty
+		{
+			get
+			{
+				return this._forDuty;
+			}
+			set
+			{
+				if ((this._forDuty != value))
+				{
+					this._forDuty = value;
 				}
 			}
 		}
@@ -16477,6 +16510,70 @@ namespace MedicalManagementSoftware.Model
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PositionMaster", DbType="VarChar(254)")]
+		public string PositionMaster
+		{
+			get
+			{
+				return this._PositionMaster;
+			}
+			set
+			{
+				if ((this._PositionMaster != value))
+				{
+					this._PositionMaster = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PositionMate", DbType="VarChar(254)")]
+		public string PositionMate
+		{
+			get
+			{
+				return this._PositionMate;
+			}
+			set
+			{
+				if ((this._PositionMate != value))
+				{
+					this._PositionMate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PositionEngineer", DbType="VarChar(254)")]
+		public string PositionEngineer
+		{
+			get
+			{
+				return this._PositionEngineer;
+			}
+			set
+			{
+				if ((this._PositionEngineer != value))
+				{
+					this._PositionEngineer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PositionRating", DbType="VarChar(254)")]
+		public string PositionRating
+		{
+			get
+			{
+				return this._PositionRating;
+			}
+			set
+			{
+				if ((this._PositionRating != value))
+				{
+					this._PositionRating = value;
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fitnessDate", DbType="VarChar(254)")]
 		public string fitnessDate
 		{
@@ -16589,18 +16686,18 @@ namespace MedicalManagementSoftware.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RESPIRATION1", DbType="VarChar(254)")]
-		public string RESPIRATION1
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RESPIRATION_exam", DbType="VarChar(254)")]
+		public string RESPIRATION_exam
 		{
 			get
 			{
-				return this._RESPIRATION1;
+				return this._RESPIRATION_exam;
 			}
 			set
 			{
-				if ((this._RESPIRATION1 != value))
+				if ((this._RESPIRATION_exam != value))
 				{
-					this._RESPIRATION1 = value;
+					this._RESPIRATION_exam = value;
 				}
 			}
 		}
@@ -16621,18 +16718,34 @@ namespace MedicalManagementSoftware.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COLOR_VISION_DATE_TAKEN1", DbType="VarChar(254)")]
-		public string COLOR_VISION_DATE_TAKEN1
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COLOR_VISION_DATE_TAKEN_exam", DbType="VarChar(254)")]
+		public string COLOR_VISION_DATE_TAKEN_exam
 		{
 			get
 			{
-				return this._COLOR_VISION_DATE_TAKEN1;
+				return this._COLOR_VISION_DATE_TAKEN_exam;
 			}
 			set
 			{
-				if ((this._COLOR_VISION_DATE_TAKEN1 != value))
+				if ((this._COLOR_VISION_DATE_TAKEN_exam != value))
 				{
-					this._COLOR_VISION_DATE_TAKEN1 = value;
+					this._COLOR_VISION_DATE_TAKEN_exam = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LiberiaLicenseNumber", DbType="VarChar(254)")]
+		public string LiberiaLicenseNumber
+		{
+			get
+			{
+				return this._LiberiaLicenseNumber;
+			}
+			set
+			{
+				if ((this._LiberiaLicenseNumber != value))
+				{
+					this._LiberiaLicenseNumber = value;
 				}
 			}
 		}
