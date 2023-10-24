@@ -538,13 +538,13 @@ namespace MedicalManagementSoftware
                 string ISHIHARA_C = i.ISHIHARA_C.ToString();
                 if (ISHIHARA_C == "YES") { r5_Y.Checked = true; } else if (ISHIHARA_C == "NO") { r5_N.Checked = true; }
 
-                string isLimitation = i.isLimitation == null ? "N" : i.isLimitation;
+                string isLimitation = i.isLimitation == null ? "Y" : i.isLimitation;
                 if (isLimitation == "Y") { rbLimitationYes.Checked = true; } else if (isLimitation == "N") { rbLimitationNo.Checked = true; }
                 txtLimitationComment.Text = i.limitationComment == null ? "-" : i.limitationComment;
 
                   dt_date.Text = i.COLOR_VISION_DATE_TAKEN.ToString();
 
-              
+              //
 
                 string VISUAL_AIDS_WORN = i.VISUAL_AIDS_WORN.ToString();
                 if (VISUAL_AIDS_WORN == "SPECTACLES") { r6_Y.Checked = true; } else if (VISUAL_AIDS_WORN == "CONTACTLENS") { r6_N.Checked = true; }
