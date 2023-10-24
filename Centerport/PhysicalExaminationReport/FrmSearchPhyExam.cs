@@ -138,6 +138,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 fmain.toolStripPhyExamSave.Enabled = false;
                 fmain.toolStripPhyExamCancel.Enabled = false;
                 fmain.toolStripPhyExamPrint.Enabled = true;
+                fmain.toolStripPhyExamPrintPreview.Enabled = true;
                 fmain.toolStripPhyExamSearch.Enabled = true;
 
 

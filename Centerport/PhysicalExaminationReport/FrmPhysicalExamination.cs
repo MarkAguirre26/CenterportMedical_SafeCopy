@@ -1,9 +1,12 @@
-﻿using MedicalManagementSoftware.Model;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
+using MedicalManagementSoftware.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -18,14 +21,16 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
     public partial class FrmPhysicalExamination : Form, MyInter
     {
 
+         PhysicalExaminationMedicalRecordModel physicalExaminationMedicalRecordModel;
+
         Main fmain;
         public DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
         public List<Panama_SeaMLC> Panama_SeaMLC_model = new List<Panama_SeaMLC>();
 
 
-        private string nameOfPhysician = "MA. LACIA B. LAGUIMUN, M.D";
-        private string addressOfPhysician = "CENTERPORT MEDICAL SERVICES, INC. 4/F VICTORIA BLDG., 429 U.N. AVE. ERMINATA, MANILA";
-        private string nameOfPhysicianCertificating = "PROFESSIONAL REGULATION COMMINION";
+        private string nameOfPhysician = "MA. LUCIA B. LAGUIMUN, M.D";
+        private string addressOfPhysician = "CENTERPORT MEDICAL SERVICES, INC. 4/F VICTORIA BLDG., 429 U.N. AVE. ERMITA, MANILA";
+        private string nameOfPhysicianCertificating = "PROFESSIONAL REGULATION COMMISSION";
         private string dateOfPhysicianCertificate = "JAN 13, 1993";
         private string dateOfPhysicianExamination = "";
 
@@ -40,6 +45,9 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
 
         private void FrmPhysicalExamination_Load(object sender, EventArgs e)
         {
+
+
+            this.AutoScroll = true;
 
             int newWidth = 835;
             int newHieght = 855;
@@ -326,10 +334,12 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
 
         public void searchPhyExamRecord(string papin)
         {
+           
             clearFields();
             txtPapin.Text = papin;
             searchPatient();
 
+            ClosePreview();
         }
 
 
@@ -340,6 +350,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             fmain.toolStripPhyExamSave.Enabled = true;
             fmain.toolStripPhyExamCancel.Enabled = true;
             fmain.toolStripPhyExamPrint.Enabled = true;
+            fmain.toolStripPhyExamPrintPreview.Enabled = true;
             fmain.toolStripPhyExamSearch.Enabled = false;
 
           
@@ -353,6 +364,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             fmain.toolStripPhyExamSave.Enabled = false;
             fmain.toolStripPhyExamCancel.Enabled = false;
             fmain.toolStripPhyExamPrint.Enabled = true;
+            fmain.toolStripPhyExamPrintPreview.Enabled = true;
             fmain.toolStripPhyExamSearch.Enabled = true;
             Availability(overlayShadow1, false);
             saveLiberia();
@@ -550,16 +562,29 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
 
         public void Edit()
         {
+
+
             if (txtPapin.Text != "")
             {
-                fmain.toolStripPhyExamEdit.Enabled = false;
-                fmain.toolStripPhyExamDelete.Enabled = false;
-                fmain.toolStripPhyExamSave.Enabled = true;
-                fmain.toolStripPhyExamCancel.Enabled = true;
-                fmain.toolStripPhyExamPrint.Enabled = false;
-                fmain.toolStripPhyExamSearch.Enabled = false;
 
-                Availability(overlayShadow1, true);
+                if (fmain.toolStripPhyExamPrintPreview.Enabled == false)
+                {
+                    MessageBox.Show("Unable to edit while preview in open", "Preview is open", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    fmain.toolStripPhyExamEdit.Enabled = false;
+                    fmain.toolStripPhyExamDelete.Enabled = false;
+                    fmain.toolStripPhyExamSave.Enabled = true;
+                    fmain.toolStripPhyExamCancel.Enabled = true;
+                    fmain.toolStripPhyExamPrint.Enabled = false;
+                    fmain.toolStripPhyExamPrintPreview.Enabled = false;
+                    fmain.toolStripPhyExamSearch.Enabled = false;
+                    Availability(overlayShadow1, true);
+
+                }
+                
+               
 
             }
 
@@ -577,17 +602,131 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             fmain.toolStripPhyExamSave.Enabled = false;
             fmain.toolStripPhyExamCancel.Enabled = false;
             fmain.toolStripPhyExamPrint.Enabled = false;
+            fmain.toolStripPhyExamPrintPreview.Enabled = false;
             fmain.toolStripPhyExamSearch.Enabled = true;
             searchPatient();
             Availability(overlayShadow1, false);
         }
 
+        static string GetDefaultPrinterName()
+        {
+            string defaultPrinterName = null;
+            PrinterSettings settings = new PrinterSettings();
+
+            if (PrinterSettings.InstalledPrinters.Count > 0)
+            {
+                defaultPrinterName = settings.PrinterName;
+            }
+
+            return defaultPrinterName;
+        }
+
+
+        private void getReportData(bool isPreview)
+        {
+            physicalExaminationMedicalRecordModel = prePareTheReportData();
+
+            PhysicalExaminationReport report = new PhysicalExaminationReport();
+            report.SetParameterValue("Latname", physicalExaminationMedicalRecordModel.LastName);
+            report.SetParameterValue("FirstName", physicalExaminationMedicalRecordModel.LastName);
+            report.SetParameterValue("MiddileName", physicalExaminationMedicalRecordModel.MiddleName);
+            report.SetParameterValue("Month", physicalExaminationMedicalRecordModel.Month);
+            report.SetParameterValue("Day", physicalExaminationMedicalRecordModel.Day);
+            report.SetParameterValue("Year", physicalExaminationMedicalRecordModel.Year);
+            report.SetParameterValue("City", physicalExaminationMedicalRecordModel.City);
+            report.SetParameterValue("Country", physicalExaminationMedicalRecordModel.Country);
+            report.SetParameterValue("Gender", physicalExaminationMedicalRecordModel.Gender);
+            report.SetParameterValue("forDuty", physicalExaminationMedicalRecordModel.forDuty);
+            report.SetParameterValue("PositionMaster", physicalExaminationMedicalRecordModel.PositionMaster);
+            report.SetParameterValue("PositionMate", physicalExaminationMedicalRecordModel.PositionMate);
+            report.SetParameterValue("PositionEngineer", physicalExaminationMedicalRecordModel.PositionEngineer);
+            report.SetParameterValue("PositionRating", physicalExaminationMedicalRecordModel.PositionRating);
+            report.SetParameterValue("Height", physicalExaminationMedicalRecordModel.Height);
+            report.SetParameterValue("Weight", physicalExaminationMedicalRecordModel.Weight);
+            report.SetParameterValue("Bp", physicalExaminationMedicalRecordModel.Bp);
+            report.SetParameterValue("Pulse", physicalExaminationMedicalRecordModel.Pulse);
+            report.SetParameterValue("Respiration", physicalExaminationMedicalRecordModel.Respiration);
+            report.SetParameterValue("GeneralAppearance", physicalExaminationMedicalRecordModel.GeneralAppearance);
+            report.SetParameterValue("VisionWithOutGlassRight", physicalExaminationMedicalRecordModel.VisionWithOutGlassRight);
+            report.SetParameterValue("VisionWithGlassRight", physicalExaminationMedicalRecordModel.VisionWithGlassRight);
+            report.SetParameterValue("VisionWithOutGlassLeft", physicalExaminationMedicalRecordModel.VisionWithOutGlassLeft);
+            report.SetParameterValue("VisionWithGlassLeft", physicalExaminationMedicalRecordModel.VisionWithGlassLeft);
+            report.SetParameterValue("dateOfVisionTest", physicalExaminationMedicalRecordModel.DateOfVisionTest);
+            report.SetParameterValue("ColorVisionMeetsStandard", physicalExaminationMedicalRecordModel.ColorVisionMeetsStandard);
+            report.SetParameterValue("ColorTestType", physicalExaminationMedicalRecordModel.ColorTestType);
+            report.SetParameterValue("HearingRight", physicalExaminationMedicalRecordModel.HearingRight);
+            report.SetParameterValue("HearingLeft", physicalExaminationMedicalRecordModel.HearingLeft);
+            report.SetParameterValue("Heart", physicalExaminationMedicalRecordModel.Heart);
+            report.SetParameterValue("Lungs", physicalExaminationMedicalRecordModel.Lungs);
+            report.SetParameterValue("ExtremitiesUpper", physicalExaminationMedicalRecordModel.ExtremitiesUpper);
+            report.SetParameterValue("ExtremitiesLower", physicalExaminationMedicalRecordModel.ExtremitiesLower);
+            report.SetParameterValue("DateOfExam", physicalExaminationMedicalRecordModel.DateOfExam);
+            report.SetParameterValue("ExpiryDate", physicalExaminationMedicalRecordModel.ExpiryDate);
+            report.SetParameterValue("NameOfApplicant", physicalExaminationMedicalRecordModel.NameOfApplicant);
+            report.SetParameterValue("mailingAddress", physicalExaminationMedicalRecordModel.MailingAddress);
+            report.SetParameterValue("Speach", physicalExaminationMedicalRecordModel.Speech);
+            report.SetParameterValue("nameOfPhysician", physicalExaminationMedicalRecordModel.nameOfPhysician);
+            report.SetParameterValue("addressOfPhysician", physicalExaminationMedicalRecordModel.addressOfPhysician);
+            report.SetParameterValue("nameOfPhysicianCertificating", physicalExaminationMedicalRecordModel.nameOfPhysicianCertificating);
+            report.SetParameterValue("dateOfPhysicianCertificate", physicalExaminationMedicalRecordModel.dateOfPhysicianCertificate);
+
+            if (isPreview)
+            {
+                Viewer1.Visible = true;
+                Viewer1.BringToFront();
+                Viewer1.ReportSource = report;
+
+
+                cmdClosePreview.Visible = true;
+                cmdClosePreview.BringToFront();
+                this.AutoScroll = false;
+
+
+
+                Viewer1.Dock = DockStyle.Fill;
+                fmain.toolStripPhyExamPrintPreview.Enabled = false;
+
+            }
+            else
+            {
+              
+
+                string PhysicalExaminationReportPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location).Replace("\\bin\\Debug", "\\PhysicalExaminationReport\\PhysicalExaminationReport.rpt");
+
+                ReportDocument reportDocument = new ReportDocument();
+                reportDocument.Load(PhysicalExaminationReportPath);
+                reportDocument.PrintOptions.PaperOrientation = PaperOrientation.Portrait;
+                reportDocument.PrintOptions.PaperSize = CrystalDecisions.Shared.PaperSize.PaperLetter;
+                reportDocument.PrintOptions.PrinterName = GetDefaultPrinterName();
+                reportDocument.PrintToPrinter(1, false, 0, 0);
+
+            }
+            
+           
+           
+        }
+
+
+
+
         public void Print()
         {
 
-            FrmPhysicalExaminationReport frmPhysicalExaminationReport = new FrmPhysicalExaminationReport();
-            frmPhysicalExaminationReport.physicalExaminationMedicalRecordModel = prePareTheReportData();
-            frmPhysicalExaminationReport.ShowDialog();
+
+          
+
+            getReportData(false);
+
+        }
+
+
+        public void printPreview()
+        {
+            
+            getReportData(true);
+
+
+
 
 
         }
@@ -901,6 +1040,22 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
         {
             txtDateOfColorVisionTest.Format = DateTimePickerFormat.Custom;
             txtDateOfColorVisionTest.CustomFormat = "MM/dd/yyyy";
+        }
+
+        private void cmdClosePreview_Click(object sender, EventArgs e)
+        {
+            ClosePreview();
+        }
+
+        public void ClosePreview()
+        {
+            cmdClosePreview.Visible = false;
+            cmdClosePreview.SendToBack();
+            Viewer1.Visible = false;
+            this.AutoScroll = true;
+            Viewer1.SendToBack();
+            Viewer1.Dock = DockStyle.Fill;
+            fmain.toolStripPhyExamPrintPreview.Enabled = true;
         }
     }
 }

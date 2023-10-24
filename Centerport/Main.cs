@@ -2984,6 +2984,11 @@ namespace MedicalManagementSoftware
             }
         }
 
+        private void toolStripButton6_Click_2(object sender, EventArgs e)
+        {
+            (Application.OpenForms["FrmPhysicalExamination"] as FrmPhysicalExamination).printPreview();
+        }
+
 
 
 

@@ -33,7 +33,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.lbldefault = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmd_close
@@ -78,20 +77,11 @@
             // lbldefault
             // 
             this.lbldefault.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldefault.Location = new System.Drawing.Point(7, 234);
+            this.lbldefault.Location = new System.Drawing.Point(7, 215);
             this.lbldefault.Name = "lbldefault";
-            this.lbldefault.Size = new System.Drawing.Size(273, 14);
+            this.lbldefault.Size = new System.Drawing.Size(273, 35);
             this.lbldefault.TabIndex = 6;
             this.lbldefault.Text = "-Printer";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 217);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Default printer:";
             // 
             // frm_printers
             // 
@@ -101,7 +91,6 @@
             this.CancelButton = this.cmd_close;
             this.ClientSize = new System.Drawing.Size(528, 255);
             this.ControlBox = false;
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.lbldefault);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button3);
@@ -128,6 +117,5 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label lbldefault;
-        private System.Windows.Forms.Label label2;
     }
 }

@@ -17,12 +17,17 @@ using Microsoft.Reporting.WinForms;
 using System.Drawing.Imaging;
 using MedicalManagementSoftware.Class;
 using MedicalManagementSoftware.Model;
+using MedicalManagementSoftware.PhysicalExaminationReport;
 
 namespace MedicalManagementSoftware
 {
     public partial class Report_SeaBase_Print : Form
     {
-        public static bool Summary, Detail, MER, MLC1, MLC2, krpan;
+
+        
+
+
+        public static bool Summary, Detail, MER, MLC1, MLC2, krpan,Liberia;
         public static string last_date_taken = "";
         private const long BUTTON_DOWN_CODE = 0xa1;
         private const long BUTTON_UP_CODE = 0xa0;
@@ -78,8 +83,7 @@ namespace MedicalManagementSoftware
                 dt.Rows.Add(i.lastname, i.firstname, i.middlename, i.address_1, i.position, i.marital_status, i.gender, i.birthdate, i.place_of_birth, i.employer, i.passport_no, i.nationality, i.religion, i.sirb, i.designation, i.picture.ToArray(), i.result_date, i.pathologist, i.fitness_date, i.valid_until, i.recommendation, i.medtech, i.restriction, i.ISHIHARA_C, i.SATISFACTORY_HEARING, i.SATISFACTORY_SIGHT_UNAID, i.VISUAL_AIDS, i.FIT_FOR_LOOKOUT);
 
             }
-            //
-
+           
             R_Seabase_summary.SetDataSource(dt);
             TextObject FormNo = (TextObject)R_Seabase_summary.ReportDefinition.ReportObjects["txt_formNo"];
             TextObject RevNo = (TextObject)R_Seabase_summary.ReportDefinition.ReportObjects["txt_RevNo"];
@@ -351,7 +355,59 @@ namespace MedicalManagementSoftware
             { backgroundWorker4.RunWorkerAsync(); }
             else if (krpan)
             { backgroundWorker6.RunWorkerAsync(); }
+            
         }
+        //private void getLiberiaReport()
+        //{
+        //    wizard1.SelectedTab = tabPage7;
+        //    MedicalManagementSoftware.PhysicalExaminationReport.PhysicalExaminationReport report = new MedicalManagementSoftware.PhysicalExaminationReport.PhysicalExaminationReport();
+
+        //           report.SetParameterValue("Latname", physicalExaminationMedicalRecordModel.LastName);
+        //    report.SetParameterValue("FirstName", physicalExaminationMedicalRecordModel.LastName);
+        //    report.SetParameterValue("MiddileName", physicalExaminationMedicalRecordModel.MiddleName);
+        //    report.SetParameterValue("Month", physicalExaminationMedicalRecordModel.Month);
+        //    report.SetParameterValue("Day", physicalExaminationMedicalRecordModel.Day);
+        //    report.SetParameterValue("Year", physicalExaminationMedicalRecordModel.Year);
+        //    report.SetParameterValue("City", physicalExaminationMedicalRecordModel.City);
+        //    report.SetParameterValue("Country", physicalExaminationMedicalRecordModel.Country);
+        //    report.SetParameterValue("Gender", physicalExaminationMedicalRecordModel.Gender);
+        //    report.SetParameterValue("forDuty", physicalExaminationMedicalRecordModel.forDuty);
+        //    report.SetParameterValue("PositionMaster", physicalExaminationMedicalRecordModel.PositionMaster);
+        //    report.SetParameterValue("PositionMate", physicalExaminationMedicalRecordModel.PositionMate);
+        //    report.SetParameterValue("PositionEngineer", physicalExaminationMedicalRecordModel.PositionEngineer);
+        //    report.SetParameterValue("PositionRating", physicalExaminationMedicalRecordModel.PositionRating);
+        //    report.SetParameterValue("Height", physicalExaminationMedicalRecordModel.Height);
+        //    report.SetParameterValue("Weight", physicalExaminationMedicalRecordModel.Weight);
+        //    report.SetParameterValue("Bp", physicalExaminationMedicalRecordModel.Bp);
+        //    report.SetParameterValue("Pulse", physicalExaminationMedicalRecordModel.Pulse);
+        //    report.SetParameterValue("Respiration", physicalExaminationMedicalRecordModel.Respiration);
+        //    report.SetParameterValue("GeneralAppearance", physicalExaminationMedicalRecordModel.GeneralAppearance);
+        //    report.SetParameterValue("VisionWithOutGlassRight", physicalExaminationMedicalRecordModel.VisionWithOutGlassRight);
+        //    report.SetParameterValue("VisionWithGlassRight", physicalExaminationMedicalRecordModel.VisionWithGlassRight);
+        //    report.SetParameterValue("VisionWithOutGlassLeft", physicalExaminationMedicalRecordModel.VisionWithOutGlassLeft);
+        //    report.SetParameterValue("VisionWithGlassLeft", physicalExaminationMedicalRecordModel.VisionWithGlassLeft);
+        //    report.SetParameterValue("dateOfVisionTest", physicalExaminationMedicalRecordModel.DateOfVisionTest);
+        //    report.SetParameterValue("ColorVisionMeetsStandard", physicalExaminationMedicalRecordModel.ColorVisionMeetsStandard);
+        //    report.SetParameterValue("ColorTestType", physicalExaminationMedicalRecordModel.ColorTestType);
+        //    report.SetParameterValue("HearingRight", physicalExaminationMedicalRecordModel.HearingRight);
+        //    report.SetParameterValue("HearingLeft", physicalExaminationMedicalRecordModel.HearingLeft);
+        //    report.SetParameterValue("Heart", physicalExaminationMedicalRecordModel.Heart);
+        //    report.SetParameterValue("Lungs", physicalExaminationMedicalRecordModel.Lungs);
+        //    report.SetParameterValue("ExtremitiesUpper", physicalExaminationMedicalRecordModel.ExtremitiesUpper);
+        //    report.SetParameterValue("ExtremitiesLower", physicalExaminationMedicalRecordModel.ExtremitiesLower);
+        //    report.SetParameterValue("DateOfExam", physicalExaminationMedicalRecordModel.DateOfExam);
+        //    report.SetParameterValue("ExpiryDate", physicalExaminationMedicalRecordModel.ExpiryDate);
+        //    report.SetParameterValue("NameOfApplicant", physicalExaminationMedicalRecordModel.NameOfApplicant);
+        //    report.SetParameterValue("mailingAddress", physicalExaminationMedicalRecordModel.MailingAddress);
+        //    report.SetParameterValue("Speach", physicalExaminationMedicalRecordModel.Speech);
+        //    report.SetParameterValue("nameOfPhysician", physicalExaminationMedicalRecordModel.nameOfPhysician);
+        //    report.SetParameterValue("addressOfPhysician", physicalExaminationMedicalRecordModel.addressOfPhysician);
+        //    report.SetParameterValue("nameOfPhysicianCertificating", physicalExaminationMedicalRecordModel.nameOfPhysicianCertificating);
+        //    report.SetParameterValue("dateOfPhysicianCertificate", physicalExaminationMedicalRecordModel.dateOfPhysicianCertificate);
+
+        //    Viewer5.ReportSource = report;
+        //    RemoveTab(Viewer5);
+        //}
 
 
         void Detailed()
@@ -429,6 +485,11 @@ namespace MedicalManagementSoftware
                 {
 
                     Viewer3.PrintReport();
+                }
+                else if (Liberia)
+                {
+
+                    Viewer5.PrintReport();
                 }
                 else if (MER)
                 {

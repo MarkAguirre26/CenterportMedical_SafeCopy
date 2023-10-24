@@ -529,4 +529,3 @@ D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\Medical Management Software.csprojResolveAssemblyReference.cache
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.PhysicalExaminationReport.FrmPhysicalExamination.resources
 D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.PhysicalExaminationReport.FrmSearchPhyExam.resources
-D:\Files\Devs\Project\Centerport\SafeCopy\CenterportMedical_SafeCopy\Centerport\obj\Debug\MedicalManagementSoftware.PhysicalExaminationReport.FrmPhysicalExaminationReport.resources
