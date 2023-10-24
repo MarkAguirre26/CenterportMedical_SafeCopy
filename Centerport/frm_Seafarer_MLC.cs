@@ -31,6 +31,7 @@ namespace MedicalManagementSoftware
         private string VISUAL_AIDS_WORN_ = "-";
         private string FIT_FOR_LOOKOUT_ = "-";
         private string VISUAL_AIDS_REQUIRED_ = "-";
+        private string ISLIMITATION = "N";
         DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
         public List<Seafarer_SearchList_MLC> Seafarer_SearchList_model = new List<Seafarer_SearchList_MLC>();
         public List<QueueSearchList_Model> SeabaseAdd_model = new List<QueueSearchList_Model>();
@@ -106,10 +107,21 @@ namespace MedicalManagementSoftware
                 if (r7_Y.Checked == true) { FIT_FOR_LOOKOUT_ = "YES"; } else if (r7_N.Checked == true) { FIT_FOR_LOOKOUT_ = "NO"; } else { FIT_FOR_LOOKOUT_ = "-"; }
                 if (r8_Y.Checked == true) { VISUAL_AIDS_REQUIRED_ = "YES"; } else if (r8_N.Checked == true) { VISUAL_AIDS_REQUIRED_ = "NO"; } else { VISUAL_AIDS_REQUIRED_ = "-"; }
 
+
+                if (rbLimitationYes.Checked == true) {
+                    ISLIMITATION = "Y";
+
+                }
+                else
+                {
+                    ISLIMITATION = "N";
+                }
+
+
                 //`resultid`,    `HEIGHT`, `WEIGHT`, `BP`, `PULSE`, `RESPIRATION`, `BODY_BUILD`, `FAR_OD_U`, `FAR_OD_C`, `FAR_OS_U`, `FAR_OS_C`, `NEAR_ODJ_U`, `NEAR_ODJ_C`, `NEAR_OSJ_U`, `NEAR_OSJ_C`, `ISHIHARA_U`, `ISHIHARA_C`,                    `HEARING_AD`, `HEARING_AS`, `SPEECH`, `CONVERSATIONAL_AD`, `CONVERSATIONAL_AS`, `SATISFACTORY_HEARING`,                      `SATISFACTORY_SIGHT_AID`,         `SATISFACTORY_SIGHT_UNAID`,                     `SATISFACTORY_PSYCHO`, `VISUAL_AIDS`,                    `FIT_FOR_LOOKOUT`,              `HEARING_RIGHT`, `HEARING_LEFT`, `CLARITY_OF_SPEECH`, `VISUAL_AIDS_REQUIRED`, `BP_DIASTOLIC`, `RHYTHM`, `VISUAL_AIDS_WORN`, `COLOR_VISION_DATE_TAKEN`, `UNAIDED_HEARING_SATISFACTORY`, `IDENTITY_CONFIRMED`
                 //string a = "INSERT INTO `t_phy_exam` (`resultid`, `HEIGHT`, `WEIGHT`, `BP`, `PULSE`, `RESPIRATION`, `BODY_BUILD`, `FAR_OD_U`, `FAR_OD_C`, `FAR_OS_U`, `FAR_OS_C`, `NEAR_ODJ_U`, `NEAR_ODJ_C`, `NEAR_OSJ_U`, `NEAR_OSJ_C`, `ISHIHARA_U`, `ISHIHARA_C`, `HEARING_AD`, `HEARING_AS`, `SPEECH`, `CONVERSATIONAL_AD`, `CONVERSATIONAL_AS`, `SATISFACTORY_HEARING`, `SATISFACTORY_SIGHT_AID`, `SATISFACTORY_SIGHT_UNAID`, `SATISFACTORY_PSYCHO`, `VISUAL_AIDS`, `FIT_FOR_LOOKOUT`, `HEARING_RIGHT`, `HEARING_LEFT`, `CLARITY_OF_SPEECH`, `VISUAL_AIDS_REQUIRED`, `BP_DIASTOLIC`, `RHYTHM`, `VISUAL_AIDS_WORN`, `COLOR_VISION_DATE_TAKEN`, `UNAIDED_HEARING_SATISFACTORY`, `IDENTITY_CONFIRMED`) VALUES ('" + LabID.Text + "', '',      '',        '',   '',         '',            '',          '',        '',         '',         '',         '',             '',          '',             '',        '',       '" + ISHIHARA_C_.ToString() + "',      '',          '',        '',         '',                     '',          '" + SATISFACTORY_HEARING_.ToString() + "',            '',                        '"+VISUAL_AIDS_REQUIRED_+"',                          '',        '" + VISUAL_AIDS_.ToString() + "', '" + FIT_FOR_LOOKOUT_.ToString() + "', '',               '',                    '',      '',          '',                   '',       '" + VISUAL_AIDS_WORN_.ToString() + "',          '" + dt_date.Text + "', '" + UNAIDED_HEARING_SATISFACTORY_.ToString() + "', '" + IDENTITY_CONFIRMED_.ToString() + "' )";
                 // string b = "INSERT INTO `t_result_main` (`resultid`, `resulttype`, `papin`, `result_date`, `pathologist`, `status`, `fitness_date`, `valid_until`, `remarks`, `recommendation`, `repeat_test_requestby`, `specimen_no`, `medtech`, `medtech_license`, `pathologist_license`, `reference_no`, `restriction`, `basic_doh_exam`, `add_lab_tests`, `flag_medlab_req`, `deck_srvc_flag`, `engine_srvc_flag`, `catering_srvc_flag`, `other_srvc_flag`) VALUES ('" + LabID.Text + "', 'SEAMLC', '" + pin.Text + "', '" + dt_ResDate.Text + "', '" + Tool.ReplaceString(txt_pathologist.Text) + "', 'PENDING',   '" + dt_fitness_Date.Text + "',      '" + dt_ValidUntil.Text + "',            '',                  '" + Tool.ReplaceString(cbo_recomendation.Text) + "',               '',                 '" + Tool.ReplaceString(txt_specimen.Text) + "',               '" + Tool.ReplaceString(cbo_medtech.Text) + "', '" + MedtectLicence.ToString() + "',                '',                 '" + LabID.Text + "',              '" + Tool.ReplaceString(txt_restriction.Text) + "',             '',                  '',            '',             '',                 '',                 '',                     '')";
-                db.ExecuteCommand("INSERT INTO t_phy_exam (resultid, HEIGHT, WEIGHT, BP, PULSE, RESPIRATION, BODY_BUILD, FAR_OD_U, FAR_OD_C, FAR_OS_U, FAR_OS_C, NEAR_ODJ_U, NEAR_ODJ_C, NEAR_OSJ_U, NEAR_OSJ_C, ISHIHARA_U, ISHIHARA_C, HEARING_AD, HEARING_AS, SPEECH, CONVERSATIONAL_AD, CONVERSATIONAL_AS, SATISFACTORY_HEARING, SATISFACTORY_SIGHT_AID, SATISFACTORY_SIGHT_UNAID, SATISFACTORY_PSYCHO, VISUAL_AIDS, FIT_FOR_LOOKOUT, HEARING_RIGHT, HEARING_LEFT, CLARITY_OF_SPEECH, VISUAL_AIDS_REQUIRED, BP_DIASTOLIC, RHYTHM, VISUAL_AIDS_WORN, COLOR_VISION_DATE_TAKEN, UNAIDED_HEARING_SATISFACTORY, IDENTITY_CONFIRMED) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23},{24},{25},{26},{27},{28},{29},{30},{31},{32},{33},{34},{35},{36},{37})", LabID.Text, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ISHIHARA_C_.ToString(), "", "", "", "", "", SATISFACTORY_HEARING_.ToString(), "", VISUAL_AIDS_REQUIRED_, "", VISUAL_AIDS_.ToString(), FIT_FOR_LOOKOUT_.ToString(), "", "", "", "", "", "", VISUAL_AIDS_WORN_.ToString(), dt_date.Text, UNAIDED_HEARING_SATISFACTORY_.ToString(), IDENTITY_CONFIRMED_.ToString());
+                db.ExecuteCommand("INSERT INTO t_phy_exam (resultid, HEIGHT, WEIGHT, BP, PULSE, RESPIRATION, BODY_BUILD, FAR_OD_U, FAR_OD_C, FAR_OS_U, FAR_OS_C, NEAR_ODJ_U, NEAR_ODJ_C, NEAR_OSJ_U, NEAR_OSJ_C, ISHIHARA_U, ISHIHARA_C, HEARING_AD, HEARING_AS, SPEECH, CONVERSATIONAL_AD, CONVERSATIONAL_AS, SATISFACTORY_HEARING, SATISFACTORY_SIGHT_AID, SATISFACTORY_SIGHT_UNAID, SATISFACTORY_PSYCHO, VISUAL_AIDS, FIT_FOR_LOOKOUT, HEARING_RIGHT, HEARING_LEFT, CLARITY_OF_SPEECH, VISUAL_AIDS_REQUIRED, BP_DIASTOLIC, RHYTHM, VISUAL_AIDS_WORN, COLOR_VISION_DATE_TAKEN, UNAIDED_HEARING_SATISFACTORY, IDENTITY_CONFIRMED,isLimitation,limitationComment) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23},{24},{25},{26},{27},{28},{29},{30},{31},{32},{33},{34},{35},{36},{37},{38},{39})", LabID.Text, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ISHIHARA_C_.ToString(), "", "", "", "", "", SATISFACTORY_HEARING_.ToString(), "", VISUAL_AIDS_REQUIRED_, "", VISUAL_AIDS_.ToString(), FIT_FOR_LOOKOUT_.ToString(), "", "", "", "", "", "", VISUAL_AIDS_WORN_.ToString(), dt_date.Text, UNAIDED_HEARING_SATISFACTORY_.ToString(), IDENTITY_CONFIRMED_.ToString(),ISLIMITATION,txtLimitationComment.Text);
                 db.ExecuteCommand("INSERT INTO t_result_main (resultid, resulttype, papin, result_date, pathologist, status, fitness_date, valid_until, remarks, recommendation, repeat_test_requestby, specimen_no, medtech, medtech_license, pathologist_license, reference_no, restriction, basic_doh_exam, add_lab_tests, flag_medlab_req, deck_srvc_flag, engine_srvc_flag, catering_srvc_flag, other_srvc_flag) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23})", LabID.Text, "SEAMLC", pin.Text, dt_ResDate.Text, txt_pathologist_Cbo.Text, "PENDING", dt_fitness_Date.Text, dt_ValidUntil.Text, "", cbo_recomendation.Text, "", txt_specimen.Text, cbo_medtech.Text, MedtectLicence.ToString(), "", LabID.Text, txt_restriction.Text, "", "", "", "", "", "", "");
                 //var arr = new[] { a, b };
                 //File.WriteAllLines(ClassSql.tmp_path, arr);
@@ -156,8 +168,20 @@ namespace MedicalManagementSoftware
                 if (r7_Y.Checked == true) { FIT_FOR_LOOKOUT_ = "YES"; } else if (r7_N.Checked == true) { FIT_FOR_LOOKOUT_ = "NO"; } else { FIT_FOR_LOOKOUT_ = "-"; }
                 if (r8_Y.Checked == true) { VISUAL_AIDS_REQUIRED_ = "YES"; } else if (r8_N.Checked == true) { VISUAL_AIDS_REQUIRED_ = "NO"; } else { VISUAL_AIDS_REQUIRED_ = "-"; }
 
-               
-                db.ExecuteCommand("UPDATE t_phy_exam  SET ISHIHARA_C={0}, SATISFACTORY_HEARING={1},VISUAL_AIDS={2}, FIT_FOR_LOOKOUT={3}, SATISFACTORY_SIGHT_UNAID={4},  VISUAL_AIDS_WORN={5}, COLOR_VISION_DATE_TAKEN={6}, UNAIDED_HEARING_SATISFACTORY={7}, IDENTITY_CONFIRMED={8} WHERE resultid={9}", ISHIHARA_C_.ToString(), SATISFACTORY_HEARING_.ToString(), VISUAL_AIDS_.ToString(), FIT_FOR_LOOKOUT_.ToString(), VISUAL_AIDS_REQUIRED_.ToString(), VISUAL_AIDS_WORN_.ToString(), dt_date.Text, UNAIDED_HEARING_SATISFACTORY_.ToString(), IDENTITY_CONFIRMED_.ToString(), LabID.Text);
+
+                if (rbLimitationYes.Checked == true)
+                {
+                    ISLIMITATION = "Y";
+
+                }
+                else
+                {
+                    ISLIMITATION = "N";
+                }
+
+
+                db.ExecuteCommand("UPDATE t_phy_exam  SET ISHIHARA_C={0}, SATISFACTORY_HEARING={1},VISUAL_AIDS={2}, FIT_FOR_LOOKOUT={3}, SATISFACTORY_SIGHT_UNAID={4},  VISUAL_AIDS_WORN={5}, COLOR_VISION_DATE_TAKEN={6}, UNAIDED_HEARING_SATISFACTORY={7}, IDENTITY_CONFIRMED={8},isLimitation={9},limitationComment={10} WHERE resultid={11}", ISHIHARA_C_.ToString(), SATISFACTORY_HEARING_.ToString(), VISUAL_AIDS_.ToString(), FIT_FOR_LOOKOUT_.ToString(), VISUAL_AIDS_REQUIRED_.ToString(), VISUAL_AIDS_WORN_.ToString(), dt_date.Text, UNAIDED_HEARING_SATISFACTORY_.ToString(), IDENTITY_CONFIRMED_.ToString(), ISLIMITATION,txtLimitationComment.Text, LabID.Text);
+
                 db.ExecuteCommand("UPDATE t_result_main SET recommendation={0},restriction={1},result_date={2},  fitness_date={3}, valid_until={4},medtech={5}, medtech_license = {6},pathologist={7},specimen_no={8} WHERE cn={9}", cbo_recomendation.Text, txt_restriction.Text, dt_ResDate.Text, dt_fitness_Date.Text, dt_ValidUntil.Text, cbo_medtech.Text, MedtectLicence.ToString(), txt_pathologist_Cbo.Text, txt_specimen.Text, cn_MLCFromResultMain);
                
 
@@ -276,24 +300,14 @@ namespace MedicalManagementSoftware
         }
         public void Print()
         {
-            //Report.Report_PrintOuts frm_mlc = new Report.Report_PrintOuts();
-            //frm_mlc.Tag = LabID.Text;
-            //frm_mlc.MLC = true;
-            //frm_mlc.ShowDialog();
-
-            //using (RDLC.frm_RDLC_report f = new RDLC.frm_RDLC_report())
-            //{
-            //    f.Tag = LabID.Text;
-            //    f.isSeaMLC = true;
-            //    f.age = txt_age.Text;
-            //    f.ShowDialog();
-            //}
-            //
+         
             Cursor.Current = Cursors.WaitCursor;
             Report_SeaBase_Print f = new Report_SeaBase_Print();
             Report_SeaBase_Print.MLC1 = true;
             Report_SeaBase_Print.last_date_taken = dt_date.Text;
             f.MedCertNumber = txt_specimen.Text;
+            f.isLimitation = rbLimitationYes.Checked == true ? "Y" : "N";
+            f.limitationComment = txtLimitationComment.Text;
             f.Tag = LabID.Text;
             f.ShowDialog();
             Cursor.Current = Cursors.Default;
@@ -496,6 +510,7 @@ namespace MedicalManagementSoftware
             r5_Y.Checked = true;
             r7_Y.Checked = true;
             r8_N.Checked = true;
+            rbLimitationNo.Checked = true;
 
             Tool.ClearFields(groupBox2);
         }
@@ -522,6 +537,10 @@ namespace MedicalManagementSoftware
 
                 string ISHIHARA_C = i.ISHIHARA_C.ToString();
                 if (ISHIHARA_C == "YES") { r5_Y.Checked = true; } else if (ISHIHARA_C == "NO") { r5_N.Checked = true; }
+
+                string isLimitation = i.isLimitation == null ? "N" : i.isLimitation;
+                if (isLimitation == "Y") { rbLimitationYes.Checked = true; } else if (isLimitation == "N") { rbLimitationNo.Checked = true; }
+                txtLimitationComment.Text = i.limitationComment == null ? "-" : i.limitationComment;
 
                   dt_date.Text = i.COLOR_VISION_DATE_TAKEN.ToString();
 

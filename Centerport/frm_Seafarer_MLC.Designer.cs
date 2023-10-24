@@ -121,6 +121,7 @@
             this.txt_status = new System.Windows.Forms.TextBox();
             this.txt_contact = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_pathologist_Cbo = new System.Windows.Forms.ComboBox();
             this.dt_ResDate = new System.Windows.Forms.DateTimePicker();
             this.lbl_reco_cn = new System.Windows.Forms.Label();
             this.dt_fitness_Date = new System.Windows.Forms.DateTimePicker();
@@ -137,7 +138,11 @@
             this.label28 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.txt_pathologist_Cbo = new System.Windows.Forms.ComboBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.rbLimitationYes = new System.Windows.Forms.RadioButton();
+            this.rbLimitationNo = new System.Windows.Forms.RadioButton();
+            this.txtLimitationComment = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -158,24 +163,28 @@
             this.contextMenuStrip4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.overlayShadow1);
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.txt_Papin);
             this.panel1.Controls.Add(this.groupBox5);
             this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.overlayShadow1);
             this.panel1.Location = new System.Drawing.Point(1, 34);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(888, 574);
+            this.panel1.Size = new System.Drawing.Size(886, 608);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.txtLimitationComment);
+            this.panel10.Controls.Add(this.panel2);
+            this.panel10.Controls.Add(this.label29);
             this.panel10.Controls.Add(this.dt_date);
             this.panel10.Controls.Add(this.lbl_pHy_Exam_Cn);
             this.panel10.Controls.Add(this.label8);
@@ -201,9 +210,9 @@
             this.panel10.Controls.Add(this.panel4);
             this.panel10.Controls.Add(this.panel6);
             this.panel10.Controls.Add(this.panel5);
-            this.panel10.Location = new System.Drawing.Point(17, 168);
+            this.panel10.Location = new System.Drawing.Point(10, 168);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(859, 292);
+            this.panel10.Size = new System.Drawing.Size(859, 328);
             this.panel10.TabIndex = 293;
             // 
             // dt_date
@@ -244,7 +253,7 @@
             this.label27.BackColor = System.Drawing.SystemColors.Control;
             this.label27.Font = new System.Drawing.Font("Arial", 9F);
             this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(295, 270);
+            this.label27.Location = new System.Drawing.Point(295, 305);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(69, 15);
             this.label27.TabIndex = 292;
@@ -257,7 +266,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(17, 31);
+            this.label3.Location = new System.Drawing.Point(20, 31);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(529, 14);
             this.label3.TabIndex = 110;
@@ -268,7 +277,7 @@
             // 
             this.txt_restriction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_restriction.Font = new System.Drawing.Font("Arial", 8F);
-            this.txt_restriction.Location = new System.Drawing.Point(365, 267);
+            this.txt_restriction.Location = new System.Drawing.Point(365, 302);
             this.txt_restriction.Name = "txt_restriction";
             this.txt_restriction.Size = new System.Drawing.Size(488, 20);
             this.txt_restriction.TabIndex = 291;
@@ -280,7 +289,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(17, 52);
+            this.label10.Location = new System.Drawing.Point(20, 52);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(342, 14);
             this.label10.TabIndex = 111;
@@ -292,7 +301,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(17, 73);
+            this.label14.Location = new System.Drawing.Point(20, 73);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(192, 14);
             this.label14.TabIndex = 112;
@@ -304,7 +313,7 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(17, 94);
+            this.label18.Location = new System.Drawing.Point(20, 94);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(362, 14);
             this.label18.TabIndex = 113;
@@ -319,7 +328,7 @@
             "FIT FOR SEA DUTY",
             "FIT WITH RESTRICTION",
             "UNFIT"});
-            this.cbo_recomendation.Location = new System.Drawing.Point(8, 264);
+            this.cbo_recomendation.Location = new System.Drawing.Point(8, 299);
             this.cbo_recomendation.Name = "cbo_recomendation";
             this.cbo_recomendation.Size = new System.Drawing.Size(279, 23);
             this.cbo_recomendation.TabIndex = 269;
@@ -331,7 +340,7 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(17, 115);
+            this.label19.Location = new System.Drawing.Point(20, 115);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(363, 14);
             this.label19.TabIndex = 114;
@@ -343,7 +352,7 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(17, 145);
+            this.label20.Location = new System.Drawing.Point(20, 145);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(151, 14);
             this.label20.TabIndex = 115;
@@ -355,7 +364,7 @@
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label26.Location = new System.Drawing.Point(5, 246);
+            this.label26.Location = new System.Drawing.Point(5, 281);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(144, 15);
             this.label26.TabIndex = 247;
@@ -367,7 +376,7 @@
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(17, 164);
+            this.label21.Location = new System.Drawing.Point(20, 164);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(149, 14);
             this.label21.TabIndex = 116;
@@ -379,7 +388,7 @@
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(17, 194);
+            this.label22.Location = new System.Drawing.Point(20, 229);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(527, 14);
             this.label22.TabIndex = 117;
@@ -404,7 +413,7 @@
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(17, 211);
+            this.label23.Location = new System.Drawing.Point(20, 246);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(523, 28);
             this.label23.TabIndex = 118;
@@ -416,7 +425,7 @@
             this.panel9.ContextMenuStrip = this.contextMenuStrip8;
             this.panel9.Controls.Add(this.r8_Y);
             this.panel9.Controls.Add(this.r8_N);
-            this.panel9.Location = new System.Drawing.Point(590, 215);
+            this.panel9.Location = new System.Drawing.Point(590, 250);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(104, 20);
             this.panel9.TabIndex = 243;
@@ -1241,11 +1250,20 @@
             this.groupBox2.Controls.Add(this.label147);
             this.groupBox2.Controls.Add(this.label149);
             this.groupBox2.Font = new System.Drawing.Font("Arial", 8F);
-            this.groupBox2.Location = new System.Drawing.Point(10, 458);
+            this.groupBox2.Location = new System.Drawing.Point(10, 499);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(868, 95);
             this.groupBox2.TabIndex = 270;
             this.groupBox2.TabStop = false;
+            // 
+            // txt_pathologist_Cbo
+            // 
+            this.txt_pathologist_Cbo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pathologist_Cbo.FormattingEnabled = true;
+            this.txt_pathologist_Cbo.Location = new System.Drawing.Point(192, 64);
+            this.txt_pathologist_Cbo.Name = "txt_pathologist_Cbo";
+            this.txt_pathologist_Cbo.Size = new System.Drawing.Size(386, 22);
+            this.txt_pathologist_Cbo.TabIndex = 296;
             // 
             // dt_ResDate
             // 
@@ -1396,7 +1414,7 @@
             // 
             this.overlayShadow1.Location = new System.Drawing.Point(0, 28);
             this.overlayShadow1.Name = "overlayShadow1";
-            this.overlayShadow1.Size = new System.Drawing.Size(888, 549);
+            this.overlayShadow1.Size = new System.Drawing.Size(880, 558);
             this.overlayShadow1.TabIndex = 294;
             // 
             // label28
@@ -1424,14 +1442,62 @@
             this.backgroundWorker2.WorkerSupportsCancellation = true;
             this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork);
             // 
-            // txt_pathologist_Cbo
+            // label29
             // 
-            this.txt_pathologist_Cbo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pathologist_Cbo.FormattingEnabled = true;
-            this.txt_pathologist_Cbo.Location = new System.Drawing.Point(192, 64);
-            this.txt_pathologist_Cbo.Name = "txt_pathologist_Cbo";
-            this.txt_pathologist_Cbo.Size = new System.Drawing.Size(386, 22);
-            this.txt_pathologist_Cbo.TabIndex = 296;
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
+            this.label29.ForeColor = System.Drawing.Color.Black;
+            this.label29.Location = new System.Drawing.Point(20, 186);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(486, 14);
+            this.label29.TabIndex = 295;
+            this.label29.Text = "NO LIMITATIONS OR RESTRICTIONS ON FITNESS? If \'NO\' specify limitations or restric" +
+    "tions:";
+            // 
+            // panel2
+            // 
+            this.panel2.ContextMenuStrip = this.contextMenuStrip5;
+            this.panel2.Controls.Add(this.rbLimitationYes);
+            this.panel2.Controls.Add(this.rbLimitationNo);
+            this.panel2.Location = new System.Drawing.Point(590, 184);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(118, 20);
+            this.panel2.TabIndex = 296;
+            // 
+            // rbLimitationYes
+            // 
+            this.rbLimitationYes.AutoSize = true;
+            this.rbLimitationYes.Checked = true;
+            this.rbLimitationYes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbLimitationYes.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbLimitationYes.Location = new System.Drawing.Point(4, 1);
+            this.rbLimitationYes.Name = "rbLimitationYes";
+            this.rbLimitationYes.Size = new System.Drawing.Size(46, 18);
+            this.rbLimitationYes.TabIndex = 81;
+            this.rbLimitationYes.TabStop = true;
+            this.rbLimitationYes.Text = "YES";
+            this.rbLimitationYes.UseVisualStyleBackColor = true;
+            // 
+            // rbLimitationNo
+            // 
+            this.rbLimitationNo.AutoSize = true;
+            this.rbLimitationNo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbLimitationNo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbLimitationNo.Location = new System.Drawing.Point(55, 1);
+            this.rbLimitationNo.Name = "rbLimitationNo";
+            this.rbLimitationNo.Size = new System.Drawing.Size(40, 18);
+            this.rbLimitationNo.TabIndex = 143;
+            this.rbLimitationNo.Text = "NO";
+            this.rbLimitationNo.UseVisualStyleBackColor = true;
+            // 
+            // txtLimitationComment
+            // 
+            this.txtLimitationComment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLimitationComment.Font = new System.Drawing.Font("Arial", 8F);
+            this.txtLimitationComment.Location = new System.Drawing.Point(20, 204);
+            this.txtLimitationComment.Name = "txtLimitationComment";
+            this.txtLimitationComment.Size = new System.Drawing.Size(688, 20);
+            this.txtLimitationComment.TabIndex = 297;
             // 
             // frm_Seafarer_MLC
             // 
@@ -1487,6 +1553,8 @@
             this.groupBox5.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1604,5 +1672,10 @@
         public System.Windows.Forms.Label lbl_reco_cn;
         private System.Windows.Forms.MaskedTextBox dt_date;
         private System.Windows.Forms.ComboBox txt_pathologist_Cbo;
+        private System.Windows.Forms.TextBox txtLimitationComment;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton rbLimitationYes;
+        private System.Windows.Forms.RadioButton rbLimitationNo;
+        private System.Windows.Forms.Label label29;
     }
 }

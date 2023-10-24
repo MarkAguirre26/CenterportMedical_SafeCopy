@@ -39,7 +39,7 @@ namespace MedicalManagementSoftware.Model
     #endregion
 		
 		public DataClasses1DataContext() : 
-				base(global::MedicalManagementSoftware.Properties.Settings.Default.Centerport_MedicalConnectionString6, mappingSource)
+				base(global::MedicalManagementSoftware.Properties.Settings.Default.Centerport_MedicalConnectionString2, mappingSource)
 		{
 			OnCreated();
 		}
@@ -394,13 +394,6 @@ namespace MedicalManagementSoftware.Model
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD);
 			return ((ISingleResult<sp_SeafarerAddResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Seafarer_PhyExam")]
-		public ISingleResult<sp_Seafarer_PhyExamResult> sp_Seafarer_PhyExam([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="VarChar(20)")] string iD)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD);
-			return ((ISingleResult<sp_Seafarer_PhyExamResult>)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Seafarer_Recomendation")]
@@ -905,6 +898,13 @@ namespace MedicalManagementSoftware.Model
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD, resulttype);
 			return ((ISingleResult<sp_Seabase_SearchListResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Seafarer_PhyExam")]
+		public ISingleResult<sp_Seafarer_PhyExamResult> sp_Seafarer_PhyExam([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="VarChar(20)")] string iD)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD);
+			return ((ISingleResult<sp_Seafarer_PhyExamResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -19743,716 +19743,6 @@ namespace MedicalManagementSoftware.Model
 				if ((this._gender != value))
 				{
 					this._gender = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Seafarer_PhyExamResult
-	{
-		
-		private int _cn;
-		
-		private string _resultid;
-		
-		private string _HEIGHT;
-		
-		private string _WEIGHT;
-		
-		private string _BP;
-		
-		private string _PULSE;
-		
-		private string _RESPIRATION;
-		
-		private string _BODY_BUILD;
-		
-		private string _FAR_OD_U;
-		
-		private string _FAR_OD_C;
-		
-		private string _FAR_OS_U;
-		
-		private string _FAR_OS_C;
-		
-		private string _NEAR_ODJ_U;
-		
-		private string _NEAR_ODJ_C;
-		
-		private string _NEAR_OSJ_U;
-		
-		private string _NEAR_OSJ_C;
-		
-		private string _ISHIHARA_U;
-		
-		private string _ISHIHARA_C;
-		
-		private string _HEARING_AD;
-		
-		private string _HEARING_AS;
-		
-		private string _SPEECH;
-		
-		private string _CONVERSATIONAL_AD;
-		
-		private string _CONVERSATIONAL_AS;
-		
-		private string _SATISFACTORY_HEARING;
-		
-		private string _SATISFACTORY_SIGHT_AID;
-		
-		private string _SATISFACTORY_SIGHT_UNAID;
-		
-		private string _SATISFACTORY_PSYCHO;
-		
-		private string _VISUAL_AIDS;
-		
-		private string _FIT_FOR_LOOKOUT;
-		
-		private string _HEARING_RIGHT;
-		
-		private string _HEARING_LEFT;
-		
-		private string _CLARITY_OF_SPEECH;
-		
-		private string _VISUAL_AIDS_REQUIRED;
-		
-		private string _BP_DIASTOLIC;
-		
-		private string _RHYTHM;
-		
-		private string _VISUAL_AIDS_WORN;
-		
-		private string _COLOR_VISION_DATE_TAKEN;
-		
-		private string _UNAIDED_HEARING_SATISFACTORY;
-		
-		private string _IDENTITY_CONFIRMED;
-		
-		public sp_Seafarer_PhyExamResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cn", DbType="Int NOT NULL")]
-		public int cn
-		{
-			get
-			{
-				return this._cn;
-			}
-			set
-			{
-				if ((this._cn != value))
-				{
-					this._cn = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_resultid", DbType="VarChar(254)")]
-		public string resultid
-		{
-			get
-			{
-				return this._resultid;
-			}
-			set
-			{
-				if ((this._resultid != value))
-				{
-					this._resultid = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HEIGHT", DbType="VarChar(254)")]
-		public string HEIGHT
-		{
-			get
-			{
-				return this._HEIGHT;
-			}
-			set
-			{
-				if ((this._HEIGHT != value))
-				{
-					this._HEIGHT = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WEIGHT", DbType="VarChar(254)")]
-		public string WEIGHT
-		{
-			get
-			{
-				return this._WEIGHT;
-			}
-			set
-			{
-				if ((this._WEIGHT != value))
-				{
-					this._WEIGHT = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BP", DbType="VarChar(254)")]
-		public string BP
-		{
-			get
-			{
-				return this._BP;
-			}
-			set
-			{
-				if ((this._BP != value))
-				{
-					this._BP = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PULSE", DbType="VarChar(254)")]
-		public string PULSE
-		{
-			get
-			{
-				return this._PULSE;
-			}
-			set
-			{
-				if ((this._PULSE != value))
-				{
-					this._PULSE = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RESPIRATION", DbType="VarChar(254)")]
-		public string RESPIRATION
-		{
-			get
-			{
-				return this._RESPIRATION;
-			}
-			set
-			{
-				if ((this._RESPIRATION != value))
-				{
-					this._RESPIRATION = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BODY_BUILD", DbType="VarChar(254)")]
-		public string BODY_BUILD
-		{
-			get
-			{
-				return this._BODY_BUILD;
-			}
-			set
-			{
-				if ((this._BODY_BUILD != value))
-				{
-					this._BODY_BUILD = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FAR_OD_U", DbType="VarChar(254)")]
-		public string FAR_OD_U
-		{
-			get
-			{
-				return this._FAR_OD_U;
-			}
-			set
-			{
-				if ((this._FAR_OD_U != value))
-				{
-					this._FAR_OD_U = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FAR_OD_C", DbType="VarChar(254)")]
-		public string FAR_OD_C
-		{
-			get
-			{
-				return this._FAR_OD_C;
-			}
-			set
-			{
-				if ((this._FAR_OD_C != value))
-				{
-					this._FAR_OD_C = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FAR_OS_U", DbType="VarChar(254)")]
-		public string FAR_OS_U
-		{
-			get
-			{
-				return this._FAR_OS_U;
-			}
-			set
-			{
-				if ((this._FAR_OS_U != value))
-				{
-					this._FAR_OS_U = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FAR_OS_C", DbType="VarChar(254)")]
-		public string FAR_OS_C
-		{
-			get
-			{
-				return this._FAR_OS_C;
-			}
-			set
-			{
-				if ((this._FAR_OS_C != value))
-				{
-					this._FAR_OS_C = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEAR_ODJ_U", DbType="VarChar(254)")]
-		public string NEAR_ODJ_U
-		{
-			get
-			{
-				return this._NEAR_ODJ_U;
-			}
-			set
-			{
-				if ((this._NEAR_ODJ_U != value))
-				{
-					this._NEAR_ODJ_U = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEAR_ODJ_C", DbType="VarChar(254)")]
-		public string NEAR_ODJ_C
-		{
-			get
-			{
-				return this._NEAR_ODJ_C;
-			}
-			set
-			{
-				if ((this._NEAR_ODJ_C != value))
-				{
-					this._NEAR_ODJ_C = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEAR_OSJ_U", DbType="VarChar(254)")]
-		public string NEAR_OSJ_U
-		{
-			get
-			{
-				return this._NEAR_OSJ_U;
-			}
-			set
-			{
-				if ((this._NEAR_OSJ_U != value))
-				{
-					this._NEAR_OSJ_U = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEAR_OSJ_C", DbType="VarChar(254)")]
-		public string NEAR_OSJ_C
-		{
-			get
-			{
-				return this._NEAR_OSJ_C;
-			}
-			set
-			{
-				if ((this._NEAR_OSJ_C != value))
-				{
-					this._NEAR_OSJ_C = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ISHIHARA_U", DbType="VarChar(254)")]
-		public string ISHIHARA_U
-		{
-			get
-			{
-				return this._ISHIHARA_U;
-			}
-			set
-			{
-				if ((this._ISHIHARA_U != value))
-				{
-					this._ISHIHARA_U = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ISHIHARA_C", DbType="VarChar(254)")]
-		public string ISHIHARA_C
-		{
-			get
-			{
-				return this._ISHIHARA_C;
-			}
-			set
-			{
-				if ((this._ISHIHARA_C != value))
-				{
-					this._ISHIHARA_C = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HEARING_AD", DbType="VarChar(254)")]
-		public string HEARING_AD
-		{
-			get
-			{
-				return this._HEARING_AD;
-			}
-			set
-			{
-				if ((this._HEARING_AD != value))
-				{
-					this._HEARING_AD = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HEARING_AS", DbType="VarChar(254)")]
-		public string HEARING_AS
-		{
-			get
-			{
-				return this._HEARING_AS;
-			}
-			set
-			{
-				if ((this._HEARING_AS != value))
-				{
-					this._HEARING_AS = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SPEECH", DbType="VarChar(254)")]
-		public string SPEECH
-		{
-			get
-			{
-				return this._SPEECH;
-			}
-			set
-			{
-				if ((this._SPEECH != value))
-				{
-					this._SPEECH = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CONVERSATIONAL_AD", DbType="VarChar(254)")]
-		public string CONVERSATIONAL_AD
-		{
-			get
-			{
-				return this._CONVERSATIONAL_AD;
-			}
-			set
-			{
-				if ((this._CONVERSATIONAL_AD != value))
-				{
-					this._CONVERSATIONAL_AD = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CONVERSATIONAL_AS", DbType="VarChar(254)")]
-		public string CONVERSATIONAL_AS
-		{
-			get
-			{
-				return this._CONVERSATIONAL_AS;
-			}
-			set
-			{
-				if ((this._CONVERSATIONAL_AS != value))
-				{
-					this._CONVERSATIONAL_AS = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SATISFACTORY_HEARING", DbType="VarChar(254)")]
-		public string SATISFACTORY_HEARING
-		{
-			get
-			{
-				return this._SATISFACTORY_HEARING;
-			}
-			set
-			{
-				if ((this._SATISFACTORY_HEARING != value))
-				{
-					this._SATISFACTORY_HEARING = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SATISFACTORY_SIGHT_AID", DbType="VarChar(254)")]
-		public string SATISFACTORY_SIGHT_AID
-		{
-			get
-			{
-				return this._SATISFACTORY_SIGHT_AID;
-			}
-			set
-			{
-				if ((this._SATISFACTORY_SIGHT_AID != value))
-				{
-					this._SATISFACTORY_SIGHT_AID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SATISFACTORY_SIGHT_UNAID", DbType="VarChar(254)")]
-		public string SATISFACTORY_SIGHT_UNAID
-		{
-			get
-			{
-				return this._SATISFACTORY_SIGHT_UNAID;
-			}
-			set
-			{
-				if ((this._SATISFACTORY_SIGHT_UNAID != value))
-				{
-					this._SATISFACTORY_SIGHT_UNAID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SATISFACTORY_PSYCHO", DbType="VarChar(254)")]
-		public string SATISFACTORY_PSYCHO
-		{
-			get
-			{
-				return this._SATISFACTORY_PSYCHO;
-			}
-			set
-			{
-				if ((this._SATISFACTORY_PSYCHO != value))
-				{
-					this._SATISFACTORY_PSYCHO = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VISUAL_AIDS", DbType="VarChar(254)")]
-		public string VISUAL_AIDS
-		{
-			get
-			{
-				return this._VISUAL_AIDS;
-			}
-			set
-			{
-				if ((this._VISUAL_AIDS != value))
-				{
-					this._VISUAL_AIDS = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FIT_FOR_LOOKOUT", DbType="VarChar(254)")]
-		public string FIT_FOR_LOOKOUT
-		{
-			get
-			{
-				return this._FIT_FOR_LOOKOUT;
-			}
-			set
-			{
-				if ((this._FIT_FOR_LOOKOUT != value))
-				{
-					this._FIT_FOR_LOOKOUT = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HEARING_RIGHT", DbType="VarChar(254)")]
-		public string HEARING_RIGHT
-		{
-			get
-			{
-				return this._HEARING_RIGHT;
-			}
-			set
-			{
-				if ((this._HEARING_RIGHT != value))
-				{
-					this._HEARING_RIGHT = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HEARING_LEFT", DbType="VarChar(254)")]
-		public string HEARING_LEFT
-		{
-			get
-			{
-				return this._HEARING_LEFT;
-			}
-			set
-			{
-				if ((this._HEARING_LEFT != value))
-				{
-					this._HEARING_LEFT = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CLARITY_OF_SPEECH", DbType="VarChar(254)")]
-		public string CLARITY_OF_SPEECH
-		{
-			get
-			{
-				return this._CLARITY_OF_SPEECH;
-			}
-			set
-			{
-				if ((this._CLARITY_OF_SPEECH != value))
-				{
-					this._CLARITY_OF_SPEECH = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VISUAL_AIDS_REQUIRED", DbType="VarChar(254)")]
-		public string VISUAL_AIDS_REQUIRED
-		{
-			get
-			{
-				return this._VISUAL_AIDS_REQUIRED;
-			}
-			set
-			{
-				if ((this._VISUAL_AIDS_REQUIRED != value))
-				{
-					this._VISUAL_AIDS_REQUIRED = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BP_DIASTOLIC", DbType="VarChar(254)")]
-		public string BP_DIASTOLIC
-		{
-			get
-			{
-				return this._BP_DIASTOLIC;
-			}
-			set
-			{
-				if ((this._BP_DIASTOLIC != value))
-				{
-					this._BP_DIASTOLIC = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RHYTHM", DbType="VarChar(254)")]
-		public string RHYTHM
-		{
-			get
-			{
-				return this._RHYTHM;
-			}
-			set
-			{
-				if ((this._RHYTHM != value))
-				{
-					this._RHYTHM = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VISUAL_AIDS_WORN", DbType="VarChar(254)")]
-		public string VISUAL_AIDS_WORN
-		{
-			get
-			{
-				return this._VISUAL_AIDS_WORN;
-			}
-			set
-			{
-				if ((this._VISUAL_AIDS_WORN != value))
-				{
-					this._VISUAL_AIDS_WORN = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COLOR_VISION_DATE_TAKEN", DbType="VarChar(254)")]
-		public string COLOR_VISION_DATE_TAKEN
-		{
-			get
-			{
-				return this._COLOR_VISION_DATE_TAKEN;
-			}
-			set
-			{
-				if ((this._COLOR_VISION_DATE_TAKEN != value))
-				{
-					this._COLOR_VISION_DATE_TAKEN = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UNAIDED_HEARING_SATISFACTORY", DbType="VarChar(254)")]
-		public string UNAIDED_HEARING_SATISFACTORY
-		{
-			get
-			{
-				return this._UNAIDED_HEARING_SATISFACTORY;
-			}
-			set
-			{
-				if ((this._UNAIDED_HEARING_SATISFACTORY != value))
-				{
-					this._UNAIDED_HEARING_SATISFACTORY = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDENTITY_CONFIRMED", DbType="VarChar(254)")]
-		public string IDENTITY_CONFIRMED
-		{
-			get
-			{
-				return this._IDENTITY_CONFIRMED;
-			}
-			set
-			{
-				if ((this._IDENTITY_CONFIRMED != value))
-				{
-					this._IDENTITY_CONFIRMED = value;
 				}
 			}
 		}
@@ -44555,6 +43845,752 @@ namespace MedicalManagementSoftware.Model
 				if ((this._recommendation != value))
 				{
 					this._recommendation = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_Seafarer_PhyExamResult
+	{
+		
+		private int _cn;
+		
+		private string _resultid;
+		
+		private string _HEIGHT;
+		
+		private string _WEIGHT;
+		
+		private string _BP;
+		
+		private string _PULSE;
+		
+		private string _RESPIRATION;
+		
+		private string _BODY_BUILD;
+		
+		private string _FAR_OD_U;
+		
+		private string _FAR_OD_C;
+		
+		private string _FAR_OS_U;
+		
+		private string _FAR_OS_C;
+		
+		private string _NEAR_ODJ_U;
+		
+		private string _NEAR_ODJ_C;
+		
+		private string _NEAR_OSJ_U;
+		
+		private string _NEAR_OSJ_C;
+		
+		private string _ISHIHARA_U;
+		
+		private string _ISHIHARA_C;
+		
+		private string _HEARING_AD;
+		
+		private string _HEARING_AS;
+		
+		private string _SPEECH;
+		
+		private string _CONVERSATIONAL_AD;
+		
+		private string _CONVERSATIONAL_AS;
+		
+		private string _SATISFACTORY_HEARING;
+		
+		private string _SATISFACTORY_SIGHT_AID;
+		
+		private string _SATISFACTORY_SIGHT_UNAID;
+		
+		private string _SATISFACTORY_PSYCHO;
+		
+		private string _VISUAL_AIDS;
+		
+		private string _FIT_FOR_LOOKOUT;
+		
+		private string _HEARING_RIGHT;
+		
+		private string _HEARING_LEFT;
+		
+		private string _CLARITY_OF_SPEECH;
+		
+		private string _VISUAL_AIDS_REQUIRED;
+		
+		private string _BP_DIASTOLIC;
+		
+		private string _RHYTHM;
+		
+		private string _VISUAL_AIDS_WORN;
+		
+		private string _COLOR_VISION_DATE_TAKEN;
+		
+		private string _UNAIDED_HEARING_SATISFACTORY;
+		
+		private string _IDENTITY_CONFIRMED;
+		
+		private string _isLimitation;
+		
+		private string _limitationComment;
+		
+		public sp_Seafarer_PhyExamResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cn", DbType="Int NOT NULL")]
+		public int cn
+		{
+			get
+			{
+				return this._cn;
+			}
+			set
+			{
+				if ((this._cn != value))
+				{
+					this._cn = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_resultid", DbType="VarChar(254)")]
+		public string resultid
+		{
+			get
+			{
+				return this._resultid;
+			}
+			set
+			{
+				if ((this._resultid != value))
+				{
+					this._resultid = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HEIGHT", DbType="VarChar(254)")]
+		public string HEIGHT
+		{
+			get
+			{
+				return this._HEIGHT;
+			}
+			set
+			{
+				if ((this._HEIGHT != value))
+				{
+					this._HEIGHT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WEIGHT", DbType="VarChar(254)")]
+		public string WEIGHT
+		{
+			get
+			{
+				return this._WEIGHT;
+			}
+			set
+			{
+				if ((this._WEIGHT != value))
+				{
+					this._WEIGHT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BP", DbType="VarChar(254)")]
+		public string BP
+		{
+			get
+			{
+				return this._BP;
+			}
+			set
+			{
+				if ((this._BP != value))
+				{
+					this._BP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PULSE", DbType="VarChar(254)")]
+		public string PULSE
+		{
+			get
+			{
+				return this._PULSE;
+			}
+			set
+			{
+				if ((this._PULSE != value))
+				{
+					this._PULSE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RESPIRATION", DbType="VarChar(254)")]
+		public string RESPIRATION
+		{
+			get
+			{
+				return this._RESPIRATION;
+			}
+			set
+			{
+				if ((this._RESPIRATION != value))
+				{
+					this._RESPIRATION = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BODY_BUILD", DbType="VarChar(254)")]
+		public string BODY_BUILD
+		{
+			get
+			{
+				return this._BODY_BUILD;
+			}
+			set
+			{
+				if ((this._BODY_BUILD != value))
+				{
+					this._BODY_BUILD = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FAR_OD_U", DbType="VarChar(254)")]
+		public string FAR_OD_U
+		{
+			get
+			{
+				return this._FAR_OD_U;
+			}
+			set
+			{
+				if ((this._FAR_OD_U != value))
+				{
+					this._FAR_OD_U = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FAR_OD_C", DbType="VarChar(254)")]
+		public string FAR_OD_C
+		{
+			get
+			{
+				return this._FAR_OD_C;
+			}
+			set
+			{
+				if ((this._FAR_OD_C != value))
+				{
+					this._FAR_OD_C = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FAR_OS_U", DbType="VarChar(254)")]
+		public string FAR_OS_U
+		{
+			get
+			{
+				return this._FAR_OS_U;
+			}
+			set
+			{
+				if ((this._FAR_OS_U != value))
+				{
+					this._FAR_OS_U = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FAR_OS_C", DbType="VarChar(254)")]
+		public string FAR_OS_C
+		{
+			get
+			{
+				return this._FAR_OS_C;
+			}
+			set
+			{
+				if ((this._FAR_OS_C != value))
+				{
+					this._FAR_OS_C = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEAR_ODJ_U", DbType="VarChar(254)")]
+		public string NEAR_ODJ_U
+		{
+			get
+			{
+				return this._NEAR_ODJ_U;
+			}
+			set
+			{
+				if ((this._NEAR_ODJ_U != value))
+				{
+					this._NEAR_ODJ_U = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEAR_ODJ_C", DbType="VarChar(254)")]
+		public string NEAR_ODJ_C
+		{
+			get
+			{
+				return this._NEAR_ODJ_C;
+			}
+			set
+			{
+				if ((this._NEAR_ODJ_C != value))
+				{
+					this._NEAR_ODJ_C = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEAR_OSJ_U", DbType="VarChar(254)")]
+		public string NEAR_OSJ_U
+		{
+			get
+			{
+				return this._NEAR_OSJ_U;
+			}
+			set
+			{
+				if ((this._NEAR_OSJ_U != value))
+				{
+					this._NEAR_OSJ_U = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NEAR_OSJ_C", DbType="VarChar(254)")]
+		public string NEAR_OSJ_C
+		{
+			get
+			{
+				return this._NEAR_OSJ_C;
+			}
+			set
+			{
+				if ((this._NEAR_OSJ_C != value))
+				{
+					this._NEAR_OSJ_C = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ISHIHARA_U", DbType="VarChar(254)")]
+		public string ISHIHARA_U
+		{
+			get
+			{
+				return this._ISHIHARA_U;
+			}
+			set
+			{
+				if ((this._ISHIHARA_U != value))
+				{
+					this._ISHIHARA_U = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ISHIHARA_C", DbType="VarChar(254)")]
+		public string ISHIHARA_C
+		{
+			get
+			{
+				return this._ISHIHARA_C;
+			}
+			set
+			{
+				if ((this._ISHIHARA_C != value))
+				{
+					this._ISHIHARA_C = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HEARING_AD", DbType="VarChar(254)")]
+		public string HEARING_AD
+		{
+			get
+			{
+				return this._HEARING_AD;
+			}
+			set
+			{
+				if ((this._HEARING_AD != value))
+				{
+					this._HEARING_AD = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HEARING_AS", DbType="VarChar(254)")]
+		public string HEARING_AS
+		{
+			get
+			{
+				return this._HEARING_AS;
+			}
+			set
+			{
+				if ((this._HEARING_AS != value))
+				{
+					this._HEARING_AS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SPEECH", DbType="VarChar(254)")]
+		public string SPEECH
+		{
+			get
+			{
+				return this._SPEECH;
+			}
+			set
+			{
+				if ((this._SPEECH != value))
+				{
+					this._SPEECH = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CONVERSATIONAL_AD", DbType="VarChar(254)")]
+		public string CONVERSATIONAL_AD
+		{
+			get
+			{
+				return this._CONVERSATIONAL_AD;
+			}
+			set
+			{
+				if ((this._CONVERSATIONAL_AD != value))
+				{
+					this._CONVERSATIONAL_AD = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CONVERSATIONAL_AS", DbType="VarChar(254)")]
+		public string CONVERSATIONAL_AS
+		{
+			get
+			{
+				return this._CONVERSATIONAL_AS;
+			}
+			set
+			{
+				if ((this._CONVERSATIONAL_AS != value))
+				{
+					this._CONVERSATIONAL_AS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SATISFACTORY_HEARING", DbType="VarChar(254)")]
+		public string SATISFACTORY_HEARING
+		{
+			get
+			{
+				return this._SATISFACTORY_HEARING;
+			}
+			set
+			{
+				if ((this._SATISFACTORY_HEARING != value))
+				{
+					this._SATISFACTORY_HEARING = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SATISFACTORY_SIGHT_AID", DbType="VarChar(254)")]
+		public string SATISFACTORY_SIGHT_AID
+		{
+			get
+			{
+				return this._SATISFACTORY_SIGHT_AID;
+			}
+			set
+			{
+				if ((this._SATISFACTORY_SIGHT_AID != value))
+				{
+					this._SATISFACTORY_SIGHT_AID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SATISFACTORY_SIGHT_UNAID", DbType="VarChar(254)")]
+		public string SATISFACTORY_SIGHT_UNAID
+		{
+			get
+			{
+				return this._SATISFACTORY_SIGHT_UNAID;
+			}
+			set
+			{
+				if ((this._SATISFACTORY_SIGHT_UNAID != value))
+				{
+					this._SATISFACTORY_SIGHT_UNAID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SATISFACTORY_PSYCHO", DbType="VarChar(254)")]
+		public string SATISFACTORY_PSYCHO
+		{
+			get
+			{
+				return this._SATISFACTORY_PSYCHO;
+			}
+			set
+			{
+				if ((this._SATISFACTORY_PSYCHO != value))
+				{
+					this._SATISFACTORY_PSYCHO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VISUAL_AIDS", DbType="VarChar(254)")]
+		public string VISUAL_AIDS
+		{
+			get
+			{
+				return this._VISUAL_AIDS;
+			}
+			set
+			{
+				if ((this._VISUAL_AIDS != value))
+				{
+					this._VISUAL_AIDS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FIT_FOR_LOOKOUT", DbType="VarChar(254)")]
+		public string FIT_FOR_LOOKOUT
+		{
+			get
+			{
+				return this._FIT_FOR_LOOKOUT;
+			}
+			set
+			{
+				if ((this._FIT_FOR_LOOKOUT != value))
+				{
+					this._FIT_FOR_LOOKOUT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HEARING_RIGHT", DbType="VarChar(254)")]
+		public string HEARING_RIGHT
+		{
+			get
+			{
+				return this._HEARING_RIGHT;
+			}
+			set
+			{
+				if ((this._HEARING_RIGHT != value))
+				{
+					this._HEARING_RIGHT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HEARING_LEFT", DbType="VarChar(254)")]
+		public string HEARING_LEFT
+		{
+			get
+			{
+				return this._HEARING_LEFT;
+			}
+			set
+			{
+				if ((this._HEARING_LEFT != value))
+				{
+					this._HEARING_LEFT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CLARITY_OF_SPEECH", DbType="VarChar(254)")]
+		public string CLARITY_OF_SPEECH
+		{
+			get
+			{
+				return this._CLARITY_OF_SPEECH;
+			}
+			set
+			{
+				if ((this._CLARITY_OF_SPEECH != value))
+				{
+					this._CLARITY_OF_SPEECH = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VISUAL_AIDS_REQUIRED", DbType="VarChar(254)")]
+		public string VISUAL_AIDS_REQUIRED
+		{
+			get
+			{
+				return this._VISUAL_AIDS_REQUIRED;
+			}
+			set
+			{
+				if ((this._VISUAL_AIDS_REQUIRED != value))
+				{
+					this._VISUAL_AIDS_REQUIRED = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BP_DIASTOLIC", DbType="VarChar(254)")]
+		public string BP_DIASTOLIC
+		{
+			get
+			{
+				return this._BP_DIASTOLIC;
+			}
+			set
+			{
+				if ((this._BP_DIASTOLIC != value))
+				{
+					this._BP_DIASTOLIC = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RHYTHM", DbType="VarChar(254)")]
+		public string RHYTHM
+		{
+			get
+			{
+				return this._RHYTHM;
+			}
+			set
+			{
+				if ((this._RHYTHM != value))
+				{
+					this._RHYTHM = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VISUAL_AIDS_WORN", DbType="VarChar(254)")]
+		public string VISUAL_AIDS_WORN
+		{
+			get
+			{
+				return this._VISUAL_AIDS_WORN;
+			}
+			set
+			{
+				if ((this._VISUAL_AIDS_WORN != value))
+				{
+					this._VISUAL_AIDS_WORN = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COLOR_VISION_DATE_TAKEN", DbType="VarChar(254)")]
+		public string COLOR_VISION_DATE_TAKEN
+		{
+			get
+			{
+				return this._COLOR_VISION_DATE_TAKEN;
+			}
+			set
+			{
+				if ((this._COLOR_VISION_DATE_TAKEN != value))
+				{
+					this._COLOR_VISION_DATE_TAKEN = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UNAIDED_HEARING_SATISFACTORY", DbType="VarChar(254)")]
+		public string UNAIDED_HEARING_SATISFACTORY
+		{
+			get
+			{
+				return this._UNAIDED_HEARING_SATISFACTORY;
+			}
+			set
+			{
+				if ((this._UNAIDED_HEARING_SATISFACTORY != value))
+				{
+					this._UNAIDED_HEARING_SATISFACTORY = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDENTITY_CONFIRMED", DbType="VarChar(254)")]
+		public string IDENTITY_CONFIRMED
+		{
+			get
+			{
+				return this._IDENTITY_CONFIRMED;
+			}
+			set
+			{
+				if ((this._IDENTITY_CONFIRMED != value))
+				{
+					this._IDENTITY_CONFIRMED = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isLimitation", DbType="VarChar(254)")]
+		public string isLimitation
+		{
+			get
+			{
+				return this._isLimitation;
+			}
+			set
+			{
+				if ((this._isLimitation != value))
+				{
+					this._isLimitation = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_limitationComment", DbType="VarChar(254)")]
+		public string limitationComment
+		{
+			get
+			{
+				return this._limitationComment;
+			}
+			set
+			{
+				if ((this._limitationComment != value))
+				{
+					this._limitationComment = value;
 				}
 			}
 		}

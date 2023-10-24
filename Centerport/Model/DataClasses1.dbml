@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Centerport_Medical" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-KIIKPT8\SQLEXPRESS;Initial Catalog=Centerport_Medical;Persist Security Info=True;User ID=sa" SettingsObjectName="MedicalManagementSoftware.Properties.Settings" SettingsPropertyName="Centerport_MedicalConnectionString6" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=Centerport_Medical;Persist Security Info=True;User ID=sa" SettingsObjectName="MedicalManagementSoftware.Properties.Settings" SettingsPropertyName="Centerport_MedicalConnectionString2" Provider="System.Data.SqlClient" />
   <Table Name="dbo.view_patient" Member="view_patients">
     <Type Name="view_patient">
       <Column Name="cn" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -1198,50 +1198,6 @@
       <Column Name="papin" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Column Name="PatientName" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
       <Column Name="gender" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.sp_Seafarer_PhyExam" Method="sp_Seafarer_PhyExam">
-    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
-    <ElementType Name="sp_Seafarer_PhyExamResult">
-      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="HEIGHT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="WEIGHT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="BP" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="PULSE" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="RESPIRATION" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="BODY_BUILD" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="FAR_OD_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="FAR_OD_C" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="FAR_OS_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="FAR_OS_C" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="NEAR_ODJ_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="NEAR_ODJ_C" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="NEAR_OSJ_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="NEAR_OSJ_C" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="ISHIHARA_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="ISHIHARA_C" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="HEARING_AD" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="HEARING_AS" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="SPEECH" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="CONVERSATIONAL_AD" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="CONVERSATIONAL_AS" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="SATISFACTORY_HEARING" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="SATISFACTORY_SIGHT_AID" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="SATISFACTORY_SIGHT_UNAID" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="SATISFACTORY_PSYCHO" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="VISUAL_AIDS" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="FIT_FOR_LOOKOUT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="HEARING_RIGHT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="HEARING_LEFT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="CLARITY_OF_SPEECH" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="VISUAL_AIDS_REQUIRED" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="BP_DIASTOLIC" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="RHYTHM" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="VISUAL_AIDS_WORN" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="COLOR_VISION_DATE_TAKEN" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="UNAIDED_HEARING_SATISFACTORY" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="IDENTITY_CONFIRMED" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
     </ElementType>
   </Function>
   <Function Name="dbo.sp_Seafarer_Recomendation" Method="sp_Seafarer_Recomendation">
@@ -2903,6 +2859,52 @@
       <Column Name="PatientName" Type="System.String" DbType="VarChar(153) NOT NULL" CanBeNull="false" />
       <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
       <Column Name="recommendation" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Seafarer_PhyExam" Method="sp_Seafarer_PhyExam">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_Seafarer_PhyExamResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HEIGHT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="WEIGHT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BP" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PULSE" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="RESPIRATION" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BODY_BUILD" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FAR_OD_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FAR_OD_C" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FAR_OS_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FAR_OS_C" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NEAR_ODJ_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NEAR_ODJ_C" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NEAR_OSJ_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NEAR_OSJ_C" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ISHIHARA_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ISHIHARA_C" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HEARING_AD" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HEARING_AS" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="SPEECH" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="CONVERSATIONAL_AD" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="CONVERSATIONAL_AS" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="SATISFACTORY_HEARING" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="SATISFACTORY_SIGHT_AID" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="SATISFACTORY_SIGHT_UNAID" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="SATISFACTORY_PSYCHO" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="VISUAL_AIDS" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FIT_FOR_LOOKOUT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HEARING_RIGHT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HEARING_LEFT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="CLARITY_OF_SPEECH" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="VISUAL_AIDS_REQUIRED" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BP_DIASTOLIC" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="RHYTHM" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="VISUAL_AIDS_WORN" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="COLOR_VISION_DATE_TAKEN" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="UNAIDED_HEARING_SATISFACTORY" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="IDENTITY_CONFIRMED" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="isLimitation" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="limitationComment" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

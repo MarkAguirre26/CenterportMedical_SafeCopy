@@ -119,7 +119,7 @@ namespace MedicalManagementSoftware
             fmain = mainn;
             pin = txt_Papin; LabID = txt_resultID;
         }
-
+        //
         private void frm_seaferer_MEC_Load(object sender, EventArgs e)
         {
             //ClassSql.DbConnect();

@@ -68,6 +68,8 @@ namespace MedicalManagementSoftware
             Report_SeaBase_Print.MLC1 = true;
             print.MedCertNumber = MedCertNumber;
             print.Tag = this.Tag.ToString();
+            print.isLimitation = "N";
+            print.limitationComment = "-";
             print.ShowDialog();
             Cursor.Current = Cursors.Default;
 

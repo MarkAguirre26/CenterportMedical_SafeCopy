@@ -30,6 +30,8 @@ namespace MedicalManagementSoftware
         static bool left_button_down = false;
 
         public string MedCertNumber;
+        public string isLimitation;
+        public string limitationComment;
         public string recomendation;
         public string bloodType;
 
@@ -85,7 +87,7 @@ namespace MedicalManagementSoftware
             FormNo.Text = ini.IniReadValue("FORM", "Seafarer_Summary");
             RevNo.Text = ini.IniReadValue("REVISION", "Seafarer_Summary");
             Iso.Text = ini.IniReadValue("ISO", "Seafarer_Summary");
-
+         
             R_Seabase_summary.SetParameterValue("Age", DateClass.getAge(d));
             R_Seabase_summary.SetParameterValue("country", country);
             Viewer1.ReportSource = R_Seabase_summary;
@@ -131,12 +133,14 @@ namespace MedicalManagementSoftware
             R_Seabase_MLC1.SetDataSource(dt);
 
             R_Seabase_MLC1.SetParameterValue("last_vision_test_taken", last_date_taken);
+            R_Seabase_MLC1.SetParameterValue("isLimitation", isLimitation);
+            R_Seabase_MLC1.SetParameterValue("limitationComment", limitationComment);
 
             TextObject FormNo = (TextObject)R_Seabase_MLC1.ReportDefinition.ReportObjects["txt_formNo"];
             TextObject RevNo = (TextObject)R_Seabase_MLC1.ReportDefinition.ReportObjects["txt_RevNo"];
             TextObject Iso = (TextObject)R_Seabase_MLC1.ReportDefinition.ReportObjects["txt_iso"];
             TextObject TxtMedicalNumber = (TextObject)R_Seabase_MLC1.ReportDefinition.ReportObjects["txt_medicalNumber"];
-
+     
             FormNo.Text = ini.IniReadValue("FORM", "Seafarer_MLC");
             RevNo.Text = ini.IniReadValue("REVISION", "Seafarer_MLC");
             Iso.Text = ini.IniReadValue("ISO", "Seafarer_MLC");
