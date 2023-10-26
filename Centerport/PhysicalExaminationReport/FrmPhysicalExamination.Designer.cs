@@ -34,7 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtFirstname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtlastname = new System.Windows.Forms.TextBox();
             this.txtMiddleName = new System.Windows.Forms.TextBox();
@@ -43,6 +42,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -243,18 +243,6 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Name:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.Font = new System.Drawing.Font("Arial", 9F);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(3, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 15);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Date of Birth:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -346,6 +334,18 @@
             this.label15.Size = new System.Drawing.Size(57, 14);
             this.label15.TabIndex = 22;
             this.label15.Text = "First name";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.Font = new System.Drawing.Font("Arial", 9F);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(3, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 15);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Date of Birth:";
             // 
             // label28
             // 
@@ -842,9 +842,9 @@
             this.flowLayoutPanel3.Controls.Add(this.CbColorTestTypeRed);
             this.flowLayoutPanel3.Controls.Add(this.CbColorTestTypeGreen);
             this.flowLayoutPanel3.Controls.Add(this.CbColorTestTypeBlue);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(403, 437);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(403, 440);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(284, 24);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(284, 18);
             this.flowLayoutPanel3.TabIndex = 312;
             // 
             // CbColorTestTypeYellow
@@ -1576,7 +1576,6 @@
             this.Viewer1.ShowGroupTreeButton = false;
             this.Viewer1.ShowLogo = false;
             this.Viewer1.ShowParameterPanelButton = false;
-            this.Viewer1.ShowPrintButton = false;
             this.Viewer1.ShowRefreshButton = false;
             this.Viewer1.ShowTextSearchButton = false;
             this.Viewer1.Size = new System.Drawing.Size(861, 507);

@@ -21,7 +21,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
     public partial class FrmPhysicalExamination : Form, MyInter
     {
 
-         PhysicalExaminationMedicalRecordModel physicalExaminationMedicalRecordModel;
+        
 
         Main fmain;
         public DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
@@ -624,54 +624,59 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
 
         private void getReportData(bool isPreview)
         {
-            physicalExaminationMedicalRecordModel = prePareTheReportData();
 
-            PhysicalExaminationReport report = new PhysicalExaminationReport();
-            report.SetParameterValue("Latname", physicalExaminationMedicalRecordModel.LastName);
-            report.SetParameterValue("FirstName", physicalExaminationMedicalRecordModel.LastName);
-            report.SetParameterValue("MiddileName", physicalExaminationMedicalRecordModel.MiddleName);
-            report.SetParameterValue("Month", physicalExaminationMedicalRecordModel.Month);
-            report.SetParameterValue("Day", physicalExaminationMedicalRecordModel.Day);
-            report.SetParameterValue("Year", physicalExaminationMedicalRecordModel.Year);
-            report.SetParameterValue("City", physicalExaminationMedicalRecordModel.City);
-            report.SetParameterValue("Country", physicalExaminationMedicalRecordModel.Country);
-            report.SetParameterValue("Gender", physicalExaminationMedicalRecordModel.Gender);
-            report.SetParameterValue("forDuty", physicalExaminationMedicalRecordModel.forDuty);
-            report.SetParameterValue("PositionMaster", physicalExaminationMedicalRecordModel.PositionMaster);
-            report.SetParameterValue("PositionMate", physicalExaminationMedicalRecordModel.PositionMate);
-            report.SetParameterValue("PositionEngineer", physicalExaminationMedicalRecordModel.PositionEngineer);
-            report.SetParameterValue("PositionRating", physicalExaminationMedicalRecordModel.PositionRating);
-            report.SetParameterValue("Height", physicalExaminationMedicalRecordModel.Height);
-            report.SetParameterValue("Weight", physicalExaminationMedicalRecordModel.Weight);
-            report.SetParameterValue("Bp", physicalExaminationMedicalRecordModel.Bp);
-            report.SetParameterValue("Pulse", physicalExaminationMedicalRecordModel.Pulse);
-            report.SetParameterValue("Respiration", physicalExaminationMedicalRecordModel.Respiration);
-            report.SetParameterValue("GeneralAppearance", physicalExaminationMedicalRecordModel.GeneralAppearance);
-            report.SetParameterValue("VisionWithOutGlassRight", physicalExaminationMedicalRecordModel.VisionWithOutGlassRight);
-            report.SetParameterValue("VisionWithGlassRight", physicalExaminationMedicalRecordModel.VisionWithGlassRight);
-            report.SetParameterValue("VisionWithOutGlassLeft", physicalExaminationMedicalRecordModel.VisionWithOutGlassLeft);
-            report.SetParameterValue("VisionWithGlassLeft", physicalExaminationMedicalRecordModel.VisionWithGlassLeft);
-            report.SetParameterValue("dateOfVisionTest", physicalExaminationMedicalRecordModel.DateOfVisionTest);
-            report.SetParameterValue("ColorVisionMeetsStandard", physicalExaminationMedicalRecordModel.ColorVisionMeetsStandard);
-            report.SetParameterValue("ColorTestType", physicalExaminationMedicalRecordModel.ColorTestType);
-            report.SetParameterValue("HearingRight", physicalExaminationMedicalRecordModel.HearingRight);
-            report.SetParameterValue("HearingLeft", physicalExaminationMedicalRecordModel.HearingLeft);
-            report.SetParameterValue("Heart", physicalExaminationMedicalRecordModel.Heart);
-            report.SetParameterValue("Lungs", physicalExaminationMedicalRecordModel.Lungs);
-            report.SetParameterValue("ExtremitiesUpper", physicalExaminationMedicalRecordModel.ExtremitiesUpper);
-            report.SetParameterValue("ExtremitiesLower", physicalExaminationMedicalRecordModel.ExtremitiesLower);
-            report.SetParameterValue("DateOfExam", physicalExaminationMedicalRecordModel.DateOfExam);
-            report.SetParameterValue("ExpiryDate", physicalExaminationMedicalRecordModel.ExpiryDate);
-            report.SetParameterValue("NameOfApplicant", physicalExaminationMedicalRecordModel.NameOfApplicant);
-            report.SetParameterValue("mailingAddress", physicalExaminationMedicalRecordModel.MailingAddress);
-            report.SetParameterValue("Speach", physicalExaminationMedicalRecordModel.Speech);
-            report.SetParameterValue("nameOfPhysician", physicalExaminationMedicalRecordModel.nameOfPhysician);
-            report.SetParameterValue("addressOfPhysician", physicalExaminationMedicalRecordModel.addressOfPhysician);
-            report.SetParameterValue("nameOfPhysicianCertificating", physicalExaminationMedicalRecordModel.nameOfPhysicianCertificating);
-            report.SetParameterValue("dateOfPhysicianCertificate", physicalExaminationMedicalRecordModel.dateOfPhysicianCertificate);
+
+            PhysicalExaminationMedicalRecordModel physicalExaminationMedicalRecordModel = prePareTheReportData();           
+
+          
 
             if (isPreview)
             {
+
+                PhysicalExaminationReport report = new PhysicalExaminationReport();
+                report.SetParameterValue("Latname", physicalExaminationMedicalRecordModel.LastName);
+                report.SetParameterValue("FirstName", physicalExaminationMedicalRecordModel.LastName);
+                report.SetParameterValue("MiddileName", physicalExaminationMedicalRecordModel.MiddleName);
+                report.SetParameterValue("Month", physicalExaminationMedicalRecordModel.Month);
+                report.SetParameterValue("Day", physicalExaminationMedicalRecordModel.Day);
+                report.SetParameterValue("Year", physicalExaminationMedicalRecordModel.Year);
+                report.SetParameterValue("City", physicalExaminationMedicalRecordModel.City);
+                report.SetParameterValue("Country", physicalExaminationMedicalRecordModel.Country);
+                report.SetParameterValue("Gender", physicalExaminationMedicalRecordModel.Gender);
+                report.SetParameterValue("forDuty", physicalExaminationMedicalRecordModel.forDuty);
+                report.SetParameterValue("PositionMaster", physicalExaminationMedicalRecordModel.PositionMaster);
+                report.SetParameterValue("PositionMate", physicalExaminationMedicalRecordModel.PositionMate);
+                report.SetParameterValue("PositionEngineer", physicalExaminationMedicalRecordModel.PositionEngineer);
+                report.SetParameterValue("PositionRating", physicalExaminationMedicalRecordModel.PositionRating);
+                report.SetParameterValue("Height", physicalExaminationMedicalRecordModel.Height);
+                report.SetParameterValue("Weight", physicalExaminationMedicalRecordModel.Weight);
+                report.SetParameterValue("Bp", physicalExaminationMedicalRecordModel.Bp);
+                report.SetParameterValue("Pulse", physicalExaminationMedicalRecordModel.Pulse);
+                report.SetParameterValue("Respiration", physicalExaminationMedicalRecordModel.Respiration);
+                report.SetParameterValue("GeneralAppearance", physicalExaminationMedicalRecordModel.GeneralAppearance);
+                report.SetParameterValue("VisionWithOutGlassRight", physicalExaminationMedicalRecordModel.VisionWithOutGlassRight);
+                report.SetParameterValue("VisionWithGlassRight", physicalExaminationMedicalRecordModel.VisionWithGlassRight);
+                report.SetParameterValue("VisionWithOutGlassLeft", physicalExaminationMedicalRecordModel.VisionWithOutGlassLeft);
+                report.SetParameterValue("VisionWithGlassLeft", physicalExaminationMedicalRecordModel.VisionWithGlassLeft);
+                report.SetParameterValue("dateOfVisionTest", physicalExaminationMedicalRecordModel.DateOfVisionTest);
+                report.SetParameterValue("ColorVisionMeetsStandard", physicalExaminationMedicalRecordModel.ColorVisionMeetsStandard);
+                report.SetParameterValue("ColorTestType", physicalExaminationMedicalRecordModel.ColorTestType);
+                report.SetParameterValue("HearingRight", physicalExaminationMedicalRecordModel.HearingRight);
+                report.SetParameterValue("HearingLeft", physicalExaminationMedicalRecordModel.HearingLeft);
+                report.SetParameterValue("Heart", physicalExaminationMedicalRecordModel.Heart);
+                report.SetParameterValue("Lungs", physicalExaminationMedicalRecordModel.Lungs);
+                report.SetParameterValue("ExtremitiesUpper", physicalExaminationMedicalRecordModel.ExtremitiesUpper);
+                report.SetParameterValue("ExtremitiesLower", physicalExaminationMedicalRecordModel.ExtremitiesLower);
+                report.SetParameterValue("DateOfExam", physicalExaminationMedicalRecordModel.DateOfExam);
+                report.SetParameterValue("ExpiryDate", physicalExaminationMedicalRecordModel.ExpiryDate);
+                report.SetParameterValue("NameOfApplicant", physicalExaminationMedicalRecordModel.NameOfApplicant);
+                report.SetParameterValue("mailingAddress", physicalExaminationMedicalRecordModel.MailingAddress);
+                report.SetParameterValue("Speach", physicalExaminationMedicalRecordModel.Speech);
+                report.SetParameterValue("nameOfPhysician", physicalExaminationMedicalRecordModel.nameOfPhysician);
+                report.SetParameterValue("addressOfPhysician", physicalExaminationMedicalRecordModel.addressOfPhysician);
+                report.SetParameterValue("nameOfPhysicianCertificating", physicalExaminationMedicalRecordModel.nameOfPhysicianCertificating);
+                report.SetParameterValue("dateOfPhysicianCertificate", physicalExaminationMedicalRecordModel.dateOfPhysicianCertificate);
+
                 Viewer1.Visible = true;
                 Viewer1.BringToFront();
                 Viewer1.ReportSource = report;
@@ -690,11 +695,54 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             else
             {
               
-
+//
                 string PhysicalExaminationReportPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location).Replace("\\bin\\Debug", "\\PhysicalExaminationReport\\PhysicalExaminationReport.rpt");
 
                 ReportDocument reportDocument = new ReportDocument();
                 reportDocument.Load(PhysicalExaminationReportPath);
+                reportDocument.SetParameterValue("Latname", physicalExaminationMedicalRecordModel.LastName);
+                reportDocument.SetParameterValue("FirstName", physicalExaminationMedicalRecordModel.LastName);
+                reportDocument.SetParameterValue("MiddileName", physicalExaminationMedicalRecordModel.MiddleName);
+                reportDocument.SetParameterValue("Month", physicalExaminationMedicalRecordModel.Month);
+                reportDocument.SetParameterValue("Day", physicalExaminationMedicalRecordModel.Day);
+                reportDocument.SetParameterValue("Year", physicalExaminationMedicalRecordModel.Year);
+                reportDocument.SetParameterValue("City", physicalExaminationMedicalRecordModel.City);
+                reportDocument.SetParameterValue("Country", physicalExaminationMedicalRecordModel.Country);
+                reportDocument.SetParameterValue("Gender", physicalExaminationMedicalRecordModel.Gender);
+                reportDocument.SetParameterValue("forDuty", physicalExaminationMedicalRecordModel.forDuty);
+                reportDocument.SetParameterValue("PositionMaster", physicalExaminationMedicalRecordModel.PositionMaster);
+                reportDocument.SetParameterValue("PositionMate", physicalExaminationMedicalRecordModel.PositionMate);
+                reportDocument.SetParameterValue("PositionEngineer", physicalExaminationMedicalRecordModel.PositionEngineer);
+                reportDocument.SetParameterValue("PositionRating", physicalExaminationMedicalRecordModel.PositionRating);
+                reportDocument.SetParameterValue("Height", physicalExaminationMedicalRecordModel.Height);
+                reportDocument.SetParameterValue("Weight", physicalExaminationMedicalRecordModel.Weight);
+                reportDocument.SetParameterValue("Bp", physicalExaminationMedicalRecordModel.Bp);
+                reportDocument.SetParameterValue("Pulse", physicalExaminationMedicalRecordModel.Pulse);
+                reportDocument.SetParameterValue("Respiration", physicalExaminationMedicalRecordModel.Respiration);
+                reportDocument.SetParameterValue("GeneralAppearance", physicalExaminationMedicalRecordModel.GeneralAppearance);
+                reportDocument.SetParameterValue("VisionWithOutGlassRight", physicalExaminationMedicalRecordModel.VisionWithOutGlassRight);
+                reportDocument.SetParameterValue("VisionWithGlassRight", physicalExaminationMedicalRecordModel.VisionWithGlassRight);
+                reportDocument.SetParameterValue("VisionWithOutGlassLeft", physicalExaminationMedicalRecordModel.VisionWithOutGlassLeft);
+                reportDocument.SetParameterValue("VisionWithGlassLeft", physicalExaminationMedicalRecordModel.VisionWithGlassLeft);
+                reportDocument.SetParameterValue("dateOfVisionTest", physicalExaminationMedicalRecordModel.DateOfVisionTest);
+                reportDocument.SetParameterValue("ColorVisionMeetsStandard", physicalExaminationMedicalRecordModel.ColorVisionMeetsStandard);
+                reportDocument.SetParameterValue("ColorTestType", physicalExaminationMedicalRecordModel.ColorTestType);
+                reportDocument.SetParameterValue("HearingRight", physicalExaminationMedicalRecordModel.HearingRight);
+                reportDocument.SetParameterValue("HearingLeft", physicalExaminationMedicalRecordModel.HearingLeft);
+                reportDocument.SetParameterValue("Heart", physicalExaminationMedicalRecordModel.Heart);
+                reportDocument.SetParameterValue("Lungs", physicalExaminationMedicalRecordModel.Lungs);
+                reportDocument.SetParameterValue("ExtremitiesUpper", physicalExaminationMedicalRecordModel.ExtremitiesUpper);
+                reportDocument.SetParameterValue("ExtremitiesLower", physicalExaminationMedicalRecordModel.ExtremitiesLower);
+                reportDocument.SetParameterValue("DateOfExam", physicalExaminationMedicalRecordModel.DateOfExam);
+                reportDocument.SetParameterValue("ExpiryDate", physicalExaminationMedicalRecordModel.ExpiryDate);
+                reportDocument.SetParameterValue("NameOfApplicant", physicalExaminationMedicalRecordModel.NameOfApplicant);
+                reportDocument.SetParameterValue("mailingAddress", physicalExaminationMedicalRecordModel.MailingAddress);
+                reportDocument.SetParameterValue("Speach", physicalExaminationMedicalRecordModel.Speech);
+                reportDocument.SetParameterValue("nameOfPhysician", physicalExaminationMedicalRecordModel.nameOfPhysician);
+                reportDocument.SetParameterValue("addressOfPhysician", physicalExaminationMedicalRecordModel.addressOfPhysician);
+                reportDocument.SetParameterValue("nameOfPhysicianCertificating", physicalExaminationMedicalRecordModel.nameOfPhysicianCertificating);
+                reportDocument.SetParameterValue("dateOfPhysicianCertificate", physicalExaminationMedicalRecordModel.dateOfPhysicianCertificate);
+                      
                 reportDocument.PrintOptions.PaperOrientation = PaperOrientation.Portrait;
                 reportDocument.PrintOptions.PaperSize = CrystalDecisions.Shared.PaperSize.PaperLetter;
                 reportDocument.PrintOptions.PrinterName = GetDefaultPrinterName();

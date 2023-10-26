@@ -24,8 +24,8 @@ namespace MedicalManagementSoftware
     public partial class Report_SeaBase_Print : Form
     {
 
-        
 
+        public string tropical;
 
         public static bool Summary, Detail, MER, MLC1, MLC2, krpan,Liberia;
         public static string last_date_taken = "";
@@ -185,6 +185,7 @@ namespace MedicalManagementSoftware
             Iso.Text = ini.IniReadValue("ISO", "Seafarer_MER");
             R_SeabaseMER1.SetParameterValue("Age", DateClass.getAge(d));
             R_SeabaseMER1.SetParameterValue("country", country);
+            R_SeabaseMER1.SetParameterValue("tropical", tropical);
             Viewer4_1.ReportSource = R_SeabaseMER1;
             RemoveTab(Viewer4_1);
 

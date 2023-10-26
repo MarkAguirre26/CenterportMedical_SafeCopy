@@ -120,8 +120,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 this.Close();
                 Cursor.Current = Cursors.WaitCursor;
                
-             
-       
+                   
                 string papin = this.dg_result.SelectedRows[0].Cells[1].Value.ToString();
         
 
@@ -129,15 +128,14 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 
                 (Application.OpenForms["FrmPhysicalExamination"] as FrmPhysicalExamination).ClearAll();
                 (Application.OpenForms["FrmPhysicalExamination"] as FrmPhysicalExamination).searchPhyExamRecord(papin);
-                
-             
+                            
 
                 //fmain.tsPanamaNew.Enabled = false;
                 fmain.toolStripPhyExamEdit.Enabled = true;
                 fmain.toolStripPhyExamDelete.Enabled = false;
                 fmain.toolStripPhyExamSave.Enabled = false;
                 fmain.toolStripPhyExamCancel.Enabled = false;
-                fmain.toolStripPhyExamPrint.Enabled = true;
+                fmain.toolStripPhyExamPrint.Enabled = true;             
                 fmain.toolStripPhyExamPrintPreview.Enabled = true;
                 fmain.toolStripPhyExamSearch.Enabled = true;
 

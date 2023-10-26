@@ -848,6 +848,7 @@ namespace MedicalManagementSoftware
             print.MedCertNumber = x_speciment.Text;
             print.bloodType = cbo_bloodType.Text;
             print.age = txt_age.Text;
+            print.tropical = rb_tropical_;
             print.Tag = LabID.Text;
             print.ShowDialog();
         }
@@ -862,10 +863,7 @@ namespace MedicalManagementSoftware
 
         private void frm_seaferer_MEC_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //ClassSql.DbClose();
-            //fmain.bseaferer = true;
-            ////fmain.Strip_sub.Visible = false;
-            //fmain.ts_add_sea.Enabled = true; fmain.ts_edit_sea.Enabled = false; fmain.ts_delete_sea.Enabled = false; fmain.ts_save_sea.Enabled = false; fmain.ts_search_sea.Enabled = true; fmain.ts_print_sea.Enabled = false; fmain.ts_cancel_sea.Enabled = false;
+           
         }
 
         private void label107_Click(object sender, EventArgs e)

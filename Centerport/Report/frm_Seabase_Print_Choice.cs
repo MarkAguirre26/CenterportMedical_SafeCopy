@@ -17,6 +17,7 @@ namespace MedicalManagementSoftware
         public string MedCertNumber;
         public string recomendation;
         public string bloodType;
+        public string tropical;
         public frm_Seabase_Print_Choice()
         {
             InitializeComponent();
@@ -91,7 +92,9 @@ namespace MedicalManagementSoftware
             print.bloodType  = bloodType;
             print.recomendation = recomendation;
             print.Tag = this.Tag.ToString();
+            print.tropical = tropical;
             print.ShowDialog();
+
             Cursor.Current = Cursors.Default;
         }
 
