@@ -128,13 +128,8 @@ namespace MedicalManagementSoftware
             txt_Papin.Select();
             Load_Medical();
 
-            //fmain.ts_add_sea.Enabled = true;
             fmain.ts_edit_sea.Enabled = false;
-            //fmain.ts_delete_sea.Enabled = false;
-            //fmain.ts_save_sea.Enabled = false;
-            //fmain.ts_cancel_sea.Enabled = false;
-            //fmain.ts_search_sea.Enabled = true;
-            //fmain.ts_print_sea.Enabled = false;
+      
 
 
         }
@@ -237,7 +232,7 @@ namespace MedicalManagementSoftware
             txt_medDir_Cbo.Text = ini.IniReadValue("MEDICAL", "PEME MedicalDirector");
             MedtectLicence = ini.IniReadValue("[MEDICAL]", "PEME_Physician_license");
             cbo_recomendation.Text = "FIT FOR SEA DUTY";
-            //cbo_bloodType.Text = "+";
+      
 
         }
         public void Save()
@@ -255,10 +250,6 @@ namespace MedicalManagementSoftware
 
 
                 Update_MedHistory();
-
-                //Update_Others();
-
-
 
 
 
@@ -400,20 +391,6 @@ namespace MedicalManagementSoftware
                 else if (rb_psych_RecWithRes.Checked == true) { psychological_exam_ = "RESERVE"; } else { psychological_exam_ = "-"; }
 
 
-                //ClassSql a = new ClassSql();     
-                //INSERT INTO `t_result_main` (`resultid`,     `resulttype`,     `papin`,             `result_date`,                        `pathologist`,                          `status`,       `fitness_date`,                           `valid_until`,                           `remarks`,                                                                     `recommendation`,                `repeat_test_requestby`,                     `specimen_no`,                                               `medtech`,                          `medtech_license`, `pathologist_license`,        `reference_no`,                                `restriction`,                                              sic_doh_exam`,                                  `add_lab_tests`,                                     `flag_medlab_req`,                         `deck_srvc_flag`,                                  `engine_srvc_flag`,                                  `catering_srvc_flag`                  , `other_srvc_flag`
-                // string a = "INSERT INTO `t_result_main` (`resultid`, `resulttype`, `papin`, `result_date`, `pathologist`, `status`, `fitness_date`, `valid_until`, `remarks`, `recommendation`, `repeat_test_requestby`, `specimen_no`, `medtech`, `medtech_license`, `pathologist_license`, `reference_no`, `restriction`, `basic_doh_exam`, `add_lab_tests`, `flag_medlab_req`, `deck_srvc_flag`, `engine_srvc_flag`, `catering_srvc_flag`, `other_srvc_flag`) VALUES ('" + LabID.Text + "', 'SEA', '" + pin.Text + "', '" + dt_resultDate.Text + "', '" + Tool.ReplaceString(txt_medDir_Cbo.Text) + "',     'PENDING',   '" + dt_fitness_Date.Text + "',      '" + dt_validUntil.Text + "',            '" + Tool.ReplaceString(x_remark_rec.Text) + "',                  '" + Tool.ReplaceString(cbo_recomendation.Text) + "',               '',                 '" + Tool.ReplaceString(x_speciment.Text) + "',               '" + Tool.ReplaceString(cbo_medtech.Text) + "',            '"+MedtectLicence.ToString()+"',                '',                 '" + LabID.Text + "',              '" + Tool.ReplaceString(x_restriction.Text) + "',             '" + rb_doh_pass_.ToString() + "',                  '" + rb_ladTest_pass_ .ToString()+ "',            '"+rb_flag_pass_.ToString() +"',             '"+deck_srvc_flag_.ToString()+"',                 '"+engine_srvc_flag_.ToString()+"',                 '"+catering_srvc_flag_.ToString()+"',                     '"+other_srvc_flag_.ToString()+"')";
-                //resultid`,     `head_injury`,             `frequent_headaches`,          `frequent_dizziness`,             `fainting_spells`,           `insomnia`,                    `depression`,                    `trachoma`,                  `deafness`,               `nose_throat_disorder`,     `tuberculosis`,                         `high_blood_pressure`,  `heart_disease`,        `rheumatic_fever`,                `diabetes_mellitus`,         `other_endocrine_disorder`,         `cancer_tumor`,     `blood_disorders`,          `stomach_pain`,                 `other_abdominal_disorder`,         `kidney_bladder_disorder`,  `back_injury`,                  `genetic_hereditary`,        `sexually_transmit_disease`, `tropical_disease`,              `asthma`,                 `allergies`,                      `gynecological_disorder`, `operations`,                                  `operations_specify`,                                                    `others`,               `consulted`,            `consulted_specify`,                    `maintenance_meds`,                                                  `operations_tag`,                `schistosomiasis`,            `last_menstrual_period`, `allergies_specify`, `other_abdominal_specify`
-                //  string b = "INSERT INTO `t_med_history` (`resultid`, `head_injury`, `frequent_headaches`, `frequent_dizziness`, `fainting_spells`, `insomnia`, `depression`, `trachoma`, `deafness`, `nose_throat_disorder`, `tuberculosis`,  `other_lung_disorder`,`high_blood_pressure`, `heart_disease`, `rheumatic_fever`, `diabetes_mellitus`, `other_endocrine_disorder`, `cancer_tumor`, `blood_disorders`, `stomach_pain`, `other_abdominal_disorder`, `kidney_bladder_disorder`, `back_injury`, `genetic_hereditary`, `sexually_transmit_disease`, `tropical_disease`, `asthma`, `allergies`, `gynecological_disorder`, `operations`, `operations_specify`, `others`, `consulted`, `consulted_specify`, `maintenance_meds`, `operations_tag`, `schistosomiasis`, `last_menstrual_period`, `allergies_specify`, `other_abdominal_specify`) VALUES ('" + LabID.Text + "', '" + rb_head_.ToString() + "', '" + rb_freqHead_.ToString() + "', '" + rb_dizziness_.ToString() + "', '" + rb_spells_.ToString() + "', '" + rb_Insomia_.ToString() + "', '" + rb_depression_.ToString() + "', '" + rb_trachoma_.ToString() + "', '" + rb_deaf_.ToString() + "', '" + rb_nose_.ToString() + "', '" + rb_tuberculosis_.ToString() + "', '" + rb_lung_.ToString() + "','" + rb_HighBlood_.ToString() + "', '" + rb_Heart_.ToString() + "', '" + rb_fever_.ToString() + "', '" + rb_diabetes_.ToString() + "', '" + rb_endocrine_.ToString() + "', '" + rb_cancer_.ToString() + "', '" + rb_blood_.ToString() + "', '" + rb_stomach_.ToString() + "', '" + rb_abdominal_.ToString() + "', '" + rb_kidney_.ToString() + "', '" + rb_back_.ToString() + "', '" + rb_Genetic_.ToString() + "', '" + rb_sexual_.ToString() + "', '" + rb_tropical_.ToString() + "', '" + rb_asthma_.ToString() + "', '" + rb_allergies_.ToString() + "', '" + rb_gyn_.ToString() + "', '" + rb_operational_.ToString() + "', '" + Tool.ReplaceString(txt_operational_specify.Text) + "', '" + Tool.ReplaceString(tx_other_History.Text) + "', '" + cb_consulted_.ToString() + "', '" + Tool.ReplaceString(txt_consulted.Text) + "', '" + Tool.ReplaceString(txt_maintenance.Text) + "', '" + operations_tag_.ToString() + "', '" + rb_schis_.ToString() + "', '" + rb_last_.ToString() + "', '" + Tool.ReplaceString(txt_allergies_specify.Text) + "', '" + Tool.ReplaceString(txt_abdominal_specify.Text) + "')";
-                //resultid`,       `column1`,           `column2`,              `column3`,             `column4`,            `column5`,                 `column6`,             `column7`,                   `column7_comment`, `            column8`,       `column8_comment`
-                // string c = "INSERT INTO `t_med_history2` (`resultid`, `column1`, `column2`, `column3`, `column4`, `column5`, `column6`, `column7`, `column7_comment`, `column8`, `column8_comment`) VALUES ('" + LabID.Text + "', '" + q1_.ToString() + "', '" + q2_.ToString() + "', '" + q3_.ToString() + "', '" + q4_.ToString() + "', '" + q5_.ToString() + "', '" + q6_.ToString() + "', '" + q7_.ToString() + "', '" + Tool.ReplaceString(txt_q7_Comment.Text) + "', '" + q8_.ToString() + "', '" + Tool.ReplaceString(txt_q8_comment.Text) + "')";
-                //resultid`,                  `HEIGHT`,                                    `WEIGHT`,                                                   `BP`,                       `PULSE`,                                    `RESPIRATION`,                                       `BODY_BUILD`,                                                 `FAR_OD_U`,                             `FAR_OD_C`,                                 `FAR_OS_U`,                                          `FAR_OS_C`,                                               `NEAR_ODJ_U`,                               `NEAR_ODJ_C`,                                           `NEAR_OSJ_U`,                                                                `NEAR_OSJ_C`,                      `ISHIHARA_U`,                        `ISHIHARA_C`,                                          `HEARING_AD`,                                                `HEARING_AS`,                       `SPEECH`,          `CONVERSATIONAL_AD`,                        `CONVERSATIONAL_AS`,                    `SATISFACTORY_HEARING`,                                     `SATISFACTORY_SIGHT_AID`,           `SATISFACTORY_SIGHT_UNAID`,                                              `SATISFACTORY_PSYCHO`,                      `VISUAL_AIDS`,                      `FIT_FOR_LOOKOUT`,                   `HEARING_RIGHT`,                           `HEARING_LEFT`,                                         `CLARITY_OF_SPEECH`,                        `VISUAL_AIDS_REQUIRED`,                          `BP_DIASTOLIC`,                                                        `RHYTHM`,                               `VISUAL_AIDS_WORN`,                        `COLOR_VISION_DATE_TAKEN`, `UNAIDED_HEARING_SATISFACTORY`, `IDENTITY_CONFIRMED
-                // string d = "INSERT INTO `t_phy_exam` (`resultid`, `HEIGHT`, `WEIGHT`, `BP`, `PULSE`, `RESPIRATION`, `BODY_BUILD`, `FAR_OD_U`, `FAR_OD_C`, `FAR_OS_U`, `FAR_OS_C`, `NEAR_ODJ_U`, `NEAR_ODJ_C`, `NEAR_OSJ_U`, `NEAR_OSJ_C`, `ISHIHARA_U`, `ISHIHARA_C`, `HEARING_AD`, `HEARING_AS`, `SPEECH`, `CONVERSATIONAL_AD`, `CONVERSATIONAL_AS`, `SATISFACTORY_HEARING`, `SATISFACTORY_SIGHT_AID`, `SATISFACTORY_SIGHT_UNAID`, `SATISFACTORY_PSYCHO`, `VISUAL_AIDS`, `FIT_FOR_LOOKOUT`, `HEARING_RIGHT`, `HEARING_LEFT`, `CLARITY_OF_SPEECH`, `VISUAL_AIDS_REQUIRED`, `BP_DIASTOLIC`, `RHYTHM`, `VISUAL_AIDS_WORN`, `COLOR_VISION_DATE_TAKEN`, `UNAIDED_HEARING_SATISFACTORY`, `IDENTITY_CONFIRMED`) VALUES ('" + LabID.Text + "', '" + Tool.ReplaceString(x_height.Text) + "',      '" + Tool.ReplaceString(x_weight.Text) + "',        '" + Tool.ReplaceString(x_bp.Text) + "',   '" + Tool.ReplaceString(x_pulse.Text) + "',         '" + Tool.ReplaceString(x_respiration.Text) + "',            '" + Tool.ReplaceString(x_body_Build.Text) + "',          '" + Tool.ReplaceString(x_far_u.Text) + "',        '" + Tool.ReplaceString(x_far_c.Text) + "',         '" + Tool.ReplaceString(x_far_os_u.Text) + "',         '" + Tool.ReplaceString(x_far_os_c.Text) + "',         '" + Tool.ReplaceString(x_Near_odj_u.Text) + "',             '" + Tool.ReplaceString(x_near_odj_c.Text) + "',          '" + Tool.ReplaceString(x_near_osj_u.Text) + "',             '" + Tool.ReplaceString(x_near_osj_c.Text) + "',        '" + ISHIHARA_U_.ToString() + "',          '" + cbo_ishihara_c.Text + "',                 '" + Tool.ReplaceString(x_hearing_Ad.Text) + "',          '" + Tool.ReplaceString(x_hearing_as.Text) + "',          '',          '" + Tool.ReplaceString(x_Con_ad.Text) + "',        '" + con_as.ToString() + "',          '" + Tool.ReplaceString(cb_satisfactory_Hearing.Text) + "',            '',                        '" + Tool.ReplaceString(cbo_satisfactory_Unaided.Text) + "',                          '',               '" + Tool.ReplaceString(cbo_visual_Aids.Text) + "', '" + FIT_FOR_LOOKOUT_.ToString() + "',  '" + HEARING_RIGHT_.ToString() + "',               '" + HEARING_LEFT_.ToString() + "',                    '" + CLARITY_OF_SPEECH_.ToString() + "',      '" + VISUAL_AIDS_REQUIRED_.ToString() + "',          '" + Tool.ReplaceString(x_bp_dias.Text) + "',                   '" + Tool.ReplaceString(x_rhythm.Text) + "',       '" + VISUAL_AIDS_WORN_.ToString() + "',                       '',               '',                              '" + IDENTITY_CONFIRMED_.ToString() + "')";
-                //`resultid`,              `SKIN_TAG`,                          `SKIN`,                         `HEAD_NECK_SCALP_TAG`,            `HEAD_NECK_SCALP`,                        `EYES_TAG`,                    `EYES`,                          `PUPILS_TAG`,                           `PUPILS`,                        `EARS_EARDRUM_TAG`,        `EARS_EARDRUM`,                     `NOSE_SINUSES_TAG`,     `NOSE_SINUSES`,                          `MOUTH_THROAT_TAG`,           `MOUTH_THROAT`,                `NECK_LN_THYROID_TAG`,                `NECK_LN_THYROID`,                 `CHEST_BREAST_AXILLA_TAG`,          `CHEST_BREAST_AXILLA`,                       `LUNGS_TAG`,                         `LUNGS`,                       `HEART_TAG`,               `HEART`,                           `ABDOMEN_TAG`,                                `ABDOMEN`,                   `BACK_FLANK_TAG`,                         `BACK_FLANK`,            `ANUS_RECTUM_TAG`,                   `ANUS_RECTUM`,         `GU_SYSTEM_TAG`,               `GU_SYSTEM`,                         `INGUINALS_GENITALS_TAG`,              `INGUINALS_GENITALS`,            `REFLEXES_TAG`,                          `REFLEXES`,                           `EXTREMITIES_TAG`,                       `EXTREMITIES`,               `DENTAL`, `DENTAL_TAG
-                // string e = "INSERT INTO `t_others` (`resultid`, `SKIN_TAG`, `SKIN`, `HEAD_NECK_SCALP_TAG`, `HEAD_NECK_SCALP`, `EYES_TAG`, `EYES`, `PUPILS_TAG`, `PUPILS`, `EARS_EARDRUM_TAG`, `EARS_EARDRUM`, `NOSE_SINUSES_TAG`, `NOSE_SINUSES`, `MOUTH_THROAT_TAG`, `MOUTH_THROAT`, `NECK_LN_THYROID_TAG`, `NECK_LN_THYROID`, `CHEST_BREAST_AXILLA_TAG`, `CHEST_BREAST_AXILLA`, `LUNGS_TAG`, `LUNGS`, `HEART_TAG`, `HEART`, `ABDOMEN_TAG`, `ABDOMEN`, `BACK_FLANK_TAG`, `BACK_FLANK`, `ANUS_RECTUM_TAG`, `ANUS_RECTUM`, `GU_SYSTEM_TAG`, `GU_SYSTEM`, `INGUINALS_GENITALS_TAG`, `INGUINALS_GENITALS`, `REFLEXES_TAG`, `REFLEXES`, `EXTREMITIES_TAG`, `EXTREMITIES`, `DENTAL`, `DENTAL_TAG`) VALUES ('" + LabID.Text + "', '" + cb_skin_.ToString() + "', '" + Tool.ReplaceString(x_skin.Text) + "',             '" + cb_neck_.ToString() + "','" + Tool.ReplaceString(x_neck.Text) + "', '" + cb_eyes_.ToString() + "', '" + Tool.ReplaceString(x_eyes.Text) + "', '" + cb_pupils_.ToString() + "', '" + Tool.ReplaceString(x_pupils.Text) + "', '" + cb_ears_.ToString() + "', '" + Tool.ReplaceString(x_ears.Text) + "', '" + cb_nose_.ToString() + "', '" + Tool.ReplaceString(x_nose.Text) + "', '" + cb_mought_.ToString() + "', '" + Tool.ReplaceString(x_mouth.Text) + "', '" + cb_thyroid_.ToString() + "', '" + Tool.ReplaceString(x_thyroid.Text) + "', '" + cb_breast_.ToString() + "', '" + Tool.ReplaceString(x_breast.Text) + "', '" + cb_lungs_.ToString() + "', '" + Tool.ReplaceString(x_lungs.Text) + "', '" + cb_heart_.ToString() + "', '" + Tool.ReplaceString(x_heart.Text) + "', '" + cb_abdomen_.ToString() + "', '" + Tool.ReplaceString(x_abdomen.Text) + "', '" + cb_back_.ToString() + "', '" + Tool.ReplaceString(x_back.Text) + "', '" + cb_anus_.ToString() + "', '" + Tool.ReplaceString(x_anus.Text) + "', '" + cb_gu_.ToString() + "', '" + Tool.ReplaceString(x_gu.Text) + "', '" + cb_inguinals_.ToString() + "', '" + Tool.ReplaceString(x_inguinals.Text) + "', '" + cb_reflexes_.ToString() + "', '" + Tool.ReplaceString(x_reflexes.Text) + "', '" + cb_extremeties_.ToString() + "', '" + Tool.ReplaceString(x_extremeties.Text) + "', '" + Tool.ReplaceString(x_dental.Text) + "', '" + cb_dental_.ToString() + "')";
-                //result_id`,                       `cxr`,                           `ecg`,                             `cbc`,                           `pregnancy_test`,                             `urinalysis`,                     `stool_exam`,                   `hbsag`,                                `hiv`,                         `rpr`,                               `blood_type`,                  `blood_chemistries`,                    `psychological_exam`,               `additional_test`,                   `remarks`, `recommendation`, `additional_test2`
-                //  string f = "INSERT INTO `t_ancillary` (`result_id`, `cxr`, `ecg`, `cbc`, `pregnancy_test`, `urinalysis`, `stool_exam`, `hbsag`, `hiv`, `rpr`, `blood_type`, `blood_chemistries`, `psychological_exam`, `additional_test`, `remarks`, `recommendation`, `additional_test2`) VALUES ('" + Tool.ReplaceString(LabID.Text) + "', '" + cxr_normal_.ToString() + "', '" + ecg_normal_.ToString() + "', '" + cbd_normal_.ToString() + "', '" + Tool.ReplaceString(cbo_pregnancyTest.Text) + "', '" + urinal_normal_.ToString() + "', '" + stool_normal_.ToString() + "', '" + hb_Nonreactive_.ToString() + "', '" + hiv_NonReactive_.ToString() + "', '" + rpr_NonReactive_.ToString() + "', '" + Tool.ReplaceString(cbo_bloodType.Text) + "', '',                    '" + psychological_exam_.ToString() + "', '" + Tool.ReplaceString(x_add_test1.Text) + "', '" + Tool.ReplaceString(x_remark.Text) + "', '', '" + Tool.ReplaceString(x_add_test2.Text) + "')";
-
 
                 db.ExecuteCommand("INSERT INTO t_result_main (resultid, resulttype, papin, result_date, pathologist, status, fitness_date, valid_until, remarks, recommendation, repeat_test_requestby, specimen_no, medtech, medtech_license, pathologist_license, reference_no, restriction, basic_doh_exam, add_lab_tests, flag_medlab_req, deck_srvc_flag, engine_srvc_flag, catering_srvc_flag, other_srvc_flag) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23})", LabID.Text, "SEA", pin.Text, dt_resultDate.Text, txt_medDir_Cbo.Text, "PENDING", dt_fitness_Date.Text, dt_validUntil.Text, x_remark_rec.Text, cbo_recomendation.Text, "", x_speciment.Text, cbo_medtech.Text, MedtectLicence.ToString(), "", LabID.Text, x_restriction.Text, rb_doh_pass_.ToString(), rb_ladTest_pass_.ToString(), rb_flag_pass_.ToString(), deck_srvc_flag_.ToString(), engine_srvc_flag_.ToString(), catering_srvc_flag_.ToString(), other_srvc_flag_.ToString());
                 db.ExecuteCommand("INSERT INTO t_med_history (resultid, head_injury, frequent_headaches, frequent_dizziness, fainting_spells, insomnia, depression, trachoma, deafness, nose_throat_disorder, tuberculosis,  other_lung_disorder,high_blood_pressure, heart_disease, rheumatic_fever, diabetes_mellitus, other_endocrine_disorder, cancer_tumor, blood_disorders, stomach_pain, other_abdominal_disorder, kidney_bladder_disorder, back_injury, genetic_hereditary, sexually_transmit_disease, tropical_disease, asthma, allergies, gynecological_disorder, operations, operations_specify, others, consulted, consulted_specify, maintenance_meds, operations_tag, schistosomiasis, last_menstrual_period, allergies_specify, other_abdominal_specify) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23},{24},{25},{26},{27},{28},{29},{30},{31},{32},{33},{34},{35},{36},{37},{38},{39})", LabID.Text, rb_head_.ToString(), rb_freqHead_.ToString(), rb_dizziness_.ToString(), rb_spells_.ToString(), rb_Insomia_.ToString(), rb_depression_.ToString(), rb_trachoma_.ToString(), rb_deaf_.ToString(), rb_nose_.ToString(), rb_tuberculosis_.ToString(), rb_lung_.ToString(), rb_HighBlood_.ToString(), rb_Heart_.ToString(), rb_fever_.ToString(), rb_diabetes_.ToString(), rb_endocrine_.ToString(), rb_cancer_.ToString(), rb_blood_.ToString(), rb_stomach_.ToString(), rb_abdominal_.ToString(), rb_kidney_.ToString(), rb_back_.ToString(), rb_Genetic_.ToString(), rb_sexual_.ToString(), rb_tropical_.ToString(), rb_asthma_.ToString(), rb_allergies_.ToString(), rb_gyn_.ToString(), rb_operational_.ToString(), txt_operational_specify.Text, tx_other_History.Text, cb_consulted_.ToString(), txt_consulted.Text, txt_maintenance.Text, operations_tag_.ToString(), rb_schis_.ToString(), rb_last_.ToString(), txt_allergies_specify.Text, txt_abdominal_specify.Text);
@@ -421,24 +398,14 @@ namespace MedicalManagementSoftware
                 db.ExecuteCommand("INSERT INTO t_phy_exam (resultid, HEIGHT, WEIGHT, BP, PULSE, RESPIRATION, BODY_BUILD, FAR_OD_U, FAR_OD_C, FAR_OS_U, FAR_OS_C, NEAR_ODJ_U, NEAR_ODJ_C, NEAR_OSJ_U, NEAR_OSJ_C, ISHIHARA_U, ISHIHARA_C, HEARING_AD, HEARING_AS, SPEECH, CONVERSATIONAL_AD, CONVERSATIONAL_AS, SATISFACTORY_HEARING, SATISFACTORY_SIGHT_AID, SATISFACTORY_SIGHT_UNAID, SATISFACTORY_PSYCHO, VISUAL_AIDS, FIT_FOR_LOOKOUT, HEARING_RIGHT, HEARING_LEFT, CLARITY_OF_SPEECH, VISUAL_AIDS_REQUIRED, BP_DIASTOLIC, RHYTHM, VISUAL_AIDS_WORN, COLOR_VISION_DATE_TAKEN, UNAIDED_HEARING_SATISFACTORY, IDENTITY_CONFIRMED) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23},{24},{25},{26},{27},{28},{29},{30},{31},{32},{33},{34},{35},{36},{37})", LabID.Text, x_height.Text, x_weight.Text, x_bp.Text, x_pulse.Text, x_respiration.Text, x_body_Build.Text, x_far_u.Text, x_far_c.Text, x_far_os_u.Text, x_far_os_c.Text, x_Near_odj_u.Text, x_near_odj_c.Text, x_near_osj_u.Text, x_near_osj_c.Text, ISHIHARA_U_.ToString(), cbo_ishihara_c.Text, x_hearing_Ad.Text, x_hearing_as.Text, "", x_Con_ad.Text, con_as.ToString(), cb_satisfactory_Hearing.Text, "", cbo_satisfactory_Unaided.Text, "", cbo_visual_Aids.Text, FIT_FOR_LOOKOUT_.ToString(), HEARING_RIGHT_.ToString(), HEARING_LEFT_.ToString(), CLARITY_OF_SPEECH_.ToString(), VISUAL_AIDS_REQUIRED_.ToString(), x_bp_dias.Text, x_rhythm.Text, VISUAL_AIDS_WORN_.ToString(), "", "", IDENTITY_CONFIRMED_.ToString());
                 db.ExecuteCommand("INSERT INTO t_others (resultid, SKIN_TAG, SKIN, HEAD_NECK_SCALP_TAG, HEAD_NECK_SCALP, EYES_TAG, EYES, PUPILS_TAG, PUPILS, EARS_EARDRUM_TAG, EARS_EARDRUM, NOSE_SINUSES_TAG, NOSE_SINUSES, MOUTH_THROAT_TAG, MOUTH_THROAT, NECK_LN_THYROID_TAG, NECK_LN_THYROID, CHEST_BREAST_AXILLA_TAG, CHEST_BREAST_AXILLA, LUNGS_TAG, LUNGS, HEART_TAG, HEART, ABDOMEN_TAG, ABDOMEN, BACK_FLANK_TAG, BACK_FLANK, ANUS_RECTUM_TAG, ANUS_RECTUM, GU_SYSTEM_TAG, GU_SYSTEM, INGUINALS_GENITALS_TAG, INGUINALS_GENITALS, REFLEXES_TAG, REFLEXES, EXTREMITIES_TAG, EXTREMITIES, DENTAL, DENTAL_TAG) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23},{24},{25},{26},{27},{28},{29},{30},{31},{32},{33},{34},{35},{36},{37},{38})", LabID.Text, cb_skin_.ToString(), x_skin.Text, cb_neck_.ToString(), x_neck.Text, cb_eyes_.ToString(), x_eyes.Text, cb_pupils_.ToString(), x_pupils.Text, cb_ears_.ToString(), x_ears.Text, cb_nose_.ToString(), x_nose.Text, cb_mought_.ToString(), x_mouth.Text, cb_thyroid_.ToString(), x_thyroid.Text, cb_breast_.ToString(), x_breast.Text, cb_lungs_.ToString(), x_lungs.Text, cb_heart_.ToString(), x_heart.Text, cb_abdomen_.ToString(), x_abdomen.Text, cb_back_.ToString(), x_back.Text, cb_anus_.ToString(), x_anus.Text, cb_gu_.ToString(), x_gu.Text, cb_inguinals_.ToString(), x_inguinals.Text, cb_reflexes_.ToString(), x_reflexes.Text, cb_extremeties_.ToString(), x_extremeties.Text, x_dental.Text, cb_dental_.ToString());
                 db.ExecuteCommand("INSERT INTO t_ancillary (result_id, cxr, ecg, cbc, pregnancy_test ,urinalysis, stool_exam, hbsag, hiv ,rpr, blood_type, blood_chemistries, psychological_exam, additional_test ,remarks, recommendation ,additional_test2) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16})", LabID.Text, cxr_normal_.ToString(), ecg_normal_.ToString(), cbd_normal_.ToString(), cbo_pregnancyTest.Text, urinal_normal_.ToString(), stool_normal_.ToString(), hb_Nonreactive_.ToString(), hiv_NonReactive_.ToString(), rpr_NonReactive_.ToString(), cbo_bloodType.Text.Replace("+", ""), "", psychological_exam_.ToString(), x_add_test1.Text, x_remark.Text, "", x_add_test2.Text);
-                //  db.ExecuteCommand("INSERT INTO [Centerport_Medical].[dbo].[tbl_krpan] ([Resultid], [BloodDisorder], [MentalDisorder], [Cardiovascular], [CircumferenceChest], [Infection], [NervousSystem], [Digestive], [Liver], [Anemia], [UrineSyphilisis]) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}", LabID.Text, BloodDisorder, MentalDisorder, Cardiovascular, CircumferenceChest, Infection, NervousSystem, NervousSystem, Liver, Anemia, UrineSyphilisis);
-
-                //Search_MedicalHistory();
-                //Search_medicalHistory2();
-                //search_Recomendation();
-                //Search_PhyExam();
-                //Search_others();
-                //search_Ancillary();  
-
-                //  var arr = new[] { a, b, c, d, e, f };
-                //  File.WriteAllLines(ClassSql.tmp_path, arr);
+   
                 Seabase_SearchList_Model.Clear();
                 SeabaseAdd_model.Clear();
                 if (!backgroundWorker1.IsBusy)
                 { backgroundWorker1.RunWorkerAsync(); }
 
 
-                //Tool.MessageBoxSave();
+                
                 Availability(false);
                 pin.Select();
                 fmain.ts_add_sea.Enabled = true;
@@ -458,12 +425,7 @@ namespace MedicalManagementSoftware
                 MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
 
             }
-            //finally
-            //{
-            //    //if (ClassSql.cnn != null) { ClassSql.DbClose(); }
-            //    if (ClassSql.dr != null) { ClassSql.dr.Close(); }
-            //}
-
+          
 
 
 
@@ -616,165 +578,11 @@ namespace MedicalManagementSoftware
                 MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
 
             }
-            //finally
-            //{
-            //    //if (ClassSql.cnn != null) { ClassSql.DbClose(); }
-            //    if (ClassSql.dr != null) { ClassSql.dr.Close(); }
-            //}
+      
 
 
         }
-        //public void Update_MedHistory2()
-        //{
-        //    try
-        //    {
-
-
-
-
-
-        //        ClassSql a = new ClassSql();             
-        //             Search_medicalHistory2();
-        //        //Tool.MessageBoxUpdate();
-
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.Systemname.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
-
-        //    }
-        //    finally
-        //    {
-        //        if (ClassSql.cnn != null) { ClassSql.DbClose(); }
-        //        if (ClassSql.dr != null) { ClassSql.dr.Close(); }
-        //    }
-
-
-        //}
-
-        //public void Update_Physical_Exam()
-        //{
-        //    try
-        //    {
-
-        //        //if (cb_ishihara_u.Checked == true) { ISHIHARA_U_ = "1"; } else { ISHIHARA_U_ = "0"; }
-        //        //if (rb_clarity_Speech_AD.Checked == true) { CLARITY_OF_SPEECH_ = "A"; } else { CLARITY_OF_SPEECH_ = "I"; }
-        //        //if (rb_fit_lookOut_Y.Checked == true) { FIT_FOR_LOOKOUT_ = "YES"; } else { FIT_FOR_LOOKOUT_ = "NO"; }
-        //        //if (rb_hearingRight_AD.Checked == true) { HEARING_RIGHT_ = "A"; } else { HEARING_RIGHT_ = "I"; }
-        //        //if (rb_hearingLeft_AD.Checked == true) { HEARING_LEFT_ = "A"; } else { HEARING_LEFT_ = "I"; }
-        //        //if (rb_visualReq_Y.Checked == true) { VISUAL_AIDS_REQUIRED_ = "YES"; } else { VISUAL_AIDS_REQUIRED_ = "NO"; }
-        //        //if (rb_visual_worn_Spectacles.Checked == true) { VISUAL_AIDS_WORN_ = "SPECTACLES"; } else { VISUAL_AIDS_WORN_ = "CONTACTLENS"; }
-        //        //if (rb_indentity_Confirm_Y.Checked == true) { IDENTITY_CONFIRMED_ = "YES"; } else { IDENTITY_CONFIRMED_ = "NO"; }
-
-
-
-
-
-        //        ClassSql a = new ClassSql();
-
-        //           Search_PhyExam();
-
-
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.Systemname.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
-
-        //    }
-        //    finally
-        //    {
-        //        if (ClassSql.cnn != null) { ClassSql.DbClose(); }
-        //        if (ClassSql.dr != null) { ClassSql.dr.Close(); }
-        //    }
-
-
-        //}
-        //public void Update_Others()
-        //{
-        //    try
-        //    {
-
-
-
-
-
-
-
-        //        //ClassSql a = new ClassSql();
-
-        //        Search_others();
-
-
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
-
-        //    }
-        //    finally
-        //    {
-        //        //if (ClassSql.cnn != null) { ClassSql.DbClose(); }
-        //        if (ClassSql.dr != null) { ClassSql.dr.Close(); }
-        //    }
-
-
-        //}
-        //public void Update_Ancillary()
-        //{
-        //    try
-        //    {
-
-
-
-
-
-
-        //        ClassSql a = new ClassSql();
-        //             search_Ancillary();
-
-
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.Systemname.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
-
-        //    }
-        //    finally
-        //    {
-        //        if (ClassSql.cnn != null) { ClassSql.DbClose(); }
-        //        if (ClassSql.dr != null) { ClassSql.dr.Close(); }
-        //    }
-
-
-        //}
-        //    public void Update_ResultMain()
-        //    {
-        //        try
-        //        {
-        //ClassSql a = new ClassSql();
-
-        //                  search_Recomendation();
-
-
-
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.Systemname.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
-
-        //        }
-        //        finally
-        //        {
-        //            if (ClassSql.cnn != null) { ClassSql.DbClose(); }
-        //            if (ClassSql.dr != null) { ClassSql.dr.Close(); }
-        //        }
-
-
-        //    }
+      
 
         public void Edit()
         {
@@ -837,7 +645,7 @@ namespace MedicalManagementSoftware
                 fmain.ts_print_sea.Enabled = true;
                 fmain.ts_cancel_sea.Enabled = false;
             }
-
+           
         }
         public void Print()
         {
@@ -848,7 +656,7 @@ namespace MedicalManagementSoftware
             print.MedCertNumber = x_speciment.Text;
             print.bloodType = cbo_bloodType.Text;
             print.age = txt_age.Text;
-            print.tropical = rb_tropical_;
+            print.tropical = rb_tropical_Y.Checked == true?"Y":"N";
             print.Tag = LabID.Text;
             print.ShowDialog();
         }
@@ -1068,65 +876,16 @@ namespace MedicalManagementSoftware
             }
         }
 
-        //void Search_Patient_sub()
-        //{
-        //    try
-        //    {
-
-        //        ClassSql a = new ClassSql(); DataTable dt;
-
-        //        dt = a.Table("SELECT t_result_main.cn, t_result_main.resultid, t_result_main.resulttype, t_result_main.papin, m_patient.lastname, m_patient.firstname, m_patient.middlename, m_patient.address_1, m_patient.address_2, m_patient.contact_1, m_patient.contact_2,   m_patient.`position`, m_patient.marital_status,  m_patient.gender, m_patient.place_of_birth, m_patient.employer, m_patient.passport_no, m_patient.nationality, m_patient.religion FROM t_result_main  Inner Join m_patient ON t_result_main.papin = m_patient.papin Where t_result_main.papin =  '" + Tool.ReplaceString(this.txt_Papin.Text) + "'");
-
-        //        foreach (DataRow dr in dt.Rows)
-        //        {
-
-        //            LabID.Text = dr["resultid"].ToString();
-        //            txtlastname.Text = dr["lastname"].ToString();
-        //            txtFirstname.Text = dr["firstname"].ToString();
-        //            txtMiddleName.Text = dr["middlename"].ToString();
-        //            txt_pBirth.Text = dr["place_of_birth"].ToString();
-        //            txt_nationality.Text = dr["nationality"].ToString();
-        //            txt_add.Text = dr["address_1"].ToString();
-        //            txt_employer.Text = dr["employer"].ToString();
-        //            txt_passno.Text = dr["passport_no"].ToString();
-        //            txt_gender.Text = dr["gender"].ToString();
-        //            txt_position.Text = dr["position"].ToString();
-        //            txt_rel.Text = dr["religion"].ToString();
-        //            txt_status.Text = dr["marital_status"].ToString();
-        //            txt_contact.Text = dr["contact_1"].ToString();
-
-
-        //        }
-
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
-
-        //    }
-        //    finally
-        //    {
-        //        //if (ClassSql.cnn != null) { ClassSql.DbClose(); }
-        //        if (ClassSql.dr != null) { ClassSql.dr.Close(); }
-        //    }
-
-
-        //}
+      
 
         public void Search_Patient()
         {
             try
             {
 
-                // ClassSql a = new ClassSql(); DataTable dt;
-
-                //  // dt = a.Table("SELECT * FROM m_patient  WHERE  papin LIKE   '%" + Tool.ReplaceString(pin.Text) + "%'");
-                // dt = a.Mytable_Proc("Seabase_patient", "@ID", pin.Text);
+            
                 var i = db.sp_Seabase_Patient(pin.Text).FirstOrDefault();
-                //foreach (var i in list)
-                //{
-
+             
                 txtlastname.Text = i.lastname.ToString();
                 txtFirstname.Text = i.firstname.ToString();
                 txtMiddleName.Text = i.middlename.ToString();
@@ -1142,20 +901,7 @@ namespace MedicalManagementSoftware
                 txt_contact.Text = i.contact_1.ToString();
                 txt_bday.Text = i.birthdate.ToString();
 
-                //if (i.picture != null)
-                //{
-                //    byte[] b = i.picture.ToArray();
-                //    MemoryStream ms = new MemoryStream(b);
-                //    Image img = Image.FromStream(ms);
-                //    using (var newImg = Tool.ScaleImage(img, 150, 200))
-                //    {
-                //        img.Save(ClassSql.SeabaseImage + "\\tmp.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
-                //    }
-
-                //}
-
-                // }
-
+              
 
             }
             catch (Exception ex)
@@ -1255,59 +1001,11 @@ namespace MedicalManagementSoftware
 
 
         }
-        //void Delete_Record()
-        //{
-
-        //    try
-        //    {
-
-
-        //        ClassSql a = new ClassSql();
-        //        a.ExecuteQuery("Delete from t_med_history where resultid = '" + LabID.Text + "' and resulttype= 'SEA'");
-        //        a.ExecuteQuery("Delete from t_med_history2 where resultid = '" + LabID.Text + "' and resulttype= 'SEA'");
-        //        a.ExecuteQuery("Delete from t_phy_exam where resultid = '" + LabID.Text + "' and resulttype= 'SEA'");
-        //        a.ExecuteQuery("Delete from t_others where resultid = '" + LabID.Text + "' and resulttype= 'SEA'");
-        //        a.ExecuteQuery("Delete from t_ancillary where resultid = '" + LabID.Text + "' and resulttype= 'SEA'");
-        //        a.ExecuteQuery("Delete from t_result_main where resultid = '" + LabID.Text + "' and resulttype= 'SEA'");
-
-        //        Tool.MessageBoxDelete();
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
-
-        //    }
-        //    finally
-        //    {
-        //        //if (ClassSql.cnn != null) { ClassSql.DbClose(); }
-        //        if (ClassSql.dr != null) { ClassSql.dr.Close(); }
-        //    }
-
-        //}
-
+     
         private void txt_resultID_TextChanged(object sender, EventArgs e)
         {
 
 
-            //if (NewSeabase)
-            //{
-            //    MessageBox.Show("HERE");
-            //    fmain.ts_add_sea.Enabled = true; fmain.ts_edit_sea.Enabled = false; fmain.ts_delete_sea.Enabled = false; fmain.ts_save_sea.Enabled = false; fmain.ts_search_sea.Enabled = true; fmain.ts_print_sea.Enabled = false; fmain.ts_cancel_sea.Enabled = false;
-
-            //}
-            //else
-            //{
-
-            //    Search_MedicalHistory();
-            //    Search_medicalHistory2();
-            //    Search_PhyExam();
-            //    Search_others();
-            //    search_Ancillary();
-            //    search_Recomendation();
-            //    fmain.ts_add_sea.Enabled = true; fmain.ts_edit_sea.Enabled = true; fmain.ts_delete_sea.Enabled = false; fmain.ts_save_sea.Enabled = false; fmain.ts_search_sea.Enabled = true; fmain.ts_print_sea.Enabled = true; fmain.ts_cancel_sea.Enabled = false;
-
-            //}
 
 
         }
@@ -1317,13 +1015,9 @@ namespace MedicalManagementSoftware
             try
             {
 
-                // ClassSql a = new ClassSql(); DataTable dt;
-                //// dt = a.Table("SELECT * FROM t_med_history WHERE  resultid LIKE  '%" + LabID.Text + "%'");
-                // dt = a.Mytable_Proc("Seabase_medicalHistory1", "@ID", LabID.Text);
+               
                 var i = db.sp_Seabase_MedHistory1(LabID.Text).FirstOrDefault();
-                //foreach (var i in list)
-                //{
-
+             
 
 
                 lbl_history1_cn.Tag = i.cn.ToString();
@@ -2028,87 +1722,10 @@ namespace MedicalManagementSoftware
 
         private void txt_Papin_TextChanged(object sender, EventArgs e)
         {
-            //if (NewSeabase)
-            //{
-            //    //ClassSql a = new ClassSql(); long cnt;
-            //    //cnt = a.CountColumn("SELECT Count(t_result_main.papin) AS `count` FROM t_result_main WHERE t_result_main.papin =  '" + Tool.ReplaceString(txt_Papin.Text) + "' and resulttype = 'SEA'");
-
-            //    if (Count)
-            //    {
-            //       // DialogResult dialogResult = MessageBox.Show("Patient had previous laboratory examination! Would you like to update Hir/Her record?", Properties.Settings.Default.Systemname.ToString(), MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
-
-            //        if (Action == "YES")
-            //        {
-            //            NewSeabase = false;
-            //            Search_Patient();
-            //            Search_MedicalHistory();
-            //            Search_medicalHistory2();
-            //            Search_PhyExam();
-            //            Search_others();
-            //            search_Ancillary();
-            //            search_Recomendation();
-            //            Availability(true);
-            //            fmain.ts_add_sea.Enabled = false; fmain.ts_edit_sea.Enabled = false; fmain.ts_delete_sea.Enabled = false; fmain.ts_save_sea.Enabled = true; fmain.ts_search_sea.Enabled = false; fmain.ts_print_sea.Enabled = false; fmain.ts_cancel_sea.Enabled = true;
-
-            //        }
-            //        else if(Action == "NO")
-            //        {
-            //            NewSeabase = true;
-            //            Search_Patient();
-            //            Availability(true);
-            //            ClearAll();
-            //            fmain.ts_add_sea.Enabled = true; fmain.ts_edit_sea.Enabled = false; fmain.ts_delete_sea.Enabled = false; fmain.ts_save_sea.Enabled = false; fmain.ts_search_sea.Enabled = true; fmain.ts_print_sea.Enabled = false; fmain.ts_cancel_sea.Enabled = false;
-
-
-            //        }
-
-
-            //    }
-            //    else
-            //    {
-
-            //        NewSeabase = true;
-            //        Search_Patient();
-            //        Availability(true);
-            //        ClearAll();
-            //        fmain.ts_add_sea.Enabled = false; fmain.ts_edit_sea.Enabled = false; fmain.ts_delete_sea.Enabled = false; fmain.ts_save_sea.Enabled = true; fmain.ts_search_sea.Enabled = false; fmain.ts_print_sea.Enabled = false; fmain.ts_cancel_sea.Enabled = true;
-
-
-            //    }
-
-
-            //}
-            //else
-            //{
-
-            //  //  Search_Patient_sub();
-            //    Search_Patient();
-            //    //Search_MedicalHistory();
-            //    //Search_medicalHistory2();
-            //    //Search_PhyExam();
-            //    //Search_others();
-            //    //search_Ancillary();
-            //    //search_Recomendation();
-
-            //}
-
-
-            //txt_Papin.Select();
-            //Medical_personnel();
+           
         }
 
-        //void Medical_personnel()
-        //{
-        //    ClassSql b = new ClassSql();
-        //    b.PutDataTOComboBox("SELECT 
-        //.cn, tbl_medical.Name, tbl_medical.License, tbl_medical.Type FROM tbl_medical WHERE 
-
-
-        //.Type =  'PEME Physician'", cbo_medtech, "Name", "cn");
-        //    b.PutDataTOTextBox("SELECT tbl_medical.cn, tbl_medical.Name, tbl_medical.License, tbl_medical.Type FROM tbl_medical WHERE tbl_medical.Type =  'PEME MedicalDirector'", txt_medDir_Cbo, "Name");
-        //    //
-
-        //}
+       
 
         private void cbo_recomendation_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -2414,12 +2031,7 @@ namespace MedicalManagementSoftware
                 MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
 
             }
-            //finally
-            //{
-
-            //    if (ClassSql.dr != null) { ClassSql.dr.Close(); }
-
-            //}
+   
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)

@@ -52,8 +52,6 @@
             this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker5 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker6 = new System.ComponentModel.BackgroundWorker();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.Viewer5 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.wizard1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -62,7 +60,6 @@
             this.tabControl1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -107,7 +104,6 @@
             this.wizard1.Controls.Add(this.tabPage2);
             this.wizard1.Controls.Add(this.tabPage3);
             this.wizard1.Controls.Add(this.tabPage4);
-            this.wizard1.Controls.Add(this.tabPage7);
             this.wizard1.Dock = System.Windows.Forms.DockStyle.Top;
             this.wizard1.Location = new System.Drawing.Point(0, 0);
             this.wizard1.Name = "wizard1";
@@ -292,32 +288,6 @@
             // 
             this.backgroundWorker6.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker6_DoWork);
             // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.Viewer5);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(870, 368);
-            this.tabPage7.TabIndex = 4;
-            this.tabPage7.Text = "tabPage7";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // Viewer5
-            // 
-            this.Viewer5.ActiveViewIndex = -1;
-            this.Viewer5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Viewer5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Viewer5.DisplayStatusBar = false;
-            this.Viewer5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Viewer5.Location = new System.Drawing.Point(3, 3);
-            this.Viewer5.Name = "Viewer5";
-            this.Viewer5.ShowCloseButton = false;
-            this.Viewer5.ShowLogo = false;
-            this.Viewer5.Size = new System.Drawing.Size(864, 362);
-            this.Viewer5.TabIndex = 1;
-            this.Viewer5.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-            // 
             // Report_SeaBase_Print
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -347,7 +317,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -377,8 +346,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker4;
         private System.ComponentModel.BackgroundWorker backgroundWorker5;
         private System.ComponentModel.BackgroundWorker backgroundWorker6;
-        private System.Windows.Forms.TabPage tabPage7;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer Viewer5;
         //private Centerport.Report.R_Seabase_MER R_Seabase_MER1;
         //private Report.R_SeabaseDetailed R_SeabaseDetailed1;
         //private Report.R_SeabaseDetailed R_SeabaseDetailed1;

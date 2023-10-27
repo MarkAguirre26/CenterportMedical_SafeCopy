@@ -27,7 +27,7 @@ namespace MedicalManagementSoftware
 
         public string tropical;
 
-        public static bool Summary, Detail, MER, MLC1, MLC2, krpan,Liberia;
+        public static bool Summary, Detail, MER, MLC1, MLC2, krpan;
         public static string last_date_taken = "";
         private const long BUTTON_DOWN_CODE = 0xa1;
         private const long BUTTON_UP_CODE = 0xa0;
@@ -486,12 +486,7 @@ namespace MedicalManagementSoftware
                 {
 
                     Viewer3.PrintReport();
-                }
-                else if (Liberia)
-                {
-
-                    Viewer5.PrintReport();
-                }
+                }               
                 else if (MER)
                 {
 
