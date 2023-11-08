@@ -256,14 +256,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Medical Management Software.exe" size="95213056">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Medical Management Software.exe" size="95223296">
       <assemblyIdentity name="Medical Management Software" version="2018.2.22.15" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EICY7c1CHmgk7njqrwnYUfgkO6aBHpTgVhtTJ+s/sHI=</dsig:DigestValue>
+        <dsig:DigestValue>16tSw7aUAOXRKxJjSPTa090aI2fUall89sZKo4FBefw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
