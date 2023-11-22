@@ -40,7 +40,9 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             string PositionMate,
             string PositionEngineer,
             string PositionRating,
-            string LiberiaLicenseNumber)
+            string LiberiaLicenseNumber,
+            string ExaminationDate
+             )
         {
             DataClasses2DataContext db = new DataClasses2DataContext(Database.connectionString);
             db.sp_Liberia(Papin,
@@ -71,7 +73,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                           valid_until, PositionMaster,
 PositionMate,
 PositionEngineer,
-PositionRating, LiberiaLicenseNumber);
+PositionRating, LiberiaLicenseNumber,ExaminationDate);
         }
     }
 }

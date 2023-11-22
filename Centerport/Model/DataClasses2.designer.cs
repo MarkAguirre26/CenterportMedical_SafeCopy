@@ -218,38 +218,6 @@ namespace MedicalManagementSoftware.Model
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaResultMainSave")]
-		public int PanamaResultMainSave(
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="FitForLookOut", DbType="VarChar(100)")] string fitForLookOut, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="NonFitForLookOut", DbType="VarChar(100)")] string nonFitForLookOut, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="DeckServiceFit", DbType="VarChar(100)")] string deckServiceFit, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="EngineFit", DbType="VarChar(100)")] string engineFit, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="CateringFit", DbType="VarChar(100)")] string cateringFit, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="OtherServiceFit", DbType="VarChar(100)")] string otherServiceFit, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="DeckServiceUnFit", DbType="VarChar(100)")] string deckServiceUnFit, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="EngineUnFit", DbType="VarChar(100)")] string engineUnFit, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="CateringUnFit", DbType="VarChar(100)")] string cateringUnFit, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="OtherUnFit", DbType="VarChar(100)")] string otherUnFit, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="WithOutRestrictions", DbType="VarChar(100)")] string withOutRestrictions, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="WithRestrictions", DbType="VarChar(100)")] string withRestrictions, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string cbVisualAidRequiredYes, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string cbVisualAidRequiredNo, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string assessmentComment1, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="MedicalCertificateExpiration", DbType="VarChar(100)")] string medicalCertificateExpiration, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="MedicalCertificateIssued", DbType="VarChar(100)")] string medicalCertificateIssued, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="NumberOfMedicalCertificate", DbType="VarChar(100)")] string numberOfMedicalCertificate, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PhysicianName", DbType="VarChar(100)")] string physicianName, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string assessmentComment2, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string assessmentComment3, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string assessmentComment4, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string assessmentComment5)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), resultMainUID, papin, fitForLookOut, nonFitForLookOut, deckServiceFit, engineFit, cateringFit, otherServiceFit, deckServiceUnFit, engineUnFit, cateringUnFit, otherUnFit, withOutRestrictions, withRestrictions, cbVisualAidRequiredYes, cbVisualAidRequiredNo, assessmentComment1, medicalCertificateExpiration, medicalCertificateIssued, numberOfMedicalCertificate, physicianName, assessmentComment2, assessmentComment3, assessmentComment4, assessmentComment5);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaDataRelatedCovidSave")]
 		public int PanamaDataRelatedCovidSave([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ContactInCovidPositive", DbType="VarChar(100)")] string contactInCovidPositive, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CovidTest", DbType="VarChar(100)")] string covidTest, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CovidDateTest", DbType="VarChar(100)")] string covidDateTest, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="HadFeverLast30Days", DbType="VarChar(100)")] string hadFeverLast30Days, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="VaccinationCovid", DbType="VarChar(100)")] string vaccinationCovid, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="VaccineType", DbType="VarChar(100)")] string vaccineType, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NumberofDoses", DbType="VarChar(100)")] string numberofDoses, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Booster", DbType="VarChar(100)")] string booster)
 		{
@@ -428,13 +396,6 @@ namespace MedicalManagementSoftware.Model
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, resultID);
 			return ((ISingleResult<PanamaPhysicalExplorationSelectResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaResultMainSelect")]
-		public ISingleResult<PanamaResultMainSelectResult> PanamaResultMainSelect([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), resultMainUID, papin);
-			return ((ISingleResult<PanamaResultMainSelectResult>)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaSightSelect")]
@@ -646,9 +607,50 @@ namespace MedicalManagementSoftware.Model
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PositionMate", DbType="VarChar(50)")] string positionMate, 
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PositionEngineer", DbType="VarChar(50)")] string positionEngineer, 
 					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PositionRating", DbType="VarChar(50)")] string positionRating, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="LiberiaLicenseNumber", DbType="VarChar(50)")] string liberiaLicenseNumber)
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="LiberiaLicenseNumber", DbType="VarChar(50)")] string liberiaLicenseNumber, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="ExaminationDate", DbType="VarChar(50)")] string examinationDate)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, examinationForDuty, height, weight, bloodPressure, pulse, respiration, generalAppearance, vissionRightEye, vissionLeftEye, vissionWithGlassRight, vissionWithGlassLeft, colorVissionMeetsStandard, colorTestType, hearingRight, hearingLeft, heart, lungs, speach, extremitiesUpper, extremitiesLower, cOLOR_VISION_DATE_TAKEN, sATISFACTORY_SIGHT_UNAID, cLARITY_OF_SPEECH, result_date, valid_until, positionMaster, positionMate, positionEngineer, positionRating, liberiaLicenseNumber);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), papin, examinationForDuty, height, weight, bloodPressure, pulse, respiration, generalAppearance, vissionRightEye, vissionLeftEye, vissionWithGlassRight, vissionWithGlassLeft, colorVissionMeetsStandard, colorTestType, hearingRight, hearingLeft, heart, lungs, speach, extremitiesUpper, extremitiesLower, cOLOR_VISION_DATE_TAKEN, sATISFACTORY_SIGHT_UNAID, cLARITY_OF_SPEECH, result_date, valid_until, positionMaster, positionMate, positionEngineer, positionRating, liberiaLicenseNumber, examinationDate);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaResultMainSelect")]
+		public ISingleResult<PanamaResultMainSelectResult> PanamaResultMainSelect([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), resultMainUID, papin);
+			return ((ISingleResult<PanamaResultMainSelectResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PanamaResultMainSave")]
+		public int PanamaResultMainSave(
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="ResultMainUID", DbType="VarChar(100)")] string resultMainUID, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="Papin", DbType="VarChar(100)")] string papin, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="FitForLookOut", DbType="VarChar(100)")] string fitForLookOut, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="NonFitForLookOut", DbType="VarChar(100)")] string nonFitForLookOut, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="DeckServiceFit", DbType="VarChar(100)")] string deckServiceFit, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="EngineFit", DbType="VarChar(100)")] string engineFit, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="CateringFit", DbType="VarChar(100)")] string cateringFit, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="OtherServiceFit", DbType="VarChar(100)")] string otherServiceFit, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="DeckServiceUnFit", DbType="VarChar(100)")] string deckServiceUnFit, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="EngineUnFit", DbType="VarChar(100)")] string engineUnFit, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="CateringUnFit", DbType="VarChar(100)")] string cateringUnFit, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="OtherUnFit", DbType="VarChar(100)")] string otherUnFit, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="WithOutRestrictions", DbType="VarChar(100)")] string withOutRestrictions, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="WithRestrictions", DbType="VarChar(100)")] string withRestrictions, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string cbVisualAidRequiredYes, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string cbVisualAidRequiredNo, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string assessmentComment1, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="MedicalCertificateExpiration", DbType="VarChar(100)")] string medicalCertificateExpiration, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="MedicalCertificateIssued", DbType="VarChar(100)")] string medicalCertificateIssued, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="NumberOfMedicalCertificate", DbType="VarChar(100)")] string numberOfMedicalCertificate, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PhysicianName", DbType="VarChar(100)")] string physicianName, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string assessmentComment2, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string assessmentComment3, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string assessmentComment4, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string assessmentComment5, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="PreviousMedical", DbType="VarChar(100)")] string previousMedical)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), resultMainUID, papin, fitForLookOut, nonFitForLookOut, deckServiceFit, engineFit, cateringFit, otherServiceFit, deckServiceUnFit, engineUnFit, cateringUnFit, otherUnFit, withOutRestrictions, withRestrictions, cbVisualAidRequiredYes, cbVisualAidRequiredNo, assessmentComment1, medicalCertificateExpiration, medicalCertificateIssued, numberOfMedicalCertificate, physicianName, assessmentComment2, assessmentComment3, assessmentComment4, assessmentComment5, previousMedical);
 			return ((int)(result.ReturnValue));
 		}
 	}
@@ -13231,482 +13233,6 @@ namespace MedicalManagementSoftware.Model
 		}
 	}
 	
-	public partial class PanamaResultMainSelectResult
-	{
-		
-		private long _RecId;
-		
-		private string _ResultId;
-		
-		private string _Papin;
-		
-		private string _FitForLookOut;
-		
-		private string _NonFitForLookOut;
-		
-		private string _DeckServiceFit;
-		
-		private string _EngineFit;
-		
-		private string _CateringFit;
-		
-		private string _OtherServiceFit;
-		
-		private string _DeckServiceUnFit;
-		
-		private string _EngineUnFit;
-		
-		private string _CateringUnFit;
-		
-		private string _OtherUnFit;
-		
-		private string _WithOutRestrictions;
-		
-		private string _cbVisualAidRequiredYes;
-		
-		private string _cbVisualAidRequiredNo;
-		
-		private string _assessmentComment1;
-		
-		private string _MedicalCertificateExpiration;
-		
-		private string _MedicalCertificateIssued;
-		
-		private string _NumberOfMedicalCertificate;
-		
-		private string _PhysicianName;
-		
-		private string _WithRestrictions;
-		
-		private string _assessmentComment2;
-		
-		private string _assessmentComment3;
-		
-		private string _assessmentComment4;
-		
-		private string _assessmentComment5;
-		
-		public PanamaResultMainSelectResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RecId", DbType="BigInt NOT NULL")]
-		public long RecId
-		{
-			get
-			{
-				return this._RecId;
-			}
-			set
-			{
-				if ((this._RecId != value))
-				{
-					this._RecId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ResultId", DbType="VarChar(1000) NOT NULL", CanBeNull=false)]
-		public string ResultId
-		{
-			get
-			{
-				return this._ResultId;
-			}
-			set
-			{
-				if ((this._ResultId != value))
-				{
-					this._ResultId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Papin", DbType="VarChar(100)")]
-		public string Papin
-		{
-			get
-			{
-				return this._Papin;
-			}
-			set
-			{
-				if ((this._Papin != value))
-				{
-					this._Papin = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FitForLookOut", DbType="VarChar(20)")]
-		public string FitForLookOut
-		{
-			get
-			{
-				return this._FitForLookOut;
-			}
-			set
-			{
-				if ((this._FitForLookOut != value))
-				{
-					this._FitForLookOut = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NonFitForLookOut", DbType="VarChar(20)")]
-		public string NonFitForLookOut
-		{
-			get
-			{
-				return this._NonFitForLookOut;
-			}
-			set
-			{
-				if ((this._NonFitForLookOut != value))
-				{
-					this._NonFitForLookOut = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DeckServiceFit", DbType="VarChar(20)")]
-		public string DeckServiceFit
-		{
-			get
-			{
-				return this._DeckServiceFit;
-			}
-			set
-			{
-				if ((this._DeckServiceFit != value))
-				{
-					this._DeckServiceFit = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EngineFit", DbType="VarChar(20)")]
-		public string EngineFit
-		{
-			get
-			{
-				return this._EngineFit;
-			}
-			set
-			{
-				if ((this._EngineFit != value))
-				{
-					this._EngineFit = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CateringFit", DbType="VarChar(20)")]
-		public string CateringFit
-		{
-			get
-			{
-				return this._CateringFit;
-			}
-			set
-			{
-				if ((this._CateringFit != value))
-				{
-					this._CateringFit = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OtherServiceFit", DbType="VarChar(20)")]
-		public string OtherServiceFit
-		{
-			get
-			{
-				return this._OtherServiceFit;
-			}
-			set
-			{
-				if ((this._OtherServiceFit != value))
-				{
-					this._OtherServiceFit = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DeckServiceUnFit", DbType="VarChar(20)")]
-		public string DeckServiceUnFit
-		{
-			get
-			{
-				return this._DeckServiceUnFit;
-			}
-			set
-			{
-				if ((this._DeckServiceUnFit != value))
-				{
-					this._DeckServiceUnFit = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EngineUnFit", DbType="VarChar(20)")]
-		public string EngineUnFit
-		{
-			get
-			{
-				return this._EngineUnFit;
-			}
-			set
-			{
-				if ((this._EngineUnFit != value))
-				{
-					this._EngineUnFit = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CateringUnFit", DbType="VarChar(20)")]
-		public string CateringUnFit
-		{
-			get
-			{
-				return this._CateringUnFit;
-			}
-			set
-			{
-				if ((this._CateringUnFit != value))
-				{
-					this._CateringUnFit = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OtherUnFit", DbType="VarChar(20)")]
-		public string OtherUnFit
-		{
-			get
-			{
-				return this._OtherUnFit;
-			}
-			set
-			{
-				if ((this._OtherUnFit != value))
-				{
-					this._OtherUnFit = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WithOutRestrictions", DbType="VarChar(20)")]
-		public string WithOutRestrictions
-		{
-			get
-			{
-				return this._WithOutRestrictions;
-			}
-			set
-			{
-				if ((this._WithOutRestrictions != value))
-				{
-					this._WithOutRestrictions = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cbVisualAidRequiredYes", DbType="VarChar(20)")]
-		public string cbVisualAidRequiredYes
-		{
-			get
-			{
-				return this._cbVisualAidRequiredYes;
-			}
-			set
-			{
-				if ((this._cbVisualAidRequiredYes != value))
-				{
-					this._cbVisualAidRequiredYes = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cbVisualAidRequiredNo", DbType="VarChar(20)")]
-		public string cbVisualAidRequiredNo
-		{
-			get
-			{
-				return this._cbVisualAidRequiredNo;
-			}
-			set
-			{
-				if ((this._cbVisualAidRequiredNo != value))
-				{
-					this._cbVisualAidRequiredNo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_assessmentComment1", DbType="VarChar(20)")]
-		public string assessmentComment1
-		{
-			get
-			{
-				return this._assessmentComment1;
-			}
-			set
-			{
-				if ((this._assessmentComment1 != value))
-				{
-					this._assessmentComment1 = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MedicalCertificateExpiration", DbType="VarChar(100)")]
-		public string MedicalCertificateExpiration
-		{
-			get
-			{
-				return this._MedicalCertificateExpiration;
-			}
-			set
-			{
-				if ((this._MedicalCertificateExpiration != value))
-				{
-					this._MedicalCertificateExpiration = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MedicalCertificateIssued", DbType="VarChar(100)")]
-		public string MedicalCertificateIssued
-		{
-			get
-			{
-				return this._MedicalCertificateIssued;
-			}
-			set
-			{
-				if ((this._MedicalCertificateIssued != value))
-				{
-					this._MedicalCertificateIssued = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NumberOfMedicalCertificate", DbType="VarChar(20)")]
-		public string NumberOfMedicalCertificate
-		{
-			get
-			{
-				return this._NumberOfMedicalCertificate;
-			}
-			set
-			{
-				if ((this._NumberOfMedicalCertificate != value))
-				{
-					this._NumberOfMedicalCertificate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhysicianName", DbType="VarChar(100)")]
-		public string PhysicianName
-		{
-			get
-			{
-				return this._PhysicianName;
-			}
-			set
-			{
-				if ((this._PhysicianName != value))
-				{
-					this._PhysicianName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WithRestrictions", DbType="VarChar(20)")]
-		public string WithRestrictions
-		{
-			get
-			{
-				return this._WithRestrictions;
-			}
-			set
-			{
-				if ((this._WithRestrictions != value))
-				{
-					this._WithRestrictions = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_assessmentComment2", DbType="VarChar(254)")]
-		public string assessmentComment2
-		{
-			get
-			{
-				return this._assessmentComment2;
-			}
-			set
-			{
-				if ((this._assessmentComment2 != value))
-				{
-					this._assessmentComment2 = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_assessmentComment3", DbType="VarChar(254)")]
-		public string assessmentComment3
-		{
-			get
-			{
-				return this._assessmentComment3;
-			}
-			set
-			{
-				if ((this._assessmentComment3 != value))
-				{
-					this._assessmentComment3 = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_assessmentComment4", DbType="VarChar(254)")]
-		public string assessmentComment4
-		{
-			get
-			{
-				return this._assessmentComment4;
-			}
-			set
-			{
-				if ((this._assessmentComment4 != value))
-				{
-					this._assessmentComment4 = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_assessmentComment5", DbType="VarChar(254)")]
-		public string assessmentComment5
-		{
-			get
-			{
-				return this._assessmentComment5;
-			}
-			set
-			{
-				if ((this._assessmentComment5 != value))
-				{
-					this._assessmentComment5 = value;
-				}
-			}
-		}
-	}
-	
 	public partial class PanamaSightSelectResult
 	{
 		
@@ -15962,6 +15488,8 @@ namespace MedicalManagementSoftware.Model
 		
 		private string _LiberiaLicenseNumber;
 		
+		private string _ExaminationDate;
+		
 		public spLiberiaSelectResult()
 		{
 		}
@@ -16746,6 +16274,516 @@ namespace MedicalManagementSoftware.Model
 				if ((this._LiberiaLicenseNumber != value))
 				{
 					this._LiberiaLicenseNumber = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ExaminationDate", DbType="VarChar(254)")]
+		public string ExaminationDate
+		{
+			get
+			{
+				return this._ExaminationDate;
+			}
+			set
+			{
+				if ((this._ExaminationDate != value))
+				{
+					this._ExaminationDate = value;
+				}
+			}
+		}
+	}
+	
+	public partial class PanamaResultMainSelectResult
+	{
+		
+		private long _RecId;
+		
+		private string _ResultId;
+		
+		private string _Papin;
+		
+		private string _FitForLookOut;
+		
+		private string _NonFitForLookOut;
+		
+		private string _DeckServiceFit;
+		
+		private string _EngineFit;
+		
+		private string _CateringFit;
+		
+		private string _OtherServiceFit;
+		
+		private string _DeckServiceUnFit;
+		
+		private string _EngineUnFit;
+		
+		private string _CateringUnFit;
+		
+		private string _OtherUnFit;
+		
+		private string _WithOutRestrictions;
+		
+		private string _cbVisualAidRequiredYes;
+		
+		private string _cbVisualAidRequiredNo;
+		
+		private string _assessmentComment1;
+		
+		private string _MedicalCertificateExpiration;
+		
+		private string _MedicalCertificateIssued;
+		
+		private string _NumberOfMedicalCertificate;
+		
+		private string _PhysicianName;
+		
+		private string _WithRestrictions;
+		
+		private string _assessmentComment2;
+		
+		private string _assessmentComment3;
+		
+		private string _assessmentComment4;
+		
+		private string _assessmentComment5;
+		
+		private string _PreviousMedical;
+		
+		public PanamaResultMainSelectResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RecId", DbType="BigInt NOT NULL")]
+		public long RecId
+		{
+			get
+			{
+				return this._RecId;
+			}
+			set
+			{
+				if ((this._RecId != value))
+				{
+					this._RecId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ResultId", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string ResultId
+		{
+			get
+			{
+				return this._ResultId;
+			}
+			set
+			{
+				if ((this._ResultId != value))
+				{
+					this._ResultId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Papin", DbType="VarChar(100)")]
+		public string Papin
+		{
+			get
+			{
+				return this._Papin;
+			}
+			set
+			{
+				if ((this._Papin != value))
+				{
+					this._Papin = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FitForLookOut", DbType="VarChar(254)")]
+		public string FitForLookOut
+		{
+			get
+			{
+				return this._FitForLookOut;
+			}
+			set
+			{
+				if ((this._FitForLookOut != value))
+				{
+					this._FitForLookOut = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NonFitForLookOut", DbType="VarChar(254)")]
+		public string NonFitForLookOut
+		{
+			get
+			{
+				return this._NonFitForLookOut;
+			}
+			set
+			{
+				if ((this._NonFitForLookOut != value))
+				{
+					this._NonFitForLookOut = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DeckServiceFit", DbType="VarChar(254)")]
+		public string DeckServiceFit
+		{
+			get
+			{
+				return this._DeckServiceFit;
+			}
+			set
+			{
+				if ((this._DeckServiceFit != value))
+				{
+					this._DeckServiceFit = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EngineFit", DbType="VarChar(254)")]
+		public string EngineFit
+		{
+			get
+			{
+				return this._EngineFit;
+			}
+			set
+			{
+				if ((this._EngineFit != value))
+				{
+					this._EngineFit = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CateringFit", DbType="VarChar(254)")]
+		public string CateringFit
+		{
+			get
+			{
+				return this._CateringFit;
+			}
+			set
+			{
+				if ((this._CateringFit != value))
+				{
+					this._CateringFit = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OtherServiceFit", DbType="VarChar(254)")]
+		public string OtherServiceFit
+		{
+			get
+			{
+				return this._OtherServiceFit;
+			}
+			set
+			{
+				if ((this._OtherServiceFit != value))
+				{
+					this._OtherServiceFit = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DeckServiceUnFit", DbType="VarChar(254)")]
+		public string DeckServiceUnFit
+		{
+			get
+			{
+				return this._DeckServiceUnFit;
+			}
+			set
+			{
+				if ((this._DeckServiceUnFit != value))
+				{
+					this._DeckServiceUnFit = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EngineUnFit", DbType="VarChar(254)")]
+		public string EngineUnFit
+		{
+			get
+			{
+				return this._EngineUnFit;
+			}
+			set
+			{
+				if ((this._EngineUnFit != value))
+				{
+					this._EngineUnFit = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CateringUnFit", DbType="VarChar(254)")]
+		public string CateringUnFit
+		{
+			get
+			{
+				return this._CateringUnFit;
+			}
+			set
+			{
+				if ((this._CateringUnFit != value))
+				{
+					this._CateringUnFit = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OtherUnFit", DbType="VarChar(254)")]
+		public string OtherUnFit
+		{
+			get
+			{
+				return this._OtherUnFit;
+			}
+			set
+			{
+				if ((this._OtherUnFit != value))
+				{
+					this._OtherUnFit = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WithOutRestrictions", DbType="VarChar(254)")]
+		public string WithOutRestrictions
+		{
+			get
+			{
+				return this._WithOutRestrictions;
+			}
+			set
+			{
+				if ((this._WithOutRestrictions != value))
+				{
+					this._WithOutRestrictions = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cbVisualAidRequiredYes", DbType="VarChar(254)")]
+		public string cbVisualAidRequiredYes
+		{
+			get
+			{
+				return this._cbVisualAidRequiredYes;
+			}
+			set
+			{
+				if ((this._cbVisualAidRequiredYes != value))
+				{
+					this._cbVisualAidRequiredYes = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cbVisualAidRequiredNo", DbType="VarChar(254)")]
+		public string cbVisualAidRequiredNo
+		{
+			get
+			{
+				return this._cbVisualAidRequiredNo;
+			}
+			set
+			{
+				if ((this._cbVisualAidRequiredNo != value))
+				{
+					this._cbVisualAidRequiredNo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_assessmentComment1", DbType="VarChar(254)")]
+		public string assessmentComment1
+		{
+			get
+			{
+				return this._assessmentComment1;
+			}
+			set
+			{
+				if ((this._assessmentComment1 != value))
+				{
+					this._assessmentComment1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MedicalCertificateExpiration", DbType="VarChar(254)")]
+		public string MedicalCertificateExpiration
+		{
+			get
+			{
+				return this._MedicalCertificateExpiration;
+			}
+			set
+			{
+				if ((this._MedicalCertificateExpiration != value))
+				{
+					this._MedicalCertificateExpiration = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MedicalCertificateIssued", DbType="VarChar(254)")]
+		public string MedicalCertificateIssued
+		{
+			get
+			{
+				return this._MedicalCertificateIssued;
+			}
+			set
+			{
+				if ((this._MedicalCertificateIssued != value))
+				{
+					this._MedicalCertificateIssued = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NumberOfMedicalCertificate", DbType="VarChar(254)")]
+		public string NumberOfMedicalCertificate
+		{
+			get
+			{
+				return this._NumberOfMedicalCertificate;
+			}
+			set
+			{
+				if ((this._NumberOfMedicalCertificate != value))
+				{
+					this._NumberOfMedicalCertificate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhysicianName", DbType="VarChar(254)")]
+		public string PhysicianName
+		{
+			get
+			{
+				return this._PhysicianName;
+			}
+			set
+			{
+				if ((this._PhysicianName != value))
+				{
+					this._PhysicianName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WithRestrictions", DbType="VarChar(254)")]
+		public string WithRestrictions
+		{
+			get
+			{
+				return this._WithRestrictions;
+			}
+			set
+			{
+				if ((this._WithRestrictions != value))
+				{
+					this._WithRestrictions = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_assessmentComment2", DbType="VarChar(254)")]
+		public string assessmentComment2
+		{
+			get
+			{
+				return this._assessmentComment2;
+			}
+			set
+			{
+				if ((this._assessmentComment2 != value))
+				{
+					this._assessmentComment2 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_assessmentComment3", DbType="VarChar(254)")]
+		public string assessmentComment3
+		{
+			get
+			{
+				return this._assessmentComment3;
+			}
+			set
+			{
+				if ((this._assessmentComment3 != value))
+				{
+					this._assessmentComment3 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_assessmentComment4", DbType="VarChar(254)")]
+		public string assessmentComment4
+		{
+			get
+			{
+				return this._assessmentComment4;
+			}
+			set
+			{
+				if ((this._assessmentComment4 != value))
+				{
+					this._assessmentComment4 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_assessmentComment5", DbType="VarChar(254)")]
+		public string assessmentComment5
+		{
+			get
+			{
+				return this._assessmentComment5;
+			}
+			set
+			{
+				if ((this._assessmentComment5 != value))
+				{
+					this._assessmentComment5 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PreviousMedical", DbType="VarChar(254)")]
+		public string PreviousMedical
+		{
+			get
+			{
+				return this._PreviousMedical;
+			}
+			set
+			{
+				if ((this._PreviousMedical != value))
+				{
+					this._PreviousMedical = value;
 				}
 			}
 		}

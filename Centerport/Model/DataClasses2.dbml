@@ -623,34 +623,6 @@
     <Parameter Name="TradeArea" Parameter="tradeArea" Type="System.String" DbType="VarChar(100)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.PanamaResultMainSave" Method="PanamaResultMainSave">
-    <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="FitForLookOut" Parameter="fitForLookOut" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="NonFitForLookOut" Parameter="nonFitForLookOut" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DeckServiceFit" Parameter="deckServiceFit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="EngineFit" Parameter="engineFit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="CateringFit" Parameter="cateringFit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="OtherServiceFit" Parameter="otherServiceFit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="DeckServiceUnFit" Parameter="deckServiceUnFit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="EngineUnFit" Parameter="engineUnFit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="CateringUnFit" Parameter="cateringUnFit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="OtherUnFit" Parameter="otherUnFit" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="WithOutRestrictions" Parameter="withOutRestrictions" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="WithRestrictions" Parameter="withRestrictions" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="cbVisualAidRequiredYes" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="cbVisualAidRequiredNo" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="assessmentComment1" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="MedicalCertificateExpiration" Parameter="medicalCertificateExpiration" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="MedicalCertificateIssued" Parameter="medicalCertificateIssued" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="NumberOfMedicalCertificate" Parameter="numberOfMedicalCertificate" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="PhysicianName" Parameter="physicianName" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="assessmentComment2" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="assessmentComment3" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="assessmentComment4" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="assessmentComment5" Type="System.String" DbType="VarChar(100)" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.PanamaDataRelatedCovidSave" Method="PanamaDataRelatedCovidSave">
     <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
@@ -1041,38 +1013,6 @@
       <Column Name="PhysicalExplorationComment4" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.PanamaResultMainSelect" Method="PanamaResultMainSelect">
-    <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
-    <ElementType Name="PanamaResultMainSelectResult">
-      <Column Name="RecId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="ResultId" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
-      <Column Name="Papin" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="FitForLookOut" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="NonFitForLookOut" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="DeckServiceFit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="EngineFit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="CateringFit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="OtherServiceFit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="DeckServiceUnFit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="EngineUnFit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="CateringUnFit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="OtherUnFit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="WithOutRestrictions" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="cbVisualAidRequiredYes" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="cbVisualAidRequiredNo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="assessmentComment1" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="MedicalCertificateExpiration" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="MedicalCertificateIssued" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="NumberOfMedicalCertificate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="PhysicianName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="WithRestrictions" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="assessmentComment2" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="assessmentComment3" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="assessmentComment4" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-      <Column Name="assessmentComment5" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.PanamaSightSelect" Method="PanamaSightSelect">
     <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
@@ -1395,6 +1335,7 @@
       <Column Name="BODY_BUILD" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
       <Column Name="COLOR_VISION_DATE_TAKEN_exam" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
       <Column Name="LiberiaLicenseNumber" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ExaminationDate" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
     </ElementType>
   </Function>
   <Function Name="dbo.sp_Liberia" Method="sp_Liberia">
@@ -1429,6 +1370,69 @@
     <Parameter Name="PositionEngineer" Parameter="positionEngineer" Type="System.String" DbType="VarChar(50)" />
     <Parameter Name="PositionRating" Parameter="positionRating" Type="System.String" DbType="VarChar(50)" />
     <Parameter Name="LiberiaLicenseNumber" Parameter="liberiaLicenseNumber" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ExaminationDate" Parameter="examinationDate" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PanamaResultMainSelect" Method="PanamaResultMainSelect">
+    <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="PanamaResultMainSelectResult">
+      <Column Name="RecId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ResultId" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Papin" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FitForLookOut" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NonFitForLookOut" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="DeckServiceFit" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="EngineFit" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="CateringFit" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="OtherServiceFit" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="DeckServiceUnFit" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="EngineUnFit" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="CateringUnFit" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="OtherUnFit" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="WithOutRestrictions" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="cbVisualAidRequiredYes" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="cbVisualAidRequiredNo" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="assessmentComment1" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="MedicalCertificateExpiration" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="MedicalCertificateIssued" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NumberOfMedicalCertificate" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PhysicianName" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="WithRestrictions" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="assessmentComment2" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="assessmentComment3" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="assessmentComment4" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="assessmentComment5" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PreviousMedical" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.PanamaResultMainSave" Method="PanamaResultMainSave">
+    <Parameter Name="ResultMainUID" Parameter="resultMainUID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="FitForLookOut" Parameter="fitForLookOut" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NonFitForLookOut" Parameter="nonFitForLookOut" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DeckServiceFit" Parameter="deckServiceFit" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="EngineFit" Parameter="engineFit" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="CateringFit" Parameter="cateringFit" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="OtherServiceFit" Parameter="otherServiceFit" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DeckServiceUnFit" Parameter="deckServiceUnFit" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="EngineUnFit" Parameter="engineUnFit" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="CateringUnFit" Parameter="cateringUnFit" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="OtherUnFit" Parameter="otherUnFit" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="WithOutRestrictions" Parameter="withOutRestrictions" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="WithRestrictions" Parameter="withRestrictions" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="cbVisualAidRequiredYes" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="cbVisualAidRequiredNo" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="assessmentComment1" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="MedicalCertificateExpiration" Parameter="medicalCertificateExpiration" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="MedicalCertificateIssued" Parameter="medicalCertificateIssued" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NumberOfMedicalCertificate" Parameter="numberOfMedicalCertificate" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="PhysicianName" Parameter="physicianName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="assessmentComment2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="assessmentComment3" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="assessmentComment4" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="assessmentComment5" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="PreviousMedical" Parameter="previousMedical" Type="System.String" DbType="VarChar(100)" />
     <Return Type="System.Int32" />
   </Function>
 </Database>

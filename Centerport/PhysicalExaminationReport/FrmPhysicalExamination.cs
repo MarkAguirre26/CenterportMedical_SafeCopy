@@ -34,7 +34,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
         private string dateOfPhysicianCertificate = "JAN 13, 1993";
         private string dateOfPhysicianExamination = "";
 
-
+        //
 
         public FrmPhysicalExamination(Main m)
         {
@@ -145,7 +145,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 txtPlaceOfBirth.Text = l.place_of_birth;
                 txtHomeAddress.Text = l.HomeAddress;
                 txtLicenceNumber.Text = l.LiberiaLicenseNumber == null ? "" : l.LiberiaLicenseNumber;
-
+                txtPhysicianDateOfExam.Text = 
                 txtHeight.Text = l.Height + " CM";
                 txtWeight.Text = l.Weight + " KG";
                 string bp_diastolic =  l.BP+"/"+l.BP_DIASTOLIC;
@@ -157,7 +157,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 txtLeftEyeWithOutGlasses.Text = l.VissionLeftEye == null ? "20/20" : l.VissionLeftEye;
                 txtRightEyeWithGlasses.Text = l.VissionWithGlassRight == null ? "20/20" : l.VissionWithGlassRight;
                 txtLeftEyeWithGlasses.Text = l.VissionWithGlassLeft == null ? "20/20" : l.VissionWithGlassLeft;
-
+                txtPhysicianDateOfExam.Text = l.ExaminationDate == null ? "" : l.ExaminationDate;
                 string d = l.COLOR_VISION_DATE_TAKEN ==null ? l.COLOR_VISION_DATE_TAKEN_exam.ToString(): l.COLOR_VISION_DATE_TAKEN.ToString();
                 DateTime temp;
                 if (DateTime.TryParse(d, out temp))
@@ -534,7 +534,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
 
 
             LiberiaModel liberiaModel = new LiberiaModel();
-            liberiaModel.save(txtPapin.Text, ExaminationForDuty, txtHeight.Text, txtWeight.Text, txtBloodPressure.Text, txtPulse.Text, txtRespiration.Text, txtGeneralAppearance.Text, txtRightEyeWithOutGlasses.Text, txtLeftEyeWithOutGlasses.Text, txtRightEyeWithGlasses.Text, txtLeftEyeWithGlasses.Text, ColorVissionMeetsStandard, ColorTestType, txtHearingRight.Text, txthearingLeft.Text, txtHeart.Text, txtLungs.Text, txtSpeach.Text, txtExtremitiesUpper.Text, txtExtremitiesLower.Text, txtDateOfColorVisionTest.Text, cbo_satisfactory_Unaided.Text, "", txtDateOfExam.Text, txtExpirydate.Text,txtMasterPosition.Text,txtMatePosition.Text,txtEngineerPosition.Text,txtRatingPosition.Text,txtLicenceNumber.Text);
+            liberiaModel.save(txtPapin.Text, ExaminationForDuty, txtHeight.Text, txtWeight.Text, txtBloodPressure.Text, txtPulse.Text, txtRespiration.Text, txtGeneralAppearance.Text, txtRightEyeWithOutGlasses.Text, txtLeftEyeWithOutGlasses.Text, txtRightEyeWithGlasses.Text, txtLeftEyeWithGlasses.Text, ColorVissionMeetsStandard, ColorTestType, txtHearingRight.Text, txthearingLeft.Text, txtHeart.Text, txtLungs.Text, txtSpeach.Text, txtExtremitiesUpper.Text, txtExtremitiesLower.Text, txtDateOfColorVisionTest.Text, cbo_satisfactory_Unaided.Text, "", txtDateOfExam.Text, txtExpirydate.Text,txtMasterPosition.Text,txtMatePosition.Text,txtEngineerPosition.Text,txtRatingPosition.Text,txtLicenceNumber.Text,txtPhysicianDateOfExam.Text);
         }
 
         public void Availability(Control overlay, bool bl)
@@ -635,7 +635,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
 
                 PhysicalExaminationReport report = new PhysicalExaminationReport();
                 report.SetParameterValue("Latname", physicalExaminationMedicalRecordModel.LastName);
-                report.SetParameterValue("FirstName", physicalExaminationMedicalRecordModel.LastName);
+                report.SetParameterValue("FirstName", physicalExaminationMedicalRecordModel.FirstName);
                 report.SetParameterValue("MiddileName", physicalExaminationMedicalRecordModel.MiddleName);
                 report.SetParameterValue("Month", physicalExaminationMedicalRecordModel.Month);
                 report.SetParameterValue("Day", physicalExaminationMedicalRecordModel.Day);
@@ -676,6 +676,8 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 report.SetParameterValue("addressOfPhysician", physicalExaminationMedicalRecordModel.addressOfPhysician);
                 report.SetParameterValue("nameOfPhysicianCertificating", physicalExaminationMedicalRecordModel.nameOfPhysicianCertificating);
                 report.SetParameterValue("dateOfPhysicianCertificate", physicalExaminationMedicalRecordModel.dateOfPhysicianCertificate);
+                report.SetParameterValue("serialnumber", physicalExaminationMedicalRecordModel.serialNumber);
+                report.SetParameterValue("ExaminationDate", physicalExaminationMedicalRecordModel.ExaminationDate);
 
                 Viewer1.Visible = true;
                 Viewer1.BringToFront();
@@ -701,7 +703,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 ReportDocument reportDocument = new ReportDocument();
                 reportDocument.Load(PhysicalExaminationReportPath);
                 reportDocument.SetParameterValue("Latname", physicalExaminationMedicalRecordModel.LastName);
-                reportDocument.SetParameterValue("FirstName", physicalExaminationMedicalRecordModel.LastName);
+                reportDocument.SetParameterValue("FirstName", physicalExaminationMedicalRecordModel.FirstName);
                 reportDocument.SetParameterValue("MiddileName", physicalExaminationMedicalRecordModel.MiddleName);
                 reportDocument.SetParameterValue("Month", physicalExaminationMedicalRecordModel.Month);
                 reportDocument.SetParameterValue("Day", physicalExaminationMedicalRecordModel.Day);
@@ -742,12 +744,14 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 reportDocument.SetParameterValue("addressOfPhysician", physicalExaminationMedicalRecordModel.addressOfPhysician);
                 reportDocument.SetParameterValue("nameOfPhysicianCertificating", physicalExaminationMedicalRecordModel.nameOfPhysicianCertificating);
                 reportDocument.SetParameterValue("dateOfPhysicianCertificate", physicalExaminationMedicalRecordModel.dateOfPhysicianCertificate);
+                reportDocument.SetParameterValue("serialnumber", physicalExaminationMedicalRecordModel.serialNumber);
+                reportDocument.SetParameterValue("ExaminationDate", physicalExaminationMedicalRecordModel.ExaminationDate);
                       
                 reportDocument.PrintOptions.PaperOrientation = PaperOrientation.Portrait;
                 reportDocument.PrintOptions.PaperSize = CrystalDecisions.Shared.PaperSize.PaperLetter;
                 reportDocument.PrintOptions.PrinterName = GetDefaultPrinterName();
                 reportDocument.PrintToPrinter(1, false, 0, 0);
-
+                //
             }
             
            
@@ -999,6 +1003,8 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             physicalExaminationMedicalRecordModel.addressOfPhysician = txtAddress.Text;
             physicalExaminationMedicalRecordModel.nameOfPhysicianCertificating = txtPhysicianCertificatingAuthority.Text;
             physicalExaminationMedicalRecordModel.dateOfPhysicianCertificate = txtDateOfIssuePhysicianCertificate.Text;
+            physicalExaminationMedicalRecordModel.serialNumber = txtLicenceNumber.Text;
+            physicalExaminationMedicalRecordModel.ExaminationDate = txtPhysicianDateOfExam.Text;
 
             return physicalExaminationMedicalRecordModel;
         }

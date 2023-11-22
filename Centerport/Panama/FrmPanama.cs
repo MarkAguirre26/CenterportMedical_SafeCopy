@@ -206,7 +206,7 @@ namespace MedicalManagementSoftware
             model.Restriction2 = txtAssessmentComment2.Text;
             model.Restriction3 = txtAssessmentComment3.Text;
             model.Restriction4 = txtAssessmentComment4.Text;
-            model.Restriction5 = txtAssessmentComment5.Text;
+            model.Restriction5 = txtAssessmentComment5.Text;            
             model.EZGPerformed = txtEZGPerformed.Text;
             return model;
 
@@ -1963,14 +1963,14 @@ namespace MedicalManagementSoftware
 
 
 
-
+                //
 
                 txtAssessmentComment1.Text = i.assessmentComment1;
                 txtAssessmentComment2.Text = i.assessmentComment2;
                 txtAssessmentComment3.Text = i.assessmentComment3;
                 txtAssessmentComment4.Text = i.assessmentComment4;
                 txtAssessmentComment5.Text = i.assessmentComment5;
-
+                txtPreviousMedical.Text = i.PreviousMedical;
 
 
 
@@ -2829,7 +2829,7 @@ namespace MedicalManagementSoftware
                             txtAssessmentComment2.Text,
                             txtAssessmentComment3.Text,
                             txtAssessmentComment4.Text,
-                             txtAssessmentComment5.Text);
+                             txtAssessmentComment5.Text,txtPreviousMedical.Text);
         }
 
 

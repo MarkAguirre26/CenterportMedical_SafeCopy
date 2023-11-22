@@ -53,7 +53,9 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
         public string addressOfPhysician { get; set; }
         public string nameOfPhysicianCertificating { get; set; }
         public string dateOfPhysicianCertificate { get; set; }
-
+        public string serialNumber { get; set; }
+        public string ExaminationDate { get; set; }
+        
 
 
 

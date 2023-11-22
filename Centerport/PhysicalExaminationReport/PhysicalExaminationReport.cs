@@ -424,6 +424,22 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport {
                 return this.DataDefinition.ParameterFields[41];
             }
         }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_serialnumber {
+            get {
+                return this.DataDefinition.ParameterFields[42];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_ExaminationDate {
+            get {
+                return this.DataDefinition.ParameterFields[43];
+            }
+        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
