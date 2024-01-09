@@ -154,9 +154,9 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 txtRespiration.Text = l.RESPIRATION_exam == null ? l.Respiration + "/MIN." : l.RESPIRATION_exam + "/MIN.";
 
                 txtRightEyeWithOutGlasses.Text = l.VissionRightEye == null ? "20/20" : l.VissionRightEye;
-                txtLeftEyeWithOutGlasses.Text = l.VissionLeftEye == null ? "20/20" : l.VissionLeftEye;
+                txtLeftEyeWithOutGlasses.Text = l.VissionLeftEye == null ? "20/20" : l.VissionWithGlassLeft;
                 txtRightEyeWithGlasses.Text = l.VissionWithGlassRight == null ? "20/20" : l.VissionWithGlassRight;
-                txtLeftEyeWithGlasses.Text = l.VissionWithGlassLeft == null ? "20/20" : l.VissionWithGlassLeft;
+                txtLeftEyeWithGlasses.Text = l.VissionWithGlassLeft == null ? "20/20" : l.VissionLeftEye;
                 txtPhysicianDateOfExam.Text = l.ExaminationDate == null ? "" : l.ExaminationDate;
                 string d = l.COLOR_VISION_DATE_TAKEN ==null ? l.COLOR_VISION_DATE_TAKEN_exam.ToString(): l.COLOR_VISION_DATE_TAKEN.ToString();
                 DateTime temp;
