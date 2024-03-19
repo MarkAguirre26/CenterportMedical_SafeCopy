@@ -129,7 +129,7 @@ namespace MedicalManagementSoftware
             Load_Medical();
 
             fmain.ts_edit_sea.Enabled = false;
-      
+
 
 
         }
@@ -232,7 +232,7 @@ namespace MedicalManagementSoftware
             txt_medDir_Cbo.Text = ini.IniReadValue("MEDICAL", "PEME MedicalDirector");
             MedtectLicence = ini.IniReadValue("[MEDICAL]", "PEME_Physician_license");
             cbo_recomendation.Text = "FIT FOR SEA DUTY";
-      
+
 
         }
         public void Save()
@@ -327,19 +327,29 @@ namespace MedicalManagementSoftware
                 if (rb_fit_lookOut_Y.Checked == true) { FIT_FOR_LOOKOUT_ = "YES"; } else if (rb_fit_lookOut_N.Checked == true) { FIT_FOR_LOOKOUT_ = "NO"; } else { FIT_FOR_LOOKOUT_ = "-"; }
 
                 //----------------------------
-                if (rb_hearingRight_AD.Checked == true) {
+                if (rb_hearingRight_AD.Checked == true)
+                {
                     HEARING_RIGHT_ = "A";
-                } else if (rb_hearingRight_IA.Checked == true) {
+                }
+                else if (rb_hearingRight_IA.Checked == true)
+                {
                     HEARING_RIGHT_ = "I";
-                } else {
-                    HEARING_RIGHT_ = "-"; 
+                }
+                else
+                {
+                    HEARING_RIGHT_ = "-";
                 }
                 //---------------
-                if (rb_hearingLeft_AD.Checked == true) { 
+                if (rb_hearingLeft_AD.Checked == true)
+                {
                     HEARING_LEFT_ = "A";
-                } else if (rb_hearingLeft_IA.Checked == true) {
+                }
+                else if (rb_hearingLeft_IA.Checked == true)
+                {
                     HEARING_LEFT_ = "I";
-                } else {
+                }
+                else
+                {
                     HEARING_LEFT_ = "-";
                 }
                 //----------------------
@@ -398,14 +408,14 @@ namespace MedicalManagementSoftware
                 db.ExecuteCommand("INSERT INTO t_phy_exam (resultid, HEIGHT, WEIGHT, BP, PULSE, RESPIRATION, BODY_BUILD, FAR_OD_U, FAR_OD_C, FAR_OS_U, FAR_OS_C, NEAR_ODJ_U, NEAR_ODJ_C, NEAR_OSJ_U, NEAR_OSJ_C, ISHIHARA_U, ISHIHARA_C, HEARING_AD, HEARING_AS, SPEECH, CONVERSATIONAL_AD, CONVERSATIONAL_AS, SATISFACTORY_HEARING, SATISFACTORY_SIGHT_AID, SATISFACTORY_SIGHT_UNAID, SATISFACTORY_PSYCHO, VISUAL_AIDS, FIT_FOR_LOOKOUT, HEARING_RIGHT, HEARING_LEFT, CLARITY_OF_SPEECH, VISUAL_AIDS_REQUIRED, BP_DIASTOLIC, RHYTHM, VISUAL_AIDS_WORN, COLOR_VISION_DATE_TAKEN, UNAIDED_HEARING_SATISFACTORY, IDENTITY_CONFIRMED) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23},{24},{25},{26},{27},{28},{29},{30},{31},{32},{33},{34},{35},{36},{37})", LabID.Text, x_height.Text, x_weight.Text, x_bp.Text, x_pulse.Text, x_respiration.Text, x_body_Build.Text, x_far_u.Text, x_far_c.Text, x_far_os_u.Text, x_far_os_c.Text, x_Near_odj_u.Text, x_near_odj_c.Text, x_near_osj_u.Text, x_near_osj_c.Text, ISHIHARA_U_.ToString(), cbo_ishihara_c.Text, x_hearing_Ad.Text, x_hearing_as.Text, "", x_Con_ad.Text, con_as.ToString(), cb_satisfactory_Hearing.Text, "", cbo_satisfactory_Unaided.Text, "", cbo_visual_Aids.Text, FIT_FOR_LOOKOUT_.ToString(), HEARING_RIGHT_.ToString(), HEARING_LEFT_.ToString(), CLARITY_OF_SPEECH_.ToString(), VISUAL_AIDS_REQUIRED_.ToString(), x_bp_dias.Text, x_rhythm.Text, VISUAL_AIDS_WORN_.ToString(), "", "", IDENTITY_CONFIRMED_.ToString());
                 db.ExecuteCommand("INSERT INTO t_others (resultid, SKIN_TAG, SKIN, HEAD_NECK_SCALP_TAG, HEAD_NECK_SCALP, EYES_TAG, EYES, PUPILS_TAG, PUPILS, EARS_EARDRUM_TAG, EARS_EARDRUM, NOSE_SINUSES_TAG, NOSE_SINUSES, MOUTH_THROAT_TAG, MOUTH_THROAT, NECK_LN_THYROID_TAG, NECK_LN_THYROID, CHEST_BREAST_AXILLA_TAG, CHEST_BREAST_AXILLA, LUNGS_TAG, LUNGS, HEART_TAG, HEART, ABDOMEN_TAG, ABDOMEN, BACK_FLANK_TAG, BACK_FLANK, ANUS_RECTUM_TAG, ANUS_RECTUM, GU_SYSTEM_TAG, GU_SYSTEM, INGUINALS_GENITALS_TAG, INGUINALS_GENITALS, REFLEXES_TAG, REFLEXES, EXTREMITIES_TAG, EXTREMITIES, DENTAL, DENTAL_TAG) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23},{24},{25},{26},{27},{28},{29},{30},{31},{32},{33},{34},{35},{36},{37},{38})", LabID.Text, cb_skin_.ToString(), x_skin.Text, cb_neck_.ToString(), x_neck.Text, cb_eyes_.ToString(), x_eyes.Text, cb_pupils_.ToString(), x_pupils.Text, cb_ears_.ToString(), x_ears.Text, cb_nose_.ToString(), x_nose.Text, cb_mought_.ToString(), x_mouth.Text, cb_thyroid_.ToString(), x_thyroid.Text, cb_breast_.ToString(), x_breast.Text, cb_lungs_.ToString(), x_lungs.Text, cb_heart_.ToString(), x_heart.Text, cb_abdomen_.ToString(), x_abdomen.Text, cb_back_.ToString(), x_back.Text, cb_anus_.ToString(), x_anus.Text, cb_gu_.ToString(), x_gu.Text, cb_inguinals_.ToString(), x_inguinals.Text, cb_reflexes_.ToString(), x_reflexes.Text, cb_extremeties_.ToString(), x_extremeties.Text, x_dental.Text, cb_dental_.ToString());
                 db.ExecuteCommand("INSERT INTO t_ancillary (result_id, cxr, ecg, cbc, pregnancy_test ,urinalysis, stool_exam, hbsag, hiv ,rpr, blood_type, blood_chemistries, psychological_exam, additional_test ,remarks, recommendation ,additional_test2) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16})", LabID.Text, cxr_normal_.ToString(), ecg_normal_.ToString(), cbd_normal_.ToString(), cbo_pregnancyTest.Text, urinal_normal_.ToString(), stool_normal_.ToString(), hb_Nonreactive_.ToString(), hiv_NonReactive_.ToString(), rpr_NonReactive_.ToString(), cbo_bloodType.Text.Replace("+", ""), "", psychological_exam_.ToString(), x_add_test1.Text, x_remark.Text, "", x_add_test2.Text);
-   
+
                 Seabase_SearchList_Model.Clear();
                 SeabaseAdd_model.Clear();
                 if (!backgroundWorker1.IsBusy)
                 { backgroundWorker1.RunWorkerAsync(); }
 
 
-                
+
                 Availability(false);
                 pin.Select();
                 fmain.ts_add_sea.Enabled = true;
@@ -425,7 +435,7 @@ namespace MedicalManagementSoftware
                 MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
 
             }
-          
+
 
 
 
@@ -554,7 +564,7 @@ namespace MedicalManagementSoftware
                 fmain.ts_add_sea.Enabled = true;
                 fmain.ts_edit_sea.Enabled = true;
                 fmain.ts_delete_sea.Enabled = false;
-                fmain.ts_save_sea.Enabled = false; 
+                fmain.ts_save_sea.Enabled = false;
                 fmain.ts_cancel_sea.Enabled = false;
                 fmain.ts_search_sea.Enabled = true;
                 fmain.ts_print_sea.Enabled = true;
@@ -578,11 +588,11 @@ namespace MedicalManagementSoftware
                 MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
 
             }
-      
+
 
 
         }
-      
+
 
         public void Edit()
         {
@@ -645,7 +655,7 @@ namespace MedicalManagementSoftware
                 fmain.ts_print_sea.Enabled = true;
                 fmain.ts_cancel_sea.Enabled = false;
             }
-           
+
         }
         public void Print()
         {
@@ -656,7 +666,7 @@ namespace MedicalManagementSoftware
             print.MedCertNumber = x_speciment.Text;
             print.bloodType = cbo_bloodType.Text;
             print.age = txt_age.Text;
-            print.tropical = rb_tropical_Y.Checked == true?"Y":"N";
+            print.tropical = rb_tropical_Y.Checked == true ? "Y" : "N";
             print.Tag = LabID.Text;
             print.ShowDialog();
         }
@@ -671,7 +681,7 @@ namespace MedicalManagementSoftware
 
         private void frm_seaferer_MEC_FormClosing(object sender, FormClosingEventArgs e)
         {
-           
+
         }
 
         private void label107_Click(object sender, EventArgs e)
@@ -876,16 +886,16 @@ namespace MedicalManagementSoftware
             }
         }
 
-      
+
 
         public void Search_Patient()
         {
             try
             {
 
-            
+
                 var i = db.sp_Seabase_Patient(pin.Text).FirstOrDefault();
-             
+
                 txtlastname.Text = i.lastname.ToString();
                 txtFirstname.Text = i.firstname.ToString();
                 txtMiddleName.Text = i.middlename.ToString();
@@ -901,7 +911,7 @@ namespace MedicalManagementSoftware
                 txt_contact.Text = i.contact_1.ToString();
                 txt_bday.Text = i.birthdate.ToString();
 
-              
+
 
             }
             catch (Exception ex)
@@ -918,11 +928,15 @@ namespace MedicalManagementSoftware
 
 
             if (bl == true)
-            { overlayShadow1.Visible = false; 
-                overlayShadow1.SendToBack(); }
+            {
+                overlayShadow1.Visible = false;
+                overlayShadow1.SendToBack();
+            }
             else
-            { overlayShadow1.Visible = true; 
-                overlayShadow1.BringToFront(); }
+            {
+                overlayShadow1.Visible = true;
+                overlayShadow1.BringToFront();
+            }
 
         }
         public void ClearAll()
@@ -1001,7 +1015,7 @@ namespace MedicalManagementSoftware
 
 
         }
-     
+
         private void txt_resultID_TextChanged(object sender, EventArgs e)
         {
 
@@ -1015,9 +1029,9 @@ namespace MedicalManagementSoftware
             try
             {
 
-               
+
                 var i = db.sp_Seabase_MedHistory1(LabID.Text).FirstOrDefault();
-             
+
 
 
                 lbl_history1_cn.Tag = i.cn.ToString();
@@ -1722,10 +1736,10 @@ namespace MedicalManagementSoftware
 
         private void txt_Papin_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
-       
+
 
         private void cbo_recomendation_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -2031,7 +2045,7 @@ namespace MedicalManagementSoftware
                 MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
 
             }
-   
+
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)

@@ -121,24 +121,24 @@ namespace MedicalManagementSoftware
             string country = "";
             var list = db.sp_Seabase_MLC(this.Tag.ToString()).ToList();
             string d = "";
+
+
             foreach (var i in list)
             {
 
                 d = i.birthdate;
-
-         
-
-
-
+                       
                 country = i.country.ToString();
      
                 dt.Rows.Add(i.lastname, i.firstname, i.middlename, i.address_1, i.position, i.marital_status, i.gender, i.birthdate, i.place_of_birth, i.employer, i.passport_no, i.nationality, i.religion, i.sirb, i.designation, i.picture.ToArray(), i.result_date, i.pathologist, i.fitness_date, i.valid_until, i.recommendation, i.medtech, i.medtech_license, i.restriction, i.ISHIHARA_C, i.SATISFACTORY_HEARING, i.SATISFACTORY_SIGHT_UNAID, i.VISUAL_AIDS, i.FIT_FOR_LOOKOUT, i.VISUAL_AIDS_REQUIRED, i.UNAIDED_HEARING_SATISFACTORY, i.IDENTITY_CONFIRMED, i.VISUAL_AIDS_WORN);
             }
+
+
             R_Seabase_MLC1.SetDataSource(dt);
 
             R_Seabase_MLC1.SetParameterValue("last_vision_test_taken", last_date_taken);
-            R_Seabase_MLC1.SetParameterValue("isLimitation", isLimitation);
-            R_Seabase_MLC1.SetParameterValue("limitationComment", limitationComment);
+            R_Seabase_MLC1.SetParameterValue("isLimitation", isLimitation != null? isLimitation:"");
+            R_Seabase_MLC1.SetParameterValue("limitationComment", limitationComment != null ? limitationComment : "");
 
             TextObject FormNo = (TextObject)R_Seabase_MLC1.ReportDefinition.ReportObjects["txt_formNo"];
             TextObject RevNo = (TextObject)R_Seabase_MLC1.ReportDefinition.ReportObjects["txt_RevNo"];

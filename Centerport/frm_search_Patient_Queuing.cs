@@ -94,7 +94,7 @@ namespace MedicalManagementSoftware
             {
                 DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
 
-              
+
 
                 var list = db.Select_Patient_pic(dg_result.SelectedRows[0].Cells[0].Value.ToString()).ToList();
                 if (list.Count() >= 1)
@@ -107,7 +107,7 @@ namespace MedicalManagementSoftware
                 }
                 else
                 {
-                   
+
                     pic_.Image = Properties.Resources.AnonymousPic;
                     pic_.BackgroundImage = Properties.Resources.AnonymousPic;
 
@@ -116,7 +116,7 @@ namespace MedicalManagementSoftware
             }
             catch //(Exception ex)
             {
-               
+
                 pic_.Image = Properties.Resources.AnonymousPic;
                 pic_.BackgroundImage = Properties.Resources.AnonymousPic;
             }
@@ -785,7 +785,7 @@ namespace MedicalManagementSoftware
                     //   lab = false; Landbase = false; queue = false; seafarer = false; Sea_mlc = false; ultraS = false; hiv = false; xray = false; Psych_Evaluation = false;
 
                 }
-               
+
 
 
             }
@@ -969,7 +969,7 @@ namespace MedicalManagementSoftware
                 SelectItem();
 
             }
-            else if (e.KeyCode == Keys.N&& e.Modifiers == Keys.Control)
+            else if (e.KeyCode == Keys.N && e.Modifiers == Keys.Control)
             {
                 frm_addPatient f_addPatient = new frm_addPatient();
                 f_addPatient.ShowDialog();
