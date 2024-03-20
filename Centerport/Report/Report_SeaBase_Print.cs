@@ -185,10 +185,10 @@ namespace MedicalManagementSoftware
             Iso.Text = ini.IniReadValue("ISO", "Seafarer_MER");
             R_SeabaseMER1.SetParameterValue("Age", DateClass.getAge(d));
             R_SeabaseMER1.SetParameterValue("country", country);
-            R_SeabaseMER1.SetParameterValue("tropical", tropical);
+            R_SeabaseMER1.SetParameterValue("tropical", tropical != null ? tropical:"");
             Viewer4_1.ReportSource = R_SeabaseMER1;
             RemoveTab(Viewer4_1);
-
+            //
 
 
 

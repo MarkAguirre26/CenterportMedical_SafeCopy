@@ -548,6 +548,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             }
             else
             {
+                //
                 txtPapin.Focus();
                 overlay.Visible = true;
                 overlay.BringToFront();
@@ -751,7 +752,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 reportDocument.PrintOptions.PaperSize = CrystalDecisions.Shared.PaperSize.PaperLetter;
                 reportDocument.PrintOptions.PrinterName = GetDefaultPrinterName();
                 reportDocument.PrintToPrinter(1, false, 0, 0);
-                //
+                
             }
             
            
@@ -1003,7 +1004,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
             physicalExaminationMedicalRecordModel.addressOfPhysician = txtAddress.Text;
             physicalExaminationMedicalRecordModel.nameOfPhysicianCertificating = txtPhysicianCertificatingAuthority.Text;
             physicalExaminationMedicalRecordModel.dateOfPhysicianCertificate = txtDateOfIssuePhysicianCertificate.Text;
-            physicalExaminationMedicalRecordModel.serialNumber = txtLicenceNumber.Text;
+            physicalExaminationMedicalRecordModel.serialNumber = txtLicenceNumber.Text != ""? txtLicenceNumber.Text : "-";
             physicalExaminationMedicalRecordModel.ExaminationDate = txtPhysicianDateOfExam.Text;
 
             return physicalExaminationMedicalRecordModel;
