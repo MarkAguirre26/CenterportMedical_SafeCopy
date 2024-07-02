@@ -156,7 +156,13 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 txtRightEyeWithOutGlasses.Text = l.VissionRightEye == null ? "20/20" : l.VissionRightEye;
                 txtLeftEyeWithOutGlasses.Text = l.VissionLeftEye == null ? "20/20" : l.VissionWithGlassLeft;
                 txtRightEyeWithGlasses.Text = l.VissionWithGlassRight == null ? "20/20" : l.VissionWithGlassRight;
-                txtLeftEyeWithGlasses.Text = l.VissionWithGlassLeft == null ? "20/20" : l.VissionLeftEye;
+                txtLeftEyeWithGlasses.Text = l.VissionWithGlassLeft == null ? "20/20" : l.VissionWithGlassLeft;
+                //txtLeftEyeWithGlasses.Text = l.VissionWithGlassLeft == null || txtLeftEyeWithOutGlasses.Text == "20/20"
+                //             ? "20/20"
+                //             : l.VissionWithGlassLeft;
+
+
+
                 txtPhysicianDateOfExam.Text = l.ExaminationDate == null ? "" : l.ExaminationDate;
                 string d = l.COLOR_VISION_DATE_TAKEN ==null ? l.COLOR_VISION_DATE_TAKEN_exam.ToString(): l.COLOR_VISION_DATE_TAKEN.ToString();
                 DateTime temp;
@@ -168,21 +174,26 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 {
                     txtDateOfColorVisionTest.Text = DateTime.Now.ToShortDateString();
                 }
-
+                //
 
                 string fullname = txtlastname.Text + ", " + txtFirstname.Text + " " + txtMiddleName.Text;
                 txtNameOfApplicant.Text = fullname;
                 txtDateOfExam.Text = l.result_date == null? l.fitnessDate:l.result_date;
                 txtExpirydate.Text = l.valid_until == null ? l.expiryDate : l.valid_until;
+                //
+                //if (l.gender.ToLower().Equals("male") || l.gender.ToLower().Equals("M"))
+                //{
+                //    rbMale.Checked = true;
+                //}
+                //else
+                //{
+                //    rbFemale.Checked = true;
+                //}
+                //
 
-                if (l.gender.ToLower().Equals("male") || l.gender.ToLower().Equals("M"))
-                {
-                    rbMale.Checked = true;
-                }
-                else
-                {
-                    rbFemale.Checked = true;
-                }
+                rbMale.Checked = l.gender.ToLower().Equals("male") || l.gender.ToLower().Equals("m");
+                rbFemale.Checked = !rbMale.Checked;
+
 
 
                 txtMasterPosition.Text = l.PositionMaster == null ? "" : l.PositionMaster;
