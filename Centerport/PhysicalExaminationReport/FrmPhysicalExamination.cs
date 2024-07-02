@@ -161,7 +161,7 @@ namespace MedicalManagementSoftware.PhysicalExaminationReport
                 //             ? "20/20"
                 //             : l.VissionWithGlassLeft;
 
-
+                //
 
                 txtPhysicianDateOfExam.Text = l.ExaminationDate == null ? "" : l.ExaminationDate;
                 string d = l.COLOR_VISION_DATE_TAKEN ==null ? l.COLOR_VISION_DATE_TAKEN_exam.ToString(): l.COLOR_VISION_DATE_TAKEN.ToString();

@@ -61,12 +61,12 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(178, 157);
+            this.linkLabel1.Location = new System.Drawing.Point(178, 173);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(118, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(57, 13);
             this.linkLabel1.TabIndex = 20;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "http://hsgsoftware.com";
+            this.linkLabel1.Text = "Repository";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label5
@@ -85,9 +85,9 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(178, 135);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(259, 13);
+            this.label3.Size = new System.Drawing.Size(262, 26);
             this.label3.TabIndex = 18;
-            this.label3.Text = "Developed by: HSG Software Development  Corp.";
+            this.label3.Text = "Developed by: HSG Software Development Corp.  \r\nMaintained by: Mark Aguirre";
             // 
             // label2
             // 
@@ -95,7 +95,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(178, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(253, 13);
+            this.label2.Size = new System.Drawing.Size(255, 13);
             this.label2.TabIndex = 17;
             this.label2.Text = "Licensed : CENTERPORT MEDICAL SERVICES, INC.";
             // 
@@ -105,9 +105,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(178, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 13);
+            this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Version: 1.0 BETA";
+            this.label1.Text = "Version: ";
             // 
             // pictureBox1
             // 
@@ -123,7 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 287);
+            this.ClientSize = new System.Drawing.Size(522, 282);
             this.Controls.Add(this.cmd_ok);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label5);
