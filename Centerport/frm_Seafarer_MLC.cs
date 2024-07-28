@@ -406,7 +406,7 @@ namespace MedicalManagementSoftware
             //{
             //    DirectoryInfo di = Directory.CreateDirectory(ClassSql.SeabaseImage);
             //}
-
+            ClearGroupBox();
 
 
 
@@ -441,7 +441,7 @@ namespace MedicalManagementSoftware
 
              
 
-
+               
                 txtlastname.Text = i.lastname.ToString();
                 txtFirstname.Text = i.firstname.ToString();
                 txtMiddleName.Text = i.middlename.ToString();
@@ -503,13 +503,13 @@ namespace MedicalManagementSoftware
         public void ClearGroupBox()
         {
     
-            r1_Y.Checked = true;
-            r2_Y.Checked = true;
-            r3_Y.Checked = true;
-            r4_Y.Checked = true;
-            r5_Y.Checked = true;
-            r7_Y.Checked = true;
-            r8_N.Checked = true;
+            r1_N.Checked = true;
+            r2_N.Checked = true;
+            r3_N.Checked = true;
+            r4_N.Checked = true;
+            r5_N.Checked = true;
+            r7_N.Checked = true;
+            r8_Y.Checked = true;
             rbLimitationNo.Checked = true;
 
             Tool.ClearFields(groupBox2);
@@ -740,8 +740,9 @@ namespace MedicalManagementSoftware
 
             try
             {
-                var i = db.sp_GetSpecimen(txt_Papin.Text).FirstOrDefault();
-                txt_specimen.Text = i.specimen_no;
+                string p = pin.Text;
+                var i = db.sp_GetSpecimen(p).FirstOrDefault();
+                txt_specimen.Text = i == null?"-":i.specimen_no;
 
                 
 
