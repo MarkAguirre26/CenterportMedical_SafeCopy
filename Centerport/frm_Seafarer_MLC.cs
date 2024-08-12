@@ -503,14 +503,14 @@ namespace MedicalManagementSoftware
         public void ClearGroupBox()
         {
     
-            r1_N.Checked = true;
-            r2_N.Checked = true;
-            r3_N.Checked = true;
-            r4_N.Checked = true;
-            r5_N.Checked = true;
-            r7_N.Checked = true;
-            r8_Y.Checked = true;
-            rbLimitationNo.Checked = true;
+            r1_Y.Checked = true;
+            r2_Y.Checked = true;
+            r3_Y.Checked = true;
+            r4_Y.Checked = true;
+            r5_Y.Checked = true;
+            r7_Y.Checked = true;
+            r8_N.Checked = true;
+            rbLimitationYes.Checked = true;
 
             Tool.ClearFields(groupBox2);
         }

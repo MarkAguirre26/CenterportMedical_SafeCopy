@@ -22,7 +22,7 @@ namespace MedicalManagementSoftware
         {
             label5.Text = Properties.Settings.Default.SystemName.ToString() + Tool.version;
             label1.Text = "Version: " + Tool.version;
-            //
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
