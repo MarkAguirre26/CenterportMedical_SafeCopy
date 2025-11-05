@@ -293,7 +293,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(342, 14);
             this.label10.TabIndex = 111;
-            this.label10.Text = "HEARING MEETS THE STANDARDS IN SCTW CODE, SECTION A-9?";
+            this.label10.Text = "HEARING MEETS THE STANDARDS IN STCW CODE, SECTION A-9?";
             // 
             // label14
             // 
@@ -317,7 +317,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(362, 14);
             this.label18.TabIndex = 113;
-            this.label18.Text = "VISUAL ACUITY MEETS STANDARDS IN SCTW CODE, SECTION A-l/9?";
+            this.label18.Text = "VISUAL ACUITY MEETS STANDARDS IN STCW CODE, SECTION A-l/9?";
             // 
             // cbo_recomendation
             // 
@@ -344,7 +344,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(363, 14);
             this.label19.TabIndex = 114;
-            this.label19.Text = "COLOUR VISION MEETS STANDARDS IN SCTW CODE, SECTION A-l/9?";
+            this.label19.Text = "COLOUR VISION MEETS STANDARDS IN STCW CODE, SECTION A-l/9?";
             // 
             // label20
             // 
