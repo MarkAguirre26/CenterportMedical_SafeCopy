@@ -66,6 +66,8 @@ namespace MedicalManagementSoftware
             string kk = ini.IniReadValue("MEDICAL", "medtech1_Lic");
             string ll = ini.IniReadValue("MEDICAL", "medtech2_Lic");
 
+            string other = ini.IniReadValue("MEDICAL", "Other");
+            string otherLicense = ini.IniReadValue("MEDICAL", "Other_license");
             meds.Add(new Meds(a, aa));
             meds.Add(new Meds(b, bb));
             meds.Add(new Meds(c, cc));
@@ -78,6 +80,7 @@ namespace MedicalManagementSoftware
             meds.Add(new Meds(j, jj));
             meds.Add(new Meds(k, kk));
             meds.Add(new Meds(l, ll));
+            meds.Add(new Meds(other, otherLicense));
 
             dg.DataSource = meds;
 

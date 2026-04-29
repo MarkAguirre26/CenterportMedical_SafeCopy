@@ -133,11 +133,11 @@ namespace MedicalManagementSoftware
                     toolStripLandBase.Visible = true;
                     toolStripSeaBase.Visible = true;
                     toolStripMLC.Visible = true;
-                    toolStripPanama.Visible = true;
+                    toolStripPanama.Visible = false;  //set to false as per advice this will be disbaled
                     MenuItemoverseasLandBased.Visible = true;
                     MenuItemseaferers.Visible = true;
                     MenuItemseaferersMLC.Visible = true;
-                    toolStripPhysicalExamination.Visible = true;
+                    toolStripPhysicalExamination.Visible = false; //set to false as per advice this will be disbaled
 
                     break;
                 case 3: //Lab

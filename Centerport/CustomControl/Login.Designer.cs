@@ -93,7 +93,6 @@
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(275, 20);
             this.txt_password.TabIndex = 19;
-            this.txt_password.Text = "Releasing";
             this.txt_password.UseSystemPasswordChar = true;
             this.txt_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_username_KeyDown);
             // 
@@ -105,7 +104,6 @@
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(275, 20);
             this.txt_username.TabIndex = 18;
-            this.txt_username.Text = "Releasing";
             this.txt_username.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_username_KeyDown);
             // 
             // cmd_login

@@ -237,6 +237,11 @@ namespace MedicalManagementSoftware
             ini.IniWriteValue("MEDICAL", "medtech1_Name", txt_medtech1_Name.Text); ini.IniWriteValue("MEDICAL", "medtech1_Lic", txt_medtech1_Lic.Text);
             ini.IniWriteValue("MEDICAL", "medtech2_Name", txt_medtech2_Name.Text); ini.IniWriteValue("MEDICAL", "medtech2_Lic", txt_medtech2_Lic.Text);
             ini.IniWriteValue("MEDICAL", "Pathologist", d.Text); ini.IniWriteValue("MEDICAL", "Pathologist_license", dd.Text);
+
+
+            ini.IniWriteValue("MEDICAL", "Other", txtOtherName.Text); ini.IniWriteValue("MEDICAL", "Other_license", txtOtherLicense.Text);
+
+
             ini.IniWriteValue("MEDICAL", "Xray_Radiologist", ea.Text); ini.IniWriteValue("MEDICAL", "Xray Radiologist_license", ee.Text);
             ini.IniWriteValue("MEDICAL", "XRAY_TECH", txt_xray_tech_Name.Text); ini.IniWriteValue("MEDICAL", "XRAYTECH_LICENSE", txt_xray_tech_License.Text);
             ini.IniWriteValue("MEDICAL", "Medical_Director", f.Text); ini.IniWriteValue("MEDICAL", "Medical Director_license", ff.Text);
@@ -285,6 +290,10 @@ namespace MedicalManagementSoftware
          hh.Text  =   ini.IniReadValue("MEDICAL", "Psychometrician_license");
          i.Text  =   ini.IniReadValue("MEDICAL", "Psychologist");
         ii.Text  =   ini.IniReadValue("MEDICAL", "Psychologist_license");
+
+
+        txtOtherName.Text = ini.IniReadValue("MEDICAL", "Other");
+        txtOtherLicense.Text = ini.IniReadValue("MEDICAL", "Other_license");
 
       j.Text = ini.IniReadValue("MEDICAL", "hiv_cert_no");
 
